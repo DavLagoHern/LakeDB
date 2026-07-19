@@ -1,0 +1,78 @@
+name: Reportar un error
+description: Informa de un fallo reproducible en LakeDB.
+title: "[Bug] "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gracias por ayudar a mejorar LakeDB. No incluyas contraseñas, IP privadas, consultas confidenciales ni datos reales.
+  - type: input
+    id: version
+    attributes:
+      label: Versión de LakeDB
+      description: Puedes verla en Acerca de LakeDB o en el nombre de la release descargada.
+      placeholder: v0.5.0
+    validations:
+      required: true
+  - type: input
+    id: system
+    attributes:
+      label: Sistema y equipo
+      placeholder: macOS 15.5, MacBook Air M2
+    validations:
+      required: true
+  - type: dropdown
+    id: database
+    attributes:
+      label: Motor de base de datos
+      options:
+        - MySQL
+        - MariaDB
+        - No aplica
+        - Otro
+    validations:
+      required: true
+  - type: input
+    id: database-version
+    attributes:
+      label: Versión del servidor
+      placeholder: MySQL 8.4 o MariaDB 11.4
+  - type: textarea
+    id: steps
+    attributes:
+      label: Pasos para reproducirlo
+      placeholder: |
+        1. Abro...
+        2. Pulso...
+        3. Aparece...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Resultado esperado
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Resultado actual
+      description: Incluye el mensaje exacto y capturas saneadas si ayudan.
+    validations:
+      required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: Contexto adicional
+      description: ¿Ocurre siempre? ¿Empezó después de actualizar? ¿Hay algún detalle relevante?
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Comprobaciones
+      options:
+        - label: He buscado incidencias similares antes de publicar.
+          required: true
+        - label: He eliminado credenciales y datos sensibles del reporte.
+          required: true

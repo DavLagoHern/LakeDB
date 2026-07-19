@@ -1,0 +1,26 @@
+name: Mejorar la documentación
+description: Propón una corrección para el README, la Wiki o las guías.
+title: "[Docs] "
+labels:
+  - documentation
+body:
+  - type: input
+    id: location
+    attributes:
+      label: Página o sección
+      placeholder: Wiki > Conexiones, SSL y SSH
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: ¿Qué resulta incorrecto o poco claro?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Cambio propuesto
+      description: Puedes escribir el texto sugerido o explicar qué información falta.
+    validations:
+      required: true

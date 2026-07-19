@@ -9,6 +9,7 @@
 
 <p align="center">
   <a href="https://github.com/DavLagoHern/LakeDB/releases/latest"><img alt="Última versión" src="https://img.shields.io/github/v/release/DavLagoHern/LakeDB?style=for-the-badge&color=0b7cff&label=DESCARGAR"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/discussions"><img alt="Comunidad LakeDB" src="https://img.shields.io/badge/COMUNIDAD-DISCUSSIONS-12d9ff?style=for-the-badge&logo=github&logoColor=020817"></a>
   <img alt="macOS Apple Silicon" src="https://img.shields.io/badge/macOS-Apple_Silicon-12d9ff?style=for-the-badge&logo=apple&logoColor=020817">
   <img alt="MySQL y MariaDB" src="https://img.shields.io/badge/MySQL_+_MariaDB-Ready-06132b?style=for-the-badge&logo=mysql&logoColor=12d9ff">
 </p>
@@ -87,9 +88,10 @@ Free seguirá siendo la base gratuita de LakeDB. Pro añadirá capacidades avanz
 ## Ayuda y comunidad
 
 - Consulta la [Wiki](https://github.com/DavLagoHern/LakeDB/wiki) para guías y preguntas frecuentes.
-- Revisa las [incidencias conocidas](https://github.com/DavLagoHern/LakeDB/issues).
-- Si encuentras un problema, abre un [nuevo issue](https://github.com/DavLagoHern/LakeDB/issues/new) indicando tu versión de LakeDB, macOS y servidor MySQL/MariaDB.
-- Para propuestas, utiliza también Issues y explica el caso de uso que quieres resolver.
+- Propón una función o vota ideas en el [foro de peticiones](https://github.com/DavLagoHern/LakeDB/discussions/categories/ideas).
+- Haz preguntas y ayuda a otros usuarios en [Preguntas y respuestas](https://github.com/DavLagoHern/LakeDB/discussions/categories/q-a).
+- Si encuentras un fallo reproducible, abre un [reporte de error](https://github.com/DavLagoHern/LakeDB/issues/new?template=bug-report.yml).
+- Lee la [guía de la comunidad](COMMUNITY.md) para saber dónde publicar cada tema.
 
 ## Sobre este repositorio
 

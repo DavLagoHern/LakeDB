@@ -1,0 +1,60 @@
+title: "[Idea] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gracias por compartir una idea para LakeDB. Busca primero propuestas parecidas y vota si ya existe una.
+  - type: textarea
+    id: problem
+    attributes:
+      label: ¿Qué problema quieres resolver?
+      description: Describe tu flujo actual y qué parte te hace perder tiempo o te limita.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: ¿Cómo te gustaría que funcionase?
+      description: No necesitas definir todos los detalles; una experiencia ideal es suficiente.
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Área de LakeDB
+      options:
+        - Conexiones
+        - Editor SQL
+        - Explorador y tablas
+        - Importación, backup o migraciones
+        - Seguridad
+        - Personalización
+        - LakeDB Pro
+        - Otra
+    validations:
+      required: true
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: ¿Con qué frecuencia te ayudaría?
+      options:
+        - Todos los días
+        - Varias veces por semana
+        - Algunas veces al mes
+        - En casos puntuales
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternativas actuales
+      description: ¿Cómo lo resuelves hoy en LakeDB o con otra herramienta?
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Antes de publicar
+      options:
+        - label: He buscado si existe una idea parecida.
+          required: true
+        - label: No he incluido credenciales ni datos sensibles.
+          required: true
