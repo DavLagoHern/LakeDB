@@ -20,7 +20,11 @@
 LakeDB está pensado para quienes trabajan cada día con muchas conexiones MySQL y MariaDB. Cada servidor vive en su propio workspace, con su editor SQL, explorador, tablas y estado independiente.
 
 <p align="center">
-  <img src="assets/lakedb-screenshot.png" width="100%" alt="Pantalla principal de LakeDB">
+  <img src="assets/screenshots/conexiones.png" width="100%" alt="Conexiones organizadas por entorno en LakeDB">
+</p>
+
+<p align="center">
+  <sub>Organiza conexiones por cliente o entorno y reconoce producción de un vistazo.</sub>
 </p>
 
 ## Lo que ya puedes hacer
@@ -37,6 +41,14 @@ LakeDB está pensado para quienes trabajan cada día con muchas conexiones MySQL
 | **Herramientas** | Backup y restore SQL, comparación de schemas y copia de estructura o datos entre conexiones. |
 
 Todo se ejecuta en local. LakeDB no envía tus conexiones, consultas o credenciales a ningún servicio externo.
+
+<details>
+  <summary><strong>Ver más capturas</strong></summary>
+  <br>
+  <p align="center"><img src="assets/screenshots/nueva-conexion.png" width="100%" alt="Configuración de una conexión en LakeDB"></p>
+  <p align="center"><img src="assets/screenshots/preferencias.png" width="100%" alt="Preferencias de LakeDB"></p>
+  <p align="center"><img src="assets/screenshots/herramientas.png" width="100%" alt="Backup, restore y migraciones en LakeDB"></p>
+</details>
 
 ## LakeDB Free y LakeDB Pro
 
