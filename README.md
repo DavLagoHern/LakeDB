@@ -8,6 +8,7 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/tag/v0.7.0-beta.1"><img alt="LakeDB 0.7 public beta" src="https://img.shields.io/badge/PUBLIC_BETA-0.7.0--beta.1-55f0bd?style=for-the-badge&logo=github&logoColor=020817"></a>
   <a href="https://github.com/DavLagoHern/LakeDB/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/DavLagoHern/LakeDB?style=for-the-badge&color=0b7cff&label=DOWNLOAD"></a>
   <a href="https://github.com/DavLagoHern/LakeDB/discussions"><img alt="LakeDB community" src="https://img.shields.io/badge/COMMUNITY-DISCUSSIONS-12d9ff?style=for-the-badge&logo=github&logoColor=020817"></a>
 </p>
