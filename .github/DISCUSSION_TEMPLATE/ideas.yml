@@ -3,58 +3,58 @@ body:
   - type: markdown
     attributes:
       value: |
-        Gracias por compartir una idea para LakeDB. Busca primero propuestas parecidas y vota si ya existe una.
+        Thanks for sharing an idea for LakeDB. Search for similar proposals first and vote if one already exists.
   - type: textarea
     id: problem
     attributes:
-      label: ¿Qué problema quieres resolver?
-      description: Describe tu flujo actual y qué parte te hace perder tiempo o te limita.
+      label: What problem are you trying to solve?
+      description: Describe your current workflow and what slows you down or limits you.
     validations:
       required: true
   - type: textarea
     id: proposal
     attributes:
-      label: ¿Cómo te gustaría que funcionase?
-      description: No necesitas definir todos los detalles; una experiencia ideal es suficiente.
+      label: How would you like it to work?
+      description: You do not need every detail; describe the ideal experience.
     validations:
       required: true
   - type: dropdown
     id: area
     attributes:
-      label: Área de LakeDB
+      label: LakeDB area
       options:
-        - Conexiones
-        - Editor SQL
-        - Explorador y tablas
-        - Importación, backup o migraciones
-        - Seguridad
-        - Personalización
+        - Connections
+        - SQL editor
+        - Explorer and tables
+        - Import, backup or migrations
+        - Security
+        - Customization
         - LakeDB Pro
-        - Otra
+        - Other
     validations:
       required: true
   - type: dropdown
     id: frequency
     attributes:
-      label: ¿Con qué frecuencia te ayudaría?
+      label: How often would this help?
       options:
-        - Todos los días
-        - Varias veces por semana
-        - Algunas veces al mes
-        - En casos puntuales
+        - Every day
+        - Several times a week
+        - A few times a month
+        - Occasionally
     validations:
       required: true
   - type: textarea
     id: alternatives
     attributes:
-      label: Alternativas actuales
-      description: ¿Cómo lo resuelves hoy en LakeDB o con otra herramienta?
+      label: Current alternatives
+      description: How do you handle this today in LakeDB or another tool?
   - type: checkboxes
     id: checks
     attributes:
-      label: Antes de publicar
+      label: Before posting
       options:
-        - label: He buscado si existe una idea parecida.
+        - label: I searched for a similar idea.
           required: true
-        - label: No he incluido credenciales ni datos sensibles.
+        - label: I removed credentials and sensitive data.
           required: true

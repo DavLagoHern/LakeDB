@@ -3,109 +3,98 @@
 </p>
 
 <p align="center">
-  <strong>Un cliente de escritorio moderno y tranquilo para MySQL y MariaDB.</strong><br>
-  Trabaja con todas tus conexiones, consultas y datos sin pelearte con la herramienta.
+  <strong>A calm, modern desktop client for MySQL and MariaDB.</strong><br>
+  Manage every connection, query and dataset without fighting your tools.
 </p>
 
 <p align="center">
-  <a href="https://github.com/DavLagoHern/LakeDB/releases/latest"><img alt="Última versión" src="https://img.shields.io/github/v/release/DavLagoHern/LakeDB?style=for-the-badge&color=0b7cff&label=DESCARGAR"></a>
-  <a href="https://github.com/DavLagoHern/LakeDB/discussions"><img alt="Comunidad LakeDB" src="https://img.shields.io/badge/COMUNIDAD-DISCUSSIONS-12d9ff?style=for-the-badge&logo=github&logoColor=020817"></a>
-  <img alt="macOS Apple Silicon" src="https://img.shields.io/badge/macOS-Apple_Silicon-12d9ff?style=for-the-badge&logo=apple&logoColor=020817">
-  <img alt="MySQL y MariaDB" src="https://img.shields.io/badge/MySQL_+_MariaDB-Ready-06132b?style=for-the-badge&logo=mysql&logoColor=12d9ff">
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/DavLagoHern/LakeDB?style=for-the-badge&color=0b7cff&label=DOWNLOAD"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/discussions"><img alt="LakeDB community" src="https://img.shields.io/badge/COMMUNITY-DISCUSSIONS-12d9ff?style=for-the-badge&logo=github&logoColor=020817"></a>
+</p>
+
+<p align="center">
+  <img alt="macOS" src="https://img.shields.io/badge/macOS-Apple_Silicon-06132b?style=flat-square&logo=apple&logoColor=white">
+  <img alt="Windows" src="https://img.shields.io/badge/Windows-x64-06132b?style=flat-square&logo=windows&logoColor=white">
+  <img alt="Linux" src="https://img.shields.io/badge/Linux-x64-06132b?style=flat-square&logo=linux&logoColor=white">
+  <img alt="MySQL and MariaDB" src="https://img.shields.io/badge/MySQL_+_MariaDB-ready-0b7cff?style=flat-square&logo=mysql&logoColor=white">
+  <img alt="English and Spanish" src="https://img.shields.io/badge/UI-English_+_Spanish-12d9ff?style=flat-square">
 </p>
 
 ---
 
-## Tu base de datos, sin ruido
+## Your databases, without the noise
 
-LakeDB está pensado para quienes trabajan cada día con muchas conexiones MySQL y MariaDB. Cada servidor vive en su propio workspace, con su editor SQL, explorador, tablas y estado independiente.
-
-<p align="center">
-  <img src="assets/screenshots/conexiones.png" width="100%" alt="Conexiones organizadas por entorno en LakeDB">
-</p>
+LakeDB is built for people who work with many MySQL and MariaDB connections every day. Every server gets its own workspace, SQL editor, object explorer, table views and independent state.
 
 <p align="center">
-  <sub>Organiza conexiones por cliente o entorno y reconoce producción de un vistazo.</sub>
+  <img src="assets/screenshots/connections.png" width="100%" alt="Connections organized by environment in LakeDB">
 </p>
 
-## Lo que ya puedes hacer
+<p align="center"><sub>Group connections by client or environment and spot production at a glance.</sub></p>
 
-| Área | Incluido en LakeDB Free |
+## Everything you need for daily database work
+
+| Area | Included in LakeDB Free |
 | --- | --- |
-| **Conexiones** | Conexiones ilimitadas, carpetas, colores por entorno, SSL, SSH Tunnel y reconexión automática. |
-| **Editor SQL** | Monaco Editor, múltiples pestañas, ejecución por selección o sentencia, historial, favoritos y cancelación. |
-| **Explorador** | Bases, tablas, vistas, procedimientos, funciones, triggers, eventos, índices, claves foráneas y DDL. |
-| **Datos** | Grid virtualizada, paginación, filtros, ordenación, búsqueda y exportación CSV, JSON y Excel-compatible. |
-| **Edición segura** | Insertar, editar, duplicar y eliminar con buffer de cambios, detección de conflictos y rollback. |
-| **Protección** | Modo de solo lectura y confirmaciones reforzadas para operaciones peligrosas en producción. |
-| **Importación** | Importa conexiones desde DBeaver, SQLyog, JSON, CSV y URLs MySQL/JDBC. |
-| **Herramientas** | Backup y restore SQL, comparación de schemas y copia de estructura o datos entre conexiones. |
+| **Connections** | Unlimited connections, folders, environment colors, SSL, SSH tunnels and automatic reconnection. |
+| **SQL editor** | Monaco Editor, multiple tabs, selection or statement execution, history, favorites and cancellation. |
+| **Explorer** | Databases, tables, views, procedures, functions, triggers, events, indexes, foreign keys and DDL. |
+| **Data** | Virtualized grid, pagination, filters, sorting, search and CSV, JSON or Excel-compatible export. |
+| **Safe editing** | Insert, edit, duplicate and delete with a change buffer, conflict detection and rollback. |
+| **Protection** | Read-only mode and reinforced confirmation for dangerous production operations. |
+| **Import** | Import connections from DBeaver, SQLyog, JSON, CSV and MySQL/JDBC URLs. |
+| **Tools** | SQL backup and restore, schema comparison, and table structure/data copy between connections. |
 
-Todo se ejecuta en local. LakeDB no envía tus conexiones, consultas o credenciales a ningún servicio externo.
+Everything runs locally. LakeDB does not send your connections, queries or credentials to an external LakeDB service.
 
 <details>
-  <summary><strong>Ver más capturas</strong></summary>
+  <summary><strong>More screenshots</strong></summary>
   <br>
-  <p align="center"><img src="assets/screenshots/nueva-conexion.png" width="100%" alt="Configuración de una conexión en LakeDB"></p>
-  <p align="center"><img src="assets/screenshots/preferencias.png" width="100%" alt="Preferencias de LakeDB"></p>
-  <p align="center"><img src="assets/screenshots/herramientas.png" width="100%" alt="Backup, restore y migraciones en LakeDB"></p>
+  <p align="center"><img src="assets/screenshots/new-connection.png" width="100%" alt="Create a connection in LakeDB"></p>
+  <p align="center"><img src="assets/screenshots/preferences.png" width="100%" alt="LakeDB preferences and language selector"></p>
+  <p align="center"><img src="assets/screenshots/database-tools.png" width="100%" alt="SQL backup, restore and migration tools"></p>
 </details>
 
-## LakeDB Free y LakeDB Pro
+## Download
 
-LakeDB será una única aplicación y una única descarga.
+Open the [latest release](https://github.com/DavLagoHern/LakeDB/releases/latest) and choose your platform:
 
-### LakeDB Free
+| Platform | Download | Install |
+| --- | --- | --- |
+| macOS Apple Silicon | `LakeDB-*-mac-arm64.dmg` or `.zip` | Open the DMG or move `LakeDB.app` to Applications. |
+| Windows x64 | `LakeDB-*-win-x64-setup.exe` | Run the installer. A portable `.exe` is also available. |
+| Linux x64 | `LakeDB-*-linux-x64.AppImage` or `.deb` | Make the AppImage executable, or install the Debian package. |
 
-La base gratuita para trabajar de verdad con MySQL y MariaDB:
+Early builds are not code-signed yet, so your operating system may display a security warning. Only download LakeDB from this official repository. Every package includes a matching SHA-256 checksum.
 
-- Sin límite artificial de conexiones.
-- Sin límite de pestañas o edición.
-- Sin cuenta obligatoria.
-- Sin telemetría ni anuncios.
+## English and Spanish, ready for more
 
-### LakeDB Pro · Próximamente
+LakeDB is available in English and Spanish. Change the interface language under **Preferences → Language**; the application menu and workspace update with it. The translation layer is structured so more languages can be added without rewriting individual screens.
 
-Cuando Pro esté disponible, podrás suscribirte desde la propia aplicación y desbloquear funciones avanzadas sin reinstalar nada:
+## LakeDB Free and Pro
 
-- Lake AI para generar, explicar y revisar SQL.
-- Agentes con contexto del esquema.
-- Sincronización Cloud de workspaces, favoritos y configuración.
-- Dashboards, KPIs y consultas programadas.
-- Colaboración para equipos.
+LakeDB will remain one application and one download.
 
-Free seguirá siendo la base gratuita de LakeDB. Pro añadirá capacidades avanzadas, no quitará las funciones esenciales que ya forman parte de Free.
+- **Free** is the complete local foundation: no artificial connection or tab limits, no mandatory account, no telemetry and no ads.
+- **Pro** will be an optional subscription inside the same app, unlocking planned capabilities such as Lake AI, cloud sync, dashboards, scheduled queries and team collaboration.
 
-## Descargar
+Free will keep the essential database features it already provides. Read the [Free and Pro roadmap](https://github.com/DavLagoHern/LakeDB/wiki/LakeDB-Free-and-Pro) for more context.
 
-1. Abre la página de [Releases](https://github.com/DavLagoHern/LakeDB/releases).
-2. Descarga `LakeDB-mac-arm64.zip` de la versión más reciente.
-3. Descomprime el archivo y mueve `LakeDB.app` a `Aplicaciones`.
-4. Abre LakeDB.
+## Help shape LakeDB
 
-> La primera beta está dirigida a macOS con Apple Silicon. La firma y notarización oficial están en preparación; mientras tanto, macOS puede pedir abrir la aplicación mediante clic derecho → **Abrir**.
+- Read the [Wiki](https://github.com/DavLagoHern/LakeDB/wiki) for installation, workflows and troubleshooting.
+- Propose and vote on features in [Ideas](https://github.com/DavLagoHern/LakeDB/discussions/categories/ideas).
+- Ask for help in [Q&A](https://github.com/DavLagoHern/LakeDB/discussions/categories/q-a).
+- Report reproducible bugs with the [bug report form](https://github.com/DavLagoHern/LakeDB/issues/new?template=bug-report.yml).
+- Check the [community guide](COMMUNITY.md) before posting logs or screenshots.
 
-## Ayuda y comunidad
+## About this repository
 
-- Consulta la [Wiki](https://github.com/DavLagoHern/LakeDB/wiki) para guías y preguntas frecuentes.
-- Propón una función o vota ideas en el [foro de peticiones](https://github.com/DavLagoHern/LakeDB/discussions/categories/ideas).
-- Haz preguntas y ayuda a otros usuarios en [Preguntas y respuestas](https://github.com/DavLagoHern/LakeDB/discussions/categories/q-a).
-- Si encuentras un fallo reproducible, abre un [reporte de error](https://github.com/DavLagoHern/LakeDB/issues/new?template=bug-report.yml).
-- Lee la [guía de la comunidad](COMMUNITY.md) para saber dónde publicar cada tema.
-
-## Sobre este repositorio
-
-Este es el repositorio público oficial de LakeDB. Aquí se publican:
-
-- Binarios y notas de cada versión.
-- Wiki, documentación y novedades.
-- Incidencias, propuestas y roadmap público.
-
-El código fuente de la aplicación se mantiene en un repositorio privado. Los binarios publicados aquí se generan automáticamente desde el repositorio de desarrollo después de superar las verificaciones de calidad.
+This is LakeDB's official public repository. It hosts binaries, release notes, documentation, issues and the public roadmap. The application source is maintained in a private repository; published binaries are generated automatically after the development repository passes its quality checks.
 
 ---
 
 <p align="center">
-  <img src="assets/lakedb-app-icon.png" width="84" alt="Icono de LakeDB"><br>
+  <img src="assets/lakedb-app-icon.png" width="84" alt="LakeDB icon"><br>
   <strong>Modern database. Deeper insights.</strong>
 </p>

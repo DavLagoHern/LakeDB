@@ -1,28 +1,28 @@
-title: "[Pregunta] "
+title: "[Question] "
 body:
   - type: textarea
     id: goal
     attributes:
-      label: ¿Qué quieres conseguir?
-      description: Explica el resultado final que buscas.
+      label: What are you trying to achieve?
+      description: Explain the outcome you want.
     validations:
       required: true
   - type: textarea
     id: attempted
     attributes:
-      label: ¿Qué has probado?
-      description: Incluye pasos, mensajes y capturas saneadas que ayuden a entenderlo.
+      label: What have you tried?
+      description: Include steps, messages and sanitized screenshots that help explain the issue.
     validations:
       required: true
   - type: input
     id: version
     attributes:
-      label: Versión de LakeDB
-      placeholder: v0.5.0
+      label: LakeDB version
+      placeholder: v0.6.0
   - type: checkboxes
     id: privacy
     attributes:
-      label: Privacidad
+      label: Privacy
       options:
-        - label: He eliminado credenciales y datos sensibles.
+        - label: I removed credentials and sensitive data.
           required: true

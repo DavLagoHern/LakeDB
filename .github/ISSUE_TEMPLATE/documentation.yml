@@ -1,26 +1,25 @@
-name: Mejorar la documentación
-description: Propón una corrección para el README, la Wiki o las guías.
+name: Documentation improvement
+description: Suggest a correction for the README, Wiki or guides.
 title: "[Docs] "
-labels:
-  - documentation
+labels: [documentation]
 body:
   - type: input
     id: location
     attributes:
-      label: Página o sección
-      placeholder: Wiki > Conexiones, SSL y SSH
+      label: Page or section
+      placeholder: Wiki > Connections, SSL and SSH
     validations:
       required: true
   - type: textarea
     id: problem
     attributes:
-      label: ¿Qué resulta incorrecto o poco claro?
+      label: What is incorrect or unclear?
     validations:
       required: true
   - type: textarea
     id: proposal
     attributes:
-      label: Cambio propuesto
-      description: Puedes escribir el texto sugerido o explicar qué información falta.
+      label: Proposed change
+      description: Add suggested wording or explain what information is missing.
     validations:
       required: true

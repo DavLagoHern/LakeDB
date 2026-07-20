@@ -1,42 +1,25 @@
-# Comunidad LakeDB
+# LakeDB community
 
-La comunidad es el lugar para compartir ideas, resolver dudas y ayudar a decidir qué debería mejorar LakeDB. No necesitas conocimientos técnicos para participar.
+The community is where we share ideas, solve questions and help decide what LakeDB should improve next. You do not need technical knowledge to take part.
 
-## ¿Dónde publico?
+## Where should I post?
 
-| Quiero… | Lugar |
+| I want to… | Go to… |
 | --- | --- |
-| Proponer una función o mejora | [Ideas](https://github.com/DavLagoHern/LakeDB/discussions/categories/ideas) |
-| Preguntar cómo se hace algo | [Preguntas y respuestas](https://github.com/DavLagoHern/LakeDB/discussions/categories/q-a) |
-| Compartir un flujo, truco o experiencia | [General](https://github.com/DavLagoHern/LakeDB/discussions/categories/general) |
-| Informar de un fallo reproducible | [Reporte de error](https://github.com/DavLagoHern/LakeDB/issues/new?template=bug-report.yml) |
-| Corregir o mejorar la documentación | [Mejora de documentación](https://github.com/DavLagoHern/LakeDB/issues/new?template=documentation.yml) |
+| Propose a feature or improvement | [Ideas](https://github.com/DavLagoHern/LakeDB/discussions/categories/ideas) |
+| Ask how to do something | [Q&A](https://github.com/DavLagoHern/LakeDB/discussions/categories/q-a) |
+| Share a workflow, tip or experience | [General](https://github.com/DavLagoHern/LakeDB/discussions/categories/general) |
+| Report a reproducible bug | [Bug report](https://github.com/DavLagoHern/LakeDB/issues/new?template=bug-report.yml) |
+| Improve the README or Wiki | [Documentation improvement](https://github.com/DavLagoHern/LakeDB/issues/new?template=documentation.yml) |
 
-## Cómo proponer una buena idea
+## Writing a useful idea
 
-No hace falta diseñar la solución. Lo más útil es explicar:
+You do not need to design the solution. Tell us what you were trying to achieve, what gets in the way today, how you would like it to work, and how often it would help. Search existing discussions first; if a similar idea exists, vote and add your use case there.
 
-1. Qué intentabas conseguir.
-2. Qué problema encuentras ahora.
-3. Cómo te gustaría que funcionase.
-4. Con qué frecuencia te ocurre y a quién más podría ayudar.
+Requests are considered using real use cases, community votes, data safety, maintenance cost, and their fit with LakeDB Free or future Pro capabilities. Votes help prioritize work, but do not guarantee a delivery date.
 
-Antes de publicar, busca si existe una propuesta parecida. Si existe, vota con 👍 y añade tu caso de uso: eso ayuda a entender la prioridad sin repartir la conversación.
+## Protect your data
 
-## Cómo se priorizan las peticiones
+Before posting, remove passwords, tokens, private keys, private IP addresses, usernames, customer names, confidential queries and production data from screenshots, logs and examples.
 
-Las ideas se valorarán teniendo en cuenta:
-
-- Utilidad para distintos tipos de usuarios.
-- Número de votos y casos de uso reales.
-- Seguridad y riesgo para los datos.
-- Complejidad de implementación y mantenimiento.
-- Encaje con LakeDB Free o con futuras capacidades Pro.
-
-Recibir votos no garantiza una fecha de entrega. Cuando una propuesta avance, su estado se comunicará en la propia discusión.
-
-## Antes de compartir información
-
-LakeDB trabaja con datos sensibles. Elimina siempre contraseñas, usuarios reales, IP privadas, nombres de clientes, consultas confidenciales y datos de producción de capturas, logs y ejemplos.
-
-Consulta también las [normas de participación](CODE_OF_CONDUCT.md) y la [guía para colaborar](CONTRIBUTING.md).
+Please also read the [Code of Conduct](CODE_OF_CONDUCT.md) and [contribution guide](CONTRIBUTING.md).

@@ -1,78 +1,70 @@
-name: Reportar un error
-description: Informa de un fallo reproducible en LakeDB.
+name: Bug report
+description: Report a reproducible problem in LakeDB.
 title: "[Bug] "
-labels:
-  - bug
+labels: [bug]
 body:
   - type: markdown
     attributes:
-      value: |
-        Gracias por ayudar a mejorar LakeDB. No incluyas contraseñas, IP privadas, consultas confidenciales ni datos reales.
+      value: Thanks for helping improve LakeDB. Never include passwords, private IP addresses, confidential queries or real production data.
   - type: input
     id: version
     attributes:
-      label: Versión de LakeDB
-      description: Puedes verla en Acerca de LakeDB o en el nombre de la release descargada.
-      placeholder: v0.5.0
+      label: LakeDB version
+      placeholder: v0.6.0
     validations:
       required: true
   - type: input
     id: system
     attributes:
-      label: Sistema y equipo
-      placeholder: macOS 15.5, MacBook Air M2
+      label: Operating system and device
+      placeholder: Windows 11 x64, macOS 15 on M2, Ubuntu 24.04 x64
     validations:
       required: true
   - type: dropdown
     id: database
     attributes:
-      label: Motor de base de datos
-      options:
-        - MySQL
-        - MariaDB
-        - No aplica
-        - Otro
+      label: Database engine
+      options: [MySQL, MariaDB, Not applicable, Other]
     validations:
       required: true
   - type: input
     id: database-version
     attributes:
-      label: Versión del servidor
-      placeholder: MySQL 8.4 o MariaDB 11.4
+      label: Server version
+      placeholder: MySQL 8.4 or MariaDB 11.4
   - type: textarea
     id: steps
     attributes:
-      label: Pasos para reproducirlo
+      label: Steps to reproduce
       placeholder: |
-        1. Abro...
-        2. Pulso...
-        3. Aparece...
+        1. Open…
+        2. Click…
+        3. See…
     validations:
       required: true
   - type: textarea
     id: expected
     attributes:
-      label: Resultado esperado
+      label: Expected result
     validations:
       required: true
   - type: textarea
     id: actual
     attributes:
-      label: Resultado actual
-      description: Incluye el mensaje exacto y capturas saneadas si ayudan.
+      label: Actual result
+      description: Include the exact message and sanitized screenshots when useful.
     validations:
       required: true
   - type: textarea
     id: extra
     attributes:
-      label: Contexto adicional
-      description: ¿Ocurre siempre? ¿Empezó después de actualizar? ¿Hay algún detalle relevante?
+      label: Additional context
   - type: checkboxes
     id: checks
     attributes:
-      label: Comprobaciones
+      label: Checklist
       options:
-        - label: He buscado incidencias similares antes de publicar.
+        - label: I searched for similar reports.
           required: true
-        - label: He eliminado credenciales y datos sensibles del reporte.
+        - label: I removed credentials and sensitive data.
           required: true

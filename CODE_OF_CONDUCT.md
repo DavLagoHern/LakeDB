@@ -1,19 +1,9 @@
-# Normas de la comunidad LakeDB
+# LakeDB Code of Conduct
 
-Queremos una comunidad útil, cercana y segura para cualquier persona, independientemente de su experiencia.
+We want a useful, welcoming and safe community for everyone, regardless of experience.
 
-## Esperamos
+Be respectful and patient, assume good faith, keep criticism focused on ideas, and provide enough context for others to help. Take special care when sharing database screenshots, queries and diagnostics.
 
-- Respeto, paciencia y crítica centrada en las ideas.
-- Preguntas y respuestas hechas de buena fe.
-- Contexto suficiente para que otras personas puedan ayudar.
-- Cuidado especial al compartir datos, capturas y diagnósticos.
+Harassment, discrimination, personal attacks, spam, misleading content, publishing private third-party data, or pressuring contributors for delivery dates are not acceptable.
 
-## No aceptamos
-
-- Acoso, insultos, discriminación o ataques personales.
-- Spam, publicidad no solicitada o contenido deliberadamente engañoso.
-- Publicación de credenciales, datos privados o información de terceros.
-- Presión, amenazas o exigencias sobre fechas de entrega.
-
-El mantenedor puede editar, ocultar o eliminar contenido y restringir la participación cuando sea necesario. Si necesitas informar de una conducta problemática, contacta de forma privada mediante el perfil del mantenedor en GitHub.
+The maintainer may edit, hide or remove content and restrict participation when necessary. To report problematic conduct, contact the maintainer privately through their GitHub profile.

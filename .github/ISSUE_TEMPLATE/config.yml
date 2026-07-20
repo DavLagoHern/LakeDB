@@ -1,11 +1,11 @@
 blank_issues_enabled: false
 contact_links:
-  - name: Proponer una función
+  - name: Propose a feature
     url: https://github.com/DavLagoHern/LakeDB/discussions/categories/ideas
-    about: Comparte una idea, explica tu caso de uso y permite que la comunidad la vote.
-  - name: Hacer una pregunta
+    about: Share an idea, explain the use case and let the community vote.
+  - name: Ask a question
     url: https://github.com/DavLagoHern/LakeDB/discussions/categories/q-a
-    about: Pide ayuda sobre el uso de LakeDB o responde a otros usuarios.
-  - name: Consultar la Wiki
+    about: Get help using LakeDB or help another user.
+  - name: Read the Wiki
     url: https://github.com/DavLagoHern/LakeDB/wiki
-    about: Revisa las guías, preguntas frecuentes y soluciones conocidas.
+    about: Browse guides, FAQs and known solutions.
