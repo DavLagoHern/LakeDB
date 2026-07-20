@@ -22,6 +22,14 @@
 
 ---
 
+## The road to LakeDB 1.0
+
+<p align="center">
+  <a href="ROADMAP.md"><img src="assets/roadmap/lakedb-roadmap-v0.6.0.png" width="100%" alt="LakeDB roadmap from version 0.1.0 to 1.0 and beyond"></a>
+</p>
+
+LakeDB is growing in public milestones. See the [living roadmap](ROADMAP.md) for what each release added, the proposed path to 1.0 and the ideas being explored beyond it. The roadmap is updated with every release; future scope is directional and shaped by community feedback.
+
 ## Your databases, without the noise
 
 LakeDB is built for people who work with many MySQL and MariaDB connections every day. Every server gets its own workspace, SQL editor, object explorer, table views and independent state.
