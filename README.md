@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/DavLagoHern/LakeDB/releases/tag/v0.8.3"><img alt="LakeDB 0.8 public beta" src="https://img.shields.io/badge/PUBLIC_BETA-0.8.3-55f0bd?style=for-the-badge&logo=github&logoColor=020817"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/tag/v0.8.4"><img alt="LakeDB 0.8 public beta" src="https://img.shields.io/badge/PUBLIC_BETA-0.8.4-55f0bd?style=for-the-badge&logo=github&logoColor=020817"></a>
   <a href="https://github.com/DavLagoHern/LakeDB/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/DavLagoHern/LakeDB?style=for-the-badge&color=0b7cff&label=DOWNLOAD"></a>
   <a href="https://github.com/DavLagoHern/LakeDB/discussions"><img alt="LakeDB community" src="https://img.shields.io/badge/COMMUNITY-DISCUSSIONS-12d9ff?style=for-the-badge&logo=github&logoColor=020817"></a>
 </p>
@@ -80,11 +80,11 @@ Open the [latest release](https://github.com/DavLagoHern/LakeDB/releases/latest)
 | Windows x64 | `LakeDB-*-win-x64-setup.exe` | Run the installer. A portable `.exe` is also available. |
 | Linux x64 | `LakeDB-*-linux-x86_64.AppImage` or `LakeDB-*-linux-amd64.deb` | Make the AppImage executable, or install the Debian package. |
 
-The `0.8.3` packages are intentionally unsigned while LakeDB is evaluated publicly, so your operating system may display a security warning. Only download LakeDB from this official repository. Every package includes a matching SHA-256 checksum. Stable releases are configured to require macOS/Windows signing and Apple notarization before publication.
+The `0.8.4` packages are intentionally unsigned while LakeDB is evaluated publicly, so your operating system may display a security warning. Only download LakeDB from this official repository. Every package includes a matching SHA-256 checksum. Stable releases are configured to require macOS/Windows signing and Apple notarization before publication.
 
-## 0.8.3 public beta: Windows polish and clean shutdown
+## 0.8.4 public beta: Home-first session restore
 
-The current beta gives Windows a fully integrated LakeDB title bar and makes the native **X** close the application cleanly instead of leaving it running in the background. Verified in-app downloads, progress, cancellation and SHA-256 checks remain available on every platform. Read the [0.8.3 notes](https://github.com/DavLagoHern/LakeDB/releases/tag/v0.8.3), the [update guide](https://github.com/DavLagoHern/LakeDB/wiki/Updates-Recovery-and-Restores) and the [safe editing guide](https://github.com/DavLagoHern/LakeDB/wiki/Tables-and-Safe-Editing).
+LakeDB now starts on **Home**, showing folders and recent connections while keeping every restored connection and workspace tab ready in the rail. Use the permanent Home button to move between your connection overview and active workspaces without closing or disconnecting them. Selecting a restored disconnected tab reconnects it on demand. Read the [0.8.4 notes](https://github.com/DavLagoHern/LakeDB/releases/tag/v0.8.4), the [session guide](https://github.com/DavLagoHern/LakeDB/wiki/Appearance-Language-and-Sessions) and the [update guide](https://github.com/DavLagoHern/LakeDB/wiki/Updates-Recovery-and-Restores).
 
 ## English and Spanish, ready for more
 
