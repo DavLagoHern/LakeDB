@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/DavLagoHern/LakeDB/releases/tag/v0.8.1"><img alt="LakeDB 0.8 public beta" src="https://img.shields.io/badge/PUBLIC_BETA-0.8.1-55f0bd?style=for-the-badge&logo=github&logoColor=020817"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/tag/v0.8.2"><img alt="LakeDB 0.8 public beta" src="https://img.shields.io/badge/PUBLIC_BETA-0.8.2-55f0bd?style=for-the-badge&logo=github&logoColor=020817"></a>
   <a href="https://github.com/DavLagoHern/LakeDB/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/DavLagoHern/LakeDB?style=for-the-badge&color=0b7cff&label=DOWNLOAD"></a>
   <a href="https://github.com/DavLagoHern/LakeDB/discussions"><img alt="LakeDB community" src="https://img.shields.io/badge/COMMUNITY-DISCUSSIONS-12d9ff?style=for-the-badge&logo=github&logoColor=020817"></a>
 </p>
@@ -80,11 +80,11 @@ Open the [latest release](https://github.com/DavLagoHern/LakeDB/releases/latest)
 | Windows x64 | `LakeDB-*-win-x64-setup.exe` | Run the installer. A portable `.exe` is also available. |
 | Linux x64 | `LakeDB-*-linux-x86_64.AppImage` or `LakeDB-*-linux-amd64.deb` | Make the AppImage executable, or install the Debian package. |
 
-The `0.8.1` packages are intentionally unsigned while LakeDB is evaluated publicly, so your operating system may display a security warning. Only download LakeDB from this official repository. Every package includes a matching SHA-256 checksum. Stable releases are configured to require macOS/Windows signing and Apple notarization before publication.
+The `0.8.2` packages are intentionally unsigned while LakeDB is evaluated publicly, so your operating system may display a security warning. Only download LakeDB from this official repository. Every package includes a matching SHA-256 checksum. Stable releases are configured to require macOS/Windows signing and Apple notarization before publication.
 
-## 0.8.1 public beta: Windows polish and folders you control
+## 0.8.2 public beta: verified in-app updates
 
-The current beta gives Windows one integrated LakeDB-coloured header and removes the stacked white native menu. Connection folders are now created manually and populated with the connections you choose; optional group suggestions are available only when no folders exist. It also includes the safer buffered table editing and structured large-value editor introduced in 0.8.0. Read the [0.8.1 notes](https://github.com/DavLagoHern/LakeDB/releases/tag/v0.8.1), the [connection guide](https://github.com/DavLagoHern/LakeDB/wiki/Connections-SSL-and-SSH) and the [safe editing guide](https://github.com/DavLagoHern/LakeDB/wiki/Tables-and-Safe-Editing).
+The current beta can download updates inside LakeDB, show progress, verify the official SHA-256 checksum and then restart into the Windows installer or open the macOS/Linux package. It retains the integrated Windows header, manual connection folders and safer buffered table editing from earlier 0.8 releases. Read the [0.8.2 notes](https://github.com/DavLagoHern/LakeDB/releases/tag/v0.8.2), the [update guide](https://github.com/DavLagoHern/LakeDB/wiki/Updates-Recovery-and-Restores) and the [safe editing guide](https://github.com/DavLagoHern/LakeDB/wiki/Tables-and-Safe-Editing).
 
 ## English and Spanish, ready for more
 
