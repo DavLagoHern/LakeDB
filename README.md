@@ -63,7 +63,7 @@ Open the [latest release](https://github.com/DavLagoHern/LakeDB/releases/latest)
 | --- | --- | --- |
 | macOS Apple Silicon | `LakeDB-*-mac-arm64.dmg` or `.zip` | Open the DMG or move `LakeDB.app` to Applications. |
 | Windows x64 | `LakeDB-*-win-x64-setup.exe` | Run the installer. A portable `.exe` is also available. |
-| Linux x64 | `LakeDB-*-linux-x64.AppImage` or `.deb` | Make the AppImage executable, or install the Debian package. |
+| Linux x64 | `LakeDB-*-linux-x86_64.AppImage` or `LakeDB-*-linux-amd64.deb` | Make the AppImage executable, or install the Debian package. |
 
 Early builds are not code-signed yet, so your operating system may display a security warning. Only download LakeDB from this official repository. Every package includes a matching SHA-256 checksum.
 
