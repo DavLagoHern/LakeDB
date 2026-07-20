@@ -84,7 +84,7 @@ The `0.8.4` packages are intentionally unsigned while LakeDB is evaluated public
 
 ## 0.8.4 public beta: Home-first session restore
 
-LakeDB now starts on **Home**, showing folders and recent connections while keeping every restored connection and workspace tab ready in the rail. Use the permanent Home button to move between your connection overview and active workspaces without closing or disconnecting them. Selecting a restored disconnected tab reconnects it on demand. Read the [0.8.4 notes](https://github.com/DavLagoHern/LakeDB/releases/tag/v0.8.4), the [session guide](https://github.com/DavLagoHern/LakeDB/wiki/Appearance-Language-and-Sessions) and the [update guide](https://github.com/DavLagoHern/LakeDB/wiki/Updates-Recovery-and-Restores).
+LakeDB now starts on **Home**, showing folders and recent connections while keeping every restored connection and workspace tab ready in the rail. Use the permanent Home button to move between your connection overview and active workspaces without closing or disconnecting them. Selecting a restored disconnected tab reconnects it on demand. On macOS, the red button closes the window while LakeDB remains available from the Dock, following the native Mac lifecycle. Read the [0.8.4 notes](https://github.com/DavLagoHern/LakeDB/releases/tag/v0.8.4), the [session guide](https://github.com/DavLagoHern/LakeDB/wiki/Appearance-Language-and-Sessions) and the [update guide](https://github.com/DavLagoHern/LakeDB/wiki/Updates-Recovery-and-Restores).
 
 ## English and Spanish, ready for more
 
