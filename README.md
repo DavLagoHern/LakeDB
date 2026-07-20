@@ -25,7 +25,7 @@
 ## The road to LakeDB 1.0
 
 <p align="center">
-  <a href="ROADMAP.md"><img src="assets/roadmap/lakedb-roadmap-v0.6.0.png" width="100%" alt="LakeDB roadmap from version 0.1.0 to 1.0 and beyond"></a>
+  <a href="ROADMAP.md"><img src="assets/roadmap/lakedb-roadmap-v0.6.0.png" width="100%" alt="LakeDB product evolution from 0.1 to 0.6 and what remains before 1.0"></a>
 </p>
 
 LakeDB is growing in public milestones. See the [living roadmap](ROADMAP.md) for what each release added, the proposed path to 1.0 and the ideas being explored beyond it. The roadmap is updated with every release; future scope is directional and shaped by community feedback.
