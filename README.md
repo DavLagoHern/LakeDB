@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/DavLagoHern/LakeDB/releases/tag/v0.7.0-beta.1"><img alt="LakeDB 0.7 public beta" src="https://img.shields.io/badge/PUBLIC_BETA-0.7.0--beta.1-55f0bd?style=for-the-badge&logo=github&logoColor=020817"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/tag/v0.8.0"><img alt="LakeDB 0.8 public beta" src="https://img.shields.io/badge/PUBLIC_BETA-0.8.0-55f0bd?style=for-the-badge&logo=github&logoColor=020817"></a>
   <a href="https://github.com/DavLagoHern/LakeDB/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/DavLagoHern/LakeDB?style=for-the-badge&color=0b7cff&label=DOWNLOAD"></a>
   <a href="https://github.com/DavLagoHern/LakeDB/discussions"><img alt="LakeDB community" src="https://img.shields.io/badge/COMMUNITY-DISCUSSIONS-12d9ff?style=for-the-badge&logo=github&logoColor=020817"></a>
 </p>
@@ -26,7 +26,7 @@
 ## The road to LakeDB 1.0
 
 <p align="center">
-  <a href="ROADMAP.md"><img src="assets/roadmap/lakedb-roadmap-v0.7.0-beta.1.png" width="100%" alt="LakeDB product evolution from 0.1 to the 0.7 beta and what remains before 1.0"></a>
+  <a href="ROADMAP.md"><img src="assets/roadmap/lakedb-roadmap-v0.8.0.png" width="100%" alt="LakeDB product evolution from 0.1 to the 0.8 editing beta and what remains before 1.0"></a>
 </p>
 
 LakeDB is growing in public milestones. See the [living roadmap](ROADMAP.md) for what each release added, the proposed path to 1.0 and the ideas being explored beyond it. The roadmap is updated with every release; future scope is directional and shaped by community feedback.
@@ -54,7 +54,7 @@ Keep many database connections open at the same time and give each one as many S
 | **SQL editor** | Monaco Editor, multiple tabs per connection, selection or statement execution, history, favorites and cancellation. |
 | **Explorer** | Databases, tables, views, procedures, functions, triggers, events, indexes, foreign keys and DDL. |
 | **Data** | Virtualized grid, pagination, filters, sorting, search and CSV, JSON or Excel-compatible export. |
-| **Safe editing** | Insert, edit, duplicate and delete with a change buffer, conflict detection and rollback. |
+| **Safe editing** | Insert, edit, duplicate and delete with visible pending-row states, conflict detection, rollback and a large-value editor for text, JSON and HTML. |
 | **Protection** | Read-only mode and reinforced confirmation for dangerous production operations. |
 | **Import** | Import connections from DBeaver, SQLyog, JSON, CSV and MySQL/JDBC URLs. |
 | **Tools** | SQL backup and restore, schema comparison, and table structure/data copy between connections. |
@@ -80,11 +80,11 @@ Open the [latest release](https://github.com/DavLagoHern/LakeDB/releases/latest)
 | Windows x64 | `LakeDB-*-win-x64-setup.exe` | Run the installer. A portable `.exe` is also available. |
 | Linux x64 | `LakeDB-*-linux-x86_64.AppImage` or `LakeDB-*-linux-amd64.deb` | Make the AppImage executable, or install the Debian package. |
 
-The `0.7.0-beta.1` packages are intentionally unsigned while LakeDB is evaluated publicly, so your operating system may display a security warning. Only download LakeDB from this official repository. Every package includes a matching SHA-256 checksum. Stable releases are configured to require macOS/Windows signing and Apple notarization before publication.
+The `0.8.0` packages are intentionally unsigned while LakeDB is evaluated publicly, so your operating system may display a security warning. Only download LakeDB from this official repository. Every package includes a matching SHA-256 checksum. Stable releases are configured to require macOS/Windows signing and Apple notarization before publication.
 
-## 0.7 public beta: built for recovery
+## 0.8 public beta: safer table editing
 
-The current beta adds update notices, safe configuration restore, preserved tabs after normal or unexpected exits, pre-migration snapshots and recovery backups before SQL restores. Read the [beta notes](https://github.com/DavLagoHern/LakeDB/releases/tag/v0.7.0-beta.1) and the [recovery guide](https://github.com/DavLagoHern/LakeDB/wiki/Updates-Recovery-and-Restores) before testing an upgrade with important local profiles.
+The current beta makes pending table work immediately visible: edited rows are yellow, inserted rows green and rows marked for deletion red until **Apply**. Large values now have Plain text, JSON and HTML modes with validation before saving. It also includes the recovery work introduced in 0.7. Read the [0.8 notes](https://github.com/DavLagoHern/LakeDB/releases/tag/v0.8.0) and the [safe editing guide](https://github.com/DavLagoHern/LakeDB/wiki/Tables-and-Safe-Editing).
 
 ## English and Spanish, ready for more
 

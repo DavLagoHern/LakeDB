@@ -1,6 +1,6 @@
 # The road to LakeDB 1.0
 
-![LakeDB product evolution from 0.1 to the 0.7 beta and what remains before 1.0](assets/roadmap/lakedb-roadmap-v0.7.0-beta.1.png)
+![LakeDB product evolution from 0.1 to the 0.8 editing beta and what remains before 1.0](assets/roadmap/lakedb-roadmap-v0.8.0.png)
 
 LakeDB is growing through clear product milestones. This roadmap tells the story from the first foundation to today's cross-platform release, then shows the work needed for a stable 1.0.
 
@@ -16,7 +16,8 @@ The milestones describe product evolution; they do not all correspond one-to-one
 | **0.4** | Safe data | Table browsing and editing, read-only mode, production safeguards, filters, paging and import/export. |
 | **0.5** | Database tools | Diagnostics, configuration backup, SQL backup/restore, schema comparison, table copy and a stronger connection experience. |
 | **0.6** | Cross-platform | Native macOS, Windows and Linux packages, English/Spanish i18n, international documentation, community and verified checksums. |
-| **0.7 beta — current** | Resilience | Update notices, guarded configuration restore, session/crash recovery, pre-migration snapshots, safer file limits, credential binding and accessibility checks. |
+| **0.7 beta** | Resilience | Update notices, guarded configuration restore, session/crash recovery, pre-migration snapshots, safer file limits, credential binding and accessibility checks. |
+| **0.8 beta — current** | Safe editing polish | Visible buffered row states, positional duplication, structured large-value editing, validation feedback and explicit transactional tests. |
 
 ## What remains before 1.0
 
