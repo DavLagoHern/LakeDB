@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">LakeDB roadmap to 1.0</title>
+  <desc id="desc">Product evolution from foundation to the 0.7 resilience beta, followed by signed stable distribution for 1.0.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#030916"/><stop offset="1" stop-color="#081b38"/></linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#2378ff"/><stop offset=".72" stop-color="#20dcff"/><stop offset="1" stop-color="#55f0bd"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="12" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1600" height="900" rx="36" fill="url(#bg)"/>
+  <circle cx="1400" cy="100" r="310" fill="#0b7cff" opacity=".08"/><circle cx="230" cy="780" r="270" fill="#20dcff" opacity=".05"/>
+  <text x="90" y="105" fill="#7fdfff" font-family="Inter,Arial,sans-serif" font-size="24" font-weight="700" letter-spacing="4">LAKEDB PRODUCT ROADMAP</text>
+  <text x="90" y="173" fill="#ffffff" font-family="Inter,Arial,sans-serif" font-size="54" font-weight="800">From focused client to trusted 1.0</text>
+  <text x="90" y="222" fill="#91a6c2" font-family="Inter,Arial,sans-serif" font-size="25">Each milestone strengthens the free local foundation.</text>
+  <rect x="90" y="315" width="1420" height="8" rx="4" fill="url(#line)" filter="url(#glow)"/>
+  <g font-family="Inter,Arial,sans-serif">
+    <g transform="translate(95 280)"><circle cx="0" cy="39" r="18" fill="#2378ff"/><text x="0" y="102" text-anchor="middle" fill="#fff" font-size="24" font-weight="800">0.1</text><text x="0" y="136" text-anchor="middle" fill="#91a6c2" font-size="18">Foundation</text></g>
+    <g transform="translate(305 280)"><circle cx="0" cy="39" r="18" fill="#267fff"/><text x="0" y="102" text-anchor="middle" fill="#fff" font-size="24" font-weight="800">0.2</text><text x="0" y="136" text-anchor="middle" fill="#91a6c2" font-size="18">Connections</text></g>
+    <g transform="translate(515 280)"><circle cx="0" cy="39" r="18" fill="#258fff"/><text x="0" y="102" text-anchor="middle" fill="#fff" font-size="24" font-weight="800">0.3</text><text x="0" y="136" text-anchor="middle" fill="#91a6c2" font-size="18">SQL workspace</text></g>
+    <g transform="translate(725 280)"><circle cx="0" cy="39" r="18" fill="#20a8ff"/><text x="0" y="102" text-anchor="middle" fill="#fff" font-size="24" font-weight="800">0.4</text><text x="0" y="136" text-anchor="middle" fill="#91a6c2" font-size="18">Safe data</text></g>
+    <g transform="translate(935 280)"><circle cx="0" cy="39" r="18" fill="#20c2ff"/><text x="0" y="102" text-anchor="middle" fill="#fff" font-size="24" font-weight="800">0.5</text><text x="0" y="136" text-anchor="middle" fill="#91a6c2" font-size="18">DB tools</text></g>
+    <g transform="translate(1145 280)"><circle cx="0" cy="39" r="18" fill="#20d6f2"/><text x="0" y="102" text-anchor="middle" fill="#fff" font-size="24" font-weight="800">0.6</text><text x="0" y="136" text-anchor="middle" fill="#91a6c2" font-size="18">Cross-platform</text></g>
+    <g transform="translate(1360 280)"><circle cx="0" cy="39" r="27" fill="#071426" stroke="#55f0bd" stroke-width="7" filter="url(#glow)"/><text x="0" y="102" text-anchor="middle" fill="#55f0bd" font-size="24" font-weight="800">0.7 BETA</text><text x="0" y="136" text-anchor="middle" fill="#d2fff0" font-size="18">Resilience</text></g>
+  </g>
+  <rect x="90" y="500" width="850" height="290" rx="28" fill="#0b1729" stroke="#1d3654"/>
+  <text x="135" y="558" fill="#55f0bd" font-family="Inter,Arial,sans-serif" font-size="21" font-weight="800" letter-spacing="2">NOW TESTING — 0.7.0 BETA 1</text>
+  <g fill="#dcecff" font-family="Inter,Arial,sans-serif" font-size="24"><text x="135" y="617">✓ Update notices and release discovery</text><text x="135" y="663">✓ Safe configuration and SQL restore recovery</text><text x="135" y="709">✓ Tabs, crash recovery and data-safe migrations</text><text x="135" y="755">✓ Accessibility and Electron security hardening</text></g>
+  <rect x="985" y="500" width="525" height="290" rx="28" fill="#0a2032" stroke="#39dcb1" stroke-width="2"/>
+  <text x="1030" y="558" fill="#7fdfff" font-family="Inter,Arial,sans-serif" font-size="21" font-weight="800" letter-spacing="2">NEXT TRUST MILESTONE</text>
+  <text x="1030" y="642" fill="#fff" font-family="Inter,Arial,sans-serif" font-size="58" font-weight="900">1.0</text>
+  <text x="1170" y="640" fill="#55f0bd" font-family="Inter,Arial,sans-serif" font-size="27" font-weight="800">STABLE</text>
+  <text x="1030" y="704" fill="#dcecff" font-family="Inter,Arial,sans-serif" font-size="23">Signed macOS + Windows builds</text>
+  <text x="1030" y="746" fill="#91a6c2" font-family="Inter,Arial,sans-serif" font-size="22">Apple notarization · beta feedback · polish</text>
+  <text x="90" y="850" fill="#67809f" font-family="Inter,Arial,sans-serif" font-size="18">Updated for LakeDB 0.7.0-beta.1 · Future scope remains directional.</text>
+</svg>

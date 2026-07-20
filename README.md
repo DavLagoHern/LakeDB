@@ -25,7 +25,7 @@
 ## The road to LakeDB 1.0
 
 <p align="center">
-  <a href="ROADMAP.md"><img src="assets/roadmap/lakedb-roadmap-v0.6.0.png" width="100%" alt="LakeDB product evolution from 0.1 to 0.6 and what remains before 1.0"></a>
+  <a href="ROADMAP.md"><img src="assets/roadmap/lakedb-roadmap-v0.7.0-beta.1.png" width="100%" alt="LakeDB product evolution from 0.1 to the 0.7 beta and what remains before 1.0"></a>
 </p>
 
 LakeDB is growing in public milestones. See the [living roadmap](ROADMAP.md) for what each release added, the proposed path to 1.0 and the ideas being explored beyond it. The roadmap is updated with every release; future scope is directional and shaped by community feedback.
@@ -33,6 +33,10 @@ LakeDB is growing in public milestones. See the [living roadmap](ROADMAP.md) for
 ## Your databases, without the noise
 
 LakeDB is built for people who work with many MySQL and MariaDB connections every day. Every server gets its own workspace, SQL editor, object explorer, table views and independent state.
+
+### Multitab across every connection
+
+Keep many database connections open at the same time and give each one as many SQL and table tabs as you need. Every connection preserves its own active tab, selected schema, editor content, table state and layout, so switching from local to staging or production never mixes your working context. Close LakeDB—or recover from an unexpected stop—and the complete multiconnection workspace comes back.
 
 <p align="center">
   <img src="assets/screenshots/connections.png" width="100%" alt="Connections organized by environment in LakeDB">
@@ -45,13 +49,15 @@ LakeDB is built for people who work with many MySQL and MariaDB connections ever
 | Area | Included in LakeDB Free |
 | --- | --- |
 | **Connections** | Unlimited connections, folders, environment colors, SSL, SSH tunnels and automatic reconnection. |
-| **SQL editor** | Monaco Editor, multiple tabs, selection or statement execution, history, favorites and cancellation. |
+| **Multiconnection tabs** | Many connections open at once, each with independent SQL/table tabs, schemas and recoverable workspace state. |
+| **SQL editor** | Monaco Editor, multiple tabs per connection, selection or statement execution, history, favorites and cancellation. |
 | **Explorer** | Databases, tables, views, procedures, functions, triggers, events, indexes, foreign keys and DDL. |
 | **Data** | Virtualized grid, pagination, filters, sorting, search and CSV, JSON or Excel-compatible export. |
 | **Safe editing** | Insert, edit, duplicate and delete with a change buffer, conflict detection and rollback. |
 | **Protection** | Read-only mode and reinforced confirmation for dangerous production operations. |
 | **Import** | Import connections from DBeaver, SQLyog, JSON, CSV and MySQL/JDBC URLs. |
 | **Tools** | SQL backup and restore, schema comparison, and table structure/data copy between connections. |
+| **Resilience** | Update notices, safe configuration restore, crash recovery and protected local-data migrations. |
 
 Everything runs locally. LakeDB does not send your connections, queries or credentials to an external LakeDB service.
 
@@ -73,7 +79,11 @@ Open the [latest release](https://github.com/DavLagoHern/LakeDB/releases/latest)
 | Windows x64 | `LakeDB-*-win-x64-setup.exe` | Run the installer. A portable `.exe` is also available. |
 | Linux x64 | `LakeDB-*-linux-x86_64.AppImage` or `LakeDB-*-linux-amd64.deb` | Make the AppImage executable, or install the Debian package. |
 
-Early builds are not code-signed yet, so your operating system may display a security warning. Only download LakeDB from this official repository. Every package includes a matching SHA-256 checksum.
+The `0.7.0-beta.1` packages are intentionally unsigned while LakeDB is evaluated publicly, so your operating system may display a security warning. Only download LakeDB from this official repository. Every package includes a matching SHA-256 checksum. Stable releases are configured to require macOS/Windows signing and Apple notarization before publication.
+
+## 0.7 public beta: built for recovery
+
+The current beta adds update notices, safe configuration restore, preserved tabs after normal or unexpected exits, pre-migration snapshots and recovery backups before SQL restores. Read the [beta notes](https://github.com/DavLagoHern/LakeDB/releases/tag/v0.7.0-beta.1) and the [recovery guide](https://github.com/DavLagoHern/LakeDB/wiki/Updates-Recovery-and-Restores) before testing an upgrade with important local profiles.
 
 ## English and Spanish, ready for more
 

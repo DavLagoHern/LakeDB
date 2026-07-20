@@ -1,6 +1,6 @@
 # The road to LakeDB 1.0
 
-![LakeDB product evolution from 0.1 to 0.6 and what remains before 1.0](assets/roadmap/lakedb-roadmap-v0.6.0.png)
+![LakeDB product evolution from 0.1 to the 0.7 beta and what remains before 1.0](assets/roadmap/lakedb-roadmap-v0.7.0-beta.1.png)
 
 LakeDB is growing through clear product milestones. This roadmap tells the story from the first foundation to today's cross-platform release, then shows the work needed for a stable 1.0.
 
@@ -15,7 +15,8 @@ The milestones describe product evolution; they do not all correspond one-to-one
 | **0.3** | SQL workspace | Monaco-powered SQL editing, tabs, object exploration, history, favorites and result navigation. |
 | **0.4** | Safe data | Table browsing and editing, read-only mode, production safeguards, filters, paging and import/export. |
 | **0.5** | Database tools | Diagnostics, configuration backup, SQL backup/restore, schema comparison, table copy and a stronger connection experience. |
-| **0.6 — current** | Cross-platform | Native macOS, Windows and Linux packages, English/Spanish i18n, international documentation, community and verified checksums. |
+| **0.6** | Cross-platform | Native macOS, Windows and Linux packages, English/Spanish i18n, international documentation, community and verified checksums. |
+| **0.7 beta — current** | Resilience | Update notices, guarded configuration restore, session/crash recovery, pre-migration snapshots, safer file limits, credential binding and accessibility checks. |
 
 ## What remains before 1.0
 
@@ -27,15 +28,15 @@ This is the current definition of a stable LakeDB 1.0. It is a direction rather 
 - macOS notarization and a documented verification path for every package.
 - Clear publisher identity and fewer first-install security warnings.
 
-### Smooth updates
+### Smooth updates — beta validation
 
-- Reliable update discovery inside the application.
-- A clear upgrade flow without losing connections, preferences or workspace state.
+- Update discovery is available in the 0.7 beta.
+- Automated migrations preserve connections, preferences and workspace state and create a pre-upgrade snapshot.
 - Release communication that explains changes, migrations and known limitations.
 
-### Polish and accessibility
+### Polish and accessibility — beta validation
 
-- Stronger keyboard navigation, focus behavior and screen-reader semantics.
+- Keyboard navigation, focus behavior and screen-reader semantics now have automated serious/critical checks.
 - First-run onboarding and clearer recovery/troubleshooting guidance.
 - Performance and visual consistency passes across the complete workspace.
 
