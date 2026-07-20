@@ -40,10 +40,10 @@ LakeDB is built for people who work with many MySQL and MariaDB connections ever
 Keep many database connections open at the same time and give each one as many SQL and table tabs as you need. Every connection preserves its own active tab, selected schema, editor content, table state and layout, so switching from local to staging or production never mixes your working context. Close LakeDB—or recover from an unexpected stop—and the complete multiconnection workspace comes back.
 
 <p align="center">
-  <img src="assets/screenshots/connections.png" width="100%" alt="Connections organized by environment in LakeDB">
+  <img src="assets/screenshots/multitab.png" width="100%" alt="Multiple database connections open with independent SQL and table tabs in LakeDB">
 </p>
 
-<p align="center"><sub>Group connections by client or environment and spot production at a glance.</sub></p>
+<p align="center"><sub>Four connection workspaces open at once; the active connection keeps its own SQL and table tabs.</sub></p>
 
 ## Everything you need for daily database work
 
