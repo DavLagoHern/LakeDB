@@ -8,8 +8,8 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/DavLagoHern/LakeDB/releases/tag/v0.9.1"><img alt="LakeDB 0.9 public beta" src="https://img.shields.io/badge/PUBLIC_BETA-0.9.1-55f0bd?style=for-the-badge&logo=github&logoColor=020817"></a>
-  <a href="https://github.com/DavLagoHern/LakeDB/releases/tag/v0.9.1"><img alt="Download LakeDB 0.9.1 beta" src="https://img.shields.io/badge/DOWNLOAD-0.9.1_BETA-0b7cff?style=for-the-badge&logo=github&logoColor=white"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/tag/v0.9.2"><img alt="LakeDB 0.9 public beta" src="https://img.shields.io/badge/PUBLIC_BETA-0.9.2-55f0bd?style=for-the-badge&logo=github&logoColor=020817"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/tag/v0.9.2"><img alt="Download LakeDB 0.9.2 beta" src="https://img.shields.io/badge/DOWNLOAD-0.9.2_BETA-0b7cff?style=for-the-badge&logo=github&logoColor=white"></a>
   <a href="https://github.com/DavLagoHern/LakeDB/discussions"><img alt="LakeDB community" src="https://img.shields.io/badge/COMMUNITY-DISCUSSIONS-12d9ff?style=for-the-badge&logo=github&logoColor=020817"></a>
 </p>
 
@@ -45,15 +45,15 @@ Keep many database connections open at the same time and give each one as many S
 
 <p align="center"><sub>Four connection workspaces open at once; the active connection keeps its own SQL and table tabs.</sub></p>
 
-## What LakeDB 0.9.1 includes
+## What LakeDB 0.9.2 includes
 
-LakeDB 0.9.1 is the current public beta of the local desktop app. It includes the core daily workflow for working across MySQL and MariaDB environments, with clearer visual identity for large multiconnection workspaces.
+LakeDB 0.9.2 is the current public beta of the local desktop app. It adds reviewable, cancellable streaming exports for large read-only queries and a clearer table-filter workflow to the complete MySQL and MariaDB desktop foundation.
 
 | Area | Included in LakeDB Free |
 | --- | --- |
 | **Connections** | Unlimited saved MySQL and MariaDB connections, folders, automatic group suggestions, environment colors, SSL, SSH tunnels, automatic reconnect and copyable diagnostics. |
 | **Workspaces** | Multiple open connections at once, each with independent SQL tabs, table tabs, selected database, layout and recoverable session state. |
-| **SQL editor** | Monaco Editor, multiple query tabs, statement or selection execution, query cancellation, lightweight formatting, history and favorite queries. |
+| **SQL editor** | Monaco Editor, multiple query tabs, statement or selection execution, query cancellation, complete streaming exports, lightweight formatting, history and favorite queries. |
 | **Object explorer** | Lazy loading for databases, tables, views, procedures, functions, triggers and events, with context menus for opening data, structure, DDL and generated SQL. |
 | **Table data** | Virtualized grid, pagination, filters, sorting, search, row copy helpers and export to CSV, JSON or Excel-compatible `.xls`. |
 | **Safe editing** | Insert, edit, duplicate and delete rows with visible pending states, validation, conflict detection, rollback and large-value editing for text, JSON and HTML. |
@@ -76,7 +76,7 @@ Everything runs locally. LakeDB does not send your connections, queries or crede
 
 ## Download
 
-Open the [LakeDB 0.9.1 beta release](https://github.com/DavLagoHern/LakeDB/releases/tag/v0.9.1) and choose your platform:
+Open the [LakeDB 0.9.2 beta release](https://github.com/DavLagoHern/LakeDB/releases/tag/v0.9.2) and choose your platform:
 
 | Platform | Download | Install |
 | --- | --- | --- |
@@ -84,11 +84,11 @@ Open the [LakeDB 0.9.1 beta release](https://github.com/DavLagoHern/LakeDB/relea
 | Windows x64 | `LakeDB-*-win-x64-setup.exe` | Run the installer. A portable `.exe` is also available. |
 | Linux x64 | `LakeDB-*-linux-x86_64.AppImage` or `LakeDB-*-linux-amd64.deb` | Make the AppImage executable, or install the Debian package. |
 
-The `0.9.1` packages are intentionally unsigned while LakeDB is evaluated publicly, so your operating system may display a security warning. Only download LakeDB from this official repository. Every package includes a matching SHA-256 checksum. Stable releases are configured to require macOS/Windows signing and Apple notarization before publication.
+The `0.9.2` packages are intentionally unsigned while LakeDB is evaluated publicly, so your operating system may display a security warning. Only download LakeDB from this official repository. Every package includes a matching SHA-256 checksum. Stable releases are configured to require macOS/Windows signing and Apple notarization before publication.
 
-## 0.9.1 public beta
+## 0.9.2 public beta
 
-LakeDB 0.9.1 gives the active connection a clearer visual identity across its tab, object explorer, SQL/table toolbar and status bar, and opens with a roomier desktop layout. The complete 0.9 database workflow remains available: connections, multitab workspaces, SQL editing, safe table editing, imports, backups, restores, migration planning, recovery and diagnostics. Read the [0.9.1 release notes](https://github.com/DavLagoHern/LakeDB/releases/tag/v0.9.1), the [backup and migration guide](https://github.com/DavLagoHern/LakeDB/wiki/Backup-Import-and-Migrations) and the [update guide](https://github.com/DavLagoHern/LakeDB/wiki/Updates-Recovery-and-Restores).
+LakeDB 0.9.2 can stream a reviewed read-only query directly to CSV, JSON or Excel-compatible `.xls`, with bounded memory, progress, cancellation and a configurable limit of up to 50 million rows. Table filters now apply explicitly and generated SQL is reusable without the grid's internal pagination. Read the [0.9.2 release notes](https://github.com/DavLagoHern/LakeDB/releases/tag/v0.9.2), the [SQL editor guide](https://github.com/DavLagoHern/LakeDB/wiki/SQL-Editor) and the [backup and migration guide](https://github.com/DavLagoHern/LakeDB/wiki/Backup-Import-and-Migrations).
 
 ## English and Spanish, ready for more
 
