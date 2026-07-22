@@ -8,8 +8,8 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/DavLagoHern/LakeDB/releases/tag/v0.9.0"><img alt="LakeDB 0.9 public beta" src="https://img.shields.io/badge/PUBLIC_BETA-0.9.0-55f0bd?style=for-the-badge&logo=github&logoColor=020817"></a>
-  <a href="https://github.com/DavLagoHern/LakeDB/releases/tag/v0.9.0"><img alt="Download LakeDB 0.9.0 beta" src="https://img.shields.io/badge/DOWNLOAD-0.9.0_BETA-0b7cff?style=for-the-badge&logo=github&logoColor=white"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/tag/v0.9.1"><img alt="LakeDB 0.9 public beta" src="https://img.shields.io/badge/PUBLIC_BETA-0.9.1-55f0bd?style=for-the-badge&logo=github&logoColor=020817"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/tag/v0.9.1"><img alt="Download LakeDB 0.9.1 beta" src="https://img.shields.io/badge/DOWNLOAD-0.9.1_BETA-0b7cff?style=for-the-badge&logo=github&logoColor=white"></a>
   <a href="https://github.com/DavLagoHern/LakeDB/discussions"><img alt="LakeDB community" src="https://img.shields.io/badge/COMMUNITY-DISCUSSIONS-12d9ff?style=for-the-badge&logo=github&logoColor=020817"></a>
 </p>
 
@@ -45,9 +45,9 @@ Keep many database connections open at the same time and give each one as many S
 
 <p align="center"><sub>Four connection workspaces open at once; the active connection keeps its own SQL and table tabs.</sub></p>
 
-## What LakeDB 0.9.0 includes
+## What LakeDB 0.9.1 includes
 
-LakeDB 0.9.0 is the current public beta of the local desktop app. It is not just a migration release: it includes the core daily workflow for working across MySQL and MariaDB environments.
+LakeDB 0.9.1 is the current public beta of the local desktop app. It includes the core daily workflow for working across MySQL and MariaDB environments, with clearer visual identity for large multiconnection workspaces.
 
 | Area | Included in LakeDB Free |
 | --- | --- |
@@ -76,7 +76,7 @@ Everything runs locally. LakeDB does not send your connections, queries or crede
 
 ## Download
 
-Open the [LakeDB 0.9.0 beta release](https://github.com/DavLagoHern/LakeDB/releases/tag/v0.9.0) and choose your platform:
+Open the [LakeDB 0.9.1 beta release](https://github.com/DavLagoHern/LakeDB/releases/tag/v0.9.1) and choose your platform:
 
 | Platform | Download | Install |
 | --- | --- | --- |
@@ -84,11 +84,11 @@ Open the [LakeDB 0.9.0 beta release](https://github.com/DavLagoHern/LakeDB/relea
 | Windows x64 | `LakeDB-*-win-x64-setup.exe` | Run the installer. A portable `.exe` is also available. |
 | Linux x64 | `LakeDB-*-linux-x86_64.AppImage` or `LakeDB-*-linux-amd64.deb` | Make the AppImage executable, or install the Debian package. |
 
-The `0.9.0` packages are intentionally unsigned while LakeDB is evaluated publicly, so your operating system may display a security warning. Only download LakeDB from this official repository. Every package includes a matching SHA-256 checksum. Stable releases are configured to require macOS/Windows signing and Apple notarization before publication.
+The `0.9.1` packages are intentionally unsigned while LakeDB is evaluated publicly, so your operating system may display a security warning. Only download LakeDB from this official repository. Every package includes a matching SHA-256 checksum. Stable releases are configured to require macOS/Windows signing and Apple notarization before publication.
 
-## 0.9.0 public beta
+## 0.9.1 public beta
 
-LakeDB 0.9.0 is a broad local database client beta: connection management, multiconnection workspaces, SQL editing, object exploration, table browsing and safe editing, imports, backups, restores, migration planning, session recovery, diagnostics and English/Spanish preferences are all part of the same app. Read the [0.9.0 release notes](https://github.com/DavLagoHern/LakeDB/releases/tag/v0.9.0) for what changed in this version, the [backup and migration guide](https://github.com/DavLagoHern/LakeDB/wiki/Backup-Import-and-Migrations) for database tools and the [update guide](https://github.com/DavLagoHern/LakeDB/wiki/Updates-Recovery-and-Restores) for recovery behavior.
+LakeDB 0.9.1 gives the active connection a clearer visual identity across its tab, object explorer, SQL/table toolbar and status bar, and opens with a roomier desktop layout. The complete 0.9 database workflow remains available: connections, multitab workspaces, SQL editing, safe table editing, imports, backups, restores, migration planning, recovery and diagnostics. Read the [0.9.1 release notes](https://github.com/DavLagoHern/LakeDB/releases/tag/v0.9.1), the [backup and migration guide](https://github.com/DavLagoHern/LakeDB/wiki/Backup-Import-and-Migrations) and the [update guide](https://github.com/DavLagoHern/LakeDB/wiki/Updates-Recovery-and-Restores).
 
 ## English and Spanish, ready for more
 

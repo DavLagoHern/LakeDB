@@ -6,9 +6,9 @@ LakeDB is close to its 1.0 foundation. The roadmap now focuses on three things: 
 
 The [latest release](https://github.com/DavLagoHern/LakeDB/releases/latest) is always the recommended build. Future scope is directional and shaped by real workflows, safety, maintenance cost and community feedback.
 
-## Current beta: 0.9.0
+## Current beta: 0.9.1
 
-LakeDB 0.9.0 is the current public beta of the local MySQL/MariaDB desktop app. It includes the complete day-to-day foundation:
+LakeDB 0.9.1 is the current public beta of the local MySQL/MariaDB desktop app. It includes the complete day-to-day foundation, with clearer active-connection theming and a roomier default desktop workspace:
 
 - Saved connections, folders, environment colors, SSL, SSH tunnels and automatic reconnect.
 - Independent workspaces per connection, with SQL tabs, table tabs, selected databases and session recovery.
