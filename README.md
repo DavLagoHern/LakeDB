@@ -23,19 +23,11 @@
 
 ---
 
-## The road to LakeDB 1.0
-
-<p align="center">
-  <a href="ROADMAP.md"><img src="assets/roadmap/lakedb-roadmap-v0.10.3.png" width="100%" alt="LakeDB 0.10.3 current beta capabilities, upcoming 1.0 trust milestone and future ideas"></a>
-</p>
-
-LakeDB is now close to its 1.0 foundation. See the [living roadmap](ROADMAP.md) for the current beta, what remains for 1.0 and the ideas being explored beyond it. Future scope is directional and shaped by community feedback.
-
 ## Your databases, without the noise
 
 LakeDB is built for people who work with many MySQL and MariaDB connections every day. Every server gets its own workspace, SQL editor, object explorer, table views and independent state.
 
-### Multitab across every connection
+### Many servers, one calm workspace
 
 Keep many database connections open at the same time and give each one as many SQL and table tabs as you need. Every connection preserves its own active tab, selected schema, editor content, table state and layout, so switching from local to staging or production never mixes your working context. Close LakeDB—or recover from an unexpected stop—and the complete multiconnection workspace comes back.
 
@@ -44,6 +36,22 @@ Keep many database connections open at the same time and give each one as many S
 </p>
 
 <p align="center"><sub>Four connection workspaces open at once; the active connection keeps its own SQL and table tabs.</sub></p>
+
+### SQL that understands your schema
+
+Complete databases, tables, aliases and columns from live metadata. LakeDB marks primary keys and indexes in suggestions, can insert multi-column index predicates after `WHERE`, formats compact or expanded SQL, and keeps query results or open tables visible below the editor.
+
+### Inspect, edit and design
+
+Browse large result sets in a virtualized grid, filter from the selected cell and edit rows with safe identity checks, conflict detection and rollback. Create or modify tables visually—columns, indexes, foreign keys and checks—while reviewing the generated SQL before applying it.
+
+### Move data without losing control
+
+Export complete reviewed queries to CSV, JSON, JSON Lines, Excel-compatible or SQL files with streaming, cancellation and optional GZIP. Back up and restore databases, compare schemas, plan migrations and review imported connections before LakeDB saves anything.
+
+### Local by design
+
+Connections, credentials, SQL and result data stay on your computer. Passwords use the local encrypted credential store; read-only connections, production confirmations, recovery snapshots and a sandboxed renderer protect daily work.
 
 ## What LakeDB 0.10 includes
 
@@ -89,7 +97,15 @@ The `0.10.4` packages are intentionally unsigned while LakeDB is evaluated publi
 
 ## Version history
 
-The latest build is **0.10.4**. See the compact [version history](VERSION-HISTORY.md) for patch-by-patch changes, or open the [0.10.4 release notes](https://github.com/DavLagoHern/LakeDB/releases/tag/v0.10.4) for download details.
+The latest build is **0.10.4**. The [version history](VERSION-HISTORY.md) records every published build with concise `ADD`, `CHANGE`, `FIX` and `SECURITY` entries. Full notes remain attached to each GitHub release.
+
+## The road to LakeDB 1.0
+
+<p align="center">
+  <a href="ROADMAP.md"><img src="assets/roadmap/lakedb-roadmap-v0.10.3.png" width="100%" alt="LakeDB 0.10 capabilities and the trust work planned before 1.0"></a>
+</p>
+
+The [roadmap](ROADMAP.md) follows the product milestones from the first LakeDB foundation through the current 0.10 line, then shows the trust and compatibility work remaining for 1.0. Patch-level details stay in the version history.
 
 ## English and Spanish, ready for more
 
@@ -105,7 +121,7 @@ LakeDB is available in English and Spanish. Change the interface language under 
 
 ## About this repository
 
-This is LakeDB's official public repository. It hosts binaries, release notes, documentation, issues and the public roadmap. The application source is maintained in a private repository; published binaries are generated automatically after the development repository passes its quality checks.
+This is LakeDB's official public repository. It hosts binaries, release notes, documentation, issues and the public roadmap. The application source is maintained separately; published binaries are produced by the guarded release pipeline after the complete test suite passes.
 
 ---
 

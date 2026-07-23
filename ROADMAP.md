@@ -1,35 +1,31 @@
-# LakeDB Roadmap
+# LakeDB roadmap
 
-![LakeDB 0.10.3 current beta capabilities, upcoming 1.0 trust milestone and future ideas](assets/roadmap/lakedb-roadmap-v0.10.3.png)
+![LakeDB 0.10 capabilities and the trust work planned before 1.0](assets/roadmap/lakedb-roadmap-v0.10.3.png)
 
-LakeDB is close to its 1.0 foundation. The roadmap now focuses on three things: what the current beta already gives you, what must be true for 1.0, and which ideas belong after the stable foundation.
+The roadmap tracks complete product milestones, not individual patches. Smaller `ADD`, `CHANGE`, `FIX` and `SECURITY` entries live in the [version history](VERSION-HISTORY.md).
 
-The [latest release](https://github.com/DavLagoHern/LakeDB/releases/latest) is always the recommended build. Future scope is directional and shaped by real workflows, safety, maintenance cost and community feedback.
+## Shipped milestones
 
-## Current beta: 0.10.4
+| Line | Product step | What it established |
+| --- | --- | --- |
+| **0.1** | Foundation | A focused local MySQL/MariaDB desktop application with connection, explorer and SQL foundations. |
+| **0.2** | Connections | Multiple simultaneous connections, folders, environments, SSL/SSH and independent workspaces. |
+| **0.3** | SQL workspace | SQL tabs, object exploration, history, favorites and result navigation. |
+| **0.4** | Safe data | Editing, filtering, paging, read-only mode, production safeguards and data exchange. |
+| **0.5** | Database tools | Diagnostics, configuration backup, SQL backup/restore, schema comparison and table copy. |
+| **0.6** | Cross-platform | macOS, Windows and Linux packages, English/Spanish UI and published checksums. |
+| **0.7** | Resilience | Update discovery, guarded restores, session/crash recovery, migration snapshots and accessibility checks. |
+| **0.8** | Editing polish | Structured large-value editing, visible pending changes, explicit folders, verified updates and a Home-first lifecycle. |
+| **0.9** | Migration and large exports | Migration Studio, clearer active-connection context and configurable streaming exports up to 50 million rows. |
+| **0.10 — current** | Smarter daily workflow | Split query/table panes, schema-aware completion, aliases and index guidance, visual schema design, typed editing, compact multitab navigation and review-first connection imports. |
 
-LakeDB 0.10.4 is the latest build in the current 0.10 public beta line:
+## Current position
 
-- Saved connections, folders, environment colors, SSL, SSH tunnels and automatic reconnect.
-- Review-first DBeaver, SQLyog, JSON, CSV and SQL URL imports with row selection, editable names/users, credential overrides and explicit duplicate handling.
-- A virtual **Unclassified** Home group for every connection without a saved folder.
-- Independent workspaces per connection, with SQL tabs above and query-result/table tabs in a live-resizable lower pane.
-- Monaco SQL editing with schema-aware completion, automatic aliases, PK/index hints and multi-column index predicate templates.
-- Compact and expanded SQL formatting with a remembered preference.
-- A lazy object explorer where one click opens table data and a deliberate double-click inserts the table name into SQL.
-- A virtualized table grid with typed editors, cell-driven filtering, pagination, sorting, search, exports and safe buffered changes.
-- Compact two-row table controls that leave more vertical space for data.
-- Overflow navigation and an all-tabs menu for large connection, query and table workspaces.
-- A compact connection picker with recent connections and folders.
-- Empty `SELECT` results remain useful grids with their column headers.
-- Configurable streaming exports to CSV, JSON, JSON Lines, Excel-compatible and SQL formats, optionally compressed with GZIP.
-- Backup, restore, database comparison and selectable multi-table migration plans.
-- Local encrypted credentials, read-only mode, production confirmations, renderer sandboxing and diagnostics.
-- English/Spanish UI, appearance preferences, update notices and configuration recovery.
+LakeDB 0.10.4 is the latest build in the 0.10 beta line. The complete current capability set is documented in the [README](README.md); patch-by-patch detail is kept out of this roadmap.
 
-## What remains for 1.0
+## Before 1.0
 
-LakeDB 1.0 is a trust milestone focused on distribution confidence, compatibility and upgrade safety.
+LakeDB 1.0 is a trust milestone focused on making the current product dependable, documented and upgrade-safe.
 
 ### Trusted distribution
 
@@ -40,20 +36,18 @@ LakeDB 1.0 is a trust milestone focused on distribution confidence, compatibilit
 
 ### Stability and compatibility
 
-- Documented operating system and MySQL/MariaDB compatibility matrix.
+- Documented operating-system and MySQL/MariaDB compatibility matrix.
 - Broader release-candidate testing across macOS, Windows and Linux.
 - Stable local settings, credential and session migrations between releases.
 - Clear recovery guidance for restore, update and crash scenarios.
 
 ### Product polish
 
-- Accessibility and keyboard navigation pass across the complete workspace.
-- Performance pass for large object trees, large grids and long SQL sessions.
-- Cleaner first-run and troubleshooting guidance.
+- Complete accessibility and keyboard-navigation review.
+- Performance review for large object trees, grids and SQL sessions.
+- Clearer first-run and troubleshooting guidance.
 - Final review of destructive-operation confirmations.
 
-## Help define LakeDB
+## Help define 1.0
 
-Propose an idea, share a real workflow and vote in [Discussions](https://github.com/DavLagoHern/LakeDB/discussions/categories/ideas). Community interest helps set priority, while safety and maintenance cost determine what ships.
-
-Small changes between builds are kept in the [version history](VERSION-HISTORY.md).
+Share real workflows and vote in [Discussions](https://github.com/DavLagoHern/LakeDB/discussions/categories/ideas). Community value, data safety and maintenance cost determine what ships.
