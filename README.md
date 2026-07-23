@@ -57,20 +57,20 @@ Connections, credentials, SQL and result data stay on your computer. Passwords u
 
 LakeDB 0.10 is the current public beta line. It combines a split SQL workspace, schema-aware completion, typed table editing, compact controls and review-first connection imports.
 
-| Area | Available today |
-| --- | --- |
-| **Connections** | Unlimited saved MySQL and MariaDB connections, folders, automatic group suggestions, environment colors, SSL, SSH tunnels, automatic reconnect and copyable diagnostics. |
-| **Workspaces** | Multiple open connections at once, each with independent SQL tabs above and query-result/table tabs in a smoothly resizable lower pane. |
-| **SQL editor** | Monaco Editor, schema-aware table/column completion, automatic aliases, PK/index hints, index predicate templates, compact/expanded formatting, execution, history, favorites and streaming exports up to 50 million rows. |
-| **Object explorer** | Lazy loading for every object type; click a table to open it below or double-click to insert its quoted name at the current SQL cursor. |
-| **Table data** | Virtualized grid, pagination, sorting, search, cell-driven filters and full-query export to CSV, JSON, JSON Lines, Excel-compatible `.xls` or SQL. |
-| **Safe editing** | Type-aware date/time, numeric, boolean and enum editors plus buffered changes, validation, conflict detection, rollback and checked text/JSON/HTML editing. |
-| **Backup and restore** | SQL database export, SQL restore with recovery backups, restore safeguards and production confirmation. |
-| **Migration Studio** | Source/target selectors, connection buttons, database comparison, selectable multi-table migration plans, structure/data copy and truncate-first workflows. |
-| **Imports** | Review and select DBeaver, SQLyog, JSON, CSV and MySQL/JDBC URL connections before saving; edit names/users, apply shared or individual passwords and resolve duplicates explicitly. |
-| **Safety** | Read-only connections, reinforced production confirmations, renderer sandboxing and no direct renderer access to filesystem, SQLite, credentials or database sockets. |
-| **Resilience** | Home-first session restore, crash recovery, configuration backup/restore, update notices, local migrations with safety snapshots and diagnostics log. |
-| **Interface** | Dark/light/system themes, density and font-size preferences, and English/Spanish UI ready for more languages. |
+| Area                   | Available today                                                                                                                                                                                                            |
+| ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Connections**        | Unlimited saved MySQL and MariaDB connections, folders, automatic group suggestions, environment colors, SSL, SSH tunnels, automatic reconnect and copyable diagnostics.                                                   |
+| **Workspaces**         | Multiple open connections at once, each with independent SQL tabs above and query-result/table tabs in a smoothly resizable lower pane.                                                                                    |
+| **SQL editor**         | Monaco Editor, schema-aware table/column completion, automatic aliases, PK/index hints, index predicate templates, compact/expanded formatting, execution, history, favorites and streaming exports up to 50 million rows. |
+| **Object explorer**    | Lazy loading for every object type; click a table to open it below or double-click to insert its quoted name at the current SQL cursor.                                                                                    |
+| **Table data**         | Virtualized grid, pagination, sorting, search, cell-driven filters and full-query export to CSV, JSON, JSON Lines, Excel-compatible `.xls` or SQL.                                                                         |
+| **Safe editing**       | Type-aware date/time, numeric, boolean and enum editors plus buffered changes, validation, conflict detection, rollback and checked text/JSON/HTML editing.                                                                |
+| **Backup and restore** | SQL database export, SQL restore with recovery backups, restore safeguards and production confirmation.                                                                                                                    |
+| **Migration Studio**   | Source/target selectors, connection buttons, database comparison, selectable multi-table migration plans, structure/data copy and truncate-first workflows.                                                                |
+| **Imports**            | Review and select DBeaver, SQLyog, JSON, CSV and MySQL/JDBC URL connections before saving; edit names/users, apply shared or individual passwords and resolve duplicates explicitly.                                       |
+| **Safety**             | Read-only connections, reinforced production confirmations, renderer sandboxing and no direct renderer access to filesystem, SQLite, credentials or database sockets.                                                      |
+| **Resilience**         | Home-first session restore, crash recovery, configuration backup/restore, update notices, local migrations with safety snapshots and diagnostics log.                                                                      |
+| **Interface**          | Dark/light/system themes, density and font-size preferences, and English/Spanish UI ready for more languages.                                                                                                              |
 
 Everything runs locally. LakeDB does not send your connections, queries or credentials to an external LakeDB service.
 
@@ -87,22 +87,22 @@ Everything runs locally. LakeDB does not send your connections, queries or crede
 
 Open the [LakeDB 0.10.4 beta release](https://github.com/DavLagoHern/LakeDB/releases/tag/v0.10.4) and choose your platform:
 
-| Platform | Download | Install |
-| --- | --- | --- |
-| macOS Apple Silicon | `LakeDB-*-mac-arm64.dmg` or `.zip` | Open the DMG or move `LakeDB.app` to Applications. |
-| Windows x64 | `LakeDB-*-win-x64-setup.exe` | Run the installer. A portable `.exe` is also available. |
-| Linux x64 | `LakeDB-*-linux-x86_64.AppImage` or `LakeDB-*-linux-amd64.deb` | Make the AppImage executable, or install the Debian package. |
+| Platform            | Download                                                       | Install                                                      |
+| ------------------- | -------------------------------------------------------------- | ------------------------------------------------------------ |
+| macOS Apple Silicon | `LakeDB-*-mac-arm64.dmg` or `.zip`                             | Open the DMG or move `LakeDB.app` to Applications.           |
+| Windows x64         | `LakeDB-*-win-x64-setup.exe`                                   | Run the installer. A portable `.exe` is also available.      |
+| Linux x64           | `LakeDB-*-linux-x86_64.AppImage` or `LakeDB-*-linux-amd64.deb` | Make the AppImage executable, or install the Debian package. |
 
 The `0.10.4` packages are intentionally unsigned while LakeDB is evaluated publicly, so your operating system may display a security warning. Only download LakeDB from this official repository. Every package includes a matching SHA-256 checksum. Stable 1.0+ releases are configured to require macOS/Windows signing and Apple notarization before publication.
 
 ## Version history
 
-The latest build is **0.10.4**. The [version history](VERSION-HISTORY.md) records every published build with concise `ADD`, `CHANGE`, `FIX` and `SECURITY` entries. Full notes remain attached to each GitHub release.
+The latest build is **0.10.4**. The [version history](VERSION-HISTORY.md) records every published build with concise `ADD`, `CHANGE`, `FIX` and `SECURITY` entries. Full notes and installers remain attached to the downloadable releases retained on GitHub.
 
 ## The road to LakeDB 1.0
 
 <p align="center">
-  <a href="ROADMAP.md"><img src="assets/roadmap/lakedb-roadmap-v0.10.3.png" width="100%" alt="LakeDB 0.10 capabilities and the trust work planned before 1.0"></a>
+  <a href="ROADMAP.md"><img src="assets/roadmap/lakedb-roadmap-v0.10.png" width="100%" alt="LakeDB 0.10 capabilities and the trust work planned before 1.0"></a>
 </p>
 
 The [roadmap](ROADMAP.md) follows the product milestones from the first LakeDB foundation through the current 0.10 line, then shows the trust and compatibility work remaining for 1.0. Patch-level details stay in the version history.
@@ -118,6 +118,8 @@ LakeDB is available in English and Spanish. Change the interface language under 
 - Ask for help in [Q&A](https://github.com/DavLagoHern/LakeDB/discussions/categories/q-a).
 - Report reproducible bugs with the [bug report form](https://github.com/DavLagoHern/LakeDB/issues/new?template=bug-report.yml).
 - Check the [community guide](COMMUNITY.md) before posting logs or screenshots.
+- Review the [compatibility](COMPATIBILITY.md) and [support](SUPPORT.md) policies before reporting environment-specific behaviour.
+- Read the [privacy](PRIVACY.md) and [security](SECURITY.md) policies before sharing diagnostics or reporting a vulnerability.
 
 ## About this repository
 

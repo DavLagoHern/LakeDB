@@ -4,13 +4,14 @@ The community is where we share ideas, solve questions and help decide what Lake
 
 ## Where should I post?
 
-| I want to… | Go to… |
-| --- | --- |
-| Propose a feature or improvement | [Ideas](https://github.com/DavLagoHern/LakeDB/discussions/categories/ideas) |
-| Ask how to do something | [Q&A](https://github.com/DavLagoHern/LakeDB/discussions/categories/q-a) |
-| Share a workflow, tip or experience | [General](https://github.com/DavLagoHern/LakeDB/discussions/categories/general) |
-| Report a reproducible bug | [Bug report](https://github.com/DavLagoHern/LakeDB/issues/new?template=bug-report.yml) |
-| Improve the README or Wiki | [Documentation improvement](https://github.com/DavLagoHern/LakeDB/issues/new?template=documentation.yml) |
+| I want to…                          | Go to…                                                                                                   |
+| ----------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| Propose a feature or improvement    | [Ideas](https://github.com/DavLagoHern/LakeDB/discussions/categories/ideas)                              |
+| Ask how to do something             | [Q&A](https://github.com/DavLagoHern/LakeDB/discussions/categories/q-a)                                  |
+| Share a workflow, tip or experience | [General](https://github.com/DavLagoHern/LakeDB/discussions/categories/general)                          |
+| Report a reproducible bug           | [Bug report](https://github.com/DavLagoHern/LakeDB/issues/new?template=bug-report.yml)                   |
+| Report a vulnerability              | [Private vulnerability report](https://github.com/DavLagoHern/LakeDB/security/advisories/new)            |
+| Improve the README or Wiki          | [Documentation improvement](https://github.com/DavLagoHern/LakeDB/issues/new?template=documentation.yml) |
 
 ## Writing a useful idea
 
@@ -22,4 +23,4 @@ Requests are considered using real use cases, community votes, data safety and m
 
 Before posting, remove passwords, tokens, private keys, private IP addresses, usernames, customer names, confidential queries and production data from screenshots, logs and examples.
 
-Please also read the [Code of Conduct](CODE_OF_CONDUCT.md) and [contribution guide](CONTRIBUTING.md).
+Please also read the [Code of Conduct](CODE_OF_CONDUCT.md), [contribution guide](CONTRIBUTING.md), [privacy policy](PRIVACY.md), [security policy](SECURITY.md) and [support policy](SUPPORT.md).

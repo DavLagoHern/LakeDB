@@ -4,6 +4,6 @@ Thank you for helping improve LakeDB. This public repository hosts releases, doc
 
 You can contribute by proposing or voting on ideas, answering questions, reporting reproducible bugs, and improving public documentation. Use the issue forms so reports include the platform, LakeDB version, database engine, expected result and exact reproduction steps.
 
-Never publish credentials or private production data. Report suspected security vulnerabilities privately through the maintainer's GitHub profile before sharing details publicly.
+Never publish credentials or private production data. Report suspected vulnerabilities through the private process in [SECURITY.md](SECURITY.md) before sharing details publicly.
 
-Pull requests are welcome for documentation and community resources. Keep each change focused and explain the problem it solves. By participating, you agree to follow the [Code of Conduct](CODE_OF_CONDUCT.md).
+Pull requests are welcome for documentation and community resources. Keep each change focused and explain the problem it solves. Check [COMPATIBILITY.md](COMPATIBILITY.md) and [SUPPORT.md](SUPPORT.md) before changing a public support claim. By participating, you agree to follow the [Code of Conduct](CODE_OF_CONDUCT.md).

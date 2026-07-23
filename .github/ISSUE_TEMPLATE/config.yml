@@ -9,3 +9,6 @@ contact_links:
   - name: Read the Wiki
     url: https://github.com/DavLagoHern/LakeDB/wiki
     about: Browse guides, FAQs and known solutions.
+  - name: Report a security vulnerability
+    url: https://github.com/DavLagoHern/LakeDB/security/advisories/new
+    about: Share vulnerability details privately. Never disclose credentials or exploit details in a public issue.

@@ -2,11 +2,13 @@
 
 The [README](README.md) describes everything LakeDB can do today. The [roadmap](ROADMAP.md) follows the larger product milestones. This file records the smaller changes in each published build.
 
-| Label | Meaning |
-| --- | --- |
-| `ADD` | New user-facing capability |
-| `CHANGE` | Intentional workflow or interface change |
-| `FIX` | Corrected behaviour |
+Packaged downloads are retained for the current build, the previous patch and the previous major beta line. Older entries remain part of the historical record, but their installers may no longer be available.
+
+| Label      | Meaning                                      |
+| ---------- | -------------------------------------------- |
+| `ADD`      | New user-facing capability                   |
+| `CHANGE`   | Intentional workflow or interface change     |
+| `FIX`      | Corrected behaviour                          |
 | `SECURITY` | Data-safety, credential or trust improvement |
 
 Only real tagged builds are listed as releases. The 0.2–0.4 product stages were development milestones rather than public tags, and 0.10.0–0.10.2 were not published as separate builds.
