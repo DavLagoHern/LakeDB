@@ -29,7 +29,6 @@ body:
         - Import, backup or migrations
         - Security
         - Customization
-        - LakeDB Pro
         - Other
     validations:
       required: true

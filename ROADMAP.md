@@ -6,11 +6,13 @@ LakeDB is close to its 1.0 foundation. The roadmap now focuses on three things: 
 
 The [latest release](https://github.com/DavLagoHern/LakeDB/releases/latest) is always the recommended build. Future scope is directional and shaped by real workflows, safety, maintenance cost and community feedback.
 
-## Current beta: 0.10.3
+## Current beta: 0.10.4
 
-LakeDB 0.10.3 is the current public beta of the local MySQL/MariaDB desktop app. It sharpens the day-to-day SQL and table workflow:
+LakeDB 0.10.4 is the latest build in the current 0.10 public beta line:
 
 - Saved connections, folders, environment colors, SSL, SSH tunnels and automatic reconnect.
+- Review-first DBeaver, SQLyog, JSON, CSV and SQL URL imports with row selection, editable names/users, credential overrides and explicit duplicate handling.
+- A virtual **Unclassified** Home group for every connection without a saved folder.
 - Independent workspaces per connection, with SQL tabs above and query-result/table tabs in a live-resizable lower pane.
 - Monaco SQL editing with schema-aware completion, automatic aliases, PK/index hints and multi-column index predicate templates.
 - Compact and expanded SQL formatting with a remembered preference.
@@ -27,7 +29,7 @@ LakeDB 0.10.3 is the current public beta of the local MySQL/MariaDB desktop app.
 
 ## What remains for 1.0
 
-LakeDB 1.0 is a trust milestone. Free remains the complete local database client foundation; 1.0 is about distribution confidence, compatibility and upgrade safety.
+LakeDB 1.0 is a trust milestone focused on distribution confidence, compatibility and upgrade safety.
 
 ### Trusted distribution
 
@@ -50,17 +52,8 @@ LakeDB 1.0 is a trust milestone. Free remains the complete local database client
 - Cleaner first-run and troubleshooting guidance.
 - Final review of destructive-operation confirmations.
 
-## After 1.0
-
-These are exploration areas, not announced release dates or guaranteed scope.
-
-- **Safer schema drift automation:** reviewed DDL suggestions for existing tables before automated structure changes.
-- **Lake AI:** generate, explain, review and optimize SQL.
-- **Lake AI Agent:** schema-aware analysis, index suggestions, documentation and assisted migrations.
-- **Cloud sync:** synchronize favorites, snippets, workspaces and preferences.
-- **Dashboards:** SQL widgets, charts, KPIs and scheduled queries.
-- **Teams:** share workspaces, connection definitions without credentials, favorites and dashboards.
-
 ## Help define LakeDB
 
-Propose an idea, share a real workflow and vote in [Discussions](https://github.com/DavLagoHern/LakeDB/discussions/categories/ideas). Community interest helps set priority, while safety, maintenance cost and fit with LakeDB's product principles determine what ships.
+Propose an idea, share a real workflow and vote in [Discussions](https://github.com/DavLagoHern/LakeDB/discussions/categories/ideas). Community interest helps set priority, while safety and maintenance cost determine what ships.
+
+Small changes between builds are kept in the [version history](VERSION-HISTORY.md).

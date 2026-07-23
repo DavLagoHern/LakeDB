@@ -16,7 +16,7 @@ The community is where we share ideas, solve questions and help decide what Lake
 
 You do not need to design the solution. Tell us what you were trying to achieve, what gets in the way today, how you would like it to work, and how often it would help. Search existing discussions first; if a similar idea exists, vote and add your use case there.
 
-Requests are considered using real use cases, community votes, data safety, maintenance cost, and their fit with LakeDB Free or future Pro capabilities. Votes help prioritize work, but do not guarantee a delivery date.
+Requests are considered using real use cases, community votes, data safety and maintenance cost. Votes help prioritize work, but do not guarantee a delivery date.
 
 ## Protect your data
 
