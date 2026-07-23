@@ -15,6 +15,14 @@ Only real tagged builds are listed as releases. The 0.2–0.4 product stages wer
 
 ## 0.10
 
+### 0.10.6
+
+- `FIX` Show the virtual **Unclassified** group in the compact connection picker.
+- `FIX` Apply a complete ad-hoc signature to macOS beta packages and validate the app inside the finished DMG.
+- `CHANGE` Document the expected first-launch security approval on macOS and Windows.
+
+[Release notes and downloads](https://github.com/DavLagoHern/LakeDB/releases/tag/v0.10.6)
+
 ### 0.10.5
 
 - `FIX` Add a dedicated **LakeDB** menu before **File** on Windows and Linux.
