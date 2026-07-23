@@ -21,7 +21,7 @@ The roadmap tracks complete product milestones, not individual patches. Smaller 
 
 ## Current position
 
-LakeDB 0.10.4 is the latest build in the 0.10 beta line. The complete current capability set is documented in the [README](README.md); patch-by-patch detail is kept out of this roadmap.
+LakeDB 0.10.5 is the latest build in the 0.10 beta line. The complete current capability set is documented in the [README](README.md); patch-by-patch detail is kept out of this roadmap.
 
 ## Before 1.0
 

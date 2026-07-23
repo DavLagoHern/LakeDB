@@ -8,8 +8,8 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/DavLagoHern/LakeDB/releases/tag/v0.10.4"><img alt="LakeDB 0.10.4 public beta" src="https://img.shields.io/badge/PUBLIC_BETA-0.10.4-55f0bd?style=for-the-badge&logo=github&logoColor=020817"></a>
-  <a href="https://github.com/DavLagoHern/LakeDB/releases/tag/v0.10.4"><img alt="Download LakeDB 0.10.4 beta" src="https://img.shields.io/badge/DOWNLOAD-0.10.4_BETA-0b7cff?style=for-the-badge&logo=github&logoColor=white"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/tag/v0.10.5"><img alt="LakeDB 0.10.5 public beta" src="https://img.shields.io/badge/PUBLIC_BETA-0.10.5-55f0bd?style=for-the-badge&logo=github&logoColor=020817"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/tag/v0.10.5"><img alt="Download LakeDB 0.10.5 beta" src="https://img.shields.io/badge/DOWNLOAD-0.10.5_BETA-0b7cff?style=for-the-badge&logo=github&logoColor=white"></a>
   <a href="https://github.com/DavLagoHern/LakeDB/discussions"><img alt="LakeDB community" src="https://img.shields.io/badge/COMMUNITY-DISCUSSIONS-12d9ff?style=for-the-badge&logo=github&logoColor=020817"></a>
 </p>
 
@@ -85,7 +85,7 @@ Everything runs locally. LakeDB does not send your connections, queries or crede
 
 ## Download
 
-Open the [LakeDB 0.10.4 beta release](https://github.com/DavLagoHern/LakeDB/releases/tag/v0.10.4) and choose your platform:
+Open the [LakeDB 0.10.5 beta release](https://github.com/DavLagoHern/LakeDB/releases/tag/v0.10.5) and choose your platform:
 
 | Platform            | Download                                                       | Install                                                      |
 | ------------------- | -------------------------------------------------------------- | ------------------------------------------------------------ |
@@ -93,11 +93,11 @@ Open the [LakeDB 0.10.4 beta release](https://github.com/DavLagoHern/LakeDB/rele
 | Windows x64         | `LakeDB-*-win-x64-setup.exe`                                   | Run the installer. A portable `.exe` is also available.      |
 | Linux x64           | `LakeDB-*-linux-x86_64.AppImage` or `LakeDB-*-linux-amd64.deb` | Make the AppImage executable, or install the Debian package. |
 
-The `0.10.4` packages are intentionally unsigned while LakeDB is evaluated publicly, so your operating system may display a security warning. Only download LakeDB from this official repository. Every package includes a matching SHA-256 checksum. Stable 1.0+ releases are configured to require macOS/Windows signing and Apple notarization before publication.
+The `0.10.5` packages are intentionally unsigned while LakeDB is evaluated publicly, so your operating system may display a security warning. Only download LakeDB from this official repository. Every package includes a matching SHA-256 checksum. Stable 1.0+ releases are configured to require macOS/Windows signing and Apple notarization before publication.
 
 ## Version history
 
-The latest build is **0.10.4**. The [version history](VERSION-HISTORY.md) records every published build with concise `ADD`, `CHANGE`, `FIX` and `SECURITY` entries. Full notes and installers remain attached to the downloadable releases retained on GitHub.
+The latest build is **0.10.5**. The [version history](VERSION-HISTORY.md) records every published build with concise `ADD`, `CHANGE`, `FIX` and `SECURITY` entries. Full notes and installers remain attached to the downloadable releases retained on GitHub.
 
 ## The road to LakeDB 1.0
 

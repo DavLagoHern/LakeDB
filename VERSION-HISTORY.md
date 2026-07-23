@@ -15,6 +15,14 @@ Only real tagged builds are listed as releases. The 0.2–0.4 product stages wer
 
 ## 0.10
 
+### 0.10.5
+
+- `FIX` Add a dedicated **LakeDB** menu before **File** on Windows and Linux.
+- `CHANGE` Make global preferences consistently available from the application menu and with `Ctrl+,`.
+- `CHANGE` Keep the existing native macOS application menu unchanged.
+
+[Release notes and downloads](https://github.com/DavLagoHern/LakeDB/releases/tag/v0.10.5)
+
 ### 0.10.4
 
 - `ADD` Review DBeaver, SQLyog, JSON, CSV and SQL URL connections in a selectable table before saving.
