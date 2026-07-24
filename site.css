@@ -746,12 +746,13 @@ svg { display: block; }
   .tools-media img { width: 100%; min-height: 0; aspect-ratio: auto; object-fit: contain; }
   .plain-list li { grid-template-columns: 1fr; gap: 5px; }
   .detail-gallery { grid-template-columns: 1fr; margin-top: 52px; }
-  .detail-gallery article { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); gap: 18px; padding: 18px 0; }
+  .detail-gallery article { display: block; padding: 26px 0; }
   .detail-gallery article + article, .detail-gallery article:nth-child(3), .detail-gallery article:nth-child(4) { border-left: 0; border-top: 1px solid var(--line); }
-  .detail-gallery img { aspect-ratio: 3/4; }
-  .detail-gallery article > div { align-self: center; padding: 0 12px 0 0; }
-  .detail-gallery h3 { font-size: 16px; }
-  .detail-gallery p { font-size: 12px; }
+  .detail-gallery .media-button { width: 100%; }
+  .detail-gallery img { aspect-ratio: auto; object-fit: contain; }
+  .detail-gallery article > div { padding: 22px 4px 4px; }
+  .detail-gallery h3 { margin-top: 9px; font-size: 20px; }
+  .detail-gallery p { max-width: 34rem; font-size: 14px; line-height: 1.65; }
   .personal-gallery { min-height: 570px; margin-top: 50px; padding: 0; }
   .personal-primary { width: calc(100vw - 32px); }
   .personal-primary img { width: 100%; min-height: 0; aspect-ratio: auto; object-fit: contain; }
