@@ -1,0 +1,6 @@
+.DS_Store
+
+# Local image-generation sources and superseded Patreon drafts.
+assets/social/lakedb-patreon-*.png
+assets/social/patreon/*-source.png
+assets/social/patreon/tier-backer-460x200.png

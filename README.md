@@ -11,6 +11,7 @@
   <a href="https://github.com/DavLagoHern/LakeDB/releases/latest"><img alt="LakeDB 0.11 public beta" src="https://img.shields.io/badge/PUBLIC_BETA-0.11-55f0bd?style=for-the-badge&logo=github&logoColor=020817"></a>
   <a href="https://github.com/DavLagoHern/LakeDB/releases/latest"><img alt="Download the latest LakeDB 0.11 beta" src="https://img.shields.io/badge/DOWNLOAD-0.11_BETA-0b7cff?style=for-the-badge&logo=github&logoColor=white"></a>
   <a href="https://github.com/DavLagoHern/LakeDB/discussions"><img alt="LakeDB community" src="https://img.shields.io/badge/COMMUNITY-DISCUSSIONS-12d9ff?style=for-the-badge&logo=github&logoColor=020817"></a>
+  <a href="https://www.patreon.com/LakeDB"><img alt="Support LakeDB on Patreon" src="https://img.shields.io/badge/SUPPORT-PATREON-06132b?style=for-the-badge&logo=patreon&logoColor=12d9ff"></a>
 </p>
 
 <p align="center">
@@ -80,6 +81,7 @@ Everything runs locally. LakeDB does not send your connections, queries or crede
 <details>
   <summary><strong>More screenshots</strong></summary>
   <br>
+  <p align="center"><img src="assets/screenshots/table-data.png" width="100%" alt="Inspect, filter and safely edit table data in LakeDB"></p>
   <p align="center"><img src="assets/screenshots/connection-picker.png" width="100%" alt="Browse recent LakeDB connections and folders"></p>
   <p align="center"><img src="assets/screenshots/quick-open.png" width="100%" alt="Search LakeDB connections, tabs, objects, snippets and commands with Quick Open"></p>
   <p align="center"><img src="assets/screenshots/new-connection.png" width="100%" alt="Create a connection in LakeDB"></p>
@@ -137,9 +139,22 @@ The [roadmap](ROADMAP.md) follows the product milestones from the first LakeDB f
 
 LakeDB is available in English and Spanish. Change the interface language under **Preferences → Language**; the application menu and workspace update with it. The translation layer is structured so more languages can be added without rewriting individual screens.
 
+## Support LakeDB
+
+LakeDB is developed independently and the public beta remains the same
+application for everyone. If LakeDB is useful in your daily work, you can
+[support its continued development on Patreon](https://www.patreon.com/LakeDB).
+Memberships help with builds, code signing, release infrastructure and the work
+toward LakeDB 1.0.
+
+Financial support is completely optional. Testing the beta, reporting
+reproducible issues, proposing improvements and sharing LakeDB are equally
+valuable ways to help the project.
+
 ## Help shape LakeDB
 
 - Read the [Wiki](https://github.com/DavLagoHern/LakeDB/wiki) for installation, workflows and troubleshooting.
+- Follow [LakeDB on Patreon](https://www.patreon.com/LakeDB) for release announcements, development updates and roadmap polls.
 - Propose and vote on features in [Ideas](https://github.com/DavLagoHern/LakeDB/discussions/categories/ideas).
 - Ask for help in [Q&A](https://github.com/DavLagoHern/LakeDB/discussions/categories/q-a).
 - Report reproducible bugs with the [bug report form](https://github.com/DavLagoHern/LakeDB/issues/new?template=bug-report.yml).
