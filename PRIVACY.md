@@ -34,7 +34,11 @@ No local encryption can protect secrets from someone who already controls your o
 
 ## Diagnostics and shared reports
 
-Diagnostics remain local until you copy or share them. They can contain hostnames, database names, local paths, SQL fragments or server errors. Review and remove sensitive information before attaching diagnostics, screenshots or configuration files to a public issue or discussion.
+Diagnostics remain local until you copy or share them. LakeDB never submits the
+support report automatically. It can contain hostnames, database names, local
+paths, SQL fragments or server errors even after automatic secret redaction.
+Review and remove sensitive information before attaching diagnostics,
+screenshots or configuration files to a public issue or discussion.
 
 ## Deleting local data
 

@@ -20,6 +20,11 @@ The Releases page retains up to two packaged builds from the current version lin
 
 Before reporting a bug, update to the latest build and check the [troubleshooting guide](https://github.com/DavLagoHern/LakeDB/wiki/Troubleshooting).
 
+Inside LakeDB, use **Help → Report a problem** to open the structured form.
+When diagnostics are relevant, open **View → Diagnostics**, copy the support
+report and review it before pasting. The report includes the app version,
+platform and sanitized local diagnostic entries.
+
 ## Useful bug information
 
 Include the LakeDB version, operating system, database product/version, connection mode, exact action, expected result and observed result. Share the smallest safe reproduction possible.

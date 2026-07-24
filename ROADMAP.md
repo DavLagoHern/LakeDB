@@ -1,6 +1,6 @@
 # LakeDB roadmap
 
-![LakeDB 0.10 beta capabilities and the trust work planned before 1.0](assets/roadmap/lakedb-roadmap-v0.10.png)
+![LakeDB 0.11 beta capabilities and the trust work planned before 1.0](assets/roadmap/lakedb-roadmap-v0.11.png)
 
 The roadmap tracks complete product milestones, not individual patches. Smaller `ADD`, `CHANGE`, `FIX` and `SECURITY` entries live in the [version history](VERSION-HISTORY.md).
 
@@ -17,11 +17,14 @@ The roadmap tracks complete product milestones, not individual patches. Smaller 
 | **0.7**            | Resilience                  | Update discovery, guarded restores, session/crash recovery, migration snapshots and accessibility checks.                                                                           |
 | **0.8**            | Editing polish              | Structured large-value editing, visible pending changes, explicit folders, verified updates and a Home-first lifecycle.                                                             |
 | **0.9**            | Migration and large exports | Migration Studio, clearer active-connection context and configurable streaming exports up to 50 million rows.                                                                       |
-| **0.10 — current** | Smarter daily workflow      | Split query/table panes, schema-aware completion, aliases and index guidance, visual schema design, typed editing, compact multitab navigation and review-first connection imports. |
+| **0.10**           | Smarter daily workflow      | Split query/table panes, schema-aware completion, aliases and index guidance, visual schema design, typed editing, compact multitab navigation and review-first connection imports. |
+| **0.11 — current** | Operational public beta     | Explain plans, visual transactions, Quick Open, persistent snippets, SQL-first object editing, granular schema comparison, session monitoring and in-app beta feedback.            |
 
 ## Current position
 
-LakeDB 0.10.5 is the latest build in the 0.10 beta line. The complete current capability set is documented in the [README](README.md); patch-by-patch detail is kept out of this roadmap.
+LakeDB 0.11.0 Beta 1 is the current public beta candidate. The complete current
+capability set is documented in the [README](README.md); patch-by-patch detail
+is kept out of this roadmap.
 
 ## Before 1.0
 

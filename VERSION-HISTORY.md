@@ -13,6 +13,19 @@ Packaged downloads are retained for the current build, the previous patch and th
 
 Only real tagged builds are listed as releases. The 0.2–0.4 product stages were development milestones rather than public tags, and 0.10.0–0.10.2 were not published as separate builds.
 
+## 0.11
+
+### 0.11.0-beta.1
+
+- `ADD` Explain plans with index/full-scan insights and read-only `EXPLAIN ANALYZE`.
+- `ADD` Visual per-tab transactions, persistent snippets and `Cmd/Ctrl+P` Quick Open.
+- `ADD` SQL-first object editing, active-session monitoring and granular schema comparison.
+- `ADD` In-app bug/idea links and a copyable sanitized support report.
+- `SECURITY` Reject `EXPLAIN ANALYZE` unless its target is one read-only `SELECT`.
+- `FIX` Route successful executions to Results and failed executions to Errors.
+
+[Release notes and downloads](https://github.com/DavLagoHern/LakeDB/releases/tag/v0.11.0-beta.1)
+
 ## 0.10
 
 ### 0.10.6

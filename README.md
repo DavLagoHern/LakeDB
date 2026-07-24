@@ -8,8 +8,8 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/DavLagoHern/LakeDB/releases/tag/v0.10.6"><img alt="LakeDB 0.10.6 public beta" src="https://img.shields.io/badge/PUBLIC_BETA-0.10.6-55f0bd?style=for-the-badge&logo=github&logoColor=020817"></a>
-  <a href="https://github.com/DavLagoHern/LakeDB/releases/tag/v0.10.6"><img alt="Download LakeDB 0.10.6 beta" src="https://img.shields.io/badge/DOWNLOAD-0.10.6_BETA-0b7cff?style=for-the-badge&logo=github&logoColor=white"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/tag/v0.11.0-beta.1"><img alt="LakeDB 0.11 public beta" src="https://img.shields.io/badge/PUBLIC_BETA-0.11-55f0bd?style=for-the-badge&logo=github&logoColor=020817"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/tag/v0.11.0-beta.1"><img alt="Download LakeDB 0.11 beta" src="https://img.shields.io/badge/DOWNLOAD-0.11_BETA-0b7cff?style=for-the-badge&logo=github&logoColor=white"></a>
   <a href="https://github.com/DavLagoHern/LakeDB/discussions"><img alt="LakeDB community" src="https://img.shields.io/badge/COMMUNITY-DISCUSSIONS-12d9ff?style=for-the-badge&logo=github&logoColor=020817"></a>
 </p>
 
@@ -53,24 +53,27 @@ Export complete reviewed queries to CSV, JSON, JSON Lines, Excel-compatible or S
 
 Connections, credentials, SQL and result data stay on your computer. Passwords use the local encrypted credential store; read-only connections, production confirmations, recovery snapshots and a sandboxed renderer protect daily work.
 
-## What LakeDB 0.10 includes
+## What LakeDB 0.11 includes
 
-LakeDB 0.10 is the current public beta line. It combines a split SQL workspace, schema-aware completion, typed table editing, compact controls and review-first connection imports.
+LakeDB 0.11 is the current public beta line. It combines the complete 0.10
+daily workflow with visual query plans, tab-owned transactions, Quick Open,
+editable SQL objects, granular schema comparison and operational diagnostics.
 
 | Area                   | Available today                                                                                                                                                                                                            |
 | ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Connections**        | Unlimited saved MySQL and MariaDB connections, folders, automatic group suggestions, environment colors, SSL, SSH tunnels, automatic reconnect and copyable diagnostics.                                                   |
 | **Workspaces**         | Multiple open connections at once, each with independent SQL tabs above and query-result/table tabs in a smoothly resizable lower pane.                                                                                    |
-| **SQL editor**         | Monaco Editor, schema-aware table/column completion, automatic aliases, PK/index hints, index predicate templates, compact/expanded formatting, execution, history, favorites and streaming exports up to 50 million rows. |
-| **Object explorer**    | Lazy loading for every object type; click a table to open it below or double-click to insert its quoted name at the current SQL cursor.                                                                                    |
+| **SQL editor**         | Monaco Editor, schema-aware completion, automatic aliases, PK/index hints, persistent snippets, compact/expanded formatting, Explain plans, visual transactions, history and streaming exports up to 50 million rows. |
+| **Object explorer**    | Lazy loading for every object type; click a table to open it below, double-click to insert its quoted name, or open non-table objects as editable SQL with a definition diff.                                               |
 | **Table data**         | Virtualized grid, pagination, sorting, search, cell-driven filters and full-query export to CSV, JSON, JSON Lines, Excel-compatible `.xls` or SQL.                                                                         |
 | **Safe editing**       | Type-aware date/time, numeric, boolean and enum editors plus buffered changes, validation, conflict detection, rollback and checked text/JSON/HTML editing.                                                                |
 | **Backup and restore** | SQL database export, SQL restore with recovery backups, restore safeguards and production confirmation.                                                                                                                    |
-| **Migration Studio**   | Source/target selectors, connection buttons, database comparison, selectable multi-table migration plans, structure/data copy and truncate-first workflows.                                                                |
+| **Migration Studio**   | Source/target selectors, granular column/index/foreign-key comparison, selectable multi-table migration plans, structure/data copy and truncate-first workflows.                                                            |
 | **Imports**            | Review and select DBeaver, SQLyog, JSON, CSV and MySQL/JDBC URL connections before saving; edit names/users, apply shared or individual passwords and resolve duplicates explicitly.                                       |
 | **Safety**             | Read-only connections, reinforced production confirmations, renderer sandboxing and no direct renderer access to filesystem, SQLite, credentials or database sockets.                                                      |
 | **Resilience**         | Home-first session restore, crash recovery, configuration backup/restore, update notices, local migrations with safety snapshots and diagnostics log.                                                                      |
 | **Interface**          | Dark/light/system themes, density and font-size preferences, and English/Spanish UI ready for more languages.                                                                                                              |
+| **Operations**         | `Cmd/Ctrl+P` Quick Open, active-session monitor, query cancellation, beta feedback links and copyable sanitized support reports.                                                                                            |
 
 Everything runs locally. LakeDB does not send your connections, queries or credentials to an external LakeDB service.
 
@@ -78,6 +81,7 @@ Everything runs locally. LakeDB does not send your connections, queries or crede
   <summary><strong>More screenshots</strong></summary>
   <br>
   <p align="center"><img src="assets/screenshots/connection-picker.png" width="100%" alt="Browse recent LakeDB connections and folders"></p>
+  <p align="center"><img src="assets/screenshots/quick-open.png" width="100%" alt="Search LakeDB connections, tabs, objects, snippets and commands with Quick Open"></p>
   <p align="center"><img src="assets/screenshots/new-connection.png" width="100%" alt="Create a connection in LakeDB"></p>
   <p align="center"><img src="assets/screenshots/preferences.png" width="100%" alt="LakeDB preferences and language selector"></p>
   <p align="center"><img src="assets/screenshots/database-tools.png" width="100%" alt="SQL backup, restore and migration tools"></p>
@@ -85,7 +89,7 @@ Everything runs locally. LakeDB does not send your connections, queries or crede
 
 ## Download
 
-Open the [LakeDB 0.10.6 beta release](https://github.com/DavLagoHern/LakeDB/releases/tag/v0.10.6) and choose your platform:
+Open the [LakeDB 0.11.0 Beta 1 release](https://github.com/DavLagoHern/LakeDB/releases/tag/v0.11.0-beta.1) and choose your platform:
 
 | Platform            | Download                                                       | Install                                                      |
 | ------------------- | -------------------------------------------------------------- | ------------------------------------------------------------ |
@@ -119,15 +123,15 @@ notarization.
 
 ## Version history
 
-The latest build is **0.10.6**. The [version history](VERSION-HISTORY.md) records every published build with concise `ADD`, `CHANGE`, `FIX` and `SECURITY` entries. Full notes and installers remain attached to the downloadable releases retained on GitHub.
+The latest build is **0.11.0 Beta 1**. The [version history](VERSION-HISTORY.md) records every published build with concise `ADD`, `CHANGE`, `FIX` and `SECURITY` entries. Full notes and installers remain attached to the downloadable releases retained on GitHub.
 
 ## The road to LakeDB 1.0
 
 <p align="center">
-  <a href="ROADMAP.md"><img src="assets/roadmap/lakedb-roadmap-v0.10.png" width="100%" alt="LakeDB 0.10 capabilities and the trust work planned before 1.0"></a>
+  <a href="ROADMAP.md"><img src="assets/roadmap/lakedb-roadmap-v0.11.png" width="100%" alt="LakeDB 0.11 beta capabilities and the trust work planned before 1.0"></a>
 </p>
 
-The [roadmap](ROADMAP.md) follows the product milestones from the first LakeDB foundation through the current 0.10 line, then shows the trust and compatibility work remaining for 1.0. Patch-level details stay in the version history.
+The [roadmap](ROADMAP.md) follows the product milestones from the first LakeDB foundation through the current 0.11 beta, then shows the trust and compatibility work remaining for 1.0. Patch-level details stay in the version history.
 
 ## English and Spanish, ready for more
 
