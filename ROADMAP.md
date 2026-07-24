@@ -22,7 +22,7 @@ The roadmap tracks complete product milestones, not individual patches. Smaller 
 
 ## Current position
 
-LakeDB 0.11.0 Beta 1 is the current public beta candidate. The complete current
+LakeDB 0.11.1 Beta 2 is the current public beta candidate. The complete current
 capability set is documented in the [README](README.md); patch-by-patch detail
 is kept out of this roadmap.
 
