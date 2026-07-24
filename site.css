@@ -728,12 +728,11 @@ svg { display: block; }
   .capability-rail article + article { border-left: 0; border-top: 1px solid var(--line); }
   .capability-rail h3 { margin-top: 38px; }
   .workflow-canvas { min-height: 0; margin-top: 48px; padding: 0; }
-  .workflow-key { position: static; width: 100%; display: flex; overflow-x: auto; border: 0; border-bottom: 1px solid var(--line); scrollbar-width: none; }
-  .workflow-key::-webkit-scrollbar { display: none; }
-  .workflow-step { flex: 0 0 auto; width: auto; min-width: 190px; padding: 15px 14px; }
+  .workflow-key { position: static; width: 100%; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); overflow: visible; border: 0; border-bottom: 1px solid var(--line); }
+  .workflow-step { width: 100%; min-width: 0; align-items: flex-start; gap: 7px; padding: 14px 8px; font-size: 11px; line-height: 1.35; }
   .workflow-step::before { display: none; }
   .workflow-screen { margin-top: 16px; }
-  .workflow-screen img { width: 100%; min-height: 0; aspect-ratio: auto; object-fit: contain; }
+  .workflow-screen img { width: 100%; min-height: 0; aspect-ratio: 16/9; object-fit: contain; }
   .workflow-detail { position: static; width: 100%; margin-top: 28px; }
   .connection-inset { position: static; width: 84%; margin: 30px 0 0 auto; }
   .connection-inset img { width: 100%; aspect-ratio: auto; object-fit: contain; }
@@ -749,7 +748,7 @@ svg { display: block; }
   .detail-gallery article { display: block; padding: 26px 0; }
   .detail-gallery article + article, .detail-gallery article:nth-child(3), .detail-gallery article:nth-child(4) { border-left: 0; border-top: 1px solid var(--line); }
   .detail-gallery .media-button { width: 100%; }
-  .detail-gallery img { aspect-ratio: auto; object-fit: contain; }
+  .detail-gallery img { aspect-ratio: 16/9; object-fit: contain; }
   .detail-gallery article > div { padding: 22px 4px 4px; }
   .detail-gallery h3 { margin-top: 9px; font-size: 20px; }
   .detail-gallery p { max-width: 34rem; font-size: 14px; line-height: 1.65; }

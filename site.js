@@ -62,7 +62,6 @@ lightbox?.addEventListener("click", (event) => {
 });
 
 const workflowImage = document.querySelector("[data-workflow-image]");
-const workflowSource = document.querySelector("[data-workflow-source]");
 const workflowScreen = workflowImage?.closest("[data-lightbox]");
 
 document.querySelectorAll("[data-shot]").forEach((step) => {
@@ -74,7 +73,6 @@ document.querySelectorAll("[data-shot]").forEach((step) => {
     window.setTimeout(() => {
       workflowImage.src = step.dataset.shot;
       workflowImage.alt = step.dataset.alt;
-      if (workflowSource) workflowSource.srcset = step.dataset.mobileShot;
       workflowScreen.dataset.lightbox = step.dataset.shot;
       workflowImage.style.opacity = "1";
     }, 160);

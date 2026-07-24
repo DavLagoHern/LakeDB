@@ -132,7 +132,7 @@ notarization.
 
 ## Version history
 
-The latest build is **0.11.1 Beta 2**. The [version history](VERSION-HISTORY.md) records every published build with concise `ADD`, `CHANGE`, `FIX` and `SECURITY` entries. Full notes and installers remain attached to the downloadable releases retained on GitHub.
+The latest build is **0.11.3 Beta 2**. The [version history](VERSION-HISTORY.md) records every published build with concise `ADD`, `CHANGE`, `FIX` and `SECURITY` entries. Full notes and installers remain attached to the downloadable releases retained on GitHub.
 
 ## The road to LakeDB 1.0
 

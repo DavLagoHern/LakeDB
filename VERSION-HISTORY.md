@@ -15,6 +15,15 @@ Only real tagged builds are listed as releases. The 0.2–0.4 product stages wer
 
 ## 0.11
 
+### 0.11.3-beta.2
+
+- `CHANGE` Simplify the SQL toolbar and move transaction controls into the Database menu.
+- `CHANGE` Replace native Format and Snippets selectors with compact LakeDB menus.
+- `ADD` Open the snippet library, create from the current SQL and reach history directly from the toolbar.
+- `FIX` Show complete product screenshots and all workflow choices on mobile without horizontal clipping.
+
+[Release notes and downloads](https://github.com/DavLagoHern/LakeDB/releases/tag/v0.11.3-beta.2)
+
 ### 0.11.2-beta.2
 
 - `FIX` Replace the unreliable silent Windows updater with the normal visible installer.
