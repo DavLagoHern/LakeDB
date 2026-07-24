@@ -8,8 +8,8 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/DavLagoHern/LakeDB/releases/tag/v0.11.0-beta.1"><img alt="LakeDB 0.11 public beta" src="https://img.shields.io/badge/PUBLIC_BETA-0.11-55f0bd?style=for-the-badge&logo=github&logoColor=020817"></a>
-  <a href="https://github.com/DavLagoHern/LakeDB/releases/tag/v0.11.0-beta.1"><img alt="Download LakeDB 0.11 beta" src="https://img.shields.io/badge/DOWNLOAD-0.11_BETA-0b7cff?style=for-the-badge&logo=github&logoColor=white"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/latest"><img alt="LakeDB 0.11 public beta" src="https://img.shields.io/badge/PUBLIC_BETA-0.11-55f0bd?style=for-the-badge&logo=github&logoColor=020817"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/latest"><img alt="Download the latest LakeDB 0.11 beta" src="https://img.shields.io/badge/DOWNLOAD-0.11_BETA-0b7cff?style=for-the-badge&logo=github&logoColor=white"></a>
   <a href="https://github.com/DavLagoHern/LakeDB/discussions"><img alt="LakeDB community" src="https://img.shields.io/badge/COMMUNITY-DISCUSSIONS-12d9ff?style=for-the-badge&logo=github&logoColor=020817"></a>
 </p>
 
@@ -71,7 +71,7 @@ editable SQL objects, granular schema comparison and operational diagnostics.
 | **Migration Studio**   | Source/target selectors, granular column/index/foreign-key comparison, selectable multi-table migration plans, structure/data copy and truncate-first workflows.                                                            |
 | **Imports**            | Review and select DBeaver, SQLyog, JSON, CSV and MySQL/JDBC URL connections before saving; edit names/users, apply shared or individual passwords and resolve duplicates explicitly.                                       |
 | **Safety**             | Read-only connections, reinforced production confirmations, renderer sandboxing and no direct renderer access to filesystem, SQLite, credentials or database sockets.                                                      |
-| **Resilience**         | Home-first session restore, crash recovery, configuration backup/restore, update notices, local migrations with safety snapshots and diagnostics log.                                                                      |
+| **Resilience**         | Home-first session restore, crash recovery, configuration backup/restore, verified in-app updates, local migrations with safety snapshots and diagnostics log.                                                              |
 | **Interface**          | Dark/light/system themes, density and font-size preferences, and English/Spanish UI ready for more languages.                                                                                                              |
 | **Operations**         | `Cmd/Ctrl+P` Quick Open, active-session monitor, query cancellation, beta feedback links and copyable sanitized support reports.                                                                                            |
 
@@ -89,7 +89,7 @@ Everything runs locally. LakeDB does not send your connections, queries or crede
 
 ## Download
 
-Open the [LakeDB 0.11.0 Beta 1 release](https://github.com/DavLagoHern/LakeDB/releases/tag/v0.11.0-beta.1) and choose your platform:
+Open the [latest LakeDB 0.11 beta release](https://github.com/DavLagoHern/LakeDB/releases/latest) and choose your platform:
 
 | Platform            | Download                                                       | Install                                                      |
 | ------------------- | -------------------------------------------------------------- | ------------------------------------------------------------ |
@@ -123,7 +123,7 @@ notarization.
 
 ## Version history
 
-The latest build is **0.11.0 Beta 1**. The [version history](VERSION-HISTORY.md) records every published build with concise `ADD`, `CHANGE`, `FIX` and `SECURITY` entries. Full notes and installers remain attached to the downloadable releases retained on GitHub.
+The latest build is **0.11.0 Beta 2**. The [version history](VERSION-HISTORY.md) records every published build with concise `ADD`, `CHANGE`, `FIX` and `SECURITY` entries. Full notes and installers remain attached to the downloadable releases retained on GitHub.
 
 ## The road to LakeDB 1.0
 
