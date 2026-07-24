@@ -53,11 +53,12 @@
           <a href="#product">Product</a>
           <a href="#workflow">Workflow</a>
           <a href="#downloads">Downloads</a>
+          <a href="#docs">Docs</a>
           <a href="#roadmap">Roadmap</a>
         </nav>
-        <a class="header-action" href="https://github.com/DavLagoHern/LakeDB" target="_blank" rel="noreferrer">
+        <a class="header-action" href="https://github.com/DavLagoHern/LakeDB" target="_blank" rel="noreferrer" aria-label="View LakeDB on GitHub">
           <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 .7a11.5 11.5 0 0 0-3.64 22.4c.58.1.79-.25.79-.56v-2.23c-3.22.7-3.9-1.37-3.9-1.37-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.78 1.2 1.78 1.2 1.04 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.74-1.55-2.57-.29-5.27-1.28-5.27-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.16 1.18a10.9 10.9 0 0 1 5.76 0c2.2-1.49 3.16-1.18 3.16-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.71 5.38-5.29 5.67.42.36.79 1.06.79 2.14v3.18c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .7Z"/></svg>
-          View on GitHub
+          <span>View on GitHub</span>
         </a>
       </div>
     </header>
@@ -87,7 +88,10 @@
             <em>0.11 public beta</em>
           </div>
           <button class="media-button" type="button" data-lightbox="assets/screenshots/multitab.png" aria-label="Open the LakeDB workspace screenshot">
-            <img src="assets/screenshots/multitab.png" alt="LakeDB with four independent connection workspaces and multiple SQL tabs" width="1920" height="1080">
+            <picture>
+              <source media="(max-width: 760px)" srcset="assets/screenshots/mobile/multitab-focus.png">
+              <img src="assets/screenshots/multitab.png" alt="LakeDB with four independent connection workspaces and multiple SQL tabs" width="1920" height="1080">
+            </picture>
           </button>
         </div>
         <div class="shell proof-line" aria-label="Product summary">
@@ -137,18 +141,21 @@
         </div>
         <div class="shell workflow-canvas" data-reveal>
           <div class="workflow-key">
-            <button class="workflow-step is-active" type="button" data-shot="assets/screenshots/multitab.png" data-alt="Multiple independent LakeDB connection workspaces">
+            <button class="workflow-step is-active" type="button" data-shot="assets/screenshots/multitab.png" data-mobile-shot="assets/screenshots/mobile/multitab-focus.png" data-alt="Multiple independent LakeDB connection workspaces">
               <span>01</span> Write with context
             </button>
-            <button class="workflow-step" type="button" data-shot="assets/screenshots/table-data.png" data-alt="Large editable table data grid in LakeDB">
+            <button class="workflow-step" type="button" data-shot="assets/screenshots/table-data.png" data-mobile-shot="assets/screenshots/mobile/table-data-focus.png" data-alt="Large editable table data grid in LakeDB">
               <span>02</span> Work with rows
             </button>
-            <button class="workflow-step" type="button" data-shot="assets/screenshots/database-tools.png" data-alt="Backup, restore and migration tools in LakeDB">
+            <button class="workflow-step" type="button" data-shot="assets/screenshots/database-tools.png" data-mobile-shot="assets/screenshots/mobile/database-tools-focus.png" data-alt="Backup, restore and migration tools in LakeDB">
               <span>03</span> Move with control
             </button>
           </div>
           <button class="workflow-screen media-button" type="button" data-lightbox="assets/screenshots/multitab.png" aria-label="Open active workflow screenshot">
-            <img src="assets/screenshots/multitab.png" alt="Multiple independent LakeDB connection workspaces" width="1920" height="1080" data-workflow-image>
+            <picture>
+              <source media="(max-width: 760px)" srcset="assets/screenshots/mobile/multitab-focus.png" data-workflow-source>
+              <img src="assets/screenshots/multitab.png" alt="Multiple independent LakeDB connection workspaces" width="1920" height="1080" data-workflow-image>
+            </picture>
           </button>
           <div class="workflow-detail">
             <strong>Quick Open</strong>
@@ -156,7 +163,10 @@
             <button class="inline-link" type="button" data-lightbox="assets/screenshots/quick-open.png">See Quick Open <span>↗</span></button>
           </div>
           <button class="connection-inset media-button" type="button" data-lightbox="assets/screenshots/connection-picker.png" aria-label="Open the connection picker screenshot">
-            <img src="assets/screenshots/connection-picker.png" alt="LakeDB connection picker with recent servers and groups" width="1920" height="1080">
+            <picture>
+              <source media="(max-width: 760px)" srcset="assets/screenshots/mobile/connection-picker-focus.png">
+              <img src="assets/screenshots/connection-picker.png" alt="LakeDB connection picker with recent servers and groups" width="1920" height="1080">
+            </picture>
           </button>
         </div>
       </section>
@@ -174,7 +184,10 @@
             <span>Safe edits</span>
           </div>
           <button class="media-button" type="button" data-lightbox="assets/screenshots/table-data.png" aria-label="Open table data screenshot">
-            <img src="assets/screenshots/table-data.png" alt="LakeDB table grid with filtering controls and editable data" width="1920" height="1080">
+            <picture>
+              <source media="(max-width: 760px)" srcset="assets/screenshots/mobile/table-data-focus.png">
+              <img src="assets/screenshots/table-data.png" alt="LakeDB table grid with filtering controls and editable data" width="1920" height="1080">
+            </picture>
           </button>
         </div>
       </section>
@@ -183,7 +196,10 @@
         <div class="shell tools-layout">
           <div class="tools-media" data-reveal>
             <button class="media-button" type="button" data-lightbox="assets/screenshots/database-tools.png" aria-label="Open database tools screenshot">
-              <img src="assets/screenshots/database-tools.png" alt="LakeDB backup, restore, compare and migration workspace" width="1920" height="1080">
+              <picture>
+                <source media="(max-width: 760px)" srcset="assets/screenshots/mobile/database-tools-focus.png">
+                <img src="assets/screenshots/database-tools.png" alt="LakeDB backup, restore, compare and migration workspace" width="1920" height="1080">
+              </picture>
             </button>
           </div>
           <div class="tools-copy">
@@ -200,18 +216,58 @@
         </div>
       </section>
 
+      <section class="details-section section">
+        <div class="shell details-heading">
+          <p class="section-index">05 / Daily details</p>
+          <h2>The small interactions<br>that keep work moving.</h2>
+          <p>LakeDB is designed around the moments repeated dozens of times a day: finding the right server, reaching an object, understanding a query and changing a row without losing confidence.</p>
+        </div>
+        <div class="shell detail-gallery" data-reveal>
+          <article>
+            <button class="media-button" type="button" data-lightbox="assets/screenshots/quick-open.png" aria-label="Open Quick Open screenshot">
+              <img src="assets/screenshots/mobile/quick-open-focus.png" alt="Quick Open searches LakeDB connections, tabs, objects, snippets and commands" width="820" height="1080">
+            </button>
+            <div><span>Cmd/Ctrl + P</span><h3>Quick Open</h3><p>Jump to connections, objects, open tabs, snippets and commands from one keyboard-first surface.</p></div>
+          </article>
+          <article>
+            <button class="media-button" type="button" data-lightbox="assets/screenshots/connection-picker.png" aria-label="Open connection picker screenshot">
+              <img src="assets/screenshots/mobile/connection-picker-focus.png" alt="Connection picker with recent servers and connection groups" width="900" height="1080">
+            </button>
+            <div><span>Connections</span><h3>Switch without resetting</h3><p>Recent servers, folders, status and environment color stay visible without leaving the active workspace.</p></div>
+          </article>
+          <article>
+            <button class="media-button" type="button" data-lightbox="assets/screenshots/multitab.png" aria-label="Open SQL workspace screenshot">
+              <img src="assets/screenshots/mobile/multitab-focus.png" alt="SQL editor with schema context and independent tabs" width="820" height="1080">
+            </button>
+            <div><span>SQL</span><h3>Context in the editor</h3><p>Schema-aware completion, formatting, Explain, snippets, history and exports share the same workspace.</p></div>
+          </article>
+          <article>
+            <button class="media-button" type="button" data-lightbox="assets/screenshots/table-data.png" aria-label="Open safe table editing screenshot">
+              <img src="assets/screenshots/mobile/table-data-focus.png" alt="Typed table editing with filters and buffered changes" width="900" height="1080">
+            </button>
+            <div><span>Table data</span><h3>Edit with an identity</h3><p>Typed values, cell-driven filters and identity checks keep changes explicit before they reach the database.</p></div>
+          </article>
+        </div>
+      </section>
+
       <section class="personal-section section">
         <div class="shell personal-heading">
-          <p class="section-index">05 / Yours by default</p>
+          <p class="section-index">06 / Yours by default</p>
           <h2>Local by design.<br>Personal where it matters.</h2>
           <p>Credentials stay in the operating system’s encrypted store. Connections support SSL, SSH, read-only mode and environment cues, while theme, density, font size and language adapt the workspace to you.</p>
         </div>
         <div class="shell personal-gallery" data-reveal>
           <button class="media-button personal-primary" type="button" data-lightbox="assets/screenshots/new-connection.png" aria-label="Open new connection screenshot">
-            <img src="assets/screenshots/new-connection.png" alt="LakeDB connection editor with General, SSH, Security and Diagnostics sections" width="1920" height="1080">
+            <picture>
+              <source media="(max-width: 760px)" srcset="assets/screenshots/mobile/new-connection-focus.png">
+              <img src="assets/screenshots/new-connection.png" alt="LakeDB connection editor with General, SSH, Security and Diagnostics sections" width="1920" height="1080">
+            </picture>
           </button>
           <button class="media-button personal-secondary" type="button" data-lightbox="assets/screenshots/preferences.png" aria-label="Open preferences screenshot">
-            <img src="assets/screenshots/preferences.png" alt="LakeDB preferences for appearance, language, editor and updates" width="1920" height="1080">
+            <picture>
+              <source media="(max-width: 760px)" srcset="assets/screenshots/mobile/preferences-focus.png">
+              <img src="assets/screenshots/preferences.png" alt="LakeDB preferences for appearance, language, editor and updates" width="1920" height="1080">
+            </picture>
           </button>
           <div class="personal-note">
             <span>On your machine</span>
@@ -223,7 +279,7 @@
       <section class="downloads section" id="downloads">
         <div class="shell download-layout">
           <div class="download-copy">
-            <p class="section-index">06 / Downloads</p>
+            <p class="section-index">07 / Downloads</p>
             <h2>Built for the desktop you already use.</h2>
             <a class="button button-primary" href="https://github.com/DavLagoHern/LakeDB/releases/latest" data-download-link>
               <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v12m0 0 5-5m-5 5-5-5M4 19h16"/></svg>
@@ -251,9 +307,32 @@
         </div>
       </section>
 
+      <section class="docs-section section" id="docs">
+        <div class="shell docs-layout">
+          <div class="docs-copy">
+            <p class="section-index">08 / Documentation</p>
+            <h2>The manual is part<br>of the product.</h2>
+            <p>Start with a five-minute setup or go directly to the workflow you need. The Wiki covers installation, connections, SQL, safe editing, data tools, recovery and troubleshooting.</p>
+            <a class="button button-secondary docs-button" href="https://github.com/DavLagoHern/LakeDB/wiki" target="_blank" rel="noreferrer">
+              Browse the complete Wiki
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg>
+            </a>
+          </div>
+          <nav class="guide-list" aria-label="LakeDB documentation guides">
+            <a href="https://github.com/DavLagoHern/LakeDB/wiki/Getting-Started" target="_blank" rel="noreferrer"><span>01</span><strong>Getting started</strong><em>Create a connection and run your first query</em><b>↗</b></a>
+            <a href="https://github.com/DavLagoHern/LakeDB/wiki/Installation" target="_blank" rel="noreferrer"><span>02</span><strong>Installation</strong><em>Windows, macOS, Linux and first-launch warnings</em><b>↗</b></a>
+            <a href="https://github.com/DavLagoHern/LakeDB/wiki/Connections-SSL-and-SSH" target="_blank" rel="noreferrer"><span>03</span><strong>Connections, SSL &amp; SSH</strong><em>Profiles, environments, tunnels and diagnostics</em><b>↗</b></a>
+            <a href="https://github.com/DavLagoHern/LakeDB/wiki/SQL-Editor" target="_blank" rel="noreferrer"><span>04</span><strong>SQL editor</strong><em>Completion, formatting, Explain, snippets and exports</em><b>↗</b></a>
+            <a href="https://github.com/DavLagoHern/LakeDB/wiki/Tables-and-Safe-Editing" target="_blank" rel="noreferrer"><span>05</span><strong>Tables &amp; safe editing</strong><em>Filters, typed values, row identity and rollback</em><b>↗</b></a>
+            <a href="https://github.com/DavLagoHern/LakeDB/wiki/Backup-Import-and-Migrations" target="_blank" rel="noreferrer"><span>06</span><strong>Backup, import &amp; migrations</strong><em>Review-first operational workflows</em><b>↗</b></a>
+            <a href="https://github.com/DavLagoHern/LakeDB/wiki/Troubleshooting" target="_blank" rel="noreferrer"><span>07</span><strong>Troubleshooting</strong><em>Resolve launch, connection, restore and editing issues</em><b>↗</b></a>
+          </nav>
+        </div>
+      </section>
+
       <section class="roadmap section" id="roadmap">
         <div class="shell roadmap-heading">
-          <p class="section-index">07 / Roadmap</p>
+          <p class="section-index">09 / Roadmap</p>
           <h2>From public beta<br>to a trusted 1.0.</h2>
         </div>
         <div class="shell roadmap-line">
@@ -288,7 +367,7 @@
       <section class="community section">
         <div class="shell community-layout">
           <div>
-            <p class="section-index">08 / Community</p>
+            <p class="section-index">10 / Community</p>
             <h2>Help shape LakeDB.</h2>
             <p>LakeDB is already used for daily database work, but the beta is where feedback can still change the product. Report a rough edge, propose a workflow or help sustain independent development.</p>
           </div>
