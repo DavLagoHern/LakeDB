@@ -151,6 +151,10 @@ Financial support is completely optional. Testing the beta, reporting
 reproducible issues, proposing improvements and sharing LakeDB are equally
 valuable ways to help the project.
 
+<p align="center">
+  <a href="https://www.patreon.com/LakeDB"><img alt="Support LakeDB on Patreon" src="https://img.shields.io/badge/SUPPORT_LAKEDB-PATREON-06132b?style=flat-square&logo=patreon&logoColor=12d9ff"></a>
+</p>
+
 ## Help shape LakeDB
 
 - Read the [Wiki](https://github.com/DavLagoHern/LakeDB/wiki) for installation, workflows and troubleshooting.
