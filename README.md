@@ -100,6 +100,12 @@ Open the [latest LakeDB 0.11 beta release](https://github.com/DavLagoHern/LakeDB
 | Windows x64         | `LakeDB-*-win-x64-setup.exe`                                   | Run the installer. A portable `.exe` is also available.      |
 | Linux x64           | `LakeDB-*-linux-x86_64.AppImage` or `LakeDB-*-linux-amd64.deb` | Make the AppImage executable, or install the Debian package. |
 
+> **Windows users upgrading from 0.11.0 or 0.11.1:** use **View release** and
+> run the 0.11.2 setup executable manually. The experimental **Restart and
+> update** action in those installed builds can close LakeDB without completing
+> the installation. From 0.11.2 onward, LakeDB opens the normal visible
+> installer and stays running.
+
 LakeDB is still a public beta. The macOS package has an integrity-preserving
 ad-hoc signature but is not yet signed with a trusted Apple Developer ID or
 notarized; the Windows package does not yet have a trusted code-signing

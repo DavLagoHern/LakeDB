@@ -15,6 +15,14 @@ Only real tagged builds are listed as releases. The 0.2–0.4 product stages wer
 
 ## 0.11
 
+### 0.11.2-beta.2
+
+- `FIX` Replace the unreliable silent Windows updater with the normal visible installer.
+- `FIX` Keep LakeDB open while Windows setup runs and confirm when the installer has opened.
+- `SECURITY` Preserve SHA-256 verification before exposing the downloaded installer.
+
+[Release notes and downloads](https://github.com/DavLagoHern/LakeDB/releases/tag/v0.11.2-beta.2)
+
 ### 0.11.1-beta.2
 
 - `FIX` Expose the **LakeDB** menu in the custom Windows title bar.
