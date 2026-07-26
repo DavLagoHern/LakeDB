@@ -13,7 +13,19 @@ Packaged downloads are retained for the current build, the previous patch and th
 
 Only real tagged builds are listed as releases. The 0.2–0.4 product stages were development milestones rather than public tags, and 0.10.0–0.10.2 were not published as separate builds.
 
-## Next beta — prepared locally
+## Beta 3
+
+### Beta 3.1 (`1.0.0-beta.3.1`)
+
+- `FIX` Close LakeDB on macOS only after the verified DMG opens successfully.
+- `FIX` Show progress and prevent repeated clicks while opening an update
+  package.
+- `FIX` Keep LakeDB running and expose the error when a package cannot be
+  opened.
+- `CHANGE` Keep the normal Windows installer visible while LakeDB remains
+  available.
+
+[Release notes and downloads](https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.3.1)
 
 ### Beta 3.0 (`1.0.0-beta.3.0`)
 
@@ -25,6 +37,8 @@ Only real tagged builds are listed as releases. The 0.2–0.4 product stages wer
 - `FIX` restore proactive schema, table, alias, column, PK and index completion.
 - `SECURITY` keep credentials, rows and results off the AI service and retain no
   question, generated SQL or schema metadata.
+
+[Release notes and downloads](https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.3.0)
 
 ## 0.11
 
