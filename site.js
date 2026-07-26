@@ -3,6 +3,29 @@ const menuToggle = document.querySelector("[data-menu-toggle]");
 const nav = document.querySelector("[data-nav]");
 const lightbox = document.querySelector("[data-lightbox-dialog]");
 const lightboxImage = document.querySelector("[data-lightbox-image]");
+const themeToggle = document.querySelector("[data-theme-toggle]");
+const themeLabel = document.querySelector("[data-theme-label]");
+const themeColor = document.querySelector('meta[name="theme-color"]');
+
+const setThemeControl = () => {
+  const isLight = document.documentElement.dataset.theme === "light";
+  themeToggle?.setAttribute("aria-pressed", String(isLight));
+  themeToggle?.setAttribute("aria-label", isLight ? "Switch to dark theme" : "Switch to light theme");
+  if (themeLabel) themeLabel.textContent = isLight ? "Dark" : "Light";
+  if (themeColor) themeColor.content = isLight ? "#ffffff" : "#020817";
+};
+
+setThemeControl();
+
+themeToggle?.addEventListener("click", () => {
+  const nextTheme = document.documentElement.dataset.theme === "light" ? "dark" : "light";
+  if (nextTheme === "light") document.documentElement.dataset.theme = "light";
+  else delete document.documentElement.dataset.theme;
+  try {
+    localStorage.setItem("lakedb-theme", nextTheme);
+  } catch {}
+  setThemeControl();
+});
 
 const setHeaderState = () => {
   header?.classList.toggle("is-scrolled", window.scrollY > 24);
