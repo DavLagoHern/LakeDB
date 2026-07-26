@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">The road to LakeDB 1.0</title>
+  <desc id="desc">A three-stop product direction from the existing SQL foundation, through QuerIA in Beta 3.0, toward a trusted AI SQL client in 1.0.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#020713"/>
+      <stop offset=".58" stop-color="#06152a"/>
+      <stop offset="1" stop-color="#08213d"/>
+    </linearGradient>
+    <linearGradient id="path" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#1686ff"/>
+      <stop offset=".52" stop-color="#36e6ff"/>
+      <stop offset="1" stop-color="#55f0bd"/>
+    </linearGradient>
+    <linearGradient id="ai" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#68f5ff"/>
+      <stop offset="1" stop-color="#118cff"/>
+    </linearGradient>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="13" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" rx="30" fill="url(#bg)"/>
+  <circle cx="1490" cy="30" r="300" fill="#0b7cff" opacity=".07"/>
+  <path d="M0 785C255 670 470 802 760 727C1030 657 1280 678 1600 590V900H0Z" fill="#0a6a85" opacity=".08"/>
+
+  <g fill="none" stroke="#087dff" stroke-width="1.2" opacity=".26">
+    <path d="M-80 845C170 690 345 930 590 820"/>
+    <path d="M-80 870C180 710 360 955 610 842"/>
+    <path d="M1270 -45C1375 100 1500 10 1660 165"/>
+    <path d="M1300 -60C1400 110 1525 25 1680 195"/>
+  </g>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="72" y="82" fill="#7fdfff" font-size="18" font-weight="800" letter-spacing="3">LAKEDB ROADMAP</text>
+    <text x="72" y="150" fill="#ffffff" font-size="56" font-weight="900">The road to LakeDB 1.0</text>
+    <text x="72" y="195" fill="#9bb0ca" font-size="21">One clear direction: ACTUAL → BETA 3.0 → 1.0</text>
+
+    <text x="205" y="296" fill="#7f96b2" font-size="15" font-weight="900" letter-spacing="2">ACTUAL</text>
+    <text x="205" y="346" fill="#ffffff" font-size="38" font-weight="900">SQL foundation</text>
+    <text x="205" y="380" fill="#9bb0ca" font-size="17">Complete local client</text>
+    <text x="205" y="408" fill="#9bb0ca" font-size="17">Schema-aware editing · safe operations</text>
+
+    <text x="800" y="275" text-anchor="middle" fill="#55f0bd" font-size="16" font-weight="900" letter-spacing="2">BETA 3.0 · NOW</text>
+    <text x="684" y="350" fill="#ffffff" font-size="64" font-weight="900">Quer</text>
+    <text x="825" y="350" fill="url(#ai)" font-size="64" font-weight="900" filter="url(#glow)">IA</text>
+    <text x="800" y="390" text-anchor="middle" fill="#d7edff" font-size="20" font-weight="800">AI becomes part of the SQL workflow</text>
+
+    <text x="1265" y="296" fill="#7fdfff" font-size="15" font-weight="900" letter-spacing="2">1.0</text>
+    <text x="1265" y="346" fill="#ffffff" font-size="38" font-weight="900">Trusted AI client</text>
+    <text x="1265" y="380" fill="#9bb0ca" font-size="17">Deeper database understanding</text>
+    <text x="1265" y="408" fill="#9bb0ca" font-size="17">Measured quality · trusted delivery</text>
+
+    <path d="M160 500C380 500 545 500 800 500C1055 500 1220 500 1440 500" stroke="#173953" stroke-width="8" stroke-linecap="round"/>
+    <path d="M160 500C380 500 545 500 800 500C1055 500 1220 500 1440 500" stroke="url(#path)" stroke-width="4" stroke-linecap="round" filter="url(#glow)"/>
+
+    <circle cx="250" cy="500" r="13" fill="#06152a" stroke="#1686ff" stroke-width="5"/>
+    <circle cx="800" cy="500" r="56" fill="#082039" stroke="#36e6ff" stroke-width="3" opacity=".48" filter="url(#glow)"/>
+    <circle cx="800" cy="500" r="27" fill="#06152a" stroke="#55f0bd" stroke-width="7"/>
+    <circle cx="1350" cy="500" r="13" fill="#06152a" stroke="#55f0bd" stroke-width="5"/>
+
+    <text x="250" y="564" text-anchor="middle" fill="#7f96b2" font-size="15" font-weight="800">BUILT AND AVAILABLE</text>
+    <text x="800" y="590" text-anchor="middle" fill="#ffffff" font-size="22" font-weight="900">Natural language → reviewable SQL → local execution</text>
+    <text x="800" y="630" text-anchor="middle" fill="#55f0bd" font-size="17" font-weight="900" letter-spacing="1.2">SELECT · INSERT · UPDATE · CREATE TABLE · ALTER TABLE</text>
+    <text x="1350" y="564" text-anchor="middle" fill="#7f96b2" font-size="15" font-weight="800">DIRECTION, NOT A DATE</text>
+
+    <g transform="translate(260 700)">
+      <circle cx="0" cy="0" r="5" fill="#36e6ff"/>
+      <text x="18" y="6" fill="#d7edff" font-size="17" font-weight="800">Review first</text>
+      <text x="18" y="34" fill="#8ea4be" font-size="15">Prepared SQL remains visible</text>
+    </g>
+    <g transform="translate(640 700)">
+      <circle cx="0" cy="0" r="5" fill="#55f0bd"/>
+      <text x="18" y="6" fill="#d7edff" font-size="17" font-weight="800">Explicit control</text>
+      <text x="18" y="34" fill="#8ea4be" font-size="15">Nothing runs automatically</text>
+    </g>
+    <g transform="translate(1035 700)">
+      <circle cx="0" cy="0" r="5" fill="#1686ff"/>
+      <text x="18" y="6" fill="#d7edff" font-size="17" font-weight="800">Local SQL client</text>
+      <text x="18" y="34" fill="#8ea4be" font-size="15">The complete foundation remains</text>
+    </g>
+
+    <text x="72" y="854" fill="#6f87a5" font-size="15">Updated for LakeDB Beta 3.0 · Product direction, not a fixed release calendar.</text>
+  </g>
+</svg>

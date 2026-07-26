@@ -1,6 +1,8 @@
 # LakeDB privacy
 
-LakeDB is a local desktop application. It has no telemetry, advertising, analytics SDK, LakeDB account or LakeDB cloud synchronization service.
+LakeDB is a local-first desktop application. It has no advertising, analytics
+SDK or cloud synchronization service. QuerIA is an optional network feature
+that remains disabled until you review this notice and explicitly activate it.
 
 ## Data that stays on your computer
 
@@ -24,7 +26,23 @@ LakeDB makes network requests only for a feature you use:
 - update downloads come from official LakeDB GitHub release assets; and
 - external links open in your default browser.
 
-LakeDB does not proxy database traffic through a LakeDB service and does not send connection settings, credentials, SQL text or result data to the LakeDB project.
+LakeDB does not proxy database traffic through a LakeDB service.
+
+Before activation, LakeDB makes no request to LakeDB Service. Choosing **Do not
+activate yet** keeps QuerIA offline. You can review the choice later in
+Preferences.
+
+After activation, using QuerIA sends the natural-language question and the
+minimum schema metadata needed to prepare SQL over HTTPS to LakeDB Service for
+temporary processing. Database credentials, table rows and query results are
+never sent. The generated SQL is shown for review and runs locally only after
+you choose to execute it.
+
+LakeDB Service does not store the question, generated SQL, schema metadata,
+table names or query results. It retains only an anonymous account identifier,
+optional email or alias, plan, usage totals, success/failure, token totals,
+and latency. Email and alias are optional and used only to identify an account
+for support or manually assigned access.
 
 ## Credentials
 

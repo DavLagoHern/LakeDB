@@ -3,15 +3,14 @@
 </p>
 
 <p align="center">
-  <strong>A calm, modern desktop client for MySQL and MariaDB.</strong><br>
-  Manage every connection, query and dataset without fighting your tools.
+  <strong>A complete MySQL and MariaDB desktop client with reviewable AI.</strong><br>
+  Ask in natural language, inspect the SQL, and run it through the same local workflow you trust.
 </p>
 
 <p align="center">
   <a href="https://davlagohern.github.io/LakeDB/"><img alt="LakeDB website" src="https://img.shields.io/badge/WEBSITE-EXPLORE_LAKEDB-19d2ff?style=for-the-badge&logoColor=020817"></a>
-  <a href="https://github.com/DavLagoHern/LakeDB/releases/latest"><img alt="LakeDB 0.11 public beta" src="https://img.shields.io/badge/PUBLIC_BETA-0.11-55f0bd?style=for-the-badge&logo=github&logoColor=020817"></a>
-  <a href="https://github.com/DavLagoHern/LakeDB/releases/latest"><img alt="Download the latest LakeDB 0.11 beta" src="https://img.shields.io/badge/DOWNLOAD-0.11_BETA-0b7cff?style=for-the-badge&logo=github&logoColor=white"></a>
-  <a href="https://github.com/DavLagoHern/LakeDB/discussions"><img alt="LakeDB community" src="https://img.shields.io/badge/COMMUNITY-DISCUSSIONS-12d9ff?style=for-the-badge&logo=github&logoColor=020817"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/latest"><img alt="LakeDB Beta 3.0" src="https://img.shields.io/badge/PUBLIC_BETA-3.0-55f0bd?style=for-the-badge&logo=github&logoColor=020817"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/latest"><img alt="Download LakeDB Beta 3.0" src="https://img.shields.io/badge/DOWNLOAD-BETA_3.0-0b7cff?style=for-the-badge&logo=github&logoColor=white"></a>
   <a href="https://www.patreon.com/LakeDB"><img alt="Support LakeDB on Patreon" src="https://img.shields.io/badge/SUPPORT-PATREON-06132b?style=for-the-badge&logo=patreon&logoColor=12d9ff"></a>
 </p>
 
@@ -25,161 +24,181 @@
 
 ---
 
-## Your databases, without the noise
-
-LakeDB is built for people who work with many MySQL and MariaDB connections every day. Every server gets its own workspace, SQL editor, object explorer, table views and independent state.
-
-### Many servers, one calm workspace
-
-Keep many database connections open at the same time and give each one as many SQL and table tabs as you need. Every connection preserves its own active tab, selected schema, editor content, table state and layout, so switching from local to staging or production never mixes your working context. Close LakeDB—or recover from an unexpected stop—and the complete multiconnection workspace comes back.
-
 <p align="center">
-  <img src="assets/screenshots/multitab.png" width="100%" alt="Multiple database connections open with independent SQL and table tabs in LakeDB">
+  <img src="assets/social/patreon/queria-beta-release-1920x1080.png" width="100%" alt="LakeDB Beta 3.0 introduces AI through QuerIA">
 </p>
 
-<p align="center"><sub>Four connection workspaces open at once; the active connection keeps its own SQL and table tabs.</sub></p>
+<p align="center"><sub><strong>AI is the headline of Beta 3.0.</strong> Quer<span style="color:#19d2ff">IA</span> turns a natural-language request into SQL you can inspect before anything runs.</sub></p>
 
-### SQL that understands your schema
+## Meet Quer<span style="color:#19d2ff">IA</span>
 
-Complete databases, tables, aliases and columns from live metadata. LakeDB marks primary keys and indexes in suggestions, can insert multi-column index predicates after `WHERE`, formats compact or expanded SQL, and keeps query results or open tables visible below the editor.
+QuerIA brings natural language into the normal LakeDB query workflow. It is not
+a separate chatbot: it is a line-based query document beside your SQL tabs.
+Write several requests, prepare only the active line, review the complete SQL,
+copy it or explicitly run it through the normal local results panel.
 
-### Inspect, edit and design
+<p align="center">
+  <img src="assets/screenshots/queria.png" width="100%" alt="Real 16:9 LakeDB Beta 3.0 capture with QuerIA preparing SELECT, INSERT, UPDATE, CREATE TABLE and ALTER TABLE statements">
+</p>
 
-Browse large result sets in a virtualized grid, filter from the selected cell and edit rows with safe identity checks, conflict detection and rollback. Create or modify tables visually—columns, indexes, foreign keys and checks—while reviewing the generated SQL before applying it.
+<p align="center"><sub><strong>Five distinct workflows in a real Beta 3.0 session.</strong> One QuerIA document prepares SELECT, INSERT, UPDATE, CREATE TABLE and ALTER TABLE statements while the normal LakeDB results workspace stays in place.</sub></p>
 
-### Move data without losing control
+### More than a simple SELECT
 
-Export complete reviewed queries to CSV, JSON, JSON Lines, Excel-compatible or SQL files with streaming, cancellation and optional GZIP. Back up and restore databases, compare schemas, plan migrations and review imported connections before LakeDB saves anything.
+QuerIA Beta 3.0 can prepare one reviewable statement at a time:
 
-### Local by design
+- `SELECT`, `SHOW`, `DESCRIBE` and `EXPLAIN`;
+- `INSERT`, `UPDATE`, `DELETE` and `REPLACE`;
+- `CREATE`, `ALTER`, `DROP`, `TRUNCATE` and `RENAME`.
 
-Connections, credentials, SQL and result data stay on your computer. Passwords use the local encrypted credential store; read-only connections, production confirmations, recovery snapshots and a sandboxed renderer protect daily work.
+Examples:
 
-## What LakeDB 0.11 includes
+```text
+Show the 10 users who placed the most bets today,
+including bet count and total stake.
+```
 
-LakeDB 0.11 is the current public beta line. It combines the complete 0.10
-daily workflow with visual query plans, tab-owned transactions, Quick Open,
-editable SQL objects, granular schema comparison and operational diagnostics.
+```sql
+SELECT
+  `u`.`id`,
+  `u`.`email`,
+  COUNT(`b`.`id`) AS `bet_count`,
+  SUM(`b`.`stake`) AS `total_stake`
+FROM `users` AS `u`
+INNER JOIN `users_bets` AS `b` ON `b`.`user_id` = `u`.`id`
+WHERE `b`.`created_at` >= CURRENT_DATE()
+  AND `b`.`created_at` < CURRENT_DATE() + INTERVAL 1 DAY
+GROUP BY `u`.`id`, `u`.`email`
+ORDER BY `total_stake` DESC
+LIMIT 10;
+```
 
-| Area                   | Available today                                                                                                                                                                                                            |
-| ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Connections**        | Unlimited saved MySQL and MariaDB connections, folders, automatic group suggestions, environment colors, SSL, SSH tunnels, automatic reconnect and copyable diagnostics.                                                   |
-| **Workspaces**         | Multiple open connections at once, each with independent SQL tabs above and query-result/table tabs in a smoothly resizable lower pane.                                                                                    |
-| **SQL editor**         | Monaco Editor, schema-aware completion, automatic aliases, PK/index hints, persistent snippets, compact/expanded formatting, Explain plans, visual transactions, history and streaming exports up to 50 million rows. |
-| **Object explorer**    | Lazy loading for every object type; click a table to open it below, double-click to insert its quoted name, or open non-table objects as editable SQL with a definition diff.                                               |
-| **Table data**         | Virtualized grid, pagination, sorting, search, cell-driven filters and full-query export to CSV, JSON, JSON Lines, Excel-compatible `.xls` or SQL.                                                                         |
-| **Safe editing**       | Type-aware date/time, numeric, boolean and enum editors plus buffered changes, validation, conflict detection, rollback and checked text/JSON/HTML editing.                                                                |
-| **Backup and restore** | SQL database export, SQL restore with recovery backups, restore safeguards and production confirmation.                                                                                                                    |
-| **Migration Studio**   | Source/target selectors, granular column/index/foreign-key comparison, selectable multi-table migration plans, structure/data copy and truncate-first workflows.                                                            |
-| **Imports**            | Review and select DBeaver, SQLyog, JSON, CSV and MySQL/JDBC URL connections before saving; edit names/users, apply shared or individual passwords and resolve duplicates explicitly.                                       |
-| **Safety**             | Read-only connections, reinforced production confirmations, renderer sandboxing and no direct renderer access to filesystem, SQLite, credentials or database sockets.                                                      |
-| **Resilience**         | Home-first session restore, crash recovery, configuration backup/restore, verified in-app updates, local migrations with safety snapshots and diagnostics log.                                                              |
-| **Interface**          | Dark/light/system themes, density and font-size preferences, and English/Spanish UI ready for more languages.                                                                                                              |
-| **Operations**         | `Cmd/Ctrl+P` Quick Open, active-session monitor, query cancellation, beta feedback links and copyable sanitized support reports.                                                                                            |
+```text
+Prepare an insert for a new user with email ada@example.com.
+```
 
-Everything runs locally. LakeDB does not send your connections, queries or credentials to an external LakeDB service.
+```sql
+INSERT INTO `users` (`email`) VALUES ('ada@example.com');
+```
 
-<details>
-  <summary><strong>More screenshots</strong></summary>
-  <br>
-  <p align="center"><img src="assets/screenshots/table-data.png" width="100%" alt="Inspect, filter and safely edit table data in LakeDB"></p>
-  <p align="center"><img src="assets/screenshots/connection-picker.png" width="100%" alt="Browse recent LakeDB connections and folders"></p>
-  <p align="center"><img src="assets/screenshots/quick-open.png" width="100%" alt="Search LakeDB connections, tabs, objects, snippets and commands with Quick Open"></p>
-  <p align="center"><img src="assets/screenshots/new-connection.png" width="100%" alt="Create a connection in LakeDB"></p>
-  <p align="center"><img src="assets/screenshots/preferences.png" width="100%" alt="LakeDB preferences and language selector"></p>
-  <p align="center"><img src="assets/screenshots/database-tools.png" width="100%" alt="SQL backup, restore and migration tools"></p>
-</details>
+```text
+Create a user_segments table with an auto-increment primary key,
+a unique name, a description and timestamps.
+```
+
+```text
+Update the user with id 7 and change the email to ada.lovelace@example.com.
+```
+
+```text
+Alter the users table to add an optional last_login_at timestamp.
+```
+
+Prepared SQL is never executed automatically. LakeDB shows it first and uses
+the normal connection, read-only rules, production safeguards, messages,
+history and results only after explicit approval.
+
+## Private until you opt in
+
+QuerIA starts disabled. On first launch, LakeDB presents a privacy notice and
+beta terms with two clear choices:
+
+- **Activate and try QuerIA** enables the optional service.
+- **Do not activate yet** makes no request to LakeDB Service.
+
+You can review and activate it later from Preferences.
+
+<p align="center">
+  <img src="assets/screenshots/queria-activation.png" width="100%" alt="Real QuerIA activation dialog shown before LakeDB makes any service connection">
+</p>
+
+<p align="center"><sub><strong>Explicit opt-in before any service connection.</strong> The notice explains the data boundary and keeps QuerIA disabled when the user chooses “Do not activate yet”.</sub></p>
+
+When QuerIA is enabled and used:
+
+- the question and minimum useful schema metadata are processed temporarily;
+- database credentials, table rows and query results are never sent;
+- questions, generated SQL, schema metadata and table names are not retained;
+- only an anonymous identifier, optional email or alias, plan, aggregate usage,
+  success or failure, token totals and latency are retained.
+
+The complete boundary is documented in [PRIVACY.md](PRIVACY.md) and the
+[QuerIA beta terms](TERMS.md). QuerIA includes a free beta allowance.
+Additional plans may be introduced later.
+
+## Still a complete SQL client
+
+AI joins the existing LakeDB workflow; it does not replace it.
+
+| Area | Available in Beta 3.0 |
+| --- | --- |
+| **Connections** | Multiple simultaneous MySQL and MariaDB connections, folders, environment colors, SSL, SSH tunnels, read-only mode and diagnostics. |
+| **Workspaces** | Independent SQL, QuerIA and table tabs for every connection, with restored editor content, selected schema and layout. |
+| **SQL editor** | Monaco Editor, proactive schema/table completion, aliases, columns, PK/index hints, snippets, formatting, Explain, transactions, history and streaming exports. |
+| **QuerIA** | Multiple question lines and tabs, minimum-schema grounding, visible SQL review, copy and explicit local execution. |
+| **Table data** | Virtualized grids, pagination, search, sorting, cell-driven filters and typed safe editing with conflict checks and rollback. |
+| **Database tools** | Backup, restore, schema comparison, migration planning, connection imports and reviewable generated SQL. |
+| **Safety** | Local encrypted credentials, production confirmations, renderer sandboxing, read-only enforcement and no remote database execution. |
+| **Resilience** | Crash recovery, disconnected session restore, configuration backup, verified updates, local migrations and diagnostics. |
+
+<p align="center">
+  <img src="assets/screenshots/multitab.png" width="100%" alt="Multiple independent LakeDB connection workspaces">
+</p>
+
+<p align="center"><sub><strong>The complete SQL foundation remains available.</strong> Each connection owns its SQL tabs, table tabs, active schema and restored workspace state.</sub></p>
+
+## QuerIA roadmap
+
+| Stage | Direction |
+| --- | --- |
+| **Actual** | Complete local SQL foundation: independent workspaces, schema-aware editing, safe data tools, operations and recovery. |
+| **Beta 3.0 — new** | Natural-language query documents, one grounded SELECT, DML or DDL statement, visible review and explicit local execution. |
+| **1.0 — direction** | Ideas include deeper table, field, relationship, index and SQL-object understanding, measured quality, stable privacy, signed delivery and product polish. |
+
+<p align="center">
+  <a href="ROADMAP.md"><img src="assets/roadmap/lakedb-roadmap-beta-3.0.png" width="100%" alt="LakeDB Beta 3.0 product and QuerIA roadmap toward 1.0"></a>
+</p>
+
+<p align="center"><sub><strong>Actual → Beta 3.0 → 1.0.</strong> The roadmap shows the existing SQL client, the QuerIA product step and the trusted-client direction without inventing intermediate release promises.</sub></p>
+
+Roadmap items describe direction, not a promise of a particular release date.
+See the [complete roadmap](ROADMAP.md) for product and trust milestones.
 
 ## Download
 
-Open the [latest LakeDB 0.11 beta release](https://github.com/DavLagoHern/LakeDB/releases/latest) and choose your platform:
+Open the [latest LakeDB release](https://github.com/DavLagoHern/LakeDB/releases/latest)
+and choose your platform:
 
-| Platform            | Download                                                       | Install                                                      |
-| ------------------- | -------------------------------------------------------------- | ------------------------------------------------------------ |
-| macOS Apple Silicon | `LakeDB-*-mac-arm64.dmg` or `.zip`                             | Open the DMG or move `LakeDB.app` to Applications.           |
-| Windows x64         | `LakeDB-*-win-x64-setup.exe`                                   | Run the installer. A portable `.exe` is also available.      |
-| Linux x64           | `LakeDB-*-linux-x86_64.AppImage` or `LakeDB-*-linux-amd64.deb` | Make the AppImage executable, or install the Debian package. |
+| Platform | Download | Install |
+| --- | --- | --- |
+| macOS Apple Silicon | `LakeDB-*-mac-arm64.dmg` or `.zip` | Open the DMG or move `LakeDB.app` to Applications. |
+| Windows x64 | `LakeDB-*-win-x64-setup.exe` | Run the installer. A portable `.exe` is also available. |
+| Linux x64 | `LakeDB-*-linux-x86_64.AppImage` or `LakeDB-*-linux-amd64.deb` | Make the AppImage executable, or install the Debian package. |
 
-> **Windows users upgrading from 0.11.0 or 0.11.1:** use **View release** and
-> run the 0.11.2 setup executable manually. The experimental **Restart and
-> update** action in those installed builds can close LakeDB without completing
-> the installation. From 0.11.2 onward, LakeDB opens the normal visible
-> installer and stays running.
-
-LakeDB is still a public beta. The macOS package has an integrity-preserving
-ad-hoc signature but is not yet signed with a trusted Apple Developer ID or
-notarized; the Windows package does not yet have a trusted code-signing
-certificate. Only download LakeDB from this official repository and use the
-matching SHA-256 checksum.
-
-<details>
-  <summary><strong>First-launch security warning</strong></summary>
-  <br>
-
-- **macOS:** move `LakeDB.app` to Applications and try to open it once. Then
-  open **System Settings → Privacy & Security**, scroll to Security and choose
-  **Open Anyway**. Confirm **Open** when macOS asks again.
-- **Windows:** if Microsoft Defender SmartScreen appears, confirm that the
-  installer or portable EXE came from this release, choose **More info**, then
-  **Run anyway**.
-
-These warnings are expected for the pre-1.0 beta. Do not bypass a warning for a
-file obtained from another website or whose SHA-256 does not match. Stable 1.0+
-publication is configured to require trusted macOS/Windows signing and Apple
-notarization.
-
-</details>
-
-## Version history
-
-The latest build is **0.11.3 Beta 2**. The [version history](VERSION-HISTORY.md) records every published build with concise `ADD`, `CHANGE`, `FIX` and `SECURITY` entries. Full notes and installers remain attached to the downloadable releases retained on GitHub.
-
-## The road to LakeDB 1.0
-
-<p align="center">
-  <a href="ROADMAP.md"><img src="assets/roadmap/lakedb-roadmap-v0.11.png" width="100%" alt="LakeDB 0.11 beta capabilities and the trust work planned before 1.0"></a>
-</p>
-
-The [roadmap](ROADMAP.md) follows the product milestones from the first LakeDB foundation through the current 0.11 beta, then shows the trust and compatibility work remaining for 1.0. Patch-level details stay in the version history.
-
-## English and Spanish, ready for more
-
-LakeDB is available in English and Spanish. Change the interface language under **Preferences → Language**; the application menu and workspace update with it. The translation layer is structured so more languages can be added without rewriting individual screens.
-
-## Support LakeDB
-
-LakeDB is developed independently and the public beta remains the same
-application for everyone. If LakeDB is useful in your daily work, you can
-[support its continued development on Patreon](https://www.patreon.com/LakeDB).
-Memberships help with builds, code signing, release infrastructure and the work
-toward LakeDB 1.0.
-
-Financial support is completely optional. Testing the beta, reporting
-reproducible issues, proposing improvements and sharing LakeDB are equally
-valuable ways to help the project.
-
-<p align="center">
-  <a href="https://www.patreon.com/LakeDB"><img alt="Support LakeDB on Patreon" src="https://img.shields.io/badge/SUPPORT_LAKEDB-PATREON-06132b?style=flat-square&logo=patreon&logoColor=12d9ff"></a>
-</p>
+LakeDB is still a public beta. macOS packages are ad-hoc signed but not yet
+notarized; Windows packages do not yet have a trusted code-signing certificate.
+Only download LakeDB from this repository and verify the published SHA-256.
 
 ## Help shape LakeDB
 
-- Read the [Wiki](https://github.com/DavLagoHern/LakeDB/wiki) for installation, workflows and troubleshooting.
-- Follow [LakeDB on Patreon](https://www.patreon.com/LakeDB) for release announcements, development updates and roadmap polls.
-- Propose and vote on features in [Ideas](https://github.com/DavLagoHern/LakeDB/discussions/categories/ideas).
-- Ask for help in [Q&A](https://github.com/DavLagoHern/LakeDB/discussions/categories/q-a).
+- Read the [Wiki](https://github.com/DavLagoHern/LakeDB/wiki).
 - Report reproducible bugs with the [bug report form](https://github.com/DavLagoHern/LakeDB/issues/new?template=bug-report.yml).
-- Check the [community guide](COMMUNITY.md) before posting logs or screenshots.
-- Review the [compatibility](COMPATIBILITY.md) and [support](SUPPORT.md) policies before reporting environment-specific behaviour.
-- Read the [privacy](PRIVACY.md) and [security](SECURITY.md) policies before sharing diagnostics or reporting a vulnerability.
+- Propose and discuss ideas in [GitHub Discussions](https://github.com/DavLagoHern/LakeDB/discussions).
+- Support signing, infrastructure and independent development on [Patreon](https://www.patreon.com/LakeDB).
+
+Patreon support is optional and is not connected to QuerIA allowances in Beta
+3.0. Testing, reporting and sharing LakeDB are equally useful.
 
 ## About this repository
 
-This is LakeDB's official public repository. It hosts binaries, release notes, documentation, issues and the public roadmap. The application source is maintained separately; published binaries are produced by the guarded release pipeline after the complete test suite passes.
+This is LakeDB's official public repository. It hosts binaries, release notes,
+documentation, issues and the public roadmap. Application source is maintained
+separately; published binaries come from the guarded release pipeline after the
+complete test suite passes.
 
 ---
 
 <p align="center">
   <img src="assets/lakedb-app-icon.png" width="84" alt="LakeDB icon"><br>
-  <strong>Modern database. Deeper insights.</strong>
+  <strong>SQL when you want it. Natural language when you need it.</strong>
 </p>

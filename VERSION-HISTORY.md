@@ -13,6 +13,19 @@ Packaged downloads are retained for the current build, the previous patch and th
 
 Only real tagged builds are listed as releases. The 0.2–0.4 product stages were development milestones rather than public tags, and 0.10.0–0.10.2 were not published as separate builds.
 
+## Next beta — prepared locally
+
+### Beta 3.0 (`1.0.0-beta.3.0`)
+
+- `ADD` QuerIA natural-language documents with minimum-schema grounding,
+  visible SQL review, copy and explicit local execution.
+- `ADD` reviewable SELECT, DML and DDL preparation.
+- `ADD` first-run opt-in with no service request before activation.
+- `CHANGE` position LakeDB as a complete SQL client with optional AI.
+- `FIX` restore proactive schema, table, alias, column, PK and index completion.
+- `SECURITY` keep credentials, rows and results off the AI service and retain no
+  question, generated SQL or schema metadata.
+
 ## 0.11
 
 ### 0.11.3-beta.2
