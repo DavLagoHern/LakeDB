@@ -25,7 +25,7 @@
 ---
 
 <p align="center">
-  <img src="assets/social/patreon/queria-beta-release-1920x1080.png" width="100%" alt="LakeDB Beta 3.0 introduces AI through QuerIA">
+  <img src="assets/screenshots/queria.png" width="100%" alt="QuerIA preparing reviewable SQL inside LakeDB Beta 3.0">
 </p>
 
 <p align="center"><sub><strong>AI is the headline of Beta 3.0.</strong> Quer<span style="color:#19d2ff">IA</span> turns a natural-language request into SQL you can inspect before anything runs.</sub></p>
