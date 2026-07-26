@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+>
+  <url>
+    <loc>https://davlagohern.github.io/LakeDB/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://davlagohern.github.io/LakeDB/assets/screenshots/queria.png</image:loc>
+      <image:caption>QuerIA prepares reviewable SQL inside the LakeDB desktop client.</image:caption>
+      <image:title>LakeDB QuerIA natural-language SQL editor</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://davlagohern.github.io/LakeDB/assets/screenshots/multitab.png</image:loc>
+      <image:caption>Independent multi-connection SQL workspaces in LakeDB.</image:caption>
+      <image:title>LakeDB multi-connection SQL client</image:title>
+    </image:image>
+  </url>
+</urlset>

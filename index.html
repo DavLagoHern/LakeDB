@@ -5,19 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#020817">
     <meta name="color-scheme" content="dark">
+    <meta name="application-name" content="LakeDB">
+    <meta name="author" content="LakeDB">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <title>LakeDB — The SQL client with QuerIA</title>
     <meta name="description" content="A local-first MySQL and MariaDB desktop client with reviewable natural-language SQL, schema-aware completion and complete database tools.">
     <link rel="canonical" href="https://davlagohern.github.io/LakeDB/">
+    <link rel="alternate" hreflang="en" href="https://davlagohern.github.io/LakeDB/">
+    <link rel="alternate" hreflang="x-default" href="https://davlagohern.github.io/LakeDB/">
     <link rel="icon" href="assets/lakedb-app-icon.png">
     <meta property="og:type" content="website">
+    <meta property="og:site_name" content="LakeDB">
+    <meta property="og:locale" content="en_US">
     <meta property="og:title" content="LakeDB Beta 3.0 — Meet QuerIA">
     <meta property="og:description" content="Ask in natural language, review the SQL and run it locally from a complete SQL client.">
     <meta property="og:url" content="https://davlagohern.github.io/LakeDB/">
-    <meta property="og:image" content="https://raw.githubusercontent.com/DavLagoHern/LakeDB/main/assets/screenshots/queria.png">
+    <meta property="og:image" content="https://davlagohern.github.io/LakeDB/assets/screenshots/queria.png">
+    <meta property="og:image:secure_url" content="https://davlagohern.github.io/LakeDB/assets/screenshots/queria.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1920">
+    <meta property="og:image:height" content="1080">
+    <meta property="og:image:alt" content="QuerIA preparing reviewable SQL inside the LakeDB desktop client">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="LakeDB Beta 3.0 — Meet QuerIA">
     <meta name="twitter:description" content="A complete SQL client with reviewable natural-language SQL.">
-    <meta name="twitter:image" content="https://raw.githubusercontent.com/DavLagoHern/LakeDB/main/assets/screenshots/queria.png">
+    <meta name="twitter:image" content="https://davlagohern.github.io/LakeDB/assets/screenshots/queria.png">
+    <meta name="twitter:image:alt" content="QuerIA preparing reviewable SQL inside the LakeDB desktop client">
     <script>
       (() => {
         try {
@@ -33,14 +46,65 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
-        "name": "LakeDB",
-        "applicationCategory": "DeveloperApplication",
-        "operatingSystem": "Windows 64-bit, macOS Apple Silicon, Linux 64-bit",
-        "description": "A local-first MySQL and MariaDB desktop client with reviewable natural-language SQL.",
-        "softwareVersion": "Beta 3.0",
-        "downloadUrl": "https://github.com/DavLagoHern/LakeDB/releases/latest",
-        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" }
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://davlagohern.github.io/LakeDB/#website",
+            "url": "https://davlagohern.github.io/LakeDB/",
+            "name": "LakeDB",
+            "description": "The local-first MySQL and MariaDB desktop client with reviewable AI.",
+            "inLanguage": "en"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://davlagohern.github.io/LakeDB/#organization",
+            "name": "LakeDB",
+            "url": "https://davlagohern.github.io/LakeDB/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://davlagohern.github.io/LakeDB/assets/lakedb-app-icon.png",
+              "width": 1024,
+              "height": 1024
+            },
+            "sameAs": [
+              "https://github.com/DavLagoHern/LakeDB",
+              "https://www.patreon.com/LakeDB"
+            ]
+          },
+          {
+            "@type": "SoftwareApplication",
+            "@id": "https://davlagohern.github.io/LakeDB/#software",
+            "name": "LakeDB",
+            "url": "https://davlagohern.github.io/LakeDB/",
+            "image": "https://davlagohern.github.io/LakeDB/assets/screenshots/queria.png",
+            "screenshot": "https://davlagohern.github.io/LakeDB/assets/screenshots/queria.png",
+            "applicationCategory": "DeveloperApplication",
+            "applicationSubCategory": "Database client",
+            "operatingSystem": "Windows 64-bit, macOS Apple Silicon, Linux 64-bit",
+            "description": "A local-first MySQL and MariaDB desktop client with reviewable natural-language SQL, schema-aware completion and complete database tools.",
+            "softwareVersion": "Beta 3.0",
+            "downloadUrl": "https://github.com/DavLagoHern/LakeDB/releases/latest",
+            "releaseNotes": "https://github.com/DavLagoHern/LakeDB/releases/latest",
+            "isAccessibleForFree": true,
+            "featureList": [
+              "Reviewable natural-language SQL with QuerIA",
+              "Schema-aware SQL autocomplete",
+              "Independent multi-connection workspaces",
+              "Local query execution and results",
+              "MySQL and MariaDB database tools"
+            ],
+            "publisher": {
+              "@id": "https://davlagohern.github.io/LakeDB/#organization"
+            },
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "EUR",
+              "availability": "https://schema.org/InStock",
+              "url": "https://github.com/DavLagoHern/LakeDB/releases/latest"
+            }
+          }
+        ]
       }
     </script>
   </head>
@@ -97,7 +161,7 @@
           </div>
           <figure class="hero-stage capture-frame" data-reveal>
             <button class="media-button" type="button" data-lightbox="assets/screenshots/queria.png" aria-label="Open the real QuerIA screenshot">
-              <img src="assets/screenshots/queria.png" alt="QuerIA preparing five kinds of reviewable SQL inside a real LakeDB workspace" width="1920" height="1080">
+              <img src="assets/screenshots/queria.png" alt="QuerIA preparing five kinds of reviewable SQL inside a real LakeDB workspace" width="1920" height="1080" fetchpriority="high" decoding="async">
             </button>
             <figcaption><strong>One QuerIA document, five real SQL workflows.</strong><span>This real 16:9 Beta 3.0 capture separates SELECT, INSERT, UPDATE, CREATE TABLE and ALTER TABLE, while results stay in the normal LakeDB workspace.</span></figcaption>
           </figure>
@@ -188,7 +252,7 @@ ADD COLUMN last_login_at TIMESTAMP NULL;</code></pre>
           <div class="tools-media" data-reveal>
             <figure class="capture-frame">
               <button class="media-button" type="button" data-lightbox="assets/screenshots/multitab.png" aria-label="Open the SQL workspace screenshot">
-                <img src="assets/screenshots/multitab.png" alt="Multiple independent SQL workspaces in LakeDB" width="1920" height="1080">
+                <img src="assets/screenshots/multitab.png" alt="Multiple independent SQL workspaces in LakeDB" width="1920" height="1080" loading="lazy" decoding="async">
               </button>
               <figcaption><strong>The complete client remains underneath QuerIA.</strong><span>Every connection owns its SQL tabs, table tabs, active schema and restored workspace state.</span></figcaption>
             </figure>
@@ -216,7 +280,7 @@ ADD COLUMN last_login_at TIMESTAMP NULL;</code></pre>
         <div class="shell personal-gallery consent-gallery" data-reveal>
           <figure class="capture-frame personal-primary">
             <button class="media-button" type="button" data-lightbox="assets/screenshots/queria-activation.png" aria-label="Open the real QuerIA activation screenshot">
-              <img src="assets/screenshots/queria-activation.png" alt="Real LakeDB activation dialog explaining QuerIA privacy before any service connection" width="1920" height="1080">
+              <img src="assets/screenshots/queria-activation.png" alt="Real LakeDB activation dialog explaining QuerIA privacy before any service connection" width="1920" height="1080" loading="lazy" decoding="async">
             </button>
             <figcaption><strong>Privacy is shown before the network feature exists.</strong><span>Choosing “Do not activate yet” keeps LakeDB from contacting the optional service.</span></figcaption>
           </figure>
@@ -236,7 +300,7 @@ ADD COLUMN last_login_at TIMESTAMP NULL;</code></pre>
         </div>
         <figure class="shell capture-frame roadmap-visual" data-reveal>
           <button class="media-button" type="button" data-lightbox="assets/roadmap/lakedb-roadmap-beta-3.0.png" aria-label="Open the LakeDB Beta 3.0 roadmap">
-            <img src="assets/roadmap/lakedb-roadmap-beta-3.0.png" alt="LakeDB roadmap from the current SQL foundation through Beta 3.0 to 1.0" width="1600" height="900">
+            <img src="assets/roadmap/lakedb-roadmap-beta-3.0.png" alt="LakeDB roadmap from the current SQL foundation through Beta 3.0 to 1.0" width="1600" height="900" loading="lazy" decoding="async">
           </button>
           <figcaption><strong>Three product moments, not a release calendar.</strong><span>The existing SQL foundation, the QuerIA step in Beta 3.0 and the trusted-client direction for 1.0.</span></figcaption>
         </figure>
