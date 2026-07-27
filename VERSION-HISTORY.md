@@ -13,6 +13,22 @@ Packaged downloads are retained for the current build, the previous patch and th
 
 Only real tagged builds are listed as releases. The 0.2–0.4 product stages were development milestones rather than public tags, and 0.10.0–0.10.2 were not published as separate builds.
 
+## Beta 4
+
+### Beta 4.0 (`1.0.0-beta.4.0`)
+
+- `ADD` Normal and Agentic QuerIA generation.
+- `ADD` bounded cross-database catalog, structure, key and index inspection.
+- `ADD` mandatory `EXPLAIN` review and visible plan signals for generated
+  `SELECT` statements.
+- `ADD` interactive table references in QuerIA results.
+- `ADD` connection search on Home and in the connection picker.
+- `ADD` stable device identity and in-app Beta Tester applications.
+- `CHANGE` follow the selected application language in QuerIA explanations.
+- `SECURITY` keep generated SQL visible and require explicit local execution.
+
+[Release notes and downloads](https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.4.0)
+
 ## Beta 3
 
 ### Beta 3.1 (`1.0.0-beta.3.1`)

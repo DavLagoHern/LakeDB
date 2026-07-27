@@ -1,55 +1,60 @@
 # LakeDB roadmap
 
-![LakeDB Beta 3.0 product and QuerIA roadmap toward 1.0](assets/roadmap/lakedb-roadmap-beta-3.0.png)
+![LakeDB Beta 4.0 product and QuerIA roadmap](assets/roadmap/lakedb-roadmap-beta-4.0.png)
 
-LakeDB Beta 3.0 changes the product from a local SQL client with advanced
-database tools into a local-first SQL client with an optional, reviewable AI
-query workflow. The roadmap tracks complete product stages rather than every
-patch.
+LakeDB Beta 4 moves QuerIA from direct statement preparation toward bounded
+database investigation. The roadmap tracks complete product stages rather than
+every patch.
 
-## Current: Beta 3.0
+## Current: Beta 4.0
 
-QuerIA prepares one schema-aware MySQL or MariaDB statement from the active
-natural-language line. It can prepare:
+QuerIA now offers two ways to prepare reviewable SQL:
 
-- `SELECT`, `SHOW`, `DESCRIBE` and `EXPLAIN`;
-- `INSERT`, `UPDATE`, `DELETE` and `REPLACE`;
-- `CREATE`, `ALTER`, `DROP`, `TRUNCATE` and `RENAME`.
+- **Normal** for direct questions and known tables.
+- **Agentic** for workflows that benefit from broader catalog discovery,
+  structure inspection, cross-database relationships, keys, indexes and
+  `EXPLAIN` review.
 
-Every statement is visible before execution. Approved SQL runs locally through
-the normal LakeDB connection, read-only rules, production safeguards, history,
-messages and result panels.
+Agentic generation is bounded by configurable context limits. It reports the
+tables used and the relevant plan signals, then returns visible SQL. It cannot
+execute a query by itself.
 
-Beta 3.0 also keeps the complete SQL client: multiple connection workspaces,
-schema-aware completion, safe table editing, large exports, Explain,
-transactions, backup, restore, comparison and migrations.
+Beta 4 also adds connection search, language-aware explanations, stable device
+identity, table links inside QuerIA results, clearer service states, Beta
+Tester applications and direct issue reporting.
 
-## From the current foundation to 1.0
+## Product stages
 
 | Stage | Direction |
 | --- | --- |
-| **Actual** | The complete local SQL foundation: multiple workspaces, schema-aware editing, safe data operations, Explain, transactions, backup, compare, migrate and recovery. |
-| **Beta 3.0 — new** | QuerIA natural-language documents, one schema-grounded SELECT, DML or DDL statement, visible SQL, explicit local execution and privacy opt-in. |
-| **1.0 — direction** | Ideas include deeper understanding of tables, fields, relationships, indexes, procedures and other SQL objects, measured quality, stable privacy boundaries, signed delivery and complete product polish. |
+| **SQL foundation** | Multiple workspaces, schema-aware editing, safe table operations, Explain, transactions, backup, compare, migrate and recovery. |
+| **Beta 3** | QuerIA natural-language documents, schema-grounded SQL, visible review, explicit local execution and privacy opt-in. |
+| **Beta 4 — current** | Normal and Agentic generation, cross-database relationships, table and index inspection, plan review and community testing. |
+| **1.0 — direction** | Measured AI quality, trusted distribution, compatibility validation, accessibility and complete product polish. |
 
 Future stages describe direction, not a fixed date or guaranteed scope.
-Feedback and safety findings can change their order.
+Feedback, privacy and safety findings can change their order.
 
-## Privacy and control gates
+## Permanent control gates
 
-QuerIA must remain optional:
+QuerIA must preserve these boundaries:
 
 - no LakeDB Service request before explicit activation;
 - no database credentials, rows or query results sent to the service;
 - no retained questions, generated SQL, schema metadata or table names;
 - visible SQL before every execution;
-- the complete local client remains available when QuerIA is disabled or
-  unavailable.
-
-Any future investigative workflow must show what it plans to inspect, bound the
-work and keep all database changes behind explicit approval.
+- bounded schema investigation;
+- the complete local client remains available when QuerIA is disabled,
+  unavailable or has no remaining allowance.
 
 ## Before 1.0
+
+### AI quality
+
+- Maintain a repeatable evaluation set for direct and agentic workflows.
+- Measure table selection, relationship, syntax, safety and plan quality.
+- Cover complex joins, dates, indexes, placeholders, writes and DDL.
+- Show useful failure states when a safe statement cannot be prepared.
 
 ### Trusted distribution
 
@@ -60,27 +65,23 @@ work and keep all database changes behind explicit approval.
 
 ### Stability and compatibility
 
-- A tested operating-system and MySQL/MariaDB compatibility matrix.
-- Packaged smoke tests on macOS, Windows and Linux.
-- Upgrade tests from retained beta lines.
-- A release-candidate soak with no open data-loss, credential, update, restore
-  or destructive-query blockers.
-
-### AI quality
-
-- A repeatable evaluation set for supported SQL operations.
-- Measured grounding, syntax, safety and clarification quality.
-- Regression tests for complex joins, dates, indexes, writes and DDL.
-- Clear failure states when a safe statement cannot be prepared.
+- Test supported macOS, Windows and Linux versions.
+- Test representative MySQL and MariaDB versions.
+- Run packaged smoke tests and retained-beta upgrade tests.
+- Complete a release-candidate soak with no data-loss, credential, update,
+  restore or destructive-query blockers.
 
 ### Product and documentation
 
 - Complete keyboard, focus and screen-reader review.
-- First-run, privacy, known-limit, recovery and troubleshooting guides.
-- Stable public terms and supported-version expectations.
-- A frozen 1.0 scope during release-candidate testing.
+- Keep first-run, privacy, known-limit, recovery and troubleshooting guides
+  current.
+- Expand Beta Tester feedback against real multi-database workflows.
+- Freeze the 1.0 scope during release-candidate testing.
 
 ## Help define 1.0
 
-Share real workflows in [Discussions](https://github.com/DavLagoHern/LakeDB/discussions/categories/ideas).
-Community value, data safety, privacy and maintenance cost determine what ships.
+Request Beta Tester access from **Settings → Account**, share workflows in
+[Discussions](https://github.com/DavLagoHern/LakeDB/discussions/categories/ideas)
+or send reproducible bugs through the
+[issue form](https://github.com/DavLagoHern/LakeDB/issues/new?template=bug-report.yml).

@@ -4,14 +4,14 @@
 
 <p align="center">
   <strong>A complete MySQL and MariaDB desktop client with reviewable AI.</strong><br>
-  Ask in natural language, inspect the SQL, and run it through the same local workflow you trust.
+  Ask directly or let QuerIA investigate relationships and indexes before it prepares SQL.
 </p>
 
 <p align="center">
   <a href="https://davlagohern.github.io/LakeDB/"><img alt="LakeDB website" src="https://img.shields.io/badge/WEBSITE-EXPLORE_LAKEDB-19d2ff?style=for-the-badge&logoColor=020817"></a>
-  <a href="https://github.com/DavLagoHern/LakeDB/releases/latest"><img alt="LakeDB Beta 3.1" src="https://img.shields.io/badge/PUBLIC_BETA-3.1-55f0bd?style=for-the-badge&logo=github&logoColor=020817"></a>
-  <a href="https://github.com/DavLagoHern/LakeDB/releases/latest"><img alt="Download LakeDB Beta 3.1" src="https://img.shields.io/badge/DOWNLOAD-BETA_3.1-0b7cff?style=for-the-badge&logo=github&logoColor=white"></a>
-  <a href="https://www.patreon.com/LakeDB"><img alt="Support LakeDB on Patreon" src="https://img.shields.io/badge/SUPPORT-PATREON-06132b?style=for-the-badge&logo=patreon&logoColor=12d9ff"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/latest"><img alt="LakeDB Beta 4.0" src="https://img.shields.io/badge/PUBLIC_BETA-4.0-55f0bd?style=for-the-badge&logo=github&logoColor=020817"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/latest"><img alt="Download LakeDB Beta 4.0" src="https://img.shields.io/badge/DOWNLOAD-BETA_4.0-0b7cff?style=for-the-badge&logo=github&logoColor=white"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/issues/new?template=bug-report.yml"><img alt="Report a LakeDB issue" src="https://img.shields.io/badge/FEEDBACK-REPORT_ISSUE-06132b?style=for-the-badge&logo=github&logoColor=12d9ff"></a>
 </p>
 
 <p align="center">
@@ -25,191 +25,154 @@
 ---
 
 <p align="center">
-  <img src="assets/screenshots/queria.png" width="100%" alt="QuerIA preparing reviewable SQL inside LakeDB Beta 3.0">
+  <img src="assets/releases/beta4/agent-mode.png" width="100%" alt="LakeDB Beta 4.0 QuerIA Agent Mode inspecting fictional schemas, relationships and indexes before preparing reviewable SQL">
 </p>
 
-<p align="center"><sub><strong>AI is the headline of Beta 3.0.</strong> Quer<span style="color:#19d2ff">IA</span> turns a natural-language request into SQL you can inspect before anything runs.</sub></p>
+<p align="center"><sub><strong>New in Beta 4.0.</strong> QuerIA can investigate tables, relationships and indexes across databases before presenting reviewable SQL.</sub></p>
 
 ## Meet Quer<span style="color:#19d2ff">IA</span>
 
-QuerIA brings natural language into the normal LakeDB query workflow. It is not
-a separate chatbot: it is a line-based query document beside your SQL tabs.
-Write several requests, prepare only the active line, review the complete SQL,
-copy it or explicitly run it through the normal local results panel.
+QuerIA is part of the normal LakeDB query workspace, not a separate chatbot.
+Write a request, inspect the complete SQL and choose whether to copy it or run
+it through your local connection.
 
-<p align="center">
-  <img src="assets/screenshots/queria.png" width="100%" alt="Real 16:9 LakeDB Beta 3.0 capture with QuerIA preparing SELECT, INSERT, UPDATE, CREATE TABLE and ALTER TABLE statements">
-</p>
+Beta 4 adds two generation modes:
 
-<p align="center"><sub><strong>Five distinct workflows in a real Beta 3.0 session.</strong> One QuerIA document prepares SELECT, INSERT, UPDATE, CREATE TABLE and ALTER TABLE statements while the normal LakeDB results workspace stays in place.</sub></p>
+- **Normal** prepares direct questions quickly when the relevant tables are
+  already clear.
+- **Agentic** explores a broader catalog, inspects table structures, keys and
+  indexes, relates sources across databases and reviews `SELECT` plans with
+  `EXPLAIN`.
 
-### More than a simple SELECT
+Both modes keep the same control boundary: generated SQL is visible and nothing
+runs automatically.
 
-QuerIA Beta 3.0 can prepare one reviewable statement at a time:
+### Agentic database understanding
+
+Agentic generation is designed for questions where the complete answer is not
+contained in the first table mentioned. It can:
+
+- discover relevant tables across several accessible databases;
+- inspect columns, primary keys, indexes and foreign keys;
+- infer a relationship when metadata and shared identifiers support it;
+- revise a draft that ignores a relevant source;
+- validate the final `SELECT` plan and report its index and access signals;
+- leave editable placeholders instead of blocking on missing literal values.
+
+QuerIA shows the tables used beside the result. Selecting one opens that table
+in the lower workspace without taking you away from the QuerIA document.
+Explanations follow the application language.
+
+### Reviewable SQL beyond SELECT
+
+QuerIA can prepare one reviewable statement at a time:
 
 - `SELECT`, `SHOW`, `DESCRIBE` and `EXPLAIN`;
 - `INSERT`, `UPDATE`, `DELETE` and `REPLACE`;
 - `CREATE`, `ALTER`, `DROP`, `TRUNCATE` and `RENAME`.
 
-Examples:
+Prepared statements use the normal LakeDB connection, read-only rules,
+production safeguards, history, messages and results only after explicit
+approval.
 
-```text
-Show the 10 users who placed the most bets today,
-including bet count and total stake.
-```
-
-```sql
-SELECT
-  `u`.`id`,
-  `u`.`email`,
-  COUNT(`b`.`id`) AS `bet_count`,
-  SUM(`b`.`stake`) AS `total_stake`
-FROM `users` AS `u`
-INNER JOIN `users_bets` AS `b` ON `b`.`user_id` = `u`.`id`
-WHERE `b`.`created_at` >= CURRENT_DATE()
-  AND `b`.`created_at` < CURRENT_DATE() + INTERVAL 1 DAY
-GROUP BY `u`.`id`, `u`.`email`
-ORDER BY `total_stake` DESC
-LIMIT 10;
-```
-
-```text
-Prepare an insert for a new user with email ada@example.com.
-```
-
-```sql
-INSERT INTO `users` (`email`) VALUES ('ada@example.com');
-```
-
-```text
-Create a user_segments table with an auto-increment primary key,
-a unique name, a description and timestamps.
-```
-
-```text
-Update the user with id 7 and change the email to ada.lovelace@example.com.
-```
-
-```text
-Alter the users table to add an optional last_login_at timestamp.
-```
-
-Prepared SQL is never executed automatically. LakeDB shows it first and uses
-the normal connection, read-only rules, production safeguards, messages,
-history and results only after explicit approval.
-
-## Private until you opt in
-
-QuerIA starts disabled. On first launch, LakeDB presents a privacy notice and
-beta terms with two clear choices:
-
-- **Activate and try QuerIA** enables the optional service.
-- **Do not activate yet** makes no request to LakeDB Service.
-
-You can review and activate it later from Preferences.
-
-<p align="center">
-  <img src="assets/screenshots/queria-activation.png" width="100%" alt="Real QuerIA activation dialog shown before LakeDB makes any service connection">
-</p>
-
-<p align="center"><sub><strong>Explicit opt-in before any service connection.</strong> The notice explains the data boundary and keeps QuerIA disabled when the user chooses “Do not activate yet”.</sub></p>
-
-When QuerIA is enabled and used:
-
-- the question and minimum useful schema metadata are processed temporarily;
-- database credentials, table rows and query results are never sent;
-- questions, generated SQL, schema metadata and table names are not retained;
-- only an anonymous identifier, optional email or alias, plan, aggregate usage,
-  success or failure, token totals and latency are retained.
-
-The complete boundary is documented in [PRIVACY.md](PRIVACY.md) and the
-[QuerIA beta terms](TERMS.md). QuerIA includes a free beta allowance.
-Additional plans may be introduced later.
-
-## Still a complete SQL client
+## A complete SQL client
 
 AI joins the existing LakeDB workflow; it does not replace it.
 
-| Area | Available in Beta 3.0 |
+| Area | Available in Beta 4.0 |
 | --- | --- |
-| **Connections** | Multiple simultaneous MySQL and MariaDB connections, folders, environment colors, SSL, SSH tunnels, read-only mode and diagnostics. |
-| **Workspaces** | Independent SQL, QuerIA and table tabs for every connection, with restored editor content, selected schema and layout. |
-| **SQL editor** | Monaco Editor, proactive schema/table completion, aliases, columns, PK/index hints, snippets, formatting, Explain, transactions, history and streaming exports. |
-| **QuerIA** | Multiple question lines and tabs, minimum-schema grounding, visible SQL review, copy and explicit local execution. |
-| **Table data** | Virtualized grids, pagination, search, sorting, cell-driven filters and typed safe editing with conflict checks and rollback. |
+| **Connections** | Multiple simultaneous connections, folders, colors, SSL, SSH tunnels, read-only mode, diagnostics and search from Home or the connection picker. |
+| **Workspaces** | Independent SQL, QuerIA and table tabs per connection, with restored editor content, selected schema and layout. |
+| **SQL editor** | Monaco Editor, proactive schema completion, aliases, columns, PK/index hints, formatting, Explain, transactions, history and streaming exports. |
+| **QuerIA** | Normal and Agentic generation, cross-database relationships, index inspection, `EXPLAIN` review, visible SQL and explicit local execution. |
+| **Table data** | Virtualized grids, pagination, search, sorting, cell filters and typed safe editing with conflict checks and rollback. |
 | **Database tools** | Backup, restore, schema comparison, migration planning, connection imports and reviewable generated SQL. |
 | **Safety** | Local encrypted credentials, production confirmations, renderer sandboxing, read-only enforcement and no remote database execution. |
-| **Resilience** | Crash recovery, disconnected session restore, configuration backup, verified updates, local migrations and diagnostics. |
+| **Resilience** | Stable device identity, crash recovery, session restore, verified updates, configuration backup and diagnostics. |
 
 <p align="center">
   <img src="assets/screenshots/multitab.png" width="100%" alt="Multiple independent LakeDB connection workspaces">
 </p>
 
-<p align="center"><sub><strong>The complete SQL foundation remains available.</strong> Each connection owns its SQL tabs, table tabs, active schema and restored workspace state.</sub></p>
+<p align="center"><sub><strong>The full SQL foundation remains local.</strong> Each connection owns its SQL tabs, table tabs, active schema and restored workspace state.</sub></p>
+
+## Private until you opt in
+
+QuerIA starts disabled. LakeDB makes no service request until you review the
+privacy notice and beta terms and explicitly activate it.
+
+<p align="center">
+  <img src="assets/screenshots/queria-activation.png" width="100%" alt="QuerIA activation dialog shown before LakeDB makes any optional service connection">
+</p>
+
+When QuerIA is used:
+
+- the question and minimum useful schema metadata are processed temporarily;
+- database credentials, table rows and query results are never sent;
+- questions, generated SQL, schema metadata and table names are not retained;
+- only the account identity, optional profile, aggregate operational usage,
+  success or failure and latency are retained.
+
+Read the complete boundary in [PRIVACY.md](PRIVACY.md) and
+[TERMS.md](TERMS.md). The complete SQL client remains available when QuerIA is
+disabled or unavailable.
+
+## Request Beta Tester
+
+Beta 4 includes a FREE QuerIA allowance. People who want to test real
+multi-database workflows can request Beta Tester access from
+**Settings → Account**. The short use-case field helps evaluate what kind of
+queries should be tested; it is not a login or an email-verification flow.
+
+<p align="center">
+  <img src="assets/releases/beta4/beta-tester.png" width="100%" alt="LakeDB Beta 4.0 campaign artwork explaining the in-app Beta Tester request">
+</p>
+
+The most useful contributions are reproducible bugs, real relationship
+examples and clear explanations of where QuerIA selected the wrong table,
+join or index.
 
 ## Where LakeDB differs
 
-This is a focused comparison with DBeaver, TablePlus, MySQL Workbench and
-HeidiSQL. Capabilities shared by every client—such as multiple connections,
-SSH/SSL, normal autocomplete, editable grids and visual table editing—are
-intentionally omitted.
+Shared capabilities such as multiple connections, SSH/SSL, normal
+autocomplete and editable grids are intentionally omitted.
 
 **✓ Included · ◐ Limited, paid or a different workflow · × No comparable built-in workflow · — No built-in AI / not applicable**
 
-### Connections, workspaces and core SQL
-
-| Capability | LakeDB | DBeaver | TablePlus | MySQL Workbench | HeidiSQL |
+| Focused capability | LakeDB | DBeaver | TablePlus | MySQL Workbench | HeidiSQL |
 | --- | :---: | :---: | :---: | :---: | :---: |
-| PK and index-aware completion hints | ✓ | ◐ | × | × | × |
-| Restored multi-connection workspaces | ✓ | ✓ | ✓ | ◐ | ◐ |
-| Environment labels and production safeguards | ✓ | ✓ | ✓ | × | × |
-| Typed staged edits with conflict detection and rollback | ✓ | ◐ | ◐ | ◐ | ◐ |
-
-### Editor, data, database operations and recovery
-
-| Capability | LakeDB | DBeaver | TablePlus | MySQL Workbench | HeidiSQL |
-| --- | :---: | :---: | :---: | :---: | :---: |
-| Large-value JSON and HTML validation | ✓ | ◐ | ◐ | × | ◐ |
-| Guided backup and restore with automatic recovery dump | ✓ | ◐ | ◐ | ◐ | ◐ |
+| Restored independent connection workspaces | ✓ | ✓ | ✓ | ◐ | ◐ |
+| PK and index-aware completion predicates | ✓ | ◐ | × | × | × |
+| Typed staged edits with conflict checks and rollback | ✓ | ◐ | ◐ | ◐ | ◐ |
+| Guided restore with automatic recovery dump | ✓ | ◐ | ◐ | ◐ | ◐ |
 | Schema compare and generated migration plan | ✓ | ◐ | × | ✓ | × |
-
-### Natural-language SQL and trust boundary
-
-| Capability | LakeDB | DBeaver | TablePlus | MySQL Workbench | HeidiSQL |
-| --- | :---: | :---: | :---: | :---: | :---: |
 | Dedicated line-based natural-language documents | ✓ | × | × | — | — |
-| Minimum useful schema grounding | ✓ | ◐ | ◐ | — | — |
-| SELECT, DML and DDL with visible review | ✓ | ◐ | ◐ | — | — |
+| Agentic cross-database relationship discovery | ✓ | ◐ | × | — | — |
+| Mandatory local SQL review before execution | ✓ | ◐ | ◐ | — | — |
 | AI never receives row data or query results | ✓ | ◐ | ✓ | — | — |
-| Explicit opt-in with no retained questions, SQL or schema names | ✓ | × | ◐ | — | — |
+| No retained questions, generated SQL or schema names | ✓ | × | ◐ | — | — |
 
-These are twelve reasons to consider LakeDB, not an exhaustive feature list.
 A partial mark includes paid editions, plug-ins or a materially different
-workflow. A cross means no comparable built-in workflow was found in the
-official documentation reviewed on 27 July 2026. A dash means the comparison
-is not applicable because the client has no built-in AI.
-
-Sources: [DBeaver documentation](https://dbeaver.com/docs/dbeaver/AI-command/),
+workflow. Sources: [DBeaver documentation](https://dbeaver.com/docs/dbeaver/AI-command/),
 [TablePlus documentation](https://docs.tableplus.com/llm-plugin),
 [MySQL Workbench manual](https://dev.mysql.com/doc/workbench/en/) and
-[HeidiSQL features](https://www.heidisql.com/).
+[HeidiSQL documentation](https://www.heidisql.com/).
 
-## QuerIA roadmap
+## Road to 1.0
 
 | Stage | Direction |
 | --- | --- |
-| **Actual** | Complete local SQL foundation: independent workspaces, schema-aware editing, safe data tools, operations and recovery. |
-| **Beta 3.0 — new** | Natural-language query documents, one grounded SELECT, DML or DDL statement, visible review and explicit local execution. |
-| **1.0 — direction** | Ideas include deeper table, field, relationship, index and SQL-object understanding, measured quality, stable privacy, signed delivery and product polish. |
+| **SQL foundation** | Independent workspaces, schema-aware editing, safe data operations, database tools and recovery. |
+| **Beta 3** | Natural-language query documents, visible SQL and explicit local execution. |
+| **Beta 4 — current** | Normal and Agentic generation, cross-database relationships, index inspection, plan review and Beta Tester feedback. |
+| **1.0 direction** | Measured quality, trusted signing and distribution, compatibility validation and complete product polish. |
 
 <p align="center">
-  <a href="ROADMAP.md"><img src="assets/roadmap/lakedb-roadmap-beta-3.0.png" width="100%" alt="LakeDB Beta 3.0 product and QuerIA roadmap toward 1.0"></a>
+  <a href="ROADMAP.md"><img src="assets/roadmap/lakedb-roadmap-beta-4.0.png" width="100%" alt="LakeDB roadmap from the SQL foundation through Beta 3 and Beta 4 toward 1.0"></a>
 </p>
 
-<p align="center"><sub><strong>Actual → Beta 3.0 → 1.0.</strong> The roadmap shows the existing SQL client, the QuerIA product step and the trusted-client direction without inventing intermediate release promises.</sub></p>
-
-Roadmap items describe direction, not a promise of a particular release date.
-See the [complete roadmap](ROADMAP.md) for product and trust milestones.
+Roadmap items describe direction, not a fixed release date. See
+[ROADMAP.md](ROADMAP.md) for the complete quality and trust gates.
 
 ## Download
 
@@ -230,18 +193,11 @@ Only download LakeDB from this repository and verify the published SHA-256.
 
 - Read the [Wiki](https://github.com/DavLagoHern/LakeDB/wiki).
 - Report reproducible bugs with the [bug report form](https://github.com/DavLagoHern/LakeDB/issues/new?template=bug-report.yml).
-- Propose and discuss ideas in [GitHub Discussions](https://github.com/DavLagoHern/LakeDB/discussions).
-- Support signing, infrastructure and independent development on [Patreon](https://www.patreon.com/LakeDB).
+- Propose ideas in [GitHub Discussions](https://github.com/DavLagoHern/LakeDB/discussions).
+- Follow development updates on [Patreon](https://www.patreon.com/LakeDB).
 
-Patreon support is optional and is not connected to QuerIA allowances in Beta
-3.0. Testing, reporting and sharing LakeDB are equally useful.
-
-## About this repository
-
-This is LakeDB's official public repository. It hosts binaries, release notes,
-documentation, issues and the public roadmap. Application source is maintained
-separately; published binaries come from the guarded release pipeline after the
-complete test suite passes.
+Testing, reporting and sharing LakeDB are the most useful ways to help this
+beta.
 
 ---
 

@@ -40,8 +40,9 @@ you choose to execute it.
 
 LakeDB Service does not store the question, generated SQL, schema metadata,
 table names or query results. It retains only an anonymous account identifier,
-optional email or alias, plan, usage totals, success/failure, token totals,
-and latency. Email and alias are optional and used only to identify an account
+optional email or alias, plan, aggregate operational usage, success/failure
+and latency. These measurements are not prompts or database metadata. Email
+and alias are optional and used only to identify an account
 for support or manually assigned access.
 
 ## Credentials
