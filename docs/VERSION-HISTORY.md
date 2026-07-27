@@ -1,6 +1,6 @@
 # LakeDB version history
 
-The [README](README.md) describes everything LakeDB can do today. The [roadmap](ROADMAP.md) follows the larger product milestones. This file records the smaller changes in each published build.
+The [README](../README.md) describes everything LakeDB can do today. The [roadmap](ROADMAP.md) follows the larger product milestones. This file records the smaller changes in each published build.
 
 Packaged downloads are retained for the current build, the previous patch and the previous major beta line. Older entries remain part of the historical record, but their installers may no longer be available.
 
@@ -14,6 +14,24 @@ Packaged downloads are retained for the current build, the previous patch and th
 Only real tagged builds are listed as releases. The 0.2–0.4 product stages were development milestones rather than public tags, and 0.10.0–0.10.2 were not published as separate builds.
 
 ## Beta 4
+
+### Beta 4.1 (`1.0.0-beta.4.1`)
+
+- `CHANGE` run the selected SQL, or otherwise only the statement under the
+  cursor, including the final statement from trailing blank lines.
+- `ADD` search within loaded query results and safely refresh the latest
+  read-only query.
+- `ADD` local query-result filters behind the existing funnel action.
+- `ADD` draggable query-result columns with one-click order reset.
+- `ADD` safe automatic SQL keyword casing with a preference to disable it.
+- `CHANGE` improve SQL operator contrast, unify result/table tab styling and
+  keep the active database/table context at the far right.
+- `CHANGE` add the settings icon to the native macOS Preferences entry.
+- `CHANGE` allow QuerIA to be disabled with confirmation and require renewed
+  consent before reconnecting the same account.
+- `SECURITY` stop LakeDB Service requests immediately when QuerIA is disabled.
+
+[Release notes and downloads](https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.4.1)
 
 ### Beta 4.0 (`1.0.0-beta.4.0`)
 

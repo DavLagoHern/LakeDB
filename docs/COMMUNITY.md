@@ -23,4 +23,4 @@ Requests are considered using real use cases, community votes, data safety and m
 
 Before posting, remove passwords, tokens, private keys, private IP addresses, usernames, customer names, confidential queries and production data from screenshots, logs and examples.
 
-Please also read the [Code of Conduct](CODE_OF_CONDUCT.md), [contribution guide](CONTRIBUTING.md), [privacy policy](PRIVACY.md), [security policy](SECURITY.md) and [support policy](SUPPORT.md).
+Please also read the [Code of Conduct](../.github/CODE_OF_CONDUCT.md), [contribution guide](../.github/CONTRIBUTING.md), [privacy policy](PRIVACY.md), [security policy](../.github/SECURITY.md) and [support policy](../.github/SUPPORT.md).

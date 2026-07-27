@@ -17,7 +17,7 @@
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="LakeDB">
     <meta property="og:locale" content="en_US">
-    <meta property="og:title" content="LakeDB Beta 4.0 — QuerIA Agent Mode">
+    <meta property="og:title" content="LakeDB Beta 4.1 — QuerIA Agent Mode">
     <meta property="og:description" content="Use direct generation or let QuerIA inspect relationships and indexes across databases before preparing reviewable SQL.">
     <meta property="og:url" content="https://davlagohern.github.io/LakeDB/">
     <meta property="og:image" content="https://davlagohern.github.io/LakeDB/assets/releases/beta4/agent-mode.png">
@@ -25,12 +25,12 @@
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="1920">
     <meta property="og:image:height" content="1080">
-    <meta property="og:image:alt" content="LakeDB Beta 4.0 QuerIA Agent Mode inspecting fictional schemas and indexes">
+    <meta property="og:image:alt" content="LakeDB Beta 4.1 QuerIA Agent Mode inspecting fictional schemas and indexes">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="LakeDB Beta 4.0 — QuerIA Agent Mode">
+    <meta name="twitter:title" content="LakeDB Beta 4.1 — QuerIA Agent Mode">
     <meta name="twitter:description" content="Normal or Agentic generation, cross-database relationships and reviewable SQL.">
     <meta name="twitter:image" content="https://davlagohern.github.io/LakeDB/assets/releases/beta4/agent-mode.png">
-    <meta name="twitter:image:alt" content="LakeDB Beta 4.0 QuerIA Agent Mode">
+    <meta name="twitter:image:alt" content="LakeDB Beta 4.1 QuerIA Agent Mode">
     <script>
       (() => {
         try {
@@ -82,13 +82,15 @@
             "applicationSubCategory": "Database client",
             "operatingSystem": "Windows 64-bit, macOS Apple Silicon, Linux 64-bit",
             "description": "A local-first MySQL and MariaDB desktop client with reviewable natural-language SQL, schema-aware completion and complete database tools.",
-            "softwareVersion": "Beta 4.0",
+            "softwareVersion": "Beta 4.1",
             "downloadUrl": "https://github.com/DavLagoHern/LakeDB/releases/latest",
             "releaseNotes": "https://github.com/DavLagoHern/LakeDB/releases/latest",
             "isAccessibleForFree": true,
             "featureList": [
               "Reviewable natural-language SQL with QuerIA",
               "Agentic cross-database relationship and index inspection",
+              "Local query-result filters and draggable columns",
+              "Safe automatic SQL keyword casing",
               "Schema-aware SQL autocomplete",
               "Independent multi-connection workspaces",
               "Local query execution and results",
@@ -153,7 +155,7 @@
             <div class="hero-actions">
               <a class="button button-primary" href="https://github.com/DavLagoHern/LakeDB/releases/latest" data-download-link>
                 <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v12m0 0 5-5m-5 5-5-5M4 19h16"/></svg>
-                <span data-download-label>Download Beta 4.0</span>
+                <span data-download-label>Download Beta 4.1</span>
               </a>
               <a class="button button-secondary" href="#queria">See QuerIA in action
                 <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg>
@@ -196,7 +198,7 @@
         <div class="shell workflow-copy">
           <p class="section-index">02 / Real examples</p>
           <h2>Beyond a one-table SELECT.</h2>
-          <p>Beta 4.0 prepares one reviewable statement at a time, from cross-database analysis to controlled DML and DDL.</p>
+            <p>Beta 4.1 combines reviewable SQL with local result filters, draggable result columns and safer everyday SQL editing.</p>
         </div>
         <div class="shell query-examples" data-reveal>
           <article>
@@ -434,7 +436,7 @@ ADD COLUMN last_login_at TIMESTAMP NULL;</code></pre>
         <div class="shell personal-heading">
           <p class="section-index">05 / Explicit opt-in</p>
           <h2>No activation.<br>No service connection.</h2>
-          <p>QuerIA starts disabled. You see the privacy notice and beta terms before LakeDB can contact the optional service, and you can choose not to activate it.</p>
+          <p>QuerIA starts disabled. You see the privacy notice and beta terms before LakeDB can contact the optional service. You can disable it again at any time, which stops service requests and requires fresh consent before reactivation.</p>
         </div>
         <div class="shell personal-gallery consent-gallery" data-reveal>
           <figure class="capture-frame personal-primary">
@@ -498,7 +500,7 @@ ADD COLUMN last_login_at TIMESTAMP NULL;</code></pre>
             <h2>Try the final public beta line.</h2>
             <a class="button button-primary" href="https://github.com/DavLagoHern/LakeDB/releases/latest" data-download-link>
               <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v12m0 0 5-5m-5 5-5-5M4 19h16"/></svg>
-              <span data-download-label>Download Beta 4.0</span>
+              <span data-download-label>Download Beta 4.1</span>
             </a>
             <p class="beta-note">QuerIA includes a free beta allowance. The complete SQL client remains usable when QuerIA is disabled, unavailable or has no remaining allowance.</p>
           </div>
@@ -530,7 +532,7 @@ ADD COLUMN last_login_at TIMESTAMP NULL;</code></pre>
           <a href="https://github.com/DavLagoHern/LakeDB/wiki">Documentation</a>
           <a href="PRIVACY.md">Privacy</a>
           <a href="TERMS.md">Beta terms</a>
-          <a href="SECURITY.md">Security</a>
+          <a href="https://github.com/DavLagoHern/LakeDB/security/policy">Security</a>
           <a href="https://github.com/DavLagoHern/LakeDB">GitHub</a>
         </nav>
       </div>

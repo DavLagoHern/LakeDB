@@ -6,4 +6,4 @@ You can contribute by proposing or voting on ideas, answering questions, reporti
 
 Never publish credentials or private production data. Report suspected vulnerabilities through the private process in [SECURITY.md](SECURITY.md) before sharing details publicly.
 
-Pull requests are welcome for documentation and community resources. Keep each change focused and explain the problem it solves. Check [COMPATIBILITY.md](COMPATIBILITY.md) and [SUPPORT.md](SUPPORT.md) before changing a public support claim. By participating, you agree to follow the [Code of Conduct](CODE_OF_CONDUCT.md).
+Pull requests are welcome for documentation and community resources. Keep each change focused and explain the problem it solves. Check [COMPATIBILITY.md](../docs/COMPATIBILITY.md) and [SUPPORT.md](SUPPORT.md) before changing a public support claim. By participating, you agree to follow the [Code of Conduct](CODE_OF_CONDUCT.md).

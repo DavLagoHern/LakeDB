@@ -6,7 +6,7 @@ LakeDB is an independently maintained desktop application. Community support is 
 
 - The latest published build receives bug, compatibility and security fixes.
 - The active release candidate or public beta is supported while it is the current path to the next stable release.
-- Older lines remain in the [version history](VERSION-HISTORY.md) but are not actively supported.
+- Older lines remain in the [version history](../docs/VERSION-HISTORY.md) but are not actively supported.
 - After 1.0, security and blocker fixes target the latest stable release rather than multiple long-lived branches.
 
 The Releases page retains up to two packaged builds from the current version line and the newest packaged build from the previous available line. Historical Git tags and version-history entries may remain after old installers are removed.
@@ -33,4 +33,4 @@ Sanitize screenshots, SQL, hostnames, usernames, local paths and diagnostics. Ne
 
 ## Scope
 
-LakeDB support covers the application on the combinations listed in [COMPATIBILITY.md](COMPATIBILITY.md). Database-server administration, VPNs, firewalls, SSH agents, certificate-authority management and recovery of third-party credentials remain the responsibility of their respective systems.
+LakeDB support covers the application on the combinations listed in [COMPATIBILITY.md](../docs/COMPATIBILITY.md). Database-server administration, VPNs, firewalls, SSH agents, certificate-authority management and recovery of third-party credentials remain the responsibility of their respective systems.

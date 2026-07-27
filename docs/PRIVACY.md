@@ -32,6 +32,11 @@ Before activation, LakeDB makes no request to LakeDB Service. Choosing **Do not
 activate yet** keeps QuerIA offline. You can review the choice later in
 Preferences.
 
+After activation, QuerIA can be disabled again from LakeDB with an explicit
+confirmation. Disabling stops service requests and clears the local consent
+state while retaining the anonymous device account and plan. Reactivation
+requires reviewing and accepting this notice and the beta terms again.
+
 After activation, using QuerIA sends the natural-language question and the
 minimum schema metadata needed to prepare SQL over HTTPS to LakeDB Service for
 temporary processing. Database credentials, table rows and query results are
@@ -65,4 +70,4 @@ Deleting connections, history or favorites in LakeDB removes those records from 
 
 ## Privacy questions
 
-Use [LakeDB Discussions](https://github.com/DavLagoHern/LakeDB/discussions) for general privacy questions. Do not post credentials or sensitive diagnostics. Report security-sensitive behaviour through the private process in [SECURITY.md](SECURITY.md).
+Use [LakeDB Discussions](https://github.com/DavLagoHern/LakeDB/discussions) for general privacy questions. Do not post credentials or sensitive diagnostics. Report security-sensitive behaviour through the private process in [SECURITY.md](../.github/SECURITY.md).

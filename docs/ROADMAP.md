@@ -6,7 +6,7 @@ LakeDB Beta 4 moves QuerIA from direct statement preparation toward bounded
 database investigation. The roadmap tracks complete product stages rather than
 every patch.
 
-## Current: Beta 4.0
+## Current: Beta 4.1
 
 QuerIA now offers two ways to prepare reviewable SQL:
 
@@ -21,7 +21,9 @@ execute a query by itself.
 
 Beta 4 also adds connection search, language-aware explanations, stable device
 identity, table links inside QuerIA results, clearer service states, Beta
-Tester applications and direct issue reporting.
+Tester applications and direct issue reporting. Beta 4.1 adds local
+query-result filters, draggable result columns, automatic SQL keyword casing
+and reversible QuerIA activation.
 
 ## Product stages
 
@@ -40,6 +42,8 @@ Feedback, privacy and safety findings can change their order.
 QuerIA must preserve these boundaries:
 
 - no LakeDB Service request before explicit activation;
+- disabling QuerIA stops service requests and reactivation requires renewed
+  consent;
 - no database credentials, rows or query results sent to the service;
 - no retained questions, generated SQL, schema metadata or table names;
 - visible SQL before every execution;
