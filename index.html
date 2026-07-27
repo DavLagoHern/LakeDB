@@ -123,6 +123,7 @@
         <nav class="site-nav" aria-label="Primary navigation" data-nav>
           <a href="#queria">QuerIA</a>
           <a href="#sql-client">SQL client</a>
+          <a href="#compare">Compare</a>
           <a href="#privacy">Privacy</a>
           <a href="#ai-roadmap">AI roadmap</a>
           <a href="#downloads">Download</a>
@@ -271,9 +272,158 @@ ADD COLUMN last_login_at TIMESTAMP NULL;</code></pre>
         </div>
       </section>
 
+      <section class="comparison-section section" id="compare">
+        <div class="shell comparison-heading">
+          <p class="section-index">04 / Compare</p>
+          <h2>One complete workflow.<br>Fewer compromises.</h2>
+          <p>LakeDB focuses on MySQL and MariaDB rather than supporting every engine. This comparison highlights the areas where its focused workflow differs from four established database clients.</p>
+        </div>
+
+        <div class="shell comparison-legend" aria-label="Comparison legend">
+          <span><b class="matrix-mark is-yes" aria-hidden="true">✓</b> Included</span>
+          <span><b class="matrix-mark is-partial" aria-hidden="true">◐</b> Limited, paid or a different workflow</span>
+          <span><b class="matrix-mark is-no" aria-hidden="true">×</b> No comparable built-in workflow found</span>
+          <span><b class="matrix-mark is-na" aria-hidden="true">—</b> No built-in AI / not applicable</span>
+        </div>
+
+        <div class="shell comparison-table-wrap" data-reveal tabindex="0" role="region" aria-label="Scrollable database client feature comparison">
+          <table class="comparison-table">
+            <colgroup>
+              <col class="comparison-feature-column">
+              <col class="comparison-lakedb-column">
+              <col span="4">
+            </colgroup>
+            <thead>
+              <tr>
+                <th scope="col">Capability</th>
+                <th scope="col" class="is-lakedb">Lake<span>DB</span></th>
+                <th scope="col"><a href="https://dbeaver.com/features/" target="_blank" rel="noreferrer">DBeaver</a></th>
+                <th scope="col"><a href="https://docs.tableplus.com/" target="_blank" rel="noreferrer">TablePlus</a></th>
+                <th scope="col"><a href="https://dev.mysql.com/doc/workbench/en/" target="_blank" rel="noreferrer">MySQL Workbench</a></th>
+                <th scope="col"><a href="https://www.heidisql.com/" target="_blank" rel="noreferrer">HeidiSQL</a></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="comparison-group">
+                <th colspan="6" scope="colgroup">Connections, workspaces and core SQL</th>
+              </tr>
+              <tr>
+                <th scope="row">PK and index-aware completion hints</th>
+                <td class="is-lakedb"><span class="matrix-mark is-yes" aria-label="Included">✓</span></td>
+                <td><span class="matrix-mark is-partial" aria-label="Database metadata available, but no equivalent completion workflow documented">◐</span></td>
+                <td><span class="matrix-mark is-no" aria-label="No comparable built-in workflow found">×</span></td>
+                <td><span class="matrix-mark is-no" aria-label="No comparable built-in workflow found">×</span></td>
+                <td><span class="matrix-mark is-no" aria-label="No comparable built-in workflow found">×</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Restored multi-connection workspaces</th>
+                <td class="is-lakedb"><span class="matrix-mark is-yes" aria-label="Included">✓</span></td>
+                <td><span class="matrix-mark is-yes" aria-label="Included">✓</span></td>
+                <td><span class="matrix-mark is-yes" aria-label="Included">✓</span></td>
+                <td><span class="matrix-mark is-partial" aria-label="Multiple connections and tabs, with a narrower restore workflow">◐</span></td>
+                <td><span class="matrix-mark is-partial" aria-label="Query tabs can be restored, with a narrower per-connection workspace workflow">◐</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Environment labels and production safeguards</th>
+                <td class="is-lakedb"><span class="matrix-mark is-yes" aria-label="Included">✓</span></td>
+                <td><span class="matrix-mark is-yes" aria-label="Included through connection types and SQL execution confirmations">✓</span></td>
+                <td><span class="matrix-mark is-yes" aria-label="Included through environment tags and safe mode">✓</span></td>
+                <td><span class="matrix-mark is-no" aria-label="No comparable built-in workflow found">×</span></td>
+                <td><span class="matrix-mark is-no" aria-label="No comparable environment classification and confirmation workflow found">×</span></td>
+              </tr>
+
+              <tr>
+                <th scope="row">Typed staged edits with conflict detection and rollback</th>
+                <td class="is-lakedb"><span class="matrix-mark is-yes" aria-label="Included">✓</span></td>
+                <td><span class="matrix-mark is-partial" aria-label="Staged editing and transactions are available, with a different conflict workflow">◐</span></td>
+                <td><span class="matrix-mark is-partial" aria-label="Safe editing is available, with a different conflict and rollback workflow">◐</span></td>
+                <td><span class="matrix-mark is-partial" aria-label="Apply and revert are available, with a different conflict workflow">◐</span></td>
+                <td><span class="matrix-mark is-partial" aria-label="Grid editing and transactions are available, with a different conflict workflow">◐</span></td>
+              </tr>
+
+              <tr class="comparison-group">
+                <th colspan="6" scope="colgroup">Editor, data, database operations and recovery</th>
+              </tr>
+              <tr>
+                <th scope="row">Large-value JSON and HTML validation</th>
+                <td class="is-lakedb"><span class="matrix-mark is-yes" aria-label="Included">✓</span></td>
+                <td><span class="matrix-mark is-partial" aria-label="Structured value editors are available, but no equivalent combined JSON and HTML validation workflow is documented">◐</span></td>
+                <td><span class="matrix-mark is-partial" aria-label="Structured value editing is available, with a narrower validation workflow">◐</span></td>
+                <td><span class="matrix-mark is-no" aria-label="No comparable built-in workflow found">×</span></td>
+                <td><span class="matrix-mark is-partial" aria-label="Structured value rendering is available, but not the combined JSON and HTML validation workflow">◐</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Guided backup and restore with automatic recovery dump</th>
+                <td class="is-lakedb"><span class="matrix-mark is-yes" aria-label="Included">✓</span></td>
+                <td><span class="matrix-mark is-partial" aria-label="Backup and restore are available, without the same automatic pre-restore recovery workflow">◐</span></td>
+                <td><span class="matrix-mark is-partial" aria-label="SQL dump import and export are available, without the same automatic recovery workflow">◐</span></td>
+                <td><span class="matrix-mark is-partial" aria-label="Backup and restore are available, without the same automatic pre-restore recovery workflow">◐</span></td>
+                <td><span class="matrix-mark is-partial" aria-label="SQL export and import are available, without the same automatic pre-restore recovery workflow">◐</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Schema compare and generated migration plan</th>
+                <td class="is-lakedb"><span class="matrix-mark is-yes" aria-label="Included">✓</span></td>
+                <td><span class="matrix-mark is-partial" aria-label="Full compare and migration requires a paid edition" title="Simple structure compare is available in Community; generated schema migration is a paid feature.">◐</span></td>
+                <td><span class="matrix-mark is-no" aria-label="No comparable built-in workflow found">×</span></td>
+                <td><span class="matrix-mark is-yes" aria-label="Included">✓</span></td>
+                <td><span class="matrix-mark is-no" aria-label="No comparable built-in workflow found">×</span></td>
+              </tr>
+              <tr class="comparison-group">
+                <th colspan="6" scope="colgroup">Natural-language SQL and trust boundary</th>
+              </tr>
+              <tr>
+                <th scope="row">Dedicated line-based natural-language documents</th>
+                <td class="is-lakedb"><span class="matrix-mark is-yes" aria-label="Included">✓</span></td>
+                <td><span class="matrix-mark is-no" aria-label="No comparable built-in workflow found">×</span></td>
+                <td><span class="matrix-mark is-no" aria-label="No comparable built-in workflow found">×</span></td>
+                <td><span class="matrix-mark is-na" aria-label="No built-in AI; not applicable">—</span></td>
+                <td><span class="matrix-mark is-na" aria-label="No built-in AI; not applicable">—</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Minimum useful schema grounding</th>
+                <td class="is-lakedb"><span class="matrix-mark is-yes" aria-label="Included">✓</span></td>
+                <td><span class="matrix-mark is-partial" aria-label="Schema context can be filtered, with a different selection workflow">◐</span></td>
+                <td><span class="matrix-mark is-partial" aria-label="Table structures can be shared with the configured model, with a different selection workflow">◐</span></td>
+                <td><span class="matrix-mark is-na" aria-label="No built-in AI; not applicable">—</span></td>
+                <td><span class="matrix-mark is-na" aria-label="No built-in AI; not applicable">—</span></td>
+              </tr>
+              <tr>
+                <th scope="row">SELECT, DML and DDL with visible review</th>
+                <td class="is-lakedb"><span class="matrix-mark is-yes" aria-label="Included">✓</span></td>
+                <td><span class="matrix-mark is-partial" aria-label="Review is configurable; SELECT can execute immediately by default">◐</span></td>
+                <td><span class="matrix-mark is-partial" aria-label="SQL is produced through a chat plugin rather than the normal query document flow">◐</span></td>
+                <td><span class="matrix-mark is-na" aria-label="No built-in AI; not applicable">—</span></td>
+                <td><span class="matrix-mark is-na" aria-label="No built-in AI; not applicable">—</span></td>
+              </tr>
+              <tr>
+                <th scope="row">AI never receives row data or query results</th>
+                <td class="is-lakedb"><span class="matrix-mark is-yes" aria-label="Included">✓</span></td>
+                <td><span class="matrix-mark is-partial" aria-label="Generation can use metadata, while optional AI tools can read sample data">◐</span></td>
+                <td><span class="matrix-mark is-yes" aria-label="TablePlus documents that data records are never sent to the language model">✓</span></td>
+                <td><span class="matrix-mark is-na" aria-label="No built-in AI; not applicable">—</span></td>
+                <td><span class="matrix-mark is-na" aria-label="No built-in AI; not applicable">—</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Explicit opt-in with no retained questions, SQL or schema names</th>
+                <td class="is-lakedb"><span class="matrix-mark is-yes" aria-label="Included">✓</span></td>
+                <td><span class="matrix-mark is-no" aria-label="No equivalent product-service retention guarantee found">×</span></td>
+                <td><span class="matrix-mark is-partial" aria-label="TablePlus does not intermediate the configured model, but provider policies still apply">◐</span></td>
+                <td><span class="matrix-mark is-na" aria-label="No built-in AI; not applicable">—</span></td>
+                <td><span class="matrix-mark is-na" aria-label="No built-in AI; not applicable">—</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="shell comparison-methodology">
+          <p><strong>Twelve reasons to consider LakeDB.</strong> Shared capabilities such as multiple connections, SSH/SSL, normal autocomplete, editable grids and visual table editing are intentionally omitted. A partial mark covers paid tiers, plug-ins or a materially different workflow. A dash means the comparison is not applicable because the client has no built-in AI.</p>
+          <p>Sources: <a href="https://dbeaver.com/docs/dbeaver/AI-command/" target="_blank" rel="noreferrer">DBeaver documentation</a>, <a href="https://docs.tableplus.com/llm-plugin" target="_blank" rel="noreferrer">TablePlus documentation</a>, <a href="https://dev.mysql.com/doc/workbench/en/" target="_blank" rel="noreferrer">MySQL Workbench manual</a> and <a href="https://www.heidisql.com/" target="_blank" rel="noreferrer">HeidiSQL features and documentation</a>.</p>
+        </div>
+      </section>
+
       <section class="personal-section section" id="privacy">
         <div class="shell personal-heading">
-          <p class="section-index">04 / Explicit opt-in</p>
+          <p class="section-index">05 / Explicit opt-in</p>
           <h2>No activation.<br>No service connection.</h2>
           <p>QuerIA starts disabled. You see the privacy notice and beta terms before LakeDB can contact the optional service, and you can choose not to activate it.</p>
         </div>
@@ -295,7 +445,7 @@ ADD COLUMN last_login_at TIMESTAMP NULL;</code></pre>
 
       <section class="roadmap section" id="ai-roadmap">
         <div class="shell roadmap-heading">
-          <p class="section-index">05 / QuerIA roadmap</p>
+          <p class="section-index">06 / QuerIA roadmap</p>
           <h2>From statement preparation<br>to database understanding.</h2>
         </div>
         <figure class="shell capture-frame roadmap-visual" data-reveal>
@@ -312,7 +462,7 @@ ADD COLUMN last_login_at TIMESTAMP NULL;</code></pre>
       <section class="downloads section" id="downloads">
         <div class="shell download-layout">
           <div class="download-copy">
-            <p class="section-index">06 / Download</p>
+            <p class="section-index">07 / Download</p>
             <h2>Try the final public beta line.</h2>
             <a class="button button-primary" href="https://github.com/DavLagoHern/LakeDB/releases/latest" data-download-link>
               <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v12m0 0 5-5m-5 5-5-5M4 19h16"/></svg>

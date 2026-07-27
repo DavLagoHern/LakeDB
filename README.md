@@ -147,6 +147,53 @@ AI joins the existing LakeDB workflow; it does not replace it.
 
 <p align="center"><sub><strong>The complete SQL foundation remains available.</strong> Each connection owns its SQL tabs, table tabs, active schema and restored workspace state.</sub></p>
 
+## Where LakeDB differs
+
+This is a focused comparison with DBeaver, TablePlus, MySQL Workbench and
+HeidiSQL. Capabilities shared by every client—such as multiple connections,
+SSH/SSL, normal autocomplete, editable grids and visual table editing—are
+intentionally omitted.
+
+**✓ Included · ◐ Limited, paid or a different workflow · × No comparable built-in workflow · — No built-in AI / not applicable**
+
+### Connections, workspaces and core SQL
+
+| Capability | LakeDB | DBeaver | TablePlus | MySQL Workbench | HeidiSQL |
+| --- | :---: | :---: | :---: | :---: | :---: |
+| PK and index-aware completion hints | ✓ | ◐ | × | × | × |
+| Restored multi-connection workspaces | ✓ | ✓ | ✓ | ◐ | ◐ |
+| Environment labels and production safeguards | ✓ | ✓ | ✓ | × | × |
+| Typed staged edits with conflict detection and rollback | ✓ | ◐ | ◐ | ◐ | ◐ |
+
+### Editor, data, database operations and recovery
+
+| Capability | LakeDB | DBeaver | TablePlus | MySQL Workbench | HeidiSQL |
+| --- | :---: | :---: | :---: | :---: | :---: |
+| Large-value JSON and HTML validation | ✓ | ◐ | ◐ | × | ◐ |
+| Guided backup and restore with automatic recovery dump | ✓ | ◐ | ◐ | ◐ | ◐ |
+| Schema compare and generated migration plan | ✓ | ◐ | × | ✓ | × |
+
+### Natural-language SQL and trust boundary
+
+| Capability | LakeDB | DBeaver | TablePlus | MySQL Workbench | HeidiSQL |
+| --- | :---: | :---: | :---: | :---: | :---: |
+| Dedicated line-based natural-language documents | ✓ | × | × | — | — |
+| Minimum useful schema grounding | ✓ | ◐ | ◐ | — | — |
+| SELECT, DML and DDL with visible review | ✓ | ◐ | ◐ | — | — |
+| AI never receives row data or query results | ✓ | ◐ | ✓ | — | — |
+| Explicit opt-in with no retained questions, SQL or schema names | ✓ | × | ◐ | — | — |
+
+These are twelve reasons to consider LakeDB, not an exhaustive feature list.
+A partial mark includes paid editions, plug-ins or a materially different
+workflow. A cross means no comparable built-in workflow was found in the
+official documentation reviewed on 27 July 2026. A dash means the comparison
+is not applicable because the client has no built-in AI.
+
+Sources: [DBeaver documentation](https://dbeaver.com/docs/dbeaver/AI-command/),
+[TablePlus documentation](https://docs.tableplus.com/llm-plugin),
+[MySQL Workbench manual](https://dev.mysql.com/doc/workbench/en/) and
+[HeidiSQL features](https://www.heidisql.com/).
+
 ## QuerIA roadmap
 
 | Stage | Direction |
