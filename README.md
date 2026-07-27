@@ -9,8 +9,8 @@
 
 <p align="center">
   <a href="https://davlagohern.github.io/LakeDB/"><img alt="LakeDB website" src="https://img.shields.io/badge/WEBSITE-EXPLORE_LAKEDB-19d2ff?style=for-the-badge&logoColor=020817"></a>
-  <a href="https://github.com/DavLagoHern/LakeDB/releases/latest"><img alt="LakeDB Beta 4.1" src="https://img.shields.io/badge/PUBLIC_BETA-4.1-55f0bd?style=for-the-badge&logo=github&logoColor=020817"></a>
-  <a href="https://github.com/DavLagoHern/LakeDB/releases/latest"><img alt="Download LakeDB Beta 4.1" src="https://img.shields.io/badge/DOWNLOAD-BETA_4.1-0b7cff?style=for-the-badge&logo=github&logoColor=white"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/latest"><img alt="LakeDB Beta 4.2" src="https://img.shields.io/badge/PUBLIC_BETA-4.2-55f0bd?style=for-the-badge&logo=github&logoColor=020817"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/latest"><img alt="Download LakeDB Beta 4.2" src="https://img.shields.io/badge/DOWNLOAD-BETA_4.2-0b7cff?style=for-the-badge&logo=github&logoColor=white"></a>
   <a href="https://github.com/DavLagoHern/LakeDB/issues/new?template=bug-report.yml"><img alt="Report a LakeDB issue" src="https://img.shields.io/badge/FEEDBACK-REPORT_ISSUE-06132b?style=for-the-badge&logo=github&logoColor=12d9ff"></a>
 </p>
 

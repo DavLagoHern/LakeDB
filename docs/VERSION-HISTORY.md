@@ -15,6 +15,16 @@ Only real tagged builds are listed as releases. The 0.2–0.4 product stages wer
 
 ## Beta 4
 
+### Beta 4.2 (`1.0.0-beta.4.2`)
+
+- `ADD` use an optional QuerIA account across multiple devices with shared
+  plan usage.
+- `ADD` review and remove linked devices or sign out the current device from
+  Preferences.
+- `FIX` keep Preferences open after removing a device.
+
+[Release notes and downloads](https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.4.2)
+
 ### Beta 4.1 (`1.0.0-beta.4.1`)
 
 - `CHANGE` run the selected SQL, or otherwise only the statement under the
