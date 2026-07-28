@@ -25,6 +25,10 @@ Only real tagged builds are listed as releases. The 0.2–0.4 product stages wer
   optionally pin the server's SHA-256 fingerprint.
 - `CHANGE` preserve the new SSH configuration in connection transfers and
   secret-free configuration backups.
+- `CHANGE` unify query-result and table filters with friendly operator names,
+  visible SQL equivalents and a compact single-row table layout.
+- `FIX` make `Contains (LIKE)` accept explicit SQL wildcards or automatically
+  add surrounding `%` wildcards to plain values.
 - `FIX` preserve SQL strings, escapes and line endings when formatting JSON
   cell values, while leaving legacy JSON-like reports in plain-text mode.
 - `FIX` keep Preferences open and return to sign-in after signing out of
