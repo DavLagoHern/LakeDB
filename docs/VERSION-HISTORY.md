@@ -15,6 +15,23 @@ Only real tagged builds are listed as releases. The 0.2–0.4 product stages wer
 
 ## Beta 4
 
+### Beta 4.3 (`1.0.0-beta.4.3`)
+
+- `ADD` connect through managed SSH tunnels with a password or a private key
+  and optional passphrase.
+- `ADD` use the system OpenSSH configuration or a tunnel already running on
+  the local computer.
+- `SECURITY` store SSH credentials separately from database passwords and
+  optionally pin the server's SHA-256 fingerprint.
+- `CHANGE` preserve the new SSH configuration in connection transfers and
+  secret-free configuration backups.
+- `FIX` preserve SQL strings, escapes and line endings when formatting JSON
+  cell values, while leaving legacy JSON-like reports in plain-text mode.
+- `FIX` keep Preferences open and return to sign-in after signing out of
+  QuerIA.
+
+[Release notes and downloads](https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.4.3)
+
 ### Beta 4.2 (`1.0.0-beta.4.2`)
 
 - `ADD` use an optional QuerIA account across multiple devices with shared
