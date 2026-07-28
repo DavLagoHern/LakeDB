@@ -10,7 +10,7 @@
 <p align="center">
   <a href="https://davlagohern.github.io/LakeDB/"><img alt="LakeDB website" src="https://img.shields.io/badge/WEBSITE-EXPLORE_LAKEDB-19d2ff?style=for-the-badge&logoColor=020817"></a>
   <a href="https://www.reddit.com/r/LakeDB/"><img alt="Join the LakeDB community on Reddit" src="https://img.shields.io/badge/REDDIT-JOIN_COMMUNITY-ff4500?style=for-the-badge&logo=reddit&logoColor=white"></a>
-  <a href="https://github.com/DavLagoHern/LakeDB/releases/latest"><img alt="Download LakeDB Beta 4.3" src="https://img.shields.io/badge/DOWNLOAD-BETA_4.3-0b7cff?style=for-the-badge&logo=github&logoColor=white"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/latest"><img alt="Download the latest LakeDB Beta 4 build" src="https://img.shields.io/badge/DOWNLOAD-BETA_4-0b7cff?style=for-the-badge&logo=github&logoColor=white"></a>
   <a href="https://github.com/DavLagoHern/LakeDB/issues/new?template=bug-report.yml"><img alt="Report a LakeDB issue" src="https://img.shields.io/badge/FEEDBACK-REPORT_ISSUE-06132b?style=for-the-badge&logo=github&logoColor=12d9ff"></a>
 </p>
 
@@ -79,7 +79,7 @@ approval.
 
 AI joins the existing LakeDB workflow; it does not replace it.
 
-| Area | Available in Beta 4.3 |
+| Area | Available in Beta 4 |
 | --- | --- |
 | **Connections** | Multiple simultaneous connections, folders, colors, SSL, SSH tunnels, read-only mode, diagnostics and search from Home or the connection picker. |
 | **Workspaces** | Independent SQL, QuerIA and table tabs per connection, with restored editor content, selected schema and layout. |
