@@ -30,9 +30,10 @@
 
 <p align="center"><sub><strong>New in Beta 4.4.</strong> Give QuerIA reusable business meaning before it chooses databases, tables and relationships.</sub></p>
 
-> **Beta 4.4.1 hotfix:** stored procedures that return result sets now finish
-> immediately after MySQL or MariaDB sends the final routine status. `CALL`
-> also uses normal MySQL keyword casing and highlighting.
+> **Beta 4.4.2 hotfix:** sorting a query result now orders the complete cached
+> result before rows are displayed or loaded in blocks. Changing the number of
+> rows per table page also recalculates the page count immediately. The Search
+> field remains intentionally local to the rows currently displayed.
 
 ## Context before catalog guessing
 

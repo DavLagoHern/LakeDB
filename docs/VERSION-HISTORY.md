@@ -15,6 +15,17 @@ Only real tagged builds are listed as releases. The 0.2–0.4 product stages wer
 
 ## Beta 4
 
+### Beta 4.4.2 (`1.0.0-beta.4.4.2`)
+
+- `FIX` sort every cached query-result row before displaying or loading
+  paginated blocks, instead of sorting only the rows already visible.
+- `FIX` preserve the complete ordering when loading additional result rows.
+- `FIX` recalculate table page counts immediately when changing rows per page
+  and return to page 1.
+- `CHANGE` keep the Search field scoped to the rows currently displayed.
+
+[Release notes and downloads](https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.4.4.2)
+
 ### Beta 4.4.1 (`1.0.0-beta.4.4.1`)
 
 - `FIX` finish `CALL` statements that return rows as soon as MySQL or MariaDB
