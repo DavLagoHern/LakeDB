@@ -26,6 +26,7 @@ Only real tagged builds are listed as releases. The 0.2–0.4 product stages wer
 - `CHANGE` list Run All outcomes and server warnings per statement.
 - `FIX` preserve long-query elapsed time while switching tabs and avoid
   duplicate query-tab numbering.
+- `FIX` release a cancelled query immediately so its SQL tab can run again.
 - `FIX` keep settings dialogs stable and render square checkboxes consistently.
 
 [Release notes and downloads](https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.4.4)
