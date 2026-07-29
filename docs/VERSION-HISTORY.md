@@ -15,6 +15,18 @@ Only real tagged builds are listed as releases. The 0.2–0.4 product stages wer
 
 ## Beta 4
 
+### Beta 4.4.1 (`1.0.0-beta.4.4.1`)
+
+- `FIX` finish `CALL` statements that return rows as soon as MySQL or MariaDB
+  sends the routine's final status packet.
+- `FIX` enforce the configured timeout across the complete query lifecycle and
+  reset only the affected SQL-tab session if its final transaction check does
+  not settle.
+- `CHANGE` highlight `CALL` as a MySQL keyword and include it in automatic
+  uppercase and SQL formatting.
+
+[Release notes and downloads](https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.4.4.1)
+
 ### Beta 4.4 (`1.0.0-beta.4.4`)
 
 - `ADD` create reusable named business contexts for QuerIA with local defaults

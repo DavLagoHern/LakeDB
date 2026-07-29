@@ -30,6 +30,10 @@
 
 <p align="center"><sub><strong>New in Beta 4.4.</strong> Give QuerIA reusable business meaning before it chooses databases, tables and relationships.</sub></p>
 
+> **Beta 4.4.1 hotfix:** stored procedures that return result sets now finish
+> immediately after MySQL or MariaDB sends the final routine status. `CALL`
+> also uses normal MySQL keyword casing and highlighting.
+
 ## Context before catalog guessing
 
 Database names rarely explain the whole business. Beta 4.4 lets you create
