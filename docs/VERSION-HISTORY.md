@@ -23,7 +23,8 @@ Only real tagged builds are listed as releases. The 0.2–0.4 product stages wer
   database interpretation and SQL preparation.
 - `ADD` inspect MySQL/MariaDB processes and replication status from the
   Database menu, including full-operation viewing and safe `KILL QUERY`.
-- `CHANGE` list Run All outcomes and server warnings per statement.
+- `CHANGE` stream Run All outcomes and server warnings as each statement
+  finishes.
 - `FIX` preserve long-query elapsed time while switching tabs and avoid
   duplicate query-tab numbering.
 - `FIX` release a cancelled query immediately so its SQL tab can run again.
