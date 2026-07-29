@@ -29,6 +29,9 @@ Only real tagged builds are listed as releases. The 0.2–0.4 product stages wer
   duplicate query-tab numbering.
 - `FIX` release a cancelled query immediately so its SQL tab can run again.
 - `FIX` keep settings dialogs stable and render square checkboxes consistently.
+- `FIX` copy active result cells and selected full-value text with the native
+  macOS, Windows and Linux shortcut without entering edit mode.
+- `CHANGE` allow query timeouts up to 86,400 seconds (24 hours).
 
 [Release notes and downloads](https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.4.4)
 
