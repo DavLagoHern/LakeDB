@@ -25,10 +25,33 @@
 ---
 
 <p align="center">
-  <img src="docs/assets/releases/beta4/agent-mode.png" width="100%" alt="LakeDB Beta 4.0 QuerIA Agent Mode inspecting fictional schemas, relationships and indexes before preparing reviewable SQL">
+  <img src="docs/assets/releases/beta4.4/contexts.png" width="100%" alt="LakeDB Beta 4.4 real application capture showing reusable Commerce, Support and Analytics contexts">
 </p>
 
-<p align="center"><sub><strong>New in Beta 4.0.</strong> QuerIA can investigate tables, relationships and indexes across databases before presenting reviewable SQL.</sub></p>
+<p align="center"><sub><strong>New in Beta 4.4.</strong> Give QuerIA reusable business meaning before it chooses databases, tables and relationships.</sub></p>
+
+## Context before catalog guessing
+
+Database names rarely explain the whole business. Beta 4.4 lets you create
+named reusable contexts for terminology, schema roles, table priorities and
+relationship rules.
+
+- Create up to 20 contexts with a short selector-friendly name.
+- Add up to 20,000 characters of business instructions to each context.
+- Choose a default context for new connections.
+- Override the context for one connection, return to the default or explicitly
+  use no context.
+- Use the same selected context in both Normal and Agentic generation.
+
+Context is stored locally with LakeDB settings. It is sent only when you ask
+QuerIA to generate SQL, alongside the bounded schema metadata already required
+for that request. It never adds credentials, database rows or query results.
+
+<p align="center">
+  <img src="docs/assets/releases/beta4.4/connection-context.png" width="100%" alt="LakeDB Beta 4.4 QuerIA toolbar showing Agentic mode and a compact Support context selected for the active connection">
+</p>
+
+<p align="center"><sub><strong>Defaults stay flexible.</strong> Each connection remembers its own context choice without adding noise to the workspace.</sub></p>
 
 ## Meet Quer<span style="color:#19d2ff">IA</span>
 
@@ -63,6 +86,12 @@ QuerIA shows the tables used beside the result. Selecting one opens that table
 in the lower workspace without taking you away from the QuerIA document.
 Explanations follow the application language.
 
+<p align="center">
+  <img src="docs/assets/releases/beta4/agent-mode.png" width="100%" alt="LakeDB Beta 4 QuerIA Agent Mode inspecting fictional schemas, relationships and indexes before preparing reviewable SQL">
+</p>
+
+<p align="center"><sub><strong>Agentic analysis remains bounded.</strong> QuerIA inspects metadata, relates sources and returns visible SQL for review.</sub></p>
+
 ### Reviewable SQL beyond SELECT
 
 QuerIA can prepare one reviewable statement at a time:
@@ -84,7 +113,7 @@ AI joins the existing LakeDB workflow; it does not replace it.
 | **Connections** | Multiple simultaneous connections, folders, colors, SSL, SSH tunnels, read-only mode, diagnostics and search from Home or the connection picker. |
 | **Workspaces** | Independent SQL, QuerIA and table tabs per connection, with restored editor content, selected schema and layout. |
 | **SQL editor** | Monaco Editor, proactive schema completion, aliases, columns, PK/index hints, safe automatic keyword casing, formatting, Explain, transactions, history and streaming exports. |
-| **QuerIA** | Normal and Agentic generation, cross-database relationships, index inspection, `EXPLAIN` review, visible SQL and explicit local execution. |
+| **QuerIA** | Reusable per-connection business contexts, Normal and Agentic generation, cross-database relationships, index inspection, `EXPLAIN` review, visible SQL and explicit local execution. |
 | **Results and data** | Local query-result filters, draggable result columns, virtualized table grids, pagination, search, sorting and typed safe editing with conflict checks and rollback. |
 | **Database tools** | Backup, restore, schema comparison, migration planning, connection imports and reviewable generated SQL. |
 | **Safety** | Local encrypted credentials, production confirmations, renderer sandboxing, read-only enforcement and no remote database execution. |
@@ -165,11 +194,11 @@ workflow. Sources: [DBeaver documentation](https://dbeaver.com/docs/dbeaver/AI-c
 | --- | --- |
 | **SQL foundation** | Independent workspaces, schema-aware editing, safe data operations, database tools and recovery. |
 | **Beta 3** | Natural-language query documents, visible SQL and explicit local execution. |
-| **Beta 4 — current** | Normal and Agentic generation, cross-database relationships, index inspection, reversible opt-in, local result filters and draggable result columns. |
+| **Beta 4 — current** | Reusable connection context, Normal and Agentic generation, cross-database relationships, index inspection, reversible opt-in and clearer execution feedback. |
 | **1.0 direction** | Measured quality, trusted signing and distribution, compatibility validation and complete product polish. |
 
 <p align="center">
-  <a href="docs/ROADMAP.md"><img src="docs/assets/roadmap/lakedb-roadmap-beta-4.0.png" width="100%" alt="LakeDB roadmap from the SQL foundation through Beta 3 and Beta 4 toward 1.0"></a>
+  <a href="docs/ROADMAP.md"><img src="docs/assets/roadmap/lakedb-roadmap-beta-4.4.png" width="100%" alt="LakeDB roadmap from the SQL foundation through Beta 3 and context-aware Beta 4 toward 1.0"></a>
 </p>
 
 Roadmap items describe direction, not a fixed release date. See

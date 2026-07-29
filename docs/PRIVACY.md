@@ -37,18 +37,20 @@ confirmation. Disabling stops service requests and clears the local consent
 state while retaining the anonymous device account and plan. Reactivation
 requires reviewing and accepting this notice and the beta terms again.
 
-After activation, using QuerIA sends the natural-language question and the
-minimum schema metadata needed to prepare SQL over HTTPS to LakeDB Service for
-temporary processing. Database credentials, table rows and query results are
-never sent. The generated SQL is shown for review and runs locally only after
-you choose to execute it.
+After activation, using QuerIA sends the natural-language question, the
+selected business context (when one is enabled) and the minimum schema metadata
+needed to prepare SQL over HTTPS to LakeDB Service for temporary processing.
+Database credentials, table rows and query results are never sent. The
+generated SQL is shown for review and runs locally only after you choose to
+execute it.
 
-LakeDB Service does not store the question, generated SQL, schema metadata,
-table names or query results. It retains only an anonymous account identifier,
-optional email or alias, plan, aggregate operational usage, success/failure
-and latency. These measurements are not prompts or database metadata. Email
-and alias are optional and used only to identify an account
-for support or manually assigned access.
+LakeDB Service does not store the question, selected business context,
+generated SQL, schema metadata, table names or query results. Reusable context
+profiles and connection assignments are stored locally by LakeDB. The service
+retains only an anonymous account identifier, optional email or alias, plan,
+aggregate operational usage, success/failure and latency. These measurements
+are not prompts, context or database metadata. Email and alias are optional and
+used only to identify an account for support or manually assigned access.
 
 ## Credentials
 

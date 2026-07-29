@@ -18,5 +18,5 @@ allowances may be introduced later. Patreon support helps fund LakeDB
 development but is not connected to QuerIA access in this release.
 
 Do not include passwords, access tokens or sensitive row values in a
-natural-language question. The processing and retention model is described in
-[PRIVACY.md](PRIVACY.md).
+natural-language question or reusable business context. The processing and
+retention model is described in [PRIVACY.md](PRIVACY.md).

@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">The road to LakeDB 1.0</title>
+  <desc id="desc">LakeDB's direction from its SQL foundation through QuerIA Beta 3 and context-aware Agent Mode in Beta 4 toward a trusted 1.0 release.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#020713"/>
+      <stop offset=".58" stop-color="#06152a"/>
+      <stop offset="1" stop-color="#08213d"/>
+    </linearGradient>
+    <linearGradient id="path" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#1686ff"/>
+      <stop offset=".55" stop-color="#36e6ff"/>
+      <stop offset="1" stop-color="#55f0bd"/>
+    </linearGradient>
+    <linearGradient id="ai" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#68f5ff"/>
+      <stop offset="1" stop-color="#118cff"/>
+    </linearGradient>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="11" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" rx="30" fill="url(#bg)"/>
+  <g fill="none" stroke="#087dff" stroke-width="1.2" opacity=".24">
+    <path d="M-80 845C170 690 345 930 590 820"/>
+    <path d="M-80 870C180 710 360 955 610 842"/>
+    <path d="M1270 -45C1375 100 1500 10 1660 165"/>
+    <path d="M1300 -60C1400 110 1525 25 1680 195"/>
+  </g>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="72" y="82" fill="#7fdfff" font-size="18" font-weight="800">LAKEDB ROADMAP</text>
+    <text x="72" y="150" fill="#ffffff" font-size="56" font-weight="900">The road to LakeDB 1.0</text>
+    <text x="72" y="195" fill="#9bb0ca" font-size="21">SQL foundation → QuerIA → context-aware analysis → trusted release</text>
+
+    <path d="M150 500H1450" stroke="#173953" stroke-width="8" stroke-linecap="round"/>
+    <path d="M150 500H1450" stroke="url(#path)" stroke-width="4" stroke-linecap="round" filter="url(#glow)"/>
+
+    <g transform="translate(210 500)">
+      <circle r="16" fill="#06152a" stroke="#1686ff" stroke-width="5"/>
+      <text y="-174" text-anchor="middle" fill="#7f96b2" font-size="15" font-weight="900">FOUNDATION</text>
+      <text y="-126" text-anchor="middle" fill="#ffffff" font-size="31" font-weight="900">Complete SQL client</text>
+      <text y="-92" text-anchor="middle" fill="#9bb0ca" font-size="16">Workspaces · editor · data tools</text>
+      <text y="66" text-anchor="middle" fill="#7f96b2" font-size="14" font-weight="800">BUILT AND AVAILABLE</text>
+    </g>
+
+    <g transform="translate(605 500)">
+      <circle r="20" fill="#06152a" stroke="#36e6ff" stroke-width="6"/>
+      <text y="-174" text-anchor="middle" fill="#7fdfff" font-size="15" font-weight="900">BETA 3</text>
+      <text x="-47" y="-121" text-anchor="middle" fill="#ffffff" font-size="42" font-weight="900">Quer</text>
+      <text x="43" y="-121" text-anchor="middle" fill="url(#ai)" font-size="42" font-weight="900">IA</text>
+      <text y="-82" text-anchor="middle" fill="#9bb0ca" font-size="16">Natural language · visible SQL</text>
+      <text y="66" text-anchor="middle" fill="#7f96b2" font-size="14" font-weight="800">REVIEW BEFORE RUN</text>
+    </g>
+
+    <g transform="translate(995 500)">
+      <circle r="55" fill="#082039" stroke="#36e6ff" stroke-width="3" opacity=".5" filter="url(#glow)"/>
+      <circle r="28" fill="#06152a" stroke="#55f0bd" stroke-width="7"/>
+      <text y="-194" text-anchor="middle" fill="#55f0bd" font-size="16" font-weight="900">BETA 4.4 · CURRENT</text>
+      <text y="-140" text-anchor="middle" fill="#ffffff" font-size="38" font-weight="900">Context-aware Agent</text>
+      <text y="-100" text-anchor="middle" fill="#d7edff" font-size="17" font-weight="800">Interpret · inspect · validate</text>
+      <text y="90" text-anchor="middle" fill="#ffffff" font-size="19" font-weight="900">Business-aware reasoning</text>
+      <text y="122" text-anchor="middle" fill="#55f0bd" font-size="15" font-weight="800">CONTEXT · KEYS · INDEXES</text>
+    </g>
+
+    <g transform="translate(1390 500)">
+      <circle r="16" fill="#06152a" stroke="#55f0bd" stroke-width="5"/>
+      <text y="-174" text-anchor="middle" fill="#7fdfff" font-size="15" font-weight="900">1.0 DIRECTION</text>
+      <text y="-126" text-anchor="middle" fill="#ffffff" font-size="31" font-weight="900">Trusted release</text>
+      <text y="-92" text-anchor="middle" fill="#9bb0ca" font-size="16">Measured quality · signed builds</text>
+      <text y="66" text-anchor="middle" fill="#7f96b2" font-size="14" font-weight="800">DIRECTION, NOT A DATE</text>
+    </g>
+
+    <g transform="translate(215 724)">
+      <circle r="5" fill="#36e6ff"/>
+      <text x="18" y="6" fill="#d7edff" font-size="17" font-weight="800">Local first</text>
+      <text x="18" y="34" fill="#8ea4be" font-size="15">Credentials, rows and results stay local</text>
+    </g>
+    <g transform="translate(720 724)">
+      <circle r="5" fill="#55f0bd"/>
+      <text x="18" y="6" fill="#d7edff" font-size="17" font-weight="800">Explicit control</text>
+      <text x="18" y="34" fill="#8ea4be" font-size="15">Generated SQL never runs automatically</text>
+    </g>
+    <g transform="translate(1220 724)">
+      <circle r="5" fill="#1686ff"/>
+      <text x="18" y="6" fill="#d7edff" font-size="17" font-weight="800">Community tested</text>
+      <text x="18" y="34" fill="#8ea4be" font-size="15">Real workflows shape the path to 1.0</text>
+    </g>
+
+    <text x="72" y="854" fill="#6f87a5" font-size="15">Updated for LakeDB Beta 4.4 · Product direction, not a fixed release calendar.</text>
+  </g>
+</svg>

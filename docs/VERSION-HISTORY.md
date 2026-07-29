@@ -15,6 +15,21 @@ Only real tagged builds are listed as releases. The 0.2–0.4 product stages wer
 
 ## Beta 4
 
+### Beta 4.4 (`1.0.0-beta.4.4`)
+
+- `ADD` create reusable named business contexts for QuerIA with local defaults
+  and connection-specific overrides.
+- `ADD` apply the selected context to Normal and Agentic table selection,
+  database interpretation and SQL preparation.
+- `ADD` inspect MySQL/MariaDB processes and replication status from the
+  Database menu, including full-operation viewing and safe `KILL QUERY`.
+- `CHANGE` list Run All outcomes and server warnings per statement.
+- `FIX` preserve long-query elapsed time while switching tabs and avoid
+  duplicate query-tab numbering.
+- `FIX` keep settings dialogs stable and render square checkboxes consistently.
+
+[Release notes and downloads](https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.4.4)
+
 ### Beta 4.3 (`1.0.0-beta.4.3`)
 
 - `ADD` connect through managed SSH tunnels with a password or a private key

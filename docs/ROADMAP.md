@@ -1,12 +1,12 @@
 # LakeDB roadmap
 
-![LakeDB Beta 4.0 product and QuerIA roadmap](assets/roadmap/lakedb-roadmap-beta-4.0.png)
+![LakeDB Beta 4.4 product and QuerIA roadmap](assets/roadmap/lakedb-roadmap-beta-4.4.png)
 
 LakeDB Beta 4 moves QuerIA from direct statement preparation toward bounded
 database investigation. The roadmap tracks complete product stages rather than
 every patch.
 
-## Current: Beta 4.1
+## Current: Beta 4.4
 
 QuerIA now offers two ways to prepare reviewable SQL:
 
@@ -21,9 +21,9 @@ execute a query by itself.
 
 Beta 4 also adds connection search, language-aware explanations, stable device
 identity, table links inside QuerIA results, clearer service states, Beta
-Tester applications and direct issue reporting. Beta 4.1 adds local
-query-result filters, draggable result columns, automatic SQL keyword casing
-and reversible QuerIA activation.
+Tester applications and direct issue reporting. Beta 4.4 adds reusable
+business contexts with local defaults and connection-specific selection so
+QuerIA can interpret database roles and relationships beyond table names.
 
 ## Product stages
 
@@ -31,7 +31,7 @@ and reversible QuerIA activation.
 | --- | --- |
 | **SQL foundation** | Multiple workspaces, schema-aware editing, safe table operations, Explain, transactions, backup, compare, migrate and recovery. |
 | **Beta 3** | QuerIA natural-language documents, schema-grounded SQL, visible review, explicit local execution and privacy opt-in. |
-| **Beta 4 — current** | Normal and Agentic generation, cross-database relationships, table and index inspection, plan review and community testing. |
+| **Beta 4 — current** | Reusable business context, Normal and Agentic generation, cross-database relationships, table and index inspection, plan review and community testing. |
 | **1.0 — direction** | Measured AI quality, trusted distribution, compatibility validation, accessibility and complete product polish. |
 
 Future stages describe direction, not a fixed date or guaranteed scope.
@@ -45,8 +45,10 @@ QuerIA must preserve these boundaries:
 - disabling QuerIA stops service requests and reactivation requires renewed
   consent;
 - no database credentials, rows or query results sent to the service;
-- no retained questions, generated SQL, schema metadata or table names;
+- no retained questions, selected business context, generated SQL, schema
+  metadata or table names;
 - visible SQL before every execution;
+- user-selected context that cannot override schema or safety boundaries;
 - bounded schema investigation;
 - the complete local client remains available when QuerIA is disabled,
   unavailable or has no remaining allowance.
