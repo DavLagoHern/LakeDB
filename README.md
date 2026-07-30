@@ -25,10 +25,10 @@
 ---
 
 <p align="center">
-  <img src="docs/assets/releases/beta4.4/contexts.png" width="100%" alt="LakeDB Beta 4.4 real application capture showing reusable Commerce, Support and Analytics contexts">
+  <img src="docs/assets/releases/beta4.4/context-release-1920x1080.png" width="100%" alt="LakeDB Beta 4.4 presentation artwork showing reusable context flowing through a selected database and QuerIA into reviewable SQL">
 </p>
 
-<p align="center"><sub><strong>New in Beta 4.4.</strong> Give QuerIA reusable business meaning before it chooses databases, tables and relationships.</sub></p>
+<p align="center"><sub><strong>Beta 4.4.</strong> Reusable business context guides database selection and relationship analysis before QuerIA prepares reviewable SQL.</sub></p>
 
 > **New in Beta 4.5:** connections now distinguish Production, Development
 > and Local work. Configure confirmation levels per environment and operation,
