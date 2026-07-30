@@ -30,6 +30,11 @@
 
 <p align="center"><sub><strong>New in Beta 4.4.</strong> Give QuerIA reusable business meaning before it chooses databases, tables and relationships.</sub></p>
 
+> **New in Beta 4.5:** connections now distinguish Production, Development
+> and Local work. Configure confirmation levels per environment and operation,
+> bulk-edit connection credentials or environments, select replication
+> channels and load the server process list only when requested.
+
 > **Beta 4.4.2 hotfix:** sorting a query result now orders the complete cached
 > result before rows are displayed or loaded in blocks. Changing the number of
 > rows per table page also recalculates the page count immediately. The Search
@@ -203,7 +208,7 @@ workflow. Sources: [DBeaver documentation](https://dbeaver.com/docs/dbeaver/AI-c
 | **1.0 direction** | Measured quality, trusted signing and distribution, compatibility validation and complete product polish. |
 
 <p align="center">
-  <a href="docs/ROADMAP.md"><img src="docs/assets/roadmap/lakedb-roadmap-beta-4.4.png" width="100%" alt="LakeDB roadmap from the SQL foundation through Beta 3 and context-aware Beta 4 toward 1.0"></a>
+  <a href="docs/ROADMAP.md"><img src="docs/assets/roadmap/lakedb-roadmap-beta-4.5.png" width="100%" alt="LakeDB roadmap from the SQL foundation through QuerIA and safer production workflows toward 1.0"></a>
 </p>
 
 Roadmap items describe direction, not a fixed release date. See

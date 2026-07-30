@@ -1,12 +1,12 @@
 # LakeDB roadmap
 
-![LakeDB Beta 4.4 product and QuerIA roadmap](assets/roadmap/lakedb-roadmap-beta-4.4.png)
+![LakeDB Beta 4.5 product and safety roadmap](assets/roadmap/lakedb-roadmap-beta-4.5.png)
 
 LakeDB Beta 4 moves QuerIA from direct statement preparation toward bounded
 database investigation. The roadmap tracks complete product stages rather than
 every patch.
 
-## Current: Beta 4.4
+## Current: Beta 4.5
 
 QuerIA now offers two ways to prepare reviewable SQL:
 
@@ -24,6 +24,8 @@ identity, table links inside QuerIA results, clearer service states, Beta
 Tester applications and direct issue reporting. Beta 4.4 adds reusable
 business contexts with local defaults and connection-specific selection so
 QuerIA can interpret database roles and relationships beyond table names.
+Beta 4.5 adds environment-aware confirmation levels, safer Production
+defaults, bulk connection editing and lower-cost on-demand server monitoring.
 
 ## Product stages
 

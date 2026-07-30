@@ -15,6 +15,22 @@ Only real tagged builds are listed as releases. The 0.2–0.4 product stages wer
 
 ## Beta 4
 
+### Beta 4.5 (`1.0.0-beta.4.5.0`)
+
+- `ADD` configurable confirmation levels for each destructive or write
+  operation in Production, Development and Local environments.
+- `SECURITY` classify new connections as Production by default and enforce
+  matching safeguards across SQL, grids, table actions and database tools.
+- `ADD` bulk-edit selected connection environments, usernames and saved
+  passwords.
+- `ADD` select among multiple replication channels and defer loading the
+  server process list until requested.
+- `ADD` resize text and JSON dialogs and remember their size.
+- `CHANGE` present available updates with release notes and allow one exact
+  version to be hidden.
+
+[Release notes and downloads](https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.4.5.0)
+
 ### Beta 4.4.2 (`1.0.0-beta.4.4.2`)
 
 - `FIX` sort every cached query-result row before displaying or loading
