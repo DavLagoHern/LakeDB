@@ -10,7 +10,7 @@
 <p align="center">
   <a href="https://davlagohern.github.io/LakeDB/"><img alt="LakeDB website" src="https://img.shields.io/badge/WEBSITE-EXPLORE_LAKEDB-19d2ff?style=for-the-badge&logoColor=020817"></a>
   <a href="https://www.reddit.com/r/LakeDB/"><img alt="Join the LakeDB community on Reddit" src="https://img.shields.io/badge/REDDIT-JOIN_COMMUNITY-ff4500?style=for-the-badge&logo=reddit&logoColor=white"></a>
-  <a href="https://github.com/DavLagoHern/LakeDB/releases/latest"><img alt="Download the latest LakeDB Beta 4 build" src="https://img.shields.io/badge/DOWNLOAD-BETA_4-0b7cff?style=for-the-badge&logo=github&logoColor=white"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.5.0"><img alt="Download LakeDB Beta 5.0" src="https://img.shields.io/badge/DOWNLOAD-BETA_5.0-0b7cff?style=for-the-badge&logo=github&logoColor=white"></a>
   <a href="https://github.com/DavLagoHern/LakeDB/issues/new?template=bug-report.yml"><img alt="Report a LakeDB issue" src="https://img.shields.io/badge/FEEDBACK-REPORT_ISSUE-06132b?style=for-the-badge&logo=github&logoColor=12d9ff"></a>
 </p>
 
@@ -25,10 +25,21 @@
 ---
 
 <p align="center">
-  <img src="docs/assets/releases/beta4.4/context-release-1920x1080.png" width="100%" alt="LakeDB Beta 4.4 presentation artwork showing reusable context flowing through a selected database and QuerIA into reviewable SQL">
+  <img src="docs/assets/releases/beta5/beta-5.0-card-1920x1080.png" width="100%" alt="LakeDB Beta 5.0 showing a local SQL diagnostic, safe quick fix and optional AI correction">
 </p>
 
-<p align="center"><sub><strong>Beta 4.4.</strong> Reusable business context guides database selection and relationship analysis before QuerIA prepares reviewable SQL.</sub></p>
+<p align="center"><sub><strong>Beta 5.0.</strong> Catch common SQL errors while typing, apply safe local fixes and request an AI correction only when more context is needed.</sub></p>
+
+> **New in Beta 5.0:** local MySQL and MariaDB syntax
+> diagnostics mark the relevant token and explain common mistakes without
+> executing SQL or contacting AI. Unambiguous corrections are available as
+> local quick fixes. An explicit **Resolve with AI** action can return a brief
+> explanation and complete corrected SQL for review in the Messages panel.
+> QuerIA remains the separate experience for generating new SQL.
+
+> **Also in Beta 5.0:** very large tables show their first rows without waiting
+> for an exact `COUNT(*)`. Interactive browsing is clearly capped at 10,000
+> rows, while filters and complete exports remain available.
 
 > **New in Beta 4.5:** connections now distinguish Production, Development
 > and Local work. Configure confirmation levels per environment and operation,
@@ -118,11 +129,11 @@ approval.
 
 AI joins the existing LakeDB workflow; it does not replace it.
 
-| Area | Available in Beta 4 |
+| Area | Available in Beta 5.0 |
 | --- | --- |
 | **Connections** | Multiple simultaneous connections, folders, colors, SSL, SSH tunnels, read-only mode, diagnostics and search from Home or the connection picker. |
 | **Workspaces** | Independent SQL, QuerIA and table tabs per connection, with restored editor content, selected schema and layout. |
-| **SQL editor** | Monaco Editor, proactive schema completion, aliases, columns, PK/index hints, safe automatic keyword casing, formatting, Explain, transactions, history and streaming exports. |
+| **SQL editor** | Monaco Editor, proactive schema completion, aliases, columns, PK/index hints, local syntax diagnostics, safe quick fixes, optional AI correction, formatting, Explain, transactions, history and streaming exports. |
 | **QuerIA** | Reusable per-connection business contexts, Normal and Agentic generation, cross-database relationships, index inspection, `EXPLAIN` review, visible SQL and explicit local execution. |
 | **Results and data** | Local query-result filters, draggable result columns, virtualized table grids, pagination, search, sorting and typed safe editing with conflict checks and rollback. |
 | **Database tools** | Backup, restore, schema comparison, migration planning, connection imports and reviewable generated SQL. |
@@ -181,6 +192,8 @@ autocomplete and editable grids are intentionally omitted.
 
 | Focused capability | LakeDB | DBeaver | TablePlus | MySQL Workbench | HeidiSQL |
 | --- | :---: | :---: | :---: | :---: | :---: |
+| Local syntax diagnostics before execution | ✓ | ✓ | × | ◐ | × |
+| Explicit AI error correction with complete SQL review | ✓ | ◐ | ◐ | — | — |
 | Restored independent connection workspaces | ✓ | ✓ | ✓ | ◐ | ◐ |
 | PK and index-aware completion predicates | ✓ | ◐ | × | × | × |
 | Typed staged edits with conflict checks and rollback | ✓ | ◐ | ◐ | ◐ | ◐ |
@@ -204,11 +217,12 @@ workflow. Sources: [DBeaver documentation](https://dbeaver.com/docs/dbeaver/AI-c
 | --- | --- |
 | **SQL foundation** | Independent workspaces, schema-aware editing, safe data operations, database tools and recovery. |
 | **Beta 3** | Natural-language query documents, visible SQL and explicit local execution. |
-| **Beta 4 — current** | Reusable connection context, Normal and Agentic generation, cross-database relationships, index inspection, reversible opt-in and clearer execution feedback. |
+| **Beta 4 — complete** | Reusable connection context, Normal and Agentic generation, cross-database relationships, index inspection, reversible opt-in and clearer execution feedback. |
+| **Beta 5 — current** | Local SQL diagnostics, safe quick fixes, explicit AI correction and faster browsing for very large tables. |
 | **1.0 direction** | Measured quality, trusted signing and distribution, compatibility validation and complete product polish. |
 
 <p align="center">
-  <a href="docs/ROADMAP.md"><img src="docs/assets/roadmap/lakedb-roadmap-beta-4.5.png" width="100%" alt="LakeDB roadmap from the SQL foundation through QuerIA and safer production workflows toward 1.0"></a>
+  <a href="docs/ROADMAP.md"><img src="docs/assets/roadmap/lakedb-roadmap-beta-5.0.png" width="100%" alt="LakeDB roadmap from the SQL foundation through QuerIA, safer production workflows and SQL confidence toward 1.0"></a>
 </p>
 
 Roadmap items describe direction, not a fixed release date. See

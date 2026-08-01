@@ -8,8 +8,8 @@
     <meta name="application-name" content="LakeDB">
     <meta name="author" content="LakeDB">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    <title>LakeDB — The SQL client with QuerIA</title>
-    <meta name="description" content="A local-first MySQL and MariaDB desktop client with reviewable natural-language SQL, schema-aware completion and complete database tools.">
+    <title>LakeDB — Local-first MySQL and MariaDB client</title>
+    <meta name="description" content="A complete local-first MySQL and MariaDB desktop client with SQL diagnostics, reviewable AI and independent connection workspaces.">
     <link rel="canonical" href="https://davlagohern.github.io/LakeDB/">
     <link rel="alternate" hreflang="en" href="https://davlagohern.github.io/LakeDB/">
     <link rel="alternate" hreflang="x-default" href="https://davlagohern.github.io/LakeDB/">
@@ -17,20 +17,20 @@
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="LakeDB">
     <meta property="og:locale" content="en_US">
-    <meta property="og:title" content="LakeDB Beta 4.1 — QuerIA Agent Mode">
-    <meta property="og:description" content="Use direct generation or let QuerIA inspect relationships and indexes across databases before preparing reviewable SQL.">
+    <meta property="og:title" content="LakeDB Beta 5.0 — SQL errors caught while you type">
+    <meta property="og:description" content="Local SQL diagnostics, safe quick fixes and optional AI correction for MySQL and MariaDB.">
     <meta property="og:url" content="https://davlagohern.github.io/LakeDB/">
-    <meta property="og:image" content="https://davlagohern.github.io/LakeDB/assets/releases/beta4/agent-mode.png">
-    <meta property="og:image:secure_url" content="https://davlagohern.github.io/LakeDB/assets/releases/beta4/agent-mode.png">
+    <meta property="og:image" content="https://davlagohern.github.io/LakeDB/assets/releases/beta5/beta-5.0-card-1920x1080.png">
+    <meta property="og:image:secure_url" content="https://davlagohern.github.io/LakeDB/assets/releases/beta5/beta-5.0-card-1920x1080.png">
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="1920">
     <meta property="og:image:height" content="1080">
-    <meta property="og:image:alt" content="LakeDB Beta 4.1 QuerIA Agent Mode inspecting fictional schemas and indexes">
+    <meta property="og:image:alt" content="LakeDB Beta 5.0 showing local SQL diagnostics and quick fixes">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="LakeDB Beta 4.1 — QuerIA Agent Mode">
-    <meta name="twitter:description" content="Normal or Agentic generation, cross-database relationships and reviewable SQL.">
-    <meta name="twitter:image" content="https://davlagohern.github.io/LakeDB/assets/releases/beta4/agent-mode.png">
-    <meta name="twitter:image:alt" content="LakeDB Beta 4.1 QuerIA Agent Mode">
+    <meta name="twitter:title" content="LakeDB Beta 5.0 — SQL errors caught while you type">
+    <meta name="twitter:description" content="Local SQL diagnostics, safe quick fixes and optional AI correction.">
+    <meta name="twitter:image" content="https://davlagohern.github.io/LakeDB/assets/releases/beta5/beta-5.0-card-1920x1080.png">
+    <meta name="twitter:image:alt" content="LakeDB Beta 5.0 local SQL diagnostics">
     <script>
       (() => {
         try {
@@ -76,18 +76,20 @@
             "@id": "https://davlagohern.github.io/LakeDB/#software",
             "name": "LakeDB",
             "url": "https://davlagohern.github.io/LakeDB/",
-            "image": "https://davlagohern.github.io/LakeDB/assets/releases/beta4/agent-mode.png",
+            "image": "https://davlagohern.github.io/LakeDB/assets/releases/beta5/beta-5.0-card-1920x1080.png",
             "screenshot": "https://davlagohern.github.io/LakeDB/assets/screenshots/queria.png",
             "applicationCategory": "DeveloperApplication",
             "applicationSubCategory": "Database client",
             "operatingSystem": "Windows 64-bit, macOS Apple Silicon, Linux 64-bit",
             "description": "A local-first MySQL and MariaDB desktop client with reviewable natural-language SQL, schema-aware completion and complete database tools.",
-            "softwareVersion": "Beta 4.1",
-            "downloadUrl": "https://github.com/DavLagoHern/LakeDB/releases/latest",
-            "releaseNotes": "https://github.com/DavLagoHern/LakeDB/releases/latest",
+            "softwareVersion": "Beta 5.0",
+            "downloadUrl": "https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.5.0",
+            "releaseNotes": "https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.5.0",
             "isAccessibleForFree": true,
             "featureList": [
               "Reviewable natural-language SQL with QuerIA",
+              "Local SQL syntax diagnostics and safe quick fixes",
+              "Explicit AI correction for existing SQL",
               "Agentic cross-database relationship and index inspection",
               "Local query-result filters and draggable columns",
               "Safe automatic SQL keyword casing",
@@ -104,7 +106,7 @@
               "price": "0",
               "priceCurrency": "EUR",
               "availability": "https://schema.org/InStock",
-              "url": "https://github.com/DavLagoHern/LakeDB/releases/latest"
+              "url": "https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.5.0"
             }
           }
         ]
@@ -124,11 +126,11 @@
           <span></span><span></span>
         </button>
         <nav class="site-nav" aria-label="Primary navigation" data-nav>
+          <a href="#beta5">Beta 5.0</a>
           <a href="#queria">QuerIA</a>
           <a href="#sql-client">SQL client</a>
           <a href="#compare">Compare</a>
           <a href="#privacy">Privacy</a>
-          <a href="#ai-roadmap">AI roadmap</a>
           <a href="#downloads">Download</a>
         </nav>
         <div class="header-controls">
@@ -146,41 +148,60 @@
     </header>
 
     <main id="main">
-      <section class="hero" id="top">
-        <div class="hero-grid" aria-hidden="true"></div>
-        <div class="shell hero-main">
+      <section class="hero hero-preview" id="top">
+        <img class="hero-preview__image" src="assets/releases/beta5/sql-quick-fix-1920x1080.png" alt="" width="1920" height="1080" fetchpriority="high" decoding="async">
+        <div class="hero-preview__shade" aria-hidden="true"></div>
+        <div class="shell hero-preview__content">
           <div class="hero-copy">
-            <h1>SQL WITH <span class="hero-ai">AI.</span><br><small>Quer<span>IA</span> investigates.</small></h1>
-            <p>Ask directly or let QuerIA inspect tables, relationships and indexes across databases before it prepares reviewable SQL.</p>
+            <p class="hero-kicker">LakeDB Beta 5.0</p>
+            <h1>Lake<span>DB</span></h1>
+            <h2>SQL errors, caught while you type.</h2>
+            <p>Local diagnostics find common MySQL and MariaDB mistakes before execution. Safe fixes stay local; AI correction is an explicit second step.</p>
             <div class="hero-actions">
-              <a class="button button-primary" href="https://github.com/DavLagoHern/LakeDB/releases/latest" data-download-link>
+              <a class="button button-primary" href="https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.5.0" data-download-link>
                 <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v12m0 0 5-5m-5 5-5-5M4 19h16"/></svg>
-                <span data-download-label>Download Beta 4.1</span>
+                <span data-download-label>Download Beta 5.0</span>
               </a>
-              <a class="button button-secondary" href="#queria">See QuerIA in action
+              <a class="button button-secondary" href="#beta5">Explore Beta 5.0
                 <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg>
               </a>
             </div>
             <p class="platforms">Windows x64 <i></i> macOS Apple Silicon <i></i> Linux x64</p>
           </div>
-          <figure class="hero-stage capture-frame" data-reveal>
-            <button class="media-button" type="button" data-lightbox="assets/releases/beta4/agent-mode.png" aria-label="Open the LakeDB Beta 4.0 Agent Mode artwork">
-              <img src="assets/releases/beta4/agent-mode.png" alt="QuerIA Agent Mode inspecting fictional schemas, relationships and indexes before preparing SQL" width="1920" height="1080" fetchpriority="high" decoding="async">
-            </button>
-            <figcaption><strong>New in Beta 4.0: bounded database investigation.</strong><span>Agent Mode can inspect relevant structures and plans before returning SQL that remains visible and under your control.</span></figcaption>
-          </figure>
         </div>
-        <div class="shell proof-line" aria-label="Product summary">
-          <span>Normal + Agentic</span>
-          <span>Local execution</span>
-          <span>MySQL &amp; MariaDB</span>
-          <span>Full SQL workflow</span>
+        <div class="shell hero-preview__proof" aria-label="Beta 5 summary">
+          <span>Local diagnostics</span>
+          <span>Safe quick fixes</span>
+          <span>Optional AI correction</span>
+          <span>QuerIA generation</span>
+        </div>
+      </section>
+
+      <section class="beta5-preview section" id="beta5">
+        <div class="shell split-heading">
+          <p class="section-index">01 / Beta 5.0</p>
+          <div>
+            <h2>A faster feedback loop, without giving up control.</h2>
+            <p>Diagnostics handle the obvious syntax mistakes locally. AI correction helps only when requested. QuerIA stays focused on creating new queries from natural language.</p>
+          </div>
+        </div>
+        <div class="shell beta5-preview__layout">
+          <figure class="capture-frame">
+            <button class="media-button" type="button" data-lightbox="assets/releases/beta5/ai-editor-correction-1920x1080.png" aria-label="Open the Beta 5 AI SQL correction preview">
+              <img src="assets/releases/beta5/ai-editor-correction-1920x1080.png" alt="LakeDB Beta 5 showing an AI SQL correction with explanation, complete SQL and an explicit Apply correction button" width="1920" height="1080" loading="lazy" decoding="async">
+            </button>
+          </figure>
+          <div class="beta5-preview__points">
+            <article><span>01</span><h3>Local first</h3><p>Markers and explanations appear while you type. No query runs and no network request is made.</p></article>
+            <article><span>02</span><h3>Fix the certain cases</h3><p>Quick fixes are offered only when LakeDB can make one unambiguous local edit.</p></article>
+            <article><span>03</span><h3>Ask AI explicitly</h3><p>Review a complete correction, then apply, copy or discard it. Corrected SQL never runs automatically.</p></article>
+          </div>
         </div>
       </section>
 
       <section class="product-intro section" id="queria">
         <div class="shell split-heading">
-          <p class="section-index">01 / QuerIA</p>
+          <p class="section-index">02 / QuerIA</p>
           <div>
             <h2>Direct when it is simple. Investigative when it is not.</h2>
             <p>QuerIA is a line-based query document beside your SQL tabs. Use Normal generation for focused requests or Agentic generation when the answer may require more tables, relationships and index review.</p>
@@ -198,7 +219,7 @@
         <div class="shell workflow-copy">
           <p class="section-index">02 / Real examples</p>
           <h2>Beyond a one-table SELECT.</h2>
-            <p>Beta 4.1 combines reviewable SQL with local result filters, draggable result columns and safer everyday SQL editing.</p>
+            <p>Beta 4.5 combines reviewable SQL with local result filters, draggable result columns and safer everyday SQL editing.</p>
         </div>
         <div class="shell query-examples" data-reveal>
           <article>
@@ -334,6 +355,14 @@ ADD COLUMN last_login_at TIMESTAMP NULL;</code></pre>
                 <td><span class="matrix-mark is-no" aria-label="No comparable built-in workflow found">×</span></td>
                 <td><span class="matrix-mark is-no" aria-label="No comparable environment classification and confirmation workflow found">×</span></td>
               </tr>
+              <tr>
+                <th scope="row">Local syntax diagnostics before execution</th>
+                <td class="is-lakedb"><span class="matrix-mark is-yes" aria-label="Included in Beta 5.0">✓</span></td>
+                <td><span class="matrix-mark is-yes" aria-label="Problem markers and semantic analysis are documented">✓</span></td>
+                <td><span class="matrix-mark is-no" aria-label="No comparable built-in local diagnostic workflow found">×</span></td>
+                <td><span class="matrix-mark is-partial" aria-label="A SQL syntax checker is available, with a different marker and quick-fix workflow">◐</span></td>
+                <td><span class="matrix-mark is-no" aria-label="No comparable built-in local diagnostic and quick-fix workflow found">×</span></td>
+              </tr>
 
               <tr>
                 <th scope="row">Typed staged edits with conflict detection and rollback</th>
@@ -373,6 +402,14 @@ ADD COLUMN last_login_at TIMESTAMP NULL;</code></pre>
               </tr>
               <tr class="comparison-group">
                 <th colspan="6" scope="colgroup">Natural-language SQL and trust boundary</th>
+              </tr>
+              <tr>
+                <th scope="row">Explicit AI error correction with complete SQL review</th>
+                <td class="is-lakedb"><span class="matrix-mark is-yes" aria-label="Included in Beta 5.0">✓</span></td>
+                <td><span class="matrix-mark is-partial" aria-label="AI error explanation and correction is documented for paid editions after execution">◐</span></td>
+                <td><span class="matrix-mark is-partial" aria-label="An LLM plug-in is available through a different query-generation workflow">◐</span></td>
+                <td><span class="matrix-mark is-na" aria-label="No built-in AI; not applicable">—</span></td>
+                <td><span class="matrix-mark is-na" aria-label="No built-in AI; not applicable">—</span></td>
               </tr>
               <tr>
                 <th scope="row">Dedicated line-based natural-language documents</th>
@@ -427,8 +464,8 @@ ADD COLUMN last_login_at TIMESTAMP NULL;</code></pre>
         </div>
 
         <div class="shell comparison-methodology">
-          <p><strong>Twelve reasons to consider LakeDB.</strong> Shared capabilities such as multiple connections, SSH/SSL, normal autocomplete, editable grids and visual table editing are intentionally omitted. A partial mark covers paid tiers, plug-ins or a materially different workflow. A dash means the comparison is not applicable because the client has no built-in AI.</p>
-          <p>Sources: <a href="https://dbeaver.com/docs/dbeaver/AI-command/" target="_blank" rel="noreferrer">DBeaver documentation</a>, <a href="https://docs.tableplus.com/llm-plugin" target="_blank" rel="noreferrer">TablePlus documentation</a>, <a href="https://dev.mysql.com/doc/workbench/en/" target="_blank" rel="noreferrer">MySQL Workbench manual</a> and <a href="https://www.heidisql.com/" target="_blank" rel="noreferrer">HeidiSQL features and documentation</a>.</p>
+          <p><strong>Fourteen reasons to consider LakeDB.</strong> Shared capabilities such as multiple connections, SSH/SSL, normal autocomplete, editable grids and visual table editing are intentionally omitted. A partial mark covers paid tiers, plug-ins or a materially different workflow. A dash means the comparison is not applicable because the client has no built-in AI.</p>
+          <p>Sources: <a href="https://dbeaver.com/docs/dbeaver/SQL-Code-Editor/" target="_blank" rel="noreferrer">DBeaver SQL editor</a>, <a href="https://dbeaver.com/docs/dbeaver/SQL-Editor/" target="_blank" rel="noreferrer">DBeaver error correction</a>, <a href="https://docs.tableplus.com/llm-plugin" target="_blank" rel="noreferrer">TablePlus documentation</a>, <a href="https://dev.mysql.com/doc/workbench/en/wb-preferences-general-editors.html" target="_blank" rel="noreferrer">MySQL Workbench syntax checker</a> and <a href="https://www.heidisql.com/" target="_blank" rel="noreferrer">HeidiSQL features and documentation</a>.</p>
         </div>
       </section>
 
@@ -483,10 +520,10 @@ ADD COLUMN last_login_at TIMESTAMP NULL;</code></pre>
           <h2>From direct SQL<br>to bounded investigation.</h2>
         </div>
         <figure class="shell capture-frame roadmap-visual" data-reveal>
-          <button class="media-button" type="button" data-lightbox="assets/roadmap/lakedb-roadmap-beta-4.0.png" aria-label="Open the LakeDB Beta 4.0 roadmap">
-            <img src="assets/roadmap/lakedb-roadmap-beta-4.0.png" alt="LakeDB roadmap from the SQL foundation through QuerIA and Agent Mode toward 1.0" width="1600" height="900" loading="lazy" decoding="async">
+          <button class="media-button" type="button" data-lightbox="assets/roadmap/lakedb-roadmap-beta-5.0.png" aria-label="Open the LakeDB Beta 5.0 roadmap">
+            <img src="assets/roadmap/lakedb-roadmap-beta-5.0.png" alt="LakeDB roadmap from the SQL foundation through QuerIA, safer production workflows and SQL confidence toward 1.0" width="1600" height="900" loading="lazy" decoding="async">
           </button>
-          <figcaption><strong>Four product stages, not a release calendar.</strong><span>The SQL foundation, reviewable QuerIA, Agent Mode in Beta 4 and the trusted-client direction for 1.0.</span></figcaption>
+          <figcaption><strong>Five product stages, not a release calendar.</strong><span>Beta 5 adds local diagnostics and explicit AI correction on the road to a trusted 1.0 release.</span></figcaption>
         </figure>
         <div class="shell roadmap-actions">
           <a href="ROADMAP.md">Read the complete roadmap <span>↗</span></a>
@@ -498,16 +535,16 @@ ADD COLUMN last_login_at TIMESTAMP NULL;</code></pre>
           <div class="download-copy">
             <p class="section-index">08 / Download</p>
             <h2>Try the final public beta line.</h2>
-            <a class="button button-primary" href="https://github.com/DavLagoHern/LakeDB/releases/latest" data-download-link>
+            <a class="button button-primary" href="https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.5.0" data-download-link>
               <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v12m0 0 5-5m-5 5-5-5M4 19h16"/></svg>
-              <span data-download-label>Download Beta 4.1</span>
+              <span data-download-label>Download Beta 5.0</span>
             </a>
             <p class="beta-note">QuerIA includes a free beta allowance. The complete SQL client remains usable when QuerIA is disabled, unavailable or has no remaining allowance.</p>
           </div>
           <div class="platform-list">
-            <a href="https://github.com/DavLagoHern/LakeDB/releases/latest" data-platform="windows"><span><strong>Windows x64</strong><em>Installer and portable build</em></span><b>↗</b></a>
-            <a href="https://github.com/DavLagoHern/LakeDB/releases/latest" data-platform="mac"><span><strong>macOS Apple Silicon</strong><em>DMG and ZIP</em></span><b>↗</b></a>
-            <a href="https://github.com/DavLagoHern/LakeDB/releases/latest" data-platform="linux"><span><strong>Linux x64</strong><em>AppImage and Debian package</em></span><b>↗</b></a>
+            <a href="https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.5.0" data-platform="windows"><span><strong>Windows x64</strong><em>Installer and portable build</em></span><b>↗</b></a>
+            <a href="https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.5.0" data-platform="mac"><span><strong>macOS Apple Silicon</strong><em>DMG and ZIP</em></span><b>↗</b></a>
+            <a href="https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.5.0" data-platform="linux"><span><strong>Linux x64</strong><em>AppImage and Debian package</em></span><b>↗</b></a>
           </div>
         </div>
       </section>

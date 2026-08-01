@@ -13,6 +13,21 @@ Packaged downloads are retained for the current build, the previous patch and th
 
 Only real tagged builds are listed as releases. The 0.2–0.4 product stages were development milestones rather than public tags, and 0.10.0–0.10.2 were not published as separate builds.
 
+## 1.0.0 Beta 5.0 — August 1, 2026
+
+- `ADD` analyze common MySQL and MariaDB syntax mistakes locally while typing,
+  with token-level markers and concise explanations.
+- `ADD` offer local quick fixes only when the replacement is unambiguous.
+- `ADD` request an optional AI correction explicitly from an editor diagnostic
+  or a server error, with complete SQL kept visible for review and no automatic
+  execution.
+- `CHANGE` keep QuerIA focused on generating new SQL and present corrections as
+  a separate **Resolve with AI** workflow in Messages or Errors.
+- `FIX` show rows from very large tables without waiting for an exact
+  `COUNT(*)`, with a clear 10,000-row interactive browsing limit.
+
+[Release notes and downloads](https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.5.0)
+
 ## Beta 4
 
 ### Beta 4.5 (`1.0.0-beta.4.5.0`)
