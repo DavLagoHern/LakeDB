@@ -20,7 +20,8 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/DavLagoHern/LakeDB/releases"><img alt="Total LakeDB release file downloads" src="https://img.shields.io/github/downloads/DavLagoHern/LakeDB/total?style=for-the-badge&label=RELEASE%20DOWNLOADS&labelColor=06132b&color=12d9ff&logo=github&logoColor=white"></a>
+  <!-- 100 maintainer-recorded downloads from archived releases + live GitHub release asset downloads. -->
+  <a href="https://github.com/DavLagoHern/LakeDB/releases"><img alt="At least 115 lifetime LakeDB release downloads, including archived releases" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FDavLagoHern%2FLakeDB%2Fdownload-stats%2Fbadge.json&style=flat-square"></a>
 </p>
 
 <p align="center">

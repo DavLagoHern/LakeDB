@@ -1,0 +1,63 @@
+name: Update lifetime download badge
+
+on:
+  schedule:
+    - cron: "17 * * * *"
+  release:
+    types: [published, deleted]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: lifetime-download-badge
+  cancel-in-progress: false
+
+jobs:
+  update:
+    name: Refresh lifetime downloads
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd # v5
+        with:
+          fetch-depth: 0
+
+      - name: Update persistent badge endpoint
+        env:
+          GH_TOKEN: ${{ github.token }}
+          HISTORICAL_DOWNLOAD_BASELINE: "100"
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          current_downloads="$(
+            gh api --paginate --slurp \
+              "repos/${GITHUB_REPOSITORY}/releases?per_page=100" |
+              jq '[.[][] | .assets[]?.download_count] | add // 0'
+          )"
+          candidate_total="$((HISTORICAL_DOWNLOAD_BASELINE + current_downloads))"
+
+          git fetch origin download-stats
+          git switch --force-create download-stats origin/download-stats
+
+          previous_total="$(jq -r '.message | sub("\\+$"; "") | tonumber' badge.json)"
+          if (( previous_total > candidate_total )); then
+            lifetime_total="$previous_total"
+          else
+            lifetime_total="$candidate_total"
+          fi
+
+          jq --arg message "${lifetime_total}+" '.message = $message' badge.json > badge.next.json
+          mv badge.next.json badge.json
+
+          if git diff --quiet -- badge.json; then
+            echo "Lifetime download badge is already current at ${lifetime_total}+."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add badge.json
+          git commit -m "Update lifetime downloads to ${lifetime_total}+"
+          git push origin HEAD:download-stats
