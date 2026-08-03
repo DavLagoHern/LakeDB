@@ -70,7 +70,21 @@ if ($InstallTest) {
         )
 
         Write-Host "`n==> Verify the Installed apps registration"
-        Invoke-CheckedCommand -Command 'winget' -Arguments @('list', '--name', 'LakeDB', '--exact')
+        $uninstallRegistryPaths = @(
+            'HKCU:\Software\Microsoft\Windows\CurrentVersion\Uninstall\*',
+            'HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall\*',
+            'HKLM:\Software\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\*'
+        )
+        $installedEntry = Get-ItemProperty -Path $uninstallRegistryPaths -ErrorAction SilentlyContinue |
+            Where-Object { $_.DisplayName -like 'LakeDB*' } |
+            Select-Object -First 1
+        if (-not $installedEntry) {
+            throw 'LakeDB was installed, but its Installed apps registry entry was not found.'
+        }
+        if ($installedEntry.DisplayVersion -ne $Version) {
+            throw "Installed apps reports LakeDB $($installedEntry.DisplayVersion), expected $Version."
+        }
+        Write-Host "Registered LakeDB $($installedEntry.DisplayVersion) for uninstall."
     }
     finally {
         Invoke-CheckedCommand -Command 'winget' -Arguments @('settings', '--disable', 'LocalManifestFiles')
