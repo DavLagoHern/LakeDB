@@ -1,0 +1,13 @@
+# Created with WinGet manifest schema 1.10.0
+PackageIdentifier: DavidLago.LakeDB
+PackageVersion: 1.0.0-beta.5.0
+InstallerType: nullsoft
+Scope: user
+UpgradeBehavior: install
+ReleaseDate: 2026-08-01
+Installers:
+  - Architecture: x64
+    InstallerUrl: https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.5.0/LakeDB-1.0.0-beta.5.0-win-x64-setup.exe
+    InstallerSha256: 42DDF0D987C00A0545E6D594AFFE7D1CE6308C7750D8D8F1CBEF4DEA156D776F
+ManifestType: installer
+ManifestVersion: 1.10.0
