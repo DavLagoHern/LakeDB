@@ -11,9 +11,16 @@
   <a href="https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.5.0"><img alt="Download LakeDB Beta 5.0" src="https://img.shields.io/badge/DOWNLOAD-BETA_5.0-0b7cff?style=for-the-badge&logo=github&logoColor=white"></a>
   <a href="https://github.com/DavLagoHern/homebrew-lakedb"><img alt="Install LakeDB with Homebrew" src="https://img.shields.io/badge/HOMEBREW-INSTALL_LAKEDB-fbb040?style=for-the-badge&logo=homebrew&logoColor=black"></a>
   <a href="https://davlagohern.github.io/LakeDB/"><img alt="LakeDB website" src="https://img.shields.io/badge/WEBSITE-EXPLORE_LAKEDB-19d2ff?style=for-the-badge&logoColor=020817"></a>
+</p>
+
+<p align="center">
   <a href="https://www.reddit.com/r/LakeDB/"><img alt="Join the LakeDB community on Reddit" src="https://img.shields.io/badge/REDDIT-JOIN_COMMUNITY-ff4500?style=for-the-badge&logo=reddit&logoColor=white"></a>
   <a href="https://www.patreon.com/LakeDB"><img alt="Support LakeDB on Patreon" src="https://img.shields.io/badge/PATREON-SUPPORT_LAKEDB-ff424d?style=for-the-badge&logo=patreon&logoColor=white"></a>
   <a href="https://github.com/DavLagoHern/LakeDB/issues/new?template=bug-report.yml"><img alt="Report a LakeDB issue" src="https://img.shields.io/badge/FEEDBACK-REPORT_ISSUE-06132b?style=for-the-badge&logo=github&logoColor=12d9ff"></a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/DavLagoHern/LakeDB/releases"><img alt="Total LakeDB release file downloads" src="https://img.shields.io/github/downloads/DavLagoHern/LakeDB/total?style=for-the-badge&label=RELEASE%20DOWNLOADS&labelColor=06132b&color=12d9ff&logo=github&logoColor=white"></a>
 </p>
 
 <p align="center">
