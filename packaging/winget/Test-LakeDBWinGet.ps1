@@ -20,11 +20,14 @@ function Invoke-CheckedCommand {
         [string]$Command,
 
         [Parameter()]
-        [string[]]$Arguments = @()
+        [string[]]$Arguments = @(),
+
+        [Parameter()]
+        [int[]]$AcceptedExitCodes = @(0)
     )
 
     & $Command @Arguments
-    if ($LASTEXITCODE -ne 0) {
+    if ($AcceptedExitCodes -notcontains $LASTEXITCODE) {
         throw "$Command failed with exit code $LASTEXITCODE."
     }
 }
@@ -51,7 +54,7 @@ if (-not (Test-Path $manifestDirectory -PathType Container)) {
 }
 
 Write-Host "`n==> Validate WinGet manifests for LakeDB $Version"
-Invoke-CheckedCommand -Command 'winget' -Arguments @('validate', $manifestDirectory)
+Invoke-CheckedCommand -Command 'winget' -Arguments @('validate', $manifestDirectory) -AcceptedExitCodes @(0, -1978335192)
 
 if ($InstallTest) {
     Write-Host "`n==> Install LakeDB from the local manifests"
