@@ -8,9 +8,11 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.5.0"><img alt="Download LakeDB Beta 5.0" src="https://img.shields.io/badge/DOWNLOAD-BETA_5.0-0b7cff?style=for-the-badge&logo=github&logoColor=white"></a>
+  <a href="https://github.com/DavLagoHern/homebrew-lakedb"><img alt="Install LakeDB with Homebrew" src="https://img.shields.io/badge/HOMEBREW-INSTALL_LAKEDB-fbb040?style=for-the-badge&logo=homebrew&logoColor=black"></a>
   <a href="https://davlagohern.github.io/LakeDB/"><img alt="LakeDB website" src="https://img.shields.io/badge/WEBSITE-EXPLORE_LAKEDB-19d2ff?style=for-the-badge&logoColor=020817"></a>
   <a href="https://www.reddit.com/r/LakeDB/"><img alt="Join the LakeDB community on Reddit" src="https://img.shields.io/badge/REDDIT-JOIN_COMMUNITY-ff4500?style=for-the-badge&logo=reddit&logoColor=white"></a>
-  <a href="https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.5.0"><img alt="Download LakeDB Beta 5.0" src="https://img.shields.io/badge/DOWNLOAD-BETA_5.0-0b7cff?style=for-the-badge&logo=github&logoColor=white"></a>
+  <a href="https://www.patreon.com/LakeDB"><img alt="Support LakeDB on Patreon" src="https://img.shields.io/badge/PATREON-SUPPORT_LAKEDB-ff424d?style=for-the-badge&logo=patreon&logoColor=white"></a>
   <a href="https://github.com/DavLagoHern/LakeDB/issues/new?template=bug-report.yml"><img alt="Report a LakeDB issue" src="https://img.shields.io/badge/FEEDBACK-REPORT_ISSUE-06132b?style=for-the-badge&logo=github&logoColor=12d9ff"></a>
 </p>
 
@@ -21,6 +23,41 @@
   <img alt="MySQL and MariaDB" src="https://img.shields.io/badge/MySQL_+_MariaDB-ready-0b7cff?style=flat-square&logo=mysql&logoColor=white">
   <img alt="English and Spanish" src="https://img.shields.io/badge/UI-English_+_Spanish-12d9ff?style=flat-square">
 </p>
+
+---
+
+## Install LakeDB
+
+### macOS Apple Silicon — Homebrew
+
+```bash
+brew tap DavLagoHern/lakedb
+brew trust DavLagoHern/lakedb
+brew install --cask lakedb
+```
+
+The LakeDB tap checks the latest verified release every six hours and keeps the
+Cask version and SHA-256 current automatically.
+
+### Direct downloads
+
+<p align="center">
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.5.0/LakeDB-1.0.0-beta.5.0-mac-arm64.dmg"><img alt="Download LakeDB for macOS Apple Silicon" src="https://img.shields.io/badge/macOS-DOWNLOAD_DMG-06132b?style=for-the-badge&logo=apple&logoColor=white"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.5.0/LakeDB-1.0.0-beta.5.0-win-x64-setup.exe"><img alt="Download LakeDB installer for Windows x64" src="https://img.shields.io/badge/Windows-DOWNLOAD_SETUP-0b7cff?style=for-the-badge&logo=windows&logoColor=white"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.5.0/LakeDB-1.0.0-beta.5.0-linux-x86_64.AppImage"><img alt="Download LakeDB AppImage for Linux x64" src="https://img.shields.io/badge/Linux-DOWNLOAD_APPIMAGE-12d9ff?style=for-the-badge&logo=linux&logoColor=020817"></a>
+</p>
+
+| Platform | Alternative package | Install |
+| --- | --- | --- |
+| macOS Apple Silicon | [ZIP](https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.5.0/LakeDB-1.0.0-beta.5.0-mac-arm64.zip) | Move `LakeDB.app` to Applications. |
+| Windows x64 | [Portable EXE](https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.5.0/LakeDB-1.0.0-beta.5.0-win-x64-portable.exe) | Run without installation. |
+| Linux x64 | [Debian package](https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.5.0/LakeDB-1.0.0-beta.5.0-linux-amd64.deb) | Install with your package manager. |
+
+> **Public beta signing:** macOS packages have an ad-hoc signature but are not
+> notarized yet; Windows packages are not yet signed with a trusted
+> certificate. Download only from the official LakeDB repositories. Every
+> package has a matching SHA-256 file on the
+> [Beta 5.0 release page](https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.5.0).
 
 ---
 
@@ -227,21 +264,6 @@ workflow. Sources: [DBeaver documentation](https://dbeaver.com/docs/dbeaver/AI-c
 
 Roadmap items describe direction, not a fixed release date. See
 [ROADMAP.md](docs/ROADMAP.md) for the complete quality and trust gates.
-
-## Download
-
-Open the [latest LakeDB release](https://github.com/DavLagoHern/LakeDB/releases/latest)
-and choose your platform:
-
-| Platform | Download | Install |
-| --- | --- | --- |
-| macOS Apple Silicon | `LakeDB-*-mac-arm64.dmg` or `.zip` | Open the DMG or move `LakeDB.app` to Applications. |
-| Windows x64 | `LakeDB-*-win-x64-setup.exe` | Run the installer. A portable `.exe` is also available. |
-| Linux x64 | `LakeDB-*-linux-x86_64.AppImage` or `LakeDB-*-linux-amd64.deb` | Make the AppImage executable, or install the Debian package. |
-
-LakeDB is still a public beta. macOS packages are ad-hoc signed but not yet
-notarized; Windows packages do not yet have a trusted code-signing certificate.
-Only download LakeDB from this repository and verify the published SHA-256.
 
 ## Help shape LakeDB
 
