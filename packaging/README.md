@@ -18,6 +18,7 @@ cask through the project-owned tap:
 
    ```bash
    brew tap DavLagoHern/lakedb
+   brew trust DavLagoHern/lakedb
    brew install --cask DavLagoHern/lakedb/lakedb
    brew uninstall --cask lakedb
    ```
