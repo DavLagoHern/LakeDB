@@ -3,18 +3,17 @@
 LakeDB publishes immutable, versioned installers in this public repository.
 This directory contains the bootstrap files for Homebrew and WinGet; the
 release-triggered workflow in `.github/workflows/package-managers.yml` keeps
-both channels current after their one-time setup is complete.
+WinGet current after its one-time setup is complete. The Homebrew tap updates
+itself from the latest verified LakeDB release.
 
 ## Homebrew
 
 The official `homebrew/cask` repository normally requires substantially more
 public notability for a self-submission than LakeDB has during its beta. Until
-LakeDB is signed, notarized and eligible for the official catalog, publish the
-cask through the project-owned tap:
+LakeDB is signed, notarized and eligible for the official catalog, the cask is
+published through `DavLagoHern/homebrew-lakedb`:
 
-1. Create the public repository `DavLagoHern/homebrew-lakedb`.
-2. Copy `homebrew/Casks/lakedb.rb` to `Casks/lakedb.rb` in that repository.
-3. Test it on Apple Silicon with:
+1. Install and test it on Apple Silicon with:
 
    ```bash
    brew tap DavLagoHern/lakedb
@@ -23,15 +22,8 @@ cask through the project-owned tap:
    brew uninstall --cask lakedb
    ```
 
-4. Create a fine-grained GitHub token with Contents read/write access only to
-   `DavLagoHern/homebrew-lakedb`. Store it in this repository as the Actions
-   secret `HOMEBREW_TAP_TOKEN`.
-5. Create the Actions repository variable `HOMEBREW_TAP_ENABLED` with value
-   `true`.
-
-Every subsequently published LakeDB release updates the cask version and
-SHA-256 and pushes the change to the tap. Do not enable the variable before the
-tap repository and secret exist.
+2. The tap's own scheduled workflow checks the latest LakeDB release every six
+   hours and updates its version and SHA-256 without a cross-repository token.
 
 For a future official submission, copy the stable `lakedb.rb` into a fork of
 `Homebrew/homebrew-cask`, run `brew audit --cask --new lakedb`, test install and
