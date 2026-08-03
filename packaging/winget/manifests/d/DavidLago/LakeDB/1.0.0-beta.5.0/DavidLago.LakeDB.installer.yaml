@@ -1,4 +1,6 @@
 # Created with WinGet manifest schema 1.10.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.10.0.schema.json
+
 PackageIdentifier: DavidLago.LakeDB
 PackageVersion: 1.0.0-beta.5.0
 InstallerType: nullsoft
