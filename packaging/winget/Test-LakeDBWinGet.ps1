@@ -33,6 +33,14 @@ if (-not (Get-Command winget -ErrorAction SilentlyContinue)) {
     throw 'WinGet is not installed. Update App Installer from Microsoft Store, then run this script again.'
 }
 
+if ($InstallTest) {
+    $currentIdentity = [Security.Principal.WindowsIdentity]::GetCurrent()
+    $currentPrincipal = [Security.Principal.WindowsPrincipal]::new($currentIdentity)
+    if (-not $currentPrincipal.IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)) {
+        throw 'InstallTest requires PowerShell opened with Run as administrator.'
+    }
+}
+
 $repositoryRoot = (Resolve-Path (Join-Path $PSScriptRoot '..\..')).Path
 $manifestDirectory = Join-Path $PSScriptRoot "manifests\d\DavidLago\LakeDB\$Version"
 $installerName = "LakeDB-$Version-win-x64-setup.exe"
@@ -48,16 +56,22 @@ Invoke-CheckedCommand -Command 'winget' -Arguments @('validate', $manifestDirect
 if ($InstallTest) {
     Write-Host "`n==> Install LakeDB from the local manifests"
     Write-Warning 'This changes the VMware guest by installing LakeDB for the current user.'
-    Invoke-CheckedCommand -Command 'winget' -Arguments @(
-        'install',
-        '--manifest', $manifestDirectory,
-        '--silent',
-        '--accept-package-agreements',
-        '--accept-source-agreements'
-    )
+    Invoke-CheckedCommand -Command 'winget' -Arguments @('settings', '--enable', 'LocalManifestFiles')
+    try {
+        Invoke-CheckedCommand -Command 'winget' -Arguments @(
+            'install',
+            '--manifest', $manifestDirectory,
+            '--silent',
+            '--accept-package-agreements',
+            '--accept-source-agreements'
+        )
 
-    Write-Host "`n==> Verify the Installed apps registration"
-    Invoke-CheckedCommand -Command 'winget' -Arguments @('list', '--name', 'LakeDB', '--exact')
+        Write-Host "`n==> Verify the Installed apps registration"
+        Invoke-CheckedCommand -Command 'winget' -Arguments @('list', '--name', 'LakeDB', '--exact')
+    }
+    finally {
+        Invoke-CheckedCommand -Command 'winget' -Arguments @('settings', '--disable', 'LocalManifestFiles')
+    }
 }
 
 if ($SubmitFirstVersion) {

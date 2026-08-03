@@ -50,10 +50,12 @@ Set-ExecutionPolicy -Scope Process Bypass
 .\packaging\winget\Test-LakeDBWinGet.ps1 -SubmitFirstVersion
 ```
 
-The first command validates the manifests without installing anything. The
-second performs a real silent installation and checks LakeDB's **Installed
-apps** registration. The third downloads the official standalone WinGetCreate
-executable and starts the interactive submission.
+The first command validates the manifests without installing anything. Run
+PowerShell **as administrator** for the second command; it temporarily enables
+WinGet's `LocalManifestFiles`, performs a real silent installation, checks
+LakeDB's **Installed apps** registration and disables the setting again. The
+third command downloads the official standalone WinGetCreate executable and
+starts the interactive submission.
 
 The equivalent manual procedure is:
 
