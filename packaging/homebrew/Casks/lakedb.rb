@@ -5,7 +5,7 @@ cask "lakedb" do
   url "https://github.com/DavLagoHern/LakeDB/releases/download/v#{version}/LakeDB-#{version}-mac-arm64.dmg",
       verified: "github.com/DavLagoHern/LakeDB/"
   name "LakeDB"
-  desc "Focused MySQL and MariaDB desktop client"
+  desc "Local-first, multi-database desktop client"
   homepage "https://github.com/DavLagoHern/LakeDB"
 
   livecheck do

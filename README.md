@@ -3,8 +3,8 @@
 </p>
 
 <p align="center">
-  <strong>A complete MySQL, MariaDB and SQLite desktop client with reviewable AI.</strong><br>
-  Open a local file or connect to a server, then keep every query visible and under your control.
+  <strong>A local-first, multi-database desktop client with reviewable AI.</strong><br>
+  Currently supporting MySQL, MariaDB and SQLite. Open a local file or connect to a server, then keep every query visible and under your control.
 </p>
 
 <p align="center">
