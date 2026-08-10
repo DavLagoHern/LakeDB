@@ -1,24 +1,25 @@
 # LakeDB roadmap
 
-![LakeDB Beta 5.0 SQL confidence roadmap](assets/roadmap/lakedb-roadmap-beta-5.0.png)
+![LakeDB Beta 5.1 multi-engine roadmap](assets/roadmap/lakedb-roadmap-beta-5.1.png)
 
-LakeDB Beta 5 adds immediate SQL feedback to the complete client: local
-diagnostics for common mistakes, safe quick fixes and explicit AI correction
-when more context is needed. The roadmap tracks complete product stages rather
-than every patch.
+LakeDB Beta 5.1 extends the complete client from MySQL and MariaDB to local
+SQLite files through a versioned engine boundary. The roadmap tracks complete
+product stages rather than every patch.
 
-## Current: Beta 5.0
+## Current: Beta 5.1
 
-Beta 5 analyzes common MySQL and MariaDB syntax mistakes locally while the
-query is being written. It marks the relevant token, gives a concise
-explanation and offers a local quick fix only when the replacement is
-unambiguous. The analyzer does not execute SQL or contact AI.
+SQLite connections can browse tables, views and triggers, run cancellable SQL
+with explicit transactions, edit rows with stable identities, inspect
+`EXPLAIN QUERY PLAN` and use dialect-aware diagnostics and reviewable AI help.
+Engine manifests keep unsupported operations disabled: SQLite does not claim
+SSH/TLS, server monitoring, database dump/restore, schema comparison or table
+copy.
 
-For harder errors, **Resolve with AI** is an explicit second step that returns
-an explanation and complete corrected SQL for review. QuerIA remains the
-separate query-generation workflow, and no corrected statement is executed
-automatically. Large tables also show their first rows without waiting for an
-exact `COUNT(*)`, with a clear 10,000-row interactive browsing limit.
+MySQL and MariaDB retain their SSH, TLS, diagnostics, monitoring and transfer
+workflows. Internal settings upgrades now validate the migration ledger and
+physical schema, create an immutable pre-upgrade backup and roll back failed
+upgrades. LakeDB protects its live internal SQLite database from being opened
+as a user connection; tests should use a copy or backup.
 
 ## Completed: Beta 4.5
 
@@ -48,7 +49,7 @@ defaults, bulk connection editing and lower-cost on-demand server monitoring.
 | **SQL foundation** | Multiple workspaces, schema-aware editing, safe table operations, Explain, transactions, backup, compare, migrate and recovery. |
 | **Beta 3** | QuerIA natural-language documents, schema-grounded SQL, visible review, explicit local execution and privacy opt-in. |
 | **Beta 4 — complete** | Reusable business context, Normal and Agentic generation, cross-database relationships, table and index inspection, plan review and community testing. |
-| **Beta 5 — current** | Local SQL diagnostics, safe quick fixes, explicit AI correction and responsive browsing for very large tables. |
+| **Beta 5 — current** | SQLite beside MySQL/MariaDB, explicit engine capabilities, local diagnostics, reviewable AI correction and hardened migrations. |
 | **1.0 — direction** | Measured AI quality, trusted distribution, compatibility validation, accessibility and complete product polish. |
 
 Future stages describe direction, not a fixed date or guaranteed scope.

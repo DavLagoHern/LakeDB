@@ -3,12 +3,12 @@
 </p>
 
 <p align="center">
-  <strong>A complete MySQL and MariaDB desktop client with reviewable AI.</strong><br>
-  Ask directly or let QuerIA investigate relationships and indexes before it prepares SQL.
+  <strong>A complete MySQL, MariaDB and SQLite desktop client with reviewable AI.</strong><br>
+  Open a local file or connect to a server, then keep every query visible and under your control.
 </p>
 
 <p align="center">
-  <a href="https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.5.0.1"><img alt="Download LakeDB Beta 5.0.1" src="https://img.shields.io/badge/DOWNLOAD-BETA_5.0.1-0b7cff?style=for-the-badge&logo=github&logoColor=white"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.5.1"><img alt="Download LakeDB Beta 5.1" src="https://img.shields.io/badge/DOWNLOAD-BETA_5.1-0b7cff?style=for-the-badge&logo=github&logoColor=white"></a>
   <a href="https://github.com/DavLagoHern/homebrew-lakedb"><img alt="Install LakeDB with Homebrew" src="https://img.shields.io/badge/HOMEBREW-INSTALL_LAKEDB-fbb040?style=for-the-badge&logo=homebrew&logoColor=black"></a>
   <a href="https://davlagohern.github.io/LakeDB/"><img alt="LakeDB website" src="https://img.shields.io/badge/WEBSITE-EXPLORE_LAKEDB-19d2ff?style=for-the-badge&logoColor=020817"></a>
 </p>
@@ -28,7 +28,7 @@
   <img alt="macOS" src="https://img.shields.io/badge/macOS-Apple_Silicon-06132b?style=flat-square&logo=apple&logoColor=white">
   <img alt="Windows" src="https://img.shields.io/badge/Windows-x64-06132b?style=flat-square&logo=windows&logoColor=white">
   <img alt="Linux" src="https://img.shields.io/badge/Linux-x64-06132b?style=flat-square&logo=linux&logoColor=white">
-  <img alt="MySQL and MariaDB" src="https://img.shields.io/badge/MySQL_+_MariaDB-ready-0b7cff?style=flat-square&logo=mysql&logoColor=white">
+  <img alt="MySQL, MariaDB and SQLite" src="https://img.shields.io/badge/MySQL_+_MariaDB_+_SQLite-ready-0b7cff?style=flat-square&logo=sqlite&logoColor=white">
   <img alt="English and Spanish" src="https://img.shields.io/badge/UI-English_+_Spanish-12d9ff?style=flat-square">
 </p>
 
@@ -50,39 +50,50 @@ Cask version and SHA-256 current automatically.
 ### Direct downloads
 
 <p align="center">
-  <a href="https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.5.0.1/LakeDB-1.0.0-beta.5.0.1-mac-arm64.dmg"><img alt="Download LakeDB for macOS Apple Silicon" src="https://img.shields.io/badge/macOS-DOWNLOAD_DMG-06132b?style=for-the-badge&logo=apple&logoColor=white"></a>
-  <a href="https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.5.0.1/LakeDB-1.0.0-beta.5.0.1-win-x64-setup.exe"><img alt="Download LakeDB installer for Windows x64" src="https://img.shields.io/badge/Windows-DOWNLOAD_SETUP-0b7cff?style=for-the-badge&logo=windows&logoColor=white"></a>
-  <a href="https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.5.0.1/LakeDB-1.0.0-beta.5.0.1-linux-x86_64.AppImage"><img alt="Download LakeDB AppImage for Linux x64" src="https://img.shields.io/badge/Linux-DOWNLOAD_APPIMAGE-12d9ff?style=for-the-badge&logo=linux&logoColor=020817"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.5.1/LakeDB-1.0.0-beta.5.1-mac-arm64.dmg"><img alt="Download LakeDB for macOS Apple Silicon" src="https://img.shields.io/badge/macOS-DOWNLOAD_DMG-06132b?style=for-the-badge&logo=apple&logoColor=white"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.5.1/LakeDB-1.0.0-beta.5.1-win-x64-setup.exe"><img alt="Download LakeDB installer for Windows x64" src="https://img.shields.io/badge/Windows-DOWNLOAD_SETUP-0b7cff?style=for-the-badge&logo=windows&logoColor=white"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.5.1/LakeDB-1.0.0-beta.5.1-linux-x86_64.AppImage"><img alt="Download LakeDB AppImage for Linux x64" src="https://img.shields.io/badge/Linux-DOWNLOAD_APPIMAGE-12d9ff?style=for-the-badge&logo=linux&logoColor=020817"></a>
 </p>
 
 | Platform | Alternative package | Install |
 | --- | --- | --- |
-| macOS Apple Silicon | [ZIP](https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.5.0.1/LakeDB-1.0.0-beta.5.0.1-mac-arm64.zip) | Move `LakeDB.app` to Applications. |
-| Windows x64 | [Portable EXE](https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.5.0.1/LakeDB-1.0.0-beta.5.0.1-win-x64-portable.exe) | Run without installation. |
-| Linux x64 | [Debian package](https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.5.0.1/LakeDB-1.0.0-beta.5.0.1-linux-amd64.deb) | Install with your package manager. |
+| macOS Apple Silicon | [ZIP](https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.5.1/LakeDB-1.0.0-beta.5.1-mac-arm64.zip) | Move `LakeDB.app` to Applications. |
+| Windows x64 | [Portable EXE](https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.5.1/LakeDB-1.0.0-beta.5.1-win-x64-portable.exe) | Run without installation. |
+| Linux x64 | [Debian package](https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.5.1/LakeDB-1.0.0-beta.5.1-linux-amd64.deb) | Install with your package manager. |
 
 > **Public beta signing:** macOS packages have an ad-hoc signature but are not
 > notarized yet; Windows packages are not yet signed with a trusted
 > certificate. Download only from the official LakeDB repositories. Every
 > package has a matching SHA-256 file on the
-> [Beta 5.0.1 release page](https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.5.0.1).
+> [Beta 5.1 release page](https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.5.1).
 
 ---
 
 <p align="center">
-  <img src="docs/assets/releases/beta5/beta-5.0-card-1920x1080.png" width="100%" alt="LakeDB Beta 5.0 showing a local SQL diagnostic, safe quick fix and optional AI correction">
+  <img src="docs/assets/releases/beta5.1/beta-5.1-release-1920x1080.png" width="100%" alt="LakeDB Beta 5.1 presents local SQLite files alongside MySQL and MariaDB connections">
 </p>
 
-<p align="center"><sub><strong>Beta 5.0.</strong> Catch common SQL errors while typing, apply safe local fixes and request an AI correction only when more context is needed.</sub></p>
+<p align="center"><sub><strong>Beta 5.1.</strong> Open SQLite files beside MySQL and MariaDB without giving up LakeDB's local-first workspace.</sub></p>
 
-> **New in Beta 5.0:** local MySQL and MariaDB syntax
+> **New in Beta 5.1:** SQLite becomes a first-class local connection. Browse
+> tables, views and triggers, edit rows with identity checks, run transactions,
+> inspect `EXPLAIN QUERY PLAN` output and use SQLite-aware diagnostics and
+> reviewable AI help. LakeDB deliberately blocks its live internal settings
+> database; test against a backup or copy instead.
+
+> **Also in Beta 5.1:** the engine boundary is now explicit and versioned.
+> Unsupported tools stay disabled per engine: SQLite does not claim SSH/TLS,
+> server monitoring, database dumps, restores, schema comparison or table copy.
+> MySQL and MariaDB retain their existing workflows.
+
+> **Introduced in Beta 5.0:** local MySQL and MariaDB syntax
 > diagnostics mark the relevant token and explain common mistakes without
 > executing SQL or contacting AI. Unambiguous corrections are available as
 > local quick fixes. An explicit **Resolve with AI** action can return a brief
 > explanation and complete corrected SQL for review in the Messages panel.
 > QuerIA remains the separate experience for generating new SQL.
 
-> **Also in Beta 5.0:** very large tables show their first rows without waiting
+> **Also introduced in Beta 5.0:** very large tables show their first rows without waiting
 > for an exact `COUNT(*)`. Interactive browsing is clearly capped at 10,000
 > rows, while filters and complete exports remain available.
 
@@ -174,14 +185,14 @@ approval.
 
 AI joins the existing LakeDB workflow; it does not replace it.
 
-| Area | Available in Beta 5.0 |
+| Area | Available in Beta 5.1 |
 | --- | --- |
-| **Connections** | Multiple simultaneous connections, folders, colors, SSL, SSH tunnels, read-only mode, diagnostics and search from Home or the connection picker. |
+| **Connections** | Multiple simultaneous MySQL, MariaDB and SQLite connections, folders, colors, read-only mode, diagnostics and search from Home or the connection picker. SSH and TLS remain server-engine capabilities. |
 | **Workspaces** | Independent SQL, QuerIA and table tabs per connection, with restored editor content, selected schema and layout. |
 | **SQL editor** | Monaco Editor, proactive schema completion, aliases, columns, PK/index hints, local syntax diagnostics, safe quick fixes, optional AI correction, formatting, Explain, transactions, history and streaming exports. |
 | **QuerIA** | Reusable per-connection business contexts, Normal and Agentic generation, cross-database relationships, index inspection, `EXPLAIN` review, visible SQL and explicit local execution. |
 | **Results and data** | Local query-result filters, draggable result columns, virtualized table grids, pagination, search, sorting and typed safe editing with conflict checks and rollback. |
-| **Database tools** | Backup, restore, schema comparison, migration planning, connection imports and reviewable generated SQL. |
+| **Database tools** | MySQL/MariaDB backup, restore, schema comparison, migration planning and table copy; capability-aware controls stay disabled when an engine does not support them. |
 | **Safety** | Local encrypted credentials, production confirmations, renderer sandboxing, read-only enforcement and no remote database execution. |
 | **Resilience** | Stable device identity, crash recovery, session restore, verified updates, configuration backup and diagnostics. |
 
@@ -263,11 +274,11 @@ workflow. Sources: [DBeaver documentation](https://dbeaver.com/docs/dbeaver/AI-c
 | **SQL foundation** | Independent workspaces, schema-aware editing, safe data operations, database tools and recovery. |
 | **Beta 3** | Natural-language query documents, visible SQL and explicit local execution. |
 | **Beta 4 — complete** | Reusable connection context, Normal and Agentic generation, cross-database relationships, index inspection, reversible opt-in and clearer execution feedback. |
-| **Beta 5 — current** | Local SQL diagnostics, safe quick fixes, explicit AI correction and faster browsing for very large tables. |
+| **Beta 5 — current** | SQLite files beside MySQL/MariaDB, engine-aware capabilities, local SQL diagnostics, explicit AI correction and hardened migrations. |
 | **1.0 direction** | Measured quality, trusted signing and distribution, compatibility validation and complete product polish. |
 
 <p align="center">
-  <a href="docs/ROADMAP.md"><img src="docs/assets/roadmap/lakedb-roadmap-beta-5.0.png" width="100%" alt="LakeDB roadmap from the SQL foundation through QuerIA, safer production workflows and SQL confidence toward 1.0"></a>
+  <a href="docs/ROADMAP.md"><img src="docs/assets/roadmap/lakedb-roadmap-beta-5.1.png" width="100%" alt="LakeDB Beta 5.1 roadmap from the SQL foundation through multi-engine local data toward 1.0"></a>
 </p>
 
 Roadmap items describe direction, not a fixed release date. See

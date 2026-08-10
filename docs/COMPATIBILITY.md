@@ -1,6 +1,6 @@
 # LakeDB compatibility
 
-This is the conservative compatibility baseline for the LakeDB 0.11 beta line and the intended 1.0 foundation. A combination marked **best effort** may work but is not part of the supported release baseline.
+This is the conservative compatibility baseline for LakeDB Beta 5.1 and the intended 1.0 foundation. A combination marked **best effort** may work but is not part of the supported release baseline.
 
 ## Desktop packages
 
@@ -25,13 +25,29 @@ End users do not need to install Node.js, Electron, Docker or a database client 
 | MySQL 8.0 and MariaDB 10.6                          | Best effort; upstream community maintenance has ended     |
 | Newer MySQL Innovation or MariaDB LTS/rolling lines | Best effort until added to the supported baseline         |
 | MySQL-compatible forks and managed services         | Best effort; provider behaviour and privileges can differ |
-| PostgreSQL, SQLite, SQL Server and Oracle Database  | Unsupported as connection targets                         |
+| PostgreSQL, SQL Server and Oracle Database          | Unsupported as connection targets                         |
 
 LakeDB uses standard MySQL protocol connections and reads metadata from server statements and `information_schema`. Individual features require the connected user to have the corresponding permissions.
 
+## SQLite files
+
+SQLite 3 database files with `.db`, `.sqlite` or `.sqlite3` extensions are
+supported as local connection targets. LakeDB uses the SQLite library bundled
+with the application; no separate server or command-line client is required.
+
+SQLite supports tables, views, triggers, SQL execution and cancellation,
+explicit transactions, safe row editing, `EXPLAIN QUERY PLAN`, local
+diagnostics and reviewable AI assistance. LakeDB database dump/restore, schema
+comparison, table copy, server monitoring, SSH and TLS are not SQLite
+capabilities in Beta 5.1.
+
+LakeDB refuses to open its live internal settings database, its WAL/SHM files,
+pre-upgrade snapshots or path aliases as user connections. Make a separate
+backup or copy before inspecting that schema through the SQLite engine.
+
 ## Connection requirements
 
-- Direct TCP access to the configured MySQL/MariaDB host and port, or access through the integrated SSH tunnel.
+- Direct TCP access to the configured MySQL/MariaDB host and port, access through the integrated SSH tunnel, or read/write access to the selected local SQLite file.
 - The operating system's OpenSSH `ssh` command for integrated tunnels.
 - A key already available to `ssh-agent` when the private key requires a passphrase.
 - A valid PEM certificate authority when TLS verification uses a custom CA.

@@ -13,6 +13,25 @@ Packaged downloads are retained for the current build, the previous patch and th
 
 Only real tagged builds are listed as releases. The 0.2–0.4 product stages were development milestones rather than public tags, and 0.10.0–0.10.2 were not published as separate builds.
 
+## 1.0.0 Beta 5.1 — prepared
+
+- `ADD` open local SQLite database files as first-class connections beside
+  MySQL and MariaDB.
+- `ADD` browse SQLite tables, views and triggers, edit identifiable rows, use
+  explicit transactions and inspect `EXPLAIN QUERY PLAN` output.
+- `ADD` apply SQLite-aware local diagnostics, QuerIA context, plan review and
+  explicit AI-assisted SQL correction.
+- `FIX` refresh SQLite schemas and already-expanded object categories after a
+  reconnect or file-path change instead of reusing stale metadata.
+- `CHANGE` drive connection fields and available tools from versioned engine
+  manifests, leaving unsupported capabilities disabled.
+- `SECURITY` protect LakeDB's live internal database and path aliases from
+  being opened as user SQLite connections.
+- `SECURITY` validate internal migration history and physical schema, create
+  an immutable pre-upgrade backup and roll back failed upgrades.
+
+[Release notes and downloads](https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.5.1)
+
 ## 1.0.0 Beta 5.0 — August 1, 2026
 
 - `ADD` analyze common MySQL and MariaDB syntax mistakes locally while typing,
