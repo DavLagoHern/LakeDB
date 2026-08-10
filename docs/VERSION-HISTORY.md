@@ -25,6 +25,9 @@ Only real tagged builds are listed as releases. The 0.2–0.4 product stages wer
   reconnect or file-path change instead of reusing stale metadata.
 - `FIX` hide Patreon and Beta Tester enrollment prompts for accounts already
   assigned to an Enterprise organization.
+- `FIX` keep established Enterprise sessions and QuerIA workspaces available
+  through temporary service failures, with 5-minute healthy checks and
+  30-second recovery checks.
 - `CHANGE` drive connection fields and available tools from versioned engine
   manifests, leaving unsupported capabilities disabled.
 - `SECURITY` protect LakeDB's live internal database and path aliases from
