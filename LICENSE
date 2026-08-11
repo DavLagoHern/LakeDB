@@ -1,0 +1,32 @@
+LakeDB Proprietary License
+
+Copyright (c) 2026 David Lago.
+
+This repository is the public distribution, documentation and community
+repository for LakeDB. The LakeDB application source code is not licensed as
+open source.
+
+Permission is granted to download and use official LakeDB release builds from
+the official LakeDB repositories for personal, professional, evaluation and
+internal use, subject to the public beta terms, privacy notice and release
+notes published in this repository.
+
+You may copy, quote and link to the public documentation in this repository for
+reasonable review, support, educational and community discussion purposes,
+provided that attribution to LakeDB is preserved.
+
+You may not sell, sublicense, repackage, redistribute, modify or create
+derivative versions of the LakeDB application binaries without prior written
+permission. You may not remove product names, notices, safety warnings or
+origin information from distributed files. Reverse engineering, decompilation
+or disassembly is not permitted except to the extent that applicable law
+requires such permission.
+
+LakeDB is provided as-is, without warranties of any kind. The author is not
+liable for database changes, data loss, service interruption, security
+incidents or other damages arising from installation, use or misuse of the
+software. Users remain responsible for reviewing SQL, using least-privilege
+database accounts, keeping backups and following their own production change
+controls.
+
+Third-party dependencies remain governed by their respective licenses.

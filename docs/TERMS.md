@@ -1,4 +1,4 @@
-# LakeDB IA beta terms
+# LakeDB AI beta terms
 
 Effective 25 July 2026.
 

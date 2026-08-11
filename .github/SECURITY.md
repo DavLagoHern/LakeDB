@@ -2,12 +2,12 @@
 
 ## Supported versions
 
-| Version                     | Security status                                                  |
-| --------------------------- | ---------------------------------------------------------------- |
-| Latest `0.10.x` public beta | Receives security and release-blocking fixes                     |
-| Older beta lines            | Unsupported                                                      |
-| Future stable releases      | The latest stable release will receive security fixes            |
-| Current release candidate   | Supported while it is the active path to the next stable release |
+| Version                       | Security status                                                  |
+| ----------------------------- | ---------------------------------------------------------------- |
+| Latest `v1.0.0-beta.5.x` beta | Receives security and release-blocking fixes                     |
+| Older beta lines              | Unsupported                                                      |
+| Future stable releases        | The latest stable release will receive security fixes            |
+| Current release candidate     | Supported while it is the active path to the next stable release |
 
 Update to the newest supported build before reporting a problem that may already be fixed.
 

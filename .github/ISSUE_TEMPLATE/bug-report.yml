@@ -10,7 +10,7 @@ body:
     id: version
     attributes:
       label: LakeDB version
-      placeholder: v0.11.0-beta.1
+      placeholder: v1.0.0-beta.5.1
     validations:
       required: true
   - type: input
@@ -24,14 +24,14 @@ body:
     id: database
     attributes:
       label: Database engine
-      options: [MySQL, MariaDB, Not applicable, Other]
+      options: [MySQL, MariaDB, SQLite, Not applicable, Other]
     validations:
       required: true
   - type: input
     id: database-version
     attributes:
-      label: Server version
-      placeholder: MySQL 8.4 or MariaDB 11.4
+      label: Database version
+      placeholder: MySQL 8.4, MariaDB 11.4 or SQLite 3.x
   - type: textarea
     id: steps
     attributes:

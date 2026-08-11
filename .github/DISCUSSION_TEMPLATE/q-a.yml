@@ -18,7 +18,7 @@ body:
     id: version
     attributes:
       label: LakeDB version
-      placeholder: v0.6.0
+      placeholder: v1.0.0-beta.5.1
   - type: checkboxes
     id: privacy
     attributes:

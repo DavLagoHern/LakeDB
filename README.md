@@ -20,6 +20,15 @@
 </p>
 
 <p align="center">
+  <a href="LICENSE"><img alt="LakeDB proprietary license" src="https://img.shields.io/badge/LICENSE-proprietary-06132b?style=flat-square"></a>
+  <a href=".github/SECURITY.md"><img alt="Security policy" src="https://img.shields.io/badge/SECURITY-policy-12d9ff?style=flat-square"></a>
+</p>
+
+<p align="center">
+  <sub>LakeDB is free to use, but it is not open source. This public repository hosts official builds, documentation, issue tracking and community feedback.</sub>
+</p>
+
+<p align="center">
   <!-- 100 maintainer-recorded downloads from archived releases + live GitHub release asset downloads. -->
   <a href="https://github.com/DavLagoHern/LakeDB/releases"><img alt="At least 115 LakeDB beta downloads, including archived releases" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FDavLagoHern%2FLakeDB%2Fdownload-stats%2Fbadge.json&style=flat-square"></a>
 </p>
