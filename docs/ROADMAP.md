@@ -1,12 +1,22 @@
 # LakeDB roadmap
 
-![LakeDB Beta 5.1 multi-engine roadmap](assets/roadmap/lakedb-roadmap-beta-5.1.png)
+![LakeDB Beta 5.2 review-first database workflow roadmap](assets/roadmap/lakedb-roadmap-beta-5.2.png)
 
-LakeDB Beta 5.1 extends the complete client from MySQL and MariaDB to local
-SQLite files through a versioned engine boundary. The roadmap tracks complete
-product stages rather than every patch.
+LakeDB Beta 5.2 makes database comparison and object-definition work explicit,
+selectable and review-first. The roadmap tracks complete product stages rather
+than every patch.
 
-## Current: Beta 5.1
+## Current: Beta 5.2
+
+MySQL and MariaDB comparison can target tables, views, procedures, functions,
+triggers and events. Table analysis can check structure, row counts or both;
+summary and migration selection are separate views, and individual database
+objects open in dedicated definition tabs with environment-aware confirmation.
+
+Bulk migration remains table-only. Non-table objects are compared by definition
+and edited individually. Row values are not read during comparison.
+
+## Released: Beta 5.1
 
 SQLite connections can browse tables, views and triggers, run cancellable SQL
 with explicit transactions, edit rows with stable identities, inspect
@@ -49,7 +59,7 @@ defaults, bulk connection editing and lower-cost on-demand server monitoring.
 | **SQL foundation** | Multiple workspaces, schema-aware editing, safe table operations, Explain, transactions, backup, compare, migrate and recovery. |
 | **Beta 3** | QuerIA natural-language documents, schema-grounded SQL, visible review, explicit local execution and privacy opt-in. |
 | **Beta 4 — complete** | Reusable business context, Normal and Agentic generation, cross-database relationships, table and index inspection, plan review and community testing. |
-| **Beta 5 — current** | SQLite beside MySQL/MariaDB, explicit engine capabilities, local diagnostics, reviewable AI correction and hardened migrations. |
+| **Beta 5 — current** | SQLite beside MySQL/MariaDB, explicit engine capabilities, review-first comparison, object-definition editing and hardened migrations. |
 | **1.0 — direction** | Measured AI quality, trusted distribution, compatibility validation, accessibility and complete product polish. |
 
 Future stages describe direction, not a fixed date or guaranteed scope.

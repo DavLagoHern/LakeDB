@@ -13,7 +13,28 @@ Packaged downloads are retained for the current build, the previous patch and th
 
 Only real tagged builds are listed as releases. The 0.2–0.4 product stages were development milestones rather than public tags, and 0.10.0–0.10.2 were not published as separate builds.
 
-## 1.0.0 Beta 5.1 — prepared
+## 1.0.0 Beta 5.2 — August 12, 2026
+
+- `ADD` choose tables, views, procedures, functions, triggers and events before
+  comparing MySQL or MariaDB databases.
+- `ADD` check table definitions, row counts or both, with explicit shortcuts
+  for tables only and all supported objects.
+- `CHANGE` separate the readable comparison summary from the checkbox-based
+  table migration workflow.
+- `ADD` open reusable definition tabs for views, routines, triggers and events
+  with reviewable `DROP` + `CREATE` scripts and required delimiters.
+- `CHANGE` apply environment-aware confirmation to object-definition writes
+  and reuse an already-open tab for the same object.
+- `ADD` optionally share object-explorer search across connections or retain an
+  independent search term for each connection.
+- `FIX` keep migration progress and completion feedback visible inside the
+  workflow instead of scrolling the complete modal.
+- `FIX` copy generated or corrected SQL through Electron's native clipboard
+  bridge with visible success or failure feedback.
+
+[Release notes and downloads](https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.5.2)
+
+## 1.0.0 Beta 5.1 — August 7, 2026
 
 - `ADD` open local SQLite database files as first-class connections beside
   MySQL and MariaDB.

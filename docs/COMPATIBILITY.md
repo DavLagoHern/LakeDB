@@ -1,6 +1,6 @@
 # LakeDB compatibility
 
-This is the conservative compatibility baseline for LakeDB Beta 5.1 and the intended 1.0 foundation. A combination marked **best effort** may work but is not part of the supported release baseline.
+This is the conservative compatibility baseline for LakeDB Beta 5.2 and the intended 1.0 foundation. A combination marked **best effort** may work but is not part of the supported release baseline.
 
 ## Desktop packages
 
