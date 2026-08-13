@@ -15,7 +15,7 @@
 
 <p align="center">
   <a href="https://www.reddit.com/r/LakeDB/"><img alt="Join the LakeDB community on Reddit" src="https://img.shields.io/badge/REDDIT-JOIN_COMMUNITY-ff4500?style=for-the-badge&logo=reddit&logoColor=white"></a>
-  <a href="https://www.patreon.com/LakeDB"><img alt="Support LakeDB on Patreon" src="https://img.shields.io/badge/PATREON-SUPPORT_LAKEDB-ff424d?style=for-the-badge&logo=patreon&logoColor=white"></a>
+  <a href="https://www.patreon.com/LakeDB/membership"><img alt="Support LakeDB development on Patreon" src="https://img.shields.io/badge/PATREON-SUPPORT_DEVELOPMENT-ff424d?style=for-the-badge&logo=patreon&logoColor=white"></a>
   <a href="https://github.com/DavLagoHern/LakeDB/issues/new?template=bug-report.yml"><img alt="Report a LakeDB issue" src="https://img.shields.io/badge/FEEDBACK-REPORT_ISSUE-06132b?style=for-the-badge&logo=github&logoColor=12d9ff"></a>
 </p>
 
@@ -230,6 +230,36 @@ AI joins the existing LakeDB workflow; it does not replace it.
 
 <p align="center"><sub><strong>The full SQL foundation remains local.</strong> Each connection owns its SQL tabs, table tabs, active schema and restored workspace state.</sub></p>
 
+## Support LakeDB
+
+LakeDB's complete local SQL client is free to use. If it saves you time, an
+optional [Patreon membership](https://www.patreon.com/LakeDB/membership) helps
+pay for builds, future code signing, release infrastructure and continued
+development toward 1.0. Core local database features are not locked behind a
+membership.
+
+Paid memberships also include a larger QuerIA allowance to help cover the real
+cost of its external AI service:
+
+| Membership | Monthly support | QuerIA allowance | Compared with FREE |
+| --- | ---: | --- | ---: |
+| **FREE** | €0 | 100,000 weighted tokens/day · 400,000/month | — |
+| **LakeDB Supporter** | €5 | 1,000,000 weighted tokens/day · 4,000,000/month | **10×** |
+| **LakeDB MEGA Supporter** | €15 | 5,000,000 weighted tokens/day · 20,000,000/month | **50×** |
+
+Weighted usage reflects the work performed, so it is not a fixed number of
+queries. Agentic requests usually inspect more metadata and make more AI calls
+than Normal requests.
+
+To activate the allowance, protect your QuerIA account with an email and
+password in **Settings → Account**, then choose **Connect Patreon**. LakeDB and
+Patreon must use the same email address. Membership changes are applied
+automatically while the Patreon connection remains linked.
+
+<p align="center">
+  <a href="https://www.patreon.com/LakeDB/membership"><img alt="Choose a LakeDB Patreon membership" src="https://img.shields.io/badge/KEEP_LAKEDB_MOVING-VIEW_MEMBERSHIPS-ff424d?style=for-the-badge&logo=patreon&logoColor=white"></a>
+</p>
+
 ## Private until you opt in
 
 QuerIA starts disabled. LakeDB makes no service request until you review the
@@ -318,10 +348,10 @@ Roadmap items describe direction, not a fixed release date. See
 - Join the community on [Reddit](https://www.reddit.com/r/LakeDB/).
 - Report reproducible bugs with the [bug report form](https://github.com/DavLagoHern/LakeDB/issues/new?template=bug-report.yml).
 - Propose ideas in [GitHub Discussions](https://github.com/DavLagoHern/LakeDB/discussions).
-- Follow development updates on [Patreon](https://www.patreon.com/LakeDB).
+- Support continued development or follow public updates on [Patreon](https://www.patreon.com/LakeDB/membership).
 
-Testing, reporting and sharing LakeDB are the most useful ways to help this
-beta.
+Testing, reporting and sharing LakeDB remain valuable ways to help this beta,
+whether or not you become a paid member.
 
 ---
 
