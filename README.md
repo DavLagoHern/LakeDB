@@ -306,8 +306,11 @@ join or index.
 
 ## Where LakeDB differs
 
-Shared capabilities such as multiple connections, SSH/SSL, normal
-autocomplete and editable grids are intentionally omitted.
+Shared capabilities such as merely opening multiple connections, SSH/SSL,
+normal autocomplete and editable grids are intentionally omitted. LakeDB's
+two-level connection workspace is included because every top-level connection
+keeps its own nested SQL, QuerIA and object tabs instead of sharing one editor
+context.
 
 **✓ Included · ◐ Limited, paid or a different workflow · × No comparable built-in workflow · — No built-in AI / not applicable**
 
@@ -315,7 +318,7 @@ autocomplete and editable grids are intentionally omitted.
 | --- | :---: | :---: | :---: | :---: | :---: |
 | Local syntax diagnostics before execution | ✓ | ✓ | × | ◐ | × |
 | Explicit AI error correction with complete SQL review | ✓ | ◐ | ◐ | — | — |
-| Restored independent connection workspaces | ✓ | ✓ | ✓ | ◐ | ◐ |
+| Top-level connection tabs with isolated, restored inner workspaces | ✓ | ◐ | ✓ | ✓ | ◐ |
 | PK and index-aware completion predicates | ✓ | ◐ | × | × | × |
 | Typed staged edits with conflict checks and rollback | ✓ | ◐ | ◐ | ◐ | ◐ |
 | Guided restore with automatic recovery dump | ✓ | ◐ | ◐ | ◐ | ◐ |
@@ -327,9 +330,9 @@ autocomplete and editable grids are intentionally omitted.
 | No retained questions, generated SQL or schema names | ✓ | × | ◐ | — | — |
 
 A partial mark includes paid editions, plug-ins or a materially different
-workflow. Sources: [DBeaver documentation](https://dbeaver.com/docs/dbeaver/AI-command/),
-[TablePlus documentation](https://docs.tableplus.com/llm-plugin),
-[MySQL Workbench manual](https://dev.mysql.com/doc/workbench/en/) and
+workflow. Sources: [DBeaver documentation](https://dbeaver.com/docs/dbeaver/Separate-Connections/),
+[TablePlus documentation](https://docs.tableplus.com/gui-tools/the-interface/multi-tabs-workspaces-windows),
+[MySQL Workbench manual](https://dev.mysql.com/doc/workbench/en/wb-configuring-files.html) and
 [HeidiSQL documentation](https://www.heidisql.com/).
 
 ## Road to 1.0
