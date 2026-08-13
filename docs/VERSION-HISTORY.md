@@ -13,6 +13,32 @@ Packaged downloads are retained for the current build, the previous patch and th
 
 Only real tagged builds are listed as releases. The 0.2–0.4 product stages were development milestones rather than public tags, and 0.10.0–0.10.2 were not published as separate builds.
 
+## 1.0.0 Beta 5.2.2 — August 13, 2026
+
+- `FIX` continue through an established Enterprise QuerIA route when the
+  public service returns an unavailable non-JSON response.
+- `CHANGE` show the signed-in account and active Enterprise plan in
+  Preferences, including saved sessions while the private service reconnects.
+- `FIX` show exact table totals up to 10,000 rows using a bounded probe instead
+  of an unrestricted row count.
+- `FIX` keep large-table pagination inside the visible 10,000-row window while
+  applying database sorting and filtering before that window.
+
+[Release notes and downloads](https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.5.2.2)
+
+## 1.0.0 Beta 5.2.1 — August 12, 2026
+
+- `FIX` harden comparison and migration ordering, target selection and
+  missing-table verification.
+- `CHANGE` keep migration progress visible and provide a dedicated results
+  view after completion.
+- `FIX` reconnect stale query sessions once and preserve parent workflows
+  through production confirmations.
+- `FIX` reuse object-definition tabs, execute delimiter-aware replacements and
+  route SQL copy through the desktop clipboard.
+
+[Release notes and downloads](https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.5.2.1)
+
 ## 1.0.0 Beta 5.2 — August 12, 2026
 
 - `ADD` choose tables, views, procedures, functions, triggers and events before
