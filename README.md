@@ -3,8 +3,8 @@
 </p>
 
 <p align="center">
-  <strong>A local-first, multi-database desktop client with reviewable AI.</strong><br>
-  Currently supporting MySQL, MariaDB and SQLite. Open a local file or connect to a server, then keep every query visible and under your control.
+  <strong>A local-first database client for people tired of switching tools, losing context between connections, and trusting black-box AI with SQL.</strong><br>
+  MySQL, MariaDB and SQLite today, with more engines planned. Keep separate workspaces, review generated or corrected SQL before anything runs, and stay in control of every database operation.
 </p>
 
 <p align="center">
@@ -12,17 +12,13 @@
   <a href="https://github.com/DavLagoHern/homebrew-lakedb"><img alt="Install LakeDB with Homebrew" src="https://img.shields.io/badge/HOMEBREW-INSTALL_LAKEDB-fbb040?style=for-the-badge&logo=homebrew&logoColor=black"></a>
   <a href="https://davlagohern.github.io/LakeDB/"><img alt="LakeDB website" src="https://img.shields.io/badge/WEBSITE-EXPLORE_LAKEDB-19d2ff?style=for-the-badge&logoColor=020817"></a>
 </p>
+## Why LakeDB
 
-<p align="center">
-  <a href="https://www.reddit.com/r/LakeDB/"><img alt="Join the LakeDB community on Reddit" src="https://img.shields.io/badge/REDDIT-JOIN_COMMUNITY-ff4500?style=for-the-badge&logo=reddit&logoColor=white"></a>
-  <a href="https://www.patreon.com/LakeDB/membership"><img alt="Support LakeDB development on Patreon" src="https://img.shields.io/badge/PATREON-SUPPORT_DEVELOPMENT-ff424d?style=for-the-badge&logo=patreon&logoColor=white"></a>
-  <a href="https://github.com/DavLagoHern/LakeDB/issues/new?template=bug-report.yml"><img alt="Report a LakeDB issue" src="https://img.shields.io/badge/FEEDBACK-REPORT_ISSUE-06132b?style=for-the-badge&logo=github&logoColor=12d9ff"></a>
-</p>
+- **One workspace across multiple engines** — work with MySQL, MariaDB and SQLite without changing tools.
+- **Review-first AI** — QuerIA can generate SQL and help explain or correct query errors, but nothing runs automatically.
+- **Production-aware workflows** — read-only connections, environment-specific confirmations and reviewable database operations.
+- **Local-first by default** — credentials stay local, and database rows or query results are not sent to the AI service.
 
-<p align="center">
-  <a href="LICENSE"><img alt="LakeDB proprietary license" src="https://img.shields.io/badge/LICENSE-proprietary-06132b?style=flat-square"></a>
-  <a href=".github/SECURITY.md"><img alt="Security policy" src="https://img.shields.io/badge/SECURITY-policy-12d9ff?style=flat-square"></a>
-</p>
 
 <p align="center">
   <sub>LakeDB is free to use, but it is not open source. This public repository hosts official builds, documentation, issue tracking and community feedback.</sub>
@@ -97,12 +93,6 @@ Cask version and SHA-256 current automatically.
 > each one. QuerIA and AI correction now copy SQL through the native clipboard
 > bridge with visible feedback.
 
-> **Updated in Beta 5.2.2:** established Enterprise sessions can keep using
-> their private QuerIA service when the public service is unavailable. Account
-> preferences show the signed-in email and the active Enterprise plan. Large
-> tables now have accurate, bounded pagination up to 10,000 rows without an
-> unrestricted `COUNT(*)`; database sorting and filtering still apply before
-> that browsing window.
 
 <p align="center">
   <img src="docs/assets/releases/beta5.2/database-comparison-scope-1920x1080.png" width="100%" alt="LakeDB Beta 5.2 database tools showing selectable tables, views, procedures, functions, triggers and events">
@@ -238,6 +228,19 @@ AI joins the existing LakeDB workflow; it does not replace it.
 <p align="center"><sub><strong>The full SQL foundation remains local.</strong> Each connection owns its SQL tabs, table tabs, active schema and restored workspace state.</sub></p>
 
 ## Support LakeDB
+
+## Community & support
+
+<p align="center">
+  <a href="https://www.reddit.com/r/LakeDB/"><img alt="Join the LakeDB community on Reddit" src="https://img.shields.io/badge/REDDIT-JOIN_COMMUNITY-ff4500?style=for-the-badge&logo=reddit&logoColor=white"></a>
+  <a href="https://www.patreon.com/LakeDB/membership"><img alt="Support LakeDB development on Patreon" src="https://img.shields.io/badge/PATREON-SUPPORT_DEVELOPMENT-ff424d?style=for-the-badge&logo=patreon&logoColor=white"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/issues/new?template=bug-report.yml"><img alt="Report a LakeDB issue" src="https://img.shields.io/badge/FEEDBACK-REPORT_ISSUE-06132b?style=for-the-badge&logo=github&logoColor=12d9ff"></a>
+</p>
+
+<p align="center">
+  <a href="LICENSE"><img alt="LakeDB proprietary license" src="https://img.shields.io/badge/LICENSE-proprietary-06132b?style=flat-square"></a>
+  <a href=".github/SECURITY.md"><img alt="Security policy" src="https://img.shields.io/badge/SECURITY-policy-12d9ff?style=flat-square"></a>
+</p>
 
 LakeDB's complete local SQL client is free to use. If it saves you time, an
 optional [Patreon membership](https://www.patreon.com/LakeDB/membership) helps
