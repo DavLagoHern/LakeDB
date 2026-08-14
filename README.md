@@ -41,6 +41,7 @@
   <img alt="Linux" src="https://img.shields.io/badge/Linux-x64-06132b?style=flat-square&logo=linux&logoColor=white">
   <img alt="MySQL, MariaDB and SQLite" src="https://img.shields.io/badge/MySQL_+_MariaDB_+_SQLite-ready-0b7cff?style=flat-square&logo=sqlite&logoColor=white">
   <img alt="English and Spanish" src="https://img.shields.io/badge/UI-English_+_Spanish-12d9ff?style=flat-square">
+      <a href="https://ecohub.mariadb.org/database-management/lakedb"><img alt="LakeDB listed on the MariaDB Server Ecosystem Hub" src="https://img.shields.io/badge/MariaDB-Ecosystem_Hub-003545?style=flat-square&logo=mariadb&logoColor=white"></a>
 </p>
 
 ---
