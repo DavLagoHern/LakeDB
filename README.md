@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.5.2.3"><img alt="Download LakeDB Beta 5.2.3" src="https://img.shields.io/badge/DOWNLOAD-BETA_5.2.3-0b7cff?style=for-the-badge&logo=github&logoColor=white"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.5.2.4"><img alt="Download LakeDB Beta 5.2.4" src="https://img.shields.io/badge/DOWNLOAD-BETA_5.2.4-0b7cff?style=for-the-badge&logo=github&logoColor=white"></a>
   <a href="https://github.com/DavLagoHern/homebrew-lakedb"><img alt="Install LakeDB with Homebrew" src="https://img.shields.io/badge/HOMEBREW-INSTALL_LAKEDB-fbb040?style=for-the-badge&logo=homebrew&logoColor=black"></a>
   <a href="https://davlagohern.github.io/LakeDB/"><img alt="LakeDB website" src="https://img.shields.io/badge/WEBSITE-EXPLORE_LAKEDB-19d2ff?style=for-the-badge&logoColor=020817"></a>
 </p>
@@ -62,30 +62,36 @@ Cask version and SHA-256 current automatically.
 ### Direct downloads
 
 <p align="center">
-  <a href="https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.5.2.3/LakeDB-1.0.0-beta.5.2.3-mac-arm64.dmg"><img alt="Download LakeDB for macOS Apple Silicon" src="https://img.shields.io/badge/macOS-DOWNLOAD_DMG-06132b?style=for-the-badge&logo=apple&logoColor=white"></a>
-  <a href="https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.5.2.3/LakeDB-1.0.0-beta.5.2.3-win-x64-setup.exe"><img alt="Download LakeDB installer for Windows x64" src="https://img.shields.io/badge/Windows-DOWNLOAD_SETUP-0b7cff?style=for-the-badge&logo=windows&logoColor=white"></a>
-  <a href="https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.5.2.3/LakeDB-1.0.0-beta.5.2.3-linux-x86_64.AppImage"><img alt="Download LakeDB AppImage for Linux x64" src="https://img.shields.io/badge/Linux-DOWNLOAD_APPIMAGE-12d9ff?style=for-the-badge&logo=linux&logoColor=020817"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.5.2.4/LakeDB-1.0.0-beta.5.2.4-mac-arm64.dmg"><img alt="Download LakeDB for macOS Apple Silicon" src="https://img.shields.io/badge/macOS-DOWNLOAD_DMG-06132b?style=for-the-badge&logo=apple&logoColor=white"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.5.2.4/LakeDB-1.0.0-beta.5.2.4-win-x64-setup.exe"><img alt="Download LakeDB installer for Windows x64" src="https://img.shields.io/badge/Windows-DOWNLOAD_SETUP-0b7cff?style=for-the-badge&logo=windows&logoColor=white"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.5.2.4/LakeDB-1.0.0-beta.5.2.4-linux-x86_64.AppImage"><img alt="Download LakeDB AppImage for Linux x64" src="https://img.shields.io/badge/Linux-DOWNLOAD_APPIMAGE-12d9ff?style=for-the-badge&logo=linux&logoColor=020817"></a>
 </p>
 
 | Platform | Alternative package | Install |
 | --- | --- | --- |
-| macOS Apple Silicon | [ZIP](https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.5.2.3/LakeDB-1.0.0-beta.5.2.3-mac-arm64.zip) | Move `LakeDB.app` to Applications. |
-| Windows x64 | [Portable EXE](https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.5.2.3/LakeDB-1.0.0-beta.5.2.3-win-x64-portable.exe) | Run without installation. |
-| Linux x64 | [Debian package](https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.5.2.3/LakeDB-1.0.0-beta.5.2.3-linux-amd64.deb) | Install with your package manager. |
+| macOS Apple Silicon | [ZIP](https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.5.2.4/LakeDB-1.0.0-beta.5.2.4-mac-arm64.zip) | Move `LakeDB.app` to Applications. |
+| Windows x64 | [Portable EXE](https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.5.2.4/LakeDB-1.0.0-beta.5.2.4-win-x64-portable.exe) | Run without installation. |
+| Linux x64 | [Debian package](https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.5.2.4/LakeDB-1.0.0-beta.5.2.4-linux-amd64.deb) | Install with your package manager. |
 
 > **Public beta signing:** macOS packages have an ad-hoc signature but are not
 > notarized yet; Windows packages are not yet signed with a trusted
 > certificate. Download only from the official LakeDB repositories. Every
 > package has a matching SHA-256 file on the
-> [Beta 5.2.3 release page](https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.5.2.3).
+> [Beta 5.2.4 release page](https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.5.2.4).
 
 ---
 
-## What's new in Beta 5.2.3
+## What's new in Beta 5.2.4
 
-Beta 5.2.3 improves migration review with safer default selection, clearer
-object counters, status explanations and confirmation dialogs that preserve
-the current workflow.
+Beta 5.2.4 improves QuerIA account and Patreon plan handling. Account settings
+now provide an upgrade action and plan comparison, Patreon memberships can be
+refreshed without disconnecting, and quota messages can lead directly to the
+available plans. LakeDB requires sign-in or account creation before continuing
+to Patreon and resumes the upgrade flow afterwards.
+
+The update also prevents logout from being counted as a new QuerIA activation
+on the same computer. Existing connections, workspaces, credentials and local
+data are retained.
 
 ## Beta 5.2 highlights
 
@@ -327,10 +333,11 @@ Weighted usage reflects the work performed, so it is not a fixed number of
 queries. Agentic requests usually inspect more metadata and make more AI calls
 than Normal requests.
 
-To activate the allowance, protect your QuerIA account with an email and
-password in **Settings → Account**, then choose **Connect Patreon**. LakeDB and
-Patreon must use the same email address. Membership changes are applied
-automatically while the Patreon connection remains linked.
+To activate the allowance, choose **Upgrade plan** in **Settings → Account**.
+LakeDB asks you to sign in or create a QuerIA account first, shows the available
+plans and then continues securely to Patreon. Membership changes are applied
+automatically while Patreon remains linked, and **Refresh Patreon** checks a
+new or changed membership without disconnecting it.
 
 <p align="center">
   <a href="https://www.patreon.com/LakeDB/membership"><img alt="Choose a LakeDB Patreon membership" src="https://img.shields.io/badge/KEEP_LAKEDB_MOVING-VIEW_MEMBERSHIPS-ff424d?style=for-the-badge&logo=patreon&logoColor=white"></a>
