@@ -27,7 +27,7 @@
 - **Local-first by default** — credentials stay local, and database rows or query results are not sent to the AI service.
 
 > 💡 **Help shape LakeDB:** suggest features, describe real database workflows and
-> vote on community ideas in [GitHub Discussions](https://github.com/DavLagoHern/LakeDB/discussions/categories/ideas).
+> react to and discuss community ideas in [GitHub Discussions](https://github.com/DavLagoHern/LakeDB/discussions/categories/ideas).
 
 <p align="center">
   <sub>LakeDB is free to use, but it is not open source. This public repository hosts official builds, documentation, issue tracking and community feedback.</sub>
