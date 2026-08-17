@@ -26,6 +26,9 @@
 - **Production-aware workflows** — read-only connections, environment-specific confirmations and reviewable database operations.
 - **Local-first by default** — credentials stay local, and database rows or query results are not sent to the AI service.
 
+> 💡 **Help shape LakeDB:** suggest features, describe real database workflows and
+> vote on community ideas in [GitHub Discussions](https://github.com/DavLagoHern/LakeDB/discussions/categories/ideas).
+
 <p align="center">
   <sub>LakeDB is free to use, but it is not open source. This public repository hosts official builds, documentation, issue tracking and community feedback.</sub>
 </p>
@@ -348,9 +351,10 @@ new or changed membership without disconnecting it.
 ## Community & support
 
 <p align="center">
+  <a href="https://github.com/DavLagoHern/LakeDB/discussions/categories/ideas"><img alt="Suggest and vote on LakeDB ideas in GitHub Discussions" src="https://img.shields.io/badge/IDEAS-JOIN_DISCUSSIONS-0b7cff?style=for-the-badge&logo=github&logoColor=white"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/issues/new?template=bug-report.yml"><img alt="Report a reproducible LakeDB bug" src="https://img.shields.io/badge/BUGS-REPORT_ISSUE-06132b?style=for-the-badge&logo=github&logoColor=12d9ff"></a>
   <a href="https://www.reddit.com/r/LakeDB/"><img alt="Join the LakeDB community on Reddit" src="https://img.shields.io/badge/REDDIT-JOIN_COMMUNITY-ff4500?style=for-the-badge&logo=reddit&logoColor=white"></a>
   <a href="https://www.patreon.com/LakeDB/membership"><img alt="Support LakeDB development on Patreon" src="https://img.shields.io/badge/PATREON-SUPPORT_DEVELOPMENT-ff424d?style=for-the-badge&logo=patreon&logoColor=white"></a>
-  <a href="https://github.com/DavLagoHern/LakeDB/issues/new?template=bug-report.yml"><img alt="Report a LakeDB issue" src="https://img.shields.io/badge/FEEDBACK-REPORT_ISSUE-06132b?style=for-the-badge&logo=github&logoColor=12d9ff"></a>
 </p>
 
 <p align="center">
