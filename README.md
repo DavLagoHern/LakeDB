@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.5.2.2"><img alt="Download LakeDB Beta 5.2.2" src="https://img.shields.io/badge/DOWNLOAD-BETA_5.2.2-0b7cff?style=for-the-badge&logo=github&logoColor=white"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.5.2.3"><img alt="Download LakeDB Beta 5.2.3" src="https://img.shields.io/badge/DOWNLOAD-BETA_5.2.3-0b7cff?style=for-the-badge&logo=github&logoColor=white"></a>
   <a href="https://github.com/DavLagoHern/homebrew-lakedb"><img alt="Install LakeDB with Homebrew" src="https://img.shields.io/badge/HOMEBREW-INSTALL_LAKEDB-fbb040?style=for-the-badge&logo=homebrew&logoColor=black"></a>
   <a href="https://davlagohern.github.io/LakeDB/"><img alt="LakeDB website" src="https://img.shields.io/badge/WEBSITE-EXPLORE_LAKEDB-19d2ff?style=for-the-badge&logoColor=020817"></a>
 </p>
@@ -62,26 +62,32 @@ Cask version and SHA-256 current automatically.
 ### Direct downloads
 
 <p align="center">
-  <a href="https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.5.2.2/LakeDB-1.0.0-beta.5.2.2-mac-arm64.dmg"><img alt="Download LakeDB for macOS Apple Silicon" src="https://img.shields.io/badge/macOS-DOWNLOAD_DMG-06132b?style=for-the-badge&logo=apple&logoColor=white"></a>
-  <a href="https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.5.2.2/LakeDB-1.0.0-beta.5.2.2-win-x64-setup.exe"><img alt="Download LakeDB installer for Windows x64" src="https://img.shields.io/badge/Windows-DOWNLOAD_SETUP-0b7cff?style=for-the-badge&logo=windows&logoColor=white"></a>
-  <a href="https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.5.2.2/LakeDB-1.0.0-beta.5.2.2-linux-x86_64.AppImage"><img alt="Download LakeDB AppImage for Linux x64" src="https://img.shields.io/badge/Linux-DOWNLOAD_APPIMAGE-12d9ff?style=for-the-badge&logo=linux&logoColor=020817"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.5.2.3/LakeDB-1.0.0-beta.5.2.3-mac-arm64.dmg"><img alt="Download LakeDB for macOS Apple Silicon" src="https://img.shields.io/badge/macOS-DOWNLOAD_DMG-06132b?style=for-the-badge&logo=apple&logoColor=white"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.5.2.3/LakeDB-1.0.0-beta.5.2.3-win-x64-setup.exe"><img alt="Download LakeDB installer for Windows x64" src="https://img.shields.io/badge/Windows-DOWNLOAD_SETUP-0b7cff?style=for-the-badge&logo=windows&logoColor=white"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.5.2.3/LakeDB-1.0.0-beta.5.2.3-linux-x86_64.AppImage"><img alt="Download LakeDB AppImage for Linux x64" src="https://img.shields.io/badge/Linux-DOWNLOAD_APPIMAGE-12d9ff?style=for-the-badge&logo=linux&logoColor=020817"></a>
 </p>
 
 | Platform | Alternative package | Install |
 | --- | --- | --- |
-| macOS Apple Silicon | [ZIP](https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.5.2.2/LakeDB-1.0.0-beta.5.2.2-mac-arm64.zip) | Move `LakeDB.app` to Applications. |
-| Windows x64 | [Portable EXE](https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.5.2.2/LakeDB-1.0.0-beta.5.2.2-win-x64-portable.exe) | Run without installation. |
-| Linux x64 | [Debian package](https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.5.2.2/LakeDB-1.0.0-beta.5.2.2-linux-amd64.deb) | Install with your package manager. |
+| macOS Apple Silicon | [ZIP](https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.5.2.3/LakeDB-1.0.0-beta.5.2.3-mac-arm64.zip) | Move `LakeDB.app` to Applications. |
+| Windows x64 | [Portable EXE](https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.5.2.3/LakeDB-1.0.0-beta.5.2.3-win-x64-portable.exe) | Run without installation. |
+| Linux x64 | [Debian package](https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.5.2.3/LakeDB-1.0.0-beta.5.2.3-linux-amd64.deb) | Install with your package manager. |
 
 > **Public beta signing:** macOS packages have an ad-hoc signature but are not
 > notarized yet; Windows packages are not yet signed with a trusted
 > certificate. Download only from the official LakeDB repositories. Every
 > package has a matching SHA-256 file on the
-> [Beta 5.2.2 release page](https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.5.2.2).
+> [Beta 5.2.3 release page](https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.5.2.3).
 
 ---
 
-## What's new in Beta 5.2.2
+## What's new in Beta 5.2.3
+
+Beta 5.2.3 improves migration review with safer default selection, clearer
+object counters, status explanations and confirmation dialogs that preserve
+the current workflow.
+
+## Beta 5.2 highlights
 
 <p align="center">
   <img src="docs/assets/releases/beta5.2/beta-5.2-release-1920x1080.png" width="100%" alt="LakeDB Beta 5.2 presents a review-first database comparison and migration workflow">

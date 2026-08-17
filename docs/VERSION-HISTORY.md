@@ -13,6 +13,19 @@ Packaged downloads are retained for the current build, the previous patch and th
 
 Only real tagged builds are listed as releases. The 0.2–0.4 product stages were development milestones rather than public tags, and 0.10.0–0.10.2 were not published as separate builds.
 
+## 1.0.0 Beta 5.2.3 — August 17, 2026
+
+- `CHANGE` keep tables, procedures and other object definitions unselected
+  until they are explicitly chosen for migration.
+- `CHANGE` show selected/available totals in migration tabs and add a review
+  summary before execution.
+- `FIX` keep Production and other confirmation dialogs above the current
+  workflow instead of replacing it.
+- `FIX` explain migration status badges and keep migration search and headers
+  visible while scrolling.
+
+[Release notes and downloads](https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.5.2.3)
+
 ## 1.0.0 Beta 5.2.2 — August 13, 2026
 
 - `FIX` continue through an established Enterprise QuerIA route when the
