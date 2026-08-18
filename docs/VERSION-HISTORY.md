@@ -13,6 +13,15 @@ Packaged downloads are retained for the current build, the previous patch and th
 
 Only real tagged builds are listed as releases. The 0.2–0.4 product stages were development milestones rather than public tags, and 0.10.0–0.10.2 were not published as separate builds.
 
+## 1.0.0 Beta 5.3.1 — August 18, 2026
+
+- `ADD` find, replace and visible match navigation in plain-text, JSON and HTML
+  value editors, plus line-aware Tab indentation.
+- `FIX` warn before discarding an edited value and retain Object Explorer
+  searches while opening or switching connections.
+
+[Release notes and downloads](https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.5.3.1)
+
 ## 1.0.0 Beta 5.3.0 — August 18, 2026
 
 - `ADD` learn a personal SQL formatting profile locally from separate
