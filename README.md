@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.5.2.4"><img alt="Download LakeDB Beta 5.2.4" src="https://img.shields.io/badge/DOWNLOAD-BETA_5.2.4-0b7cff?style=for-the-badge&logo=github&logoColor=white"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.5.3.0"><img alt="Download LakeDB Beta 5.3" src="https://img.shields.io/badge/DOWNLOAD-BETA_5.3-0b7cff?style=for-the-badge&logo=github&logoColor=white"></a>
   <a href="https://github.com/DavLagoHern/homebrew-lakedb"><img alt="Install LakeDB with Homebrew" src="https://img.shields.io/badge/HOMEBREW-INSTALL_LAKEDB-fbb040?style=for-the-badge&logo=homebrew&logoColor=black"></a>
   <a href="https://davlagohern.github.io/LakeDB/"><img alt="LakeDB website" src="https://img.shields.io/badge/WEBSITE-EXPLORE_LAKEDB-19d2ff?style=for-the-badge&logoColor=020817"></a>
 </p>
@@ -65,36 +65,36 @@ Cask version and SHA-256 current automatically.
 ### Direct downloads
 
 <p align="center">
-  <a href="https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.5.2.4/LakeDB-1.0.0-beta.5.2.4-mac-arm64.dmg"><img alt="Download LakeDB for macOS Apple Silicon" src="https://img.shields.io/badge/macOS-DOWNLOAD_DMG-06132b?style=for-the-badge&logo=apple&logoColor=white"></a>
-  <a href="https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.5.2.4/LakeDB-1.0.0-beta.5.2.4-win-x64-setup.exe"><img alt="Download LakeDB installer for Windows x64" src="https://img.shields.io/badge/Windows-DOWNLOAD_SETUP-0b7cff?style=for-the-badge&logo=windows&logoColor=white"></a>
-  <a href="https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.5.2.4/LakeDB-1.0.0-beta.5.2.4-linux-x86_64.AppImage"><img alt="Download LakeDB AppImage for Linux x64" src="https://img.shields.io/badge/Linux-DOWNLOAD_APPIMAGE-12d9ff?style=for-the-badge&logo=linux&logoColor=020817"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.5.3.0/LakeDB-1.0.0-beta.5.3.0-mac-arm64.dmg"><img alt="Download LakeDB for macOS Apple Silicon" src="https://img.shields.io/badge/macOS-DOWNLOAD_DMG-06132b?style=for-the-badge&logo=apple&logoColor=white"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.5.3.0/LakeDB-1.0.0-beta.5.3.0-win-x64-setup.exe"><img alt="Download LakeDB installer for Windows x64" src="https://img.shields.io/badge/Windows-DOWNLOAD_SETUP-0b7cff?style=for-the-badge&logo=windows&logoColor=white"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.5.3.0/LakeDB-1.0.0-beta.5.3.0-linux-x86_64.AppImage"><img alt="Download LakeDB AppImage for Linux x64" src="https://img.shields.io/badge/Linux-DOWNLOAD_APPIMAGE-12d9ff?style=for-the-badge&logo=linux&logoColor=020817"></a>
 </p>
 
 | Platform | Alternative package | Install |
 | --- | --- | --- |
-| macOS Apple Silicon | [ZIP](https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.5.2.4/LakeDB-1.0.0-beta.5.2.4-mac-arm64.zip) | Move `LakeDB.app` to Applications. |
-| Windows x64 | [Portable EXE](https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.5.2.4/LakeDB-1.0.0-beta.5.2.4-win-x64-portable.exe) | Run without installation. |
-| Linux x64 | [Debian package](https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.5.2.4/LakeDB-1.0.0-beta.5.2.4-linux-amd64.deb) | Install with your package manager. |
+| macOS Apple Silicon | [ZIP](https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.5.3.0/LakeDB-1.0.0-beta.5.3.0-mac-arm64.zip) | Move `LakeDB.app` to Applications. |
+| Windows x64 | [Portable EXE](https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.5.3.0/LakeDB-1.0.0-beta.5.3.0-win-x64-portable.exe) | Run without installation. |
+| Linux x64 | [Debian package](https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.5.3.0/LakeDB-1.0.0-beta.5.3.0-linux-amd64.deb) | Install with your package manager. |
 
 > **Public beta signing:** macOS packages have an ad-hoc signature but are not
 > notarized yet; Windows packages are not yet signed with a trusted
 > certificate. Download only from the official LakeDB repositories. Every
 > package has a matching SHA-256 file on the
-> [Beta 5.2.4 release page](https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.5.2.4).
+> [Beta 5.3 release page](https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.5.3.0).
 
 ---
 
-## What's new in Beta 5.2.4
+## What's new in Beta 5.3
 
-Beta 5.2.4 improves QuerIA account and Patreon plan handling. Account settings
-now provide an upgrade action and plan comparison, Patreon memberships can be
-refreshed without disconnecting, and quota messages can lead directly to the
-available plans. LakeDB requires sign-in or account creation before continuing
-to Patreon and resumes the upgrade flow afterwards.
+Beta 5.3 can learn your SQL formatting style locally from separate `SELECT`,
+`INSERT`, `UPDATE` and `DELETE` examples. It infers practical layout rules and
+saves them as **Custom: My Style**, without QuerIA, AI tokens or external
+services. Compact and Expanded remain unchanged.
 
-The update also prevents logout from being counted as a new QuerIA activation
-on the same computer. Existing connections, workspaces, credentials and local
-data are retained.
+This community feedback update also points multi-statement errors to the exact
+SQL while preserving completed results, remembers export folders and table
+column widths, and lets you hide noisy tables locally in Object Explorer. See
+[Discussion #25](https://github.com/DavLagoHern/LakeDB/discussions/25).
 
 ## Beta 5.2 highlights
 
@@ -303,7 +303,7 @@ workflow. Sources: [DBeaver documentation](https://dbeaver.com/docs/dbeaver/Sepa
 | **SQL foundation** | Independent workspaces, schema-aware editing, safe data operations, database tools and recovery. |
 | **Beta 3** | Natural-language query documents, visible SQL and explicit local execution. |
 | **Beta 4 — complete** | Reusable connection context, Normal and Agentic generation, cross-database relationships, index inspection, reversible opt-in and clearer execution feedback. |
-| **Beta 5.2 — current** | SQLite beside MySQL/MariaDB, selectable comparison scopes, reusable object definitions and explicit migration actions. |
+| **Beta 5.3 — current** | Local learned SQL formatting, clearer script failures and practical table workflow preferences. |
 | **1.0 direction** | Measured quality, trusted signing and distribution, compatibility validation and complete product polish. |
 
 <p align="center">

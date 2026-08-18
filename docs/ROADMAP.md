@@ -2,19 +2,19 @@
 
 ![LakeDB Beta 5.2 review-first database workflow roadmap](assets/roadmap/lakedb-roadmap-beta-5.2.png)
 
-LakeDB Beta 5.2 makes database comparison and object-definition work explicit,
-selectable and review-first. The roadmap tracks complete product stages rather
-than every patch.
+LakeDB Beta 5.3 turns direct community feedback into local SQL formatting and
+everyday workflow improvements. The roadmap tracks complete product stages
+rather than every patch.
 
-## Current: Beta 5.2
+## Current: Beta 5.3
 
-MySQL and MariaDB comparison can target tables, views, procedures, functions,
-triggers and events. Table analysis can check structure, row counts or both;
-summary and migration selection are separate views, and individual database
-objects open in dedicated definition tabs with environment-aware confirmation.
+LakeDB can learn a saved formatting profile from separate `SELECT`, `INSERT`,
+`UPDATE` and `DELETE` examples using only local, deterministic analysis. Script
+errors identify the exact failed statement while retaining completed results;
+export folders, table widths and locally hidden tables are remembered.
 
-Bulk migration remains table-only. Non-table objects are compared by definition
-and edited individually. Row values are not read during comparison.
+Compact and Expanded formatting remain available unchanged. Personal examples
+are not sent to QuerIA or any external service.
 
 ## Released: Beta 5.1
 
@@ -59,7 +59,7 @@ defaults, bulk connection editing and lower-cost on-demand server monitoring.
 | **SQL foundation** | Multiple workspaces, schema-aware editing, safe table operations, Explain, transactions, backup, compare, migrate and recovery. |
 | **Beta 3** | QuerIA natural-language documents, schema-grounded SQL, visible review, explicit local execution and privacy opt-in. |
 | **Beta 4 — complete** | Reusable business context, Normal and Agentic generation, cross-database relationships, table and index inspection, plan review and community testing. |
-| **Beta 5 — current** | SQLite beside MySQL/MariaDB, explicit engine capabilities, review-first comparison, object-definition editing and hardened migrations. |
+| **Beta 5 — current** | SQLite beside MySQL/MariaDB, review-first database tools, local learned formatting and practical workflow polish. |
 | **1.0 — direction** | Measured AI quality, trusted distribution, compatibility validation, accessibility and complete product polish. |
 
 Future stages describe direction, not a fixed date or guaranteed scope.
