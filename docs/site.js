@@ -120,6 +120,6 @@ if (userAgent.includes("win")) {
 if (platform) {
   document.querySelector(`[data-platform="${platform}"]`)?.classList.add("is-detected");
   document.querySelectorAll("[data-download-label]").forEach((label) => {
-    label.textContent = `Download Beta 5.1 for ${platformName}`;
+    label.textContent = `Download Beta 5.3.1 for ${platformName}`;
   });
 }
