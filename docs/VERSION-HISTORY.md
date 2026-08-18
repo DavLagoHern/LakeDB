@@ -26,6 +26,16 @@ Only real tagged builds are listed as releases. The 0.2–0.4 product stages wer
 
 [Release notes and downloads](https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.5.3.0)
 
+## 1.0.0 Beta 5.2.4 — August 17, 2026
+
+- `ADD` show QuerIA plan comparisons and start an account upgrade from
+  Preferences or a quota message.
+- `CHANGE` refresh Patreon membership status without disconnecting the
+  LakeDB account and resume upgrades after sign-in.
+- `FIX` avoid counting logout as a new QuerIA activation on the same device.
+
+[Release notes and downloads](https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.5.2.4)
+
 ## 1.0.0 Beta 5.2.3 — August 17, 2026
 
 - `CHANGE` keep tables, procedures and other object definitions unselected
