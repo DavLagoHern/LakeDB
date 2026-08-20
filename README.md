@@ -84,54 +84,10 @@ Cask version and SHA-256 current automatically.
 
 ---
 
-## What's new in Beta 5.3
+## Latest release
 
-Beta 5.3 can learn your SQL formatting style locally from separate `SELECT`,
-`INSERT`, `UPDATE` and `DELETE` examples. It infers practical layout rules and
-saves them as **Custom: My Style**, without QuerIA, AI tokens or external
-services. Compact and Expanded remain unchanged.
-
-This community feedback update also points multi-statement errors to the exact
-SQL while preserving completed results, remembers export folders and table
-column widths, and lets you hide noisy tables locally in Object Explorer. See
-[Discussion #25](https://github.com/DavLagoHern/LakeDB/discussions/25).
-
-Beta 5.3.1 adds find, replace and indentation to large text, JSON and HTML
-values, warns before discarding edits, and keeps Object Explorer searches while
-switching connections.
-
-## Beta 5.2 highlights
-
-<p align="center">
-  <img src="docs/assets/releases/beta5.2/beta-5.2-release-1920x1080.png" width="100%" alt="LakeDB Beta 5.2 presents a review-first database comparison and migration workflow">
-</p>
-
-Beta 5.2 keeps comparison and migration deliberately separate:
-
-- choose which tables, views, procedures, functions, triggers and events to compare;
-- select structure and row-count checks explicitly;
-- review results in **Summary** before opening **Migrate**;
-- migrate only the selected tables through reviewable actions;
-- open views, routines, triggers and events in dedicated definition tabs;
-- browse large tables through a bounded interactive window instead of blocking on an unrestricted `COUNT(*)`.
-
-Row values are not read or compared during bulk comparison, and non-table
-objects remain comparison-only in bulk migration plans.
-
-<p align="center">
-  <img src="docs/assets/releases/beta5.2/database-comparison-scope-1920x1080.png" width="100%" alt="LakeDB Beta 5.2 database tools showing selectable tables, views, procedures, functions, triggers and events">
-</p>
-
-<p align="center"><sub><strong>Compare deliberately.</strong> Choose what to inspect first, then decide what should actually move.</sub></p>
-
-### Previous beta highlights
-
-- **Beta 5.1** — first-class SQLite connections, SQLite-aware diagnostics, transactions and `EXPLAIN QUERY PLAN`.
-- **Beta 5.0** — local MySQL/MariaDB syntax diagnostics, safe quick fixes and optional AI-assisted correction.
-- **Beta 4.5** — Production, Development and Local environments with configurable confirmation levels.
-- **Beta 4.4** — reusable business contexts for QuerIA with per-connection selection.
-
-See the full history in [GitHub Releases](https://github.com/DavLagoHern/LakeDB/releases).
+LakeDB is currently available as **Beta 5.3.1**. See its changes and the full
+version history in [GitHub Releases](https://github.com/DavLagoHern/LakeDB/releases).
 
 ---
 
@@ -139,7 +95,7 @@ See the full history in [GitHub Releases](https://github.com/DavLagoHern/LakeDB/
 
 AI joins the existing LakeDB workflow; it does not replace it.
 
-| Area | Available in Beta 5.2 |
+| Area | Available now |
 | --- | --- |
 | **Connections** | Multiple simultaneous MySQL, MariaDB and SQLite connections, folders, colors, read-only mode, diagnostics and search from Home or the connection picker. SSH and TLS remain server-engine capabilities. |
 | **Workspaces** | Independent SQL, QuerIA and table tabs per connection, with restored editor content, selected schema and layout. |
@@ -319,35 +275,15 @@ Roadmap items describe direction, not a fixed release date. See
 
 ---
 
-## Support LakeDB
+## Support development
 
-LakeDB's complete local SQL client is free to use. If it saves you time, an
-optional [Patreon membership](https://www.patreon.com/LakeDB/membership) helps
-pay for builds, future code signing, release infrastructure and continued
-development toward 1.0. Core local database features are not locked behind a
-membership.
-
-Paid memberships also include a larger QuerIA allowance to help cover the real
-cost of its external AI service:
-
-| Membership | Monthly support | QuerIA allowance | Compared with FREE |
-| --- | ---: | --- | ---: |
-| **FREE** | €0 | 100,000 weighted tokens/day · 400,000/month | — |
-| **LakeDB Supporter** | €5 | 1,000,000 weighted tokens/day · 4,000,000/month | **10×** |
-| **LakeDB MEGA Supporter** | €15 | 5,000,000 weighted tokens/day · 20,000,000/month | **50×** |
-
-Weighted usage reflects the work performed, so it is not a fixed number of
-queries. Agentic requests usually inspect more metadata and make more AI calls
-than Normal requests.
-
-To activate the allowance, choose **Upgrade plan** in **Settings → Account**.
-LakeDB asks you to sign in or create a QuerIA account first, shows the available
-plans and then continues securely to Patreon. Membership changes are applied
-automatically while Patreon remains linked, and **Refresh Patreon** checks a
-new or changed membership without disconnecting it.
+LakeDB's complete local SQL client is free to use. An optional
+[Patreon membership](https://www.patreon.com/LakeDB/membership) helps fund its
+continued development and includes higher QuerIA AI usage limits. Core local
+database features are not locked behind a membership.
 
 <p align="center">
-  <a href="https://www.patreon.com/LakeDB/membership"><img alt="Choose a LakeDB Patreon membership" src="https://img.shields.io/badge/KEEP_LAKEDB_MOVING-VIEW_MEMBERSHIPS-ff424d?style=for-the-badge&logo=patreon&logoColor=white"></a>
+  <a href="https://www.patreon.com/LakeDB/membership"><img alt="Support LakeDB development on Patreon" src="https://img.shields.io/badge/SUPPORT-LAKEDB_DEVELOPMENT-ff424d?style=for-the-badge&logo=patreon&logoColor=white"></a>
 </p>
 
 ---
