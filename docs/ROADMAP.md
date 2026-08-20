@@ -1,20 +1,28 @@
 # LakeDB roadmap
 
-![LakeDB Beta 5.2 review-first database workflow roadmap](assets/roadmap/lakedb-roadmap-beta-5.2.png)
+![LakeDB Beta 5.4 visible database context roadmap](assets/roadmap/lakedb-roadmap-beta-5.4.png)
 
-LakeDB Beta 5.3 turns direct community feedback into local SQL formatting and
-everyday workflow improvements. The roadmap tracks complete product stages
-rather than every patch.
+LakeDB Beta 5.4 makes relationships, system metadata and database access easier
+to see without blurring the boundary between server truth and local context.
+The roadmap tracks complete product stages rather than every patch.
 
-## Current: Beta 5.3
+## Current: Beta 5.4
+
+MySQL and MariaDB databases can open a visual relationship map. Real foreign
+keys remain solid while user-defined links are dashed and stored only in
+LakeDB. Tables can be dragged, the canvas can be panned and the mouse wheel
+zooms around the cursor.
+
+System schemas are grouped at the bottom of Object Explorer, collapsed by
+default and optionally hidden. Users and privileges can be inspected and
+managed through explicit SQL review when the connected account permits it.
+
+## Released: Beta 5.3
 
 LakeDB can learn a saved formatting profile from separate `SELECT`, `INSERT`,
-`UPDATE` and `DELETE` examples using only local, deterministic analysis. Script
+`UPDATE` and `DELETE` examples using local, deterministic analysis. Script
 errors identify the exact failed statement while retaining completed results;
-export folders, table widths and locally hidden tables are remembered.
-
-Compact and Expanded formatting remain available unchanged. Personal examples
-are not sent to QuerIA or any external service.
+export folders, table widths, searches and locally hidden tables are remembered.
 
 ## Released: Beta 5.1
 
@@ -59,7 +67,7 @@ defaults, bulk connection editing and lower-cost on-demand server monitoring.
 | **SQL foundation** | Multiple workspaces, schema-aware editing, safe table operations, Explain, transactions, backup, compare, migrate and recovery. |
 | **Beta 3** | QuerIA natural-language documents, schema-grounded SQL, visible review, explicit local execution and privacy opt-in. |
 | **Beta 4 — complete** | Reusable business context, Normal and Agentic generation, cross-database relationships, table and index inspection, plan review and community testing. |
-| **Beta 5 — current** | SQLite beside MySQL/MariaDB, review-first database tools, local learned formatting and practical workflow polish. |
+| **Beta 5 — current** | SQLite beside MySQL/MariaDB, review-first database tools, local learned formatting, visible relationships and access management. |
 | **1.0 — direction** | Measured AI quality, trusted distribution, compatibility validation, accessibility and complete product polish. |
 
 Future stages describe direction, not a fixed date or guaranteed scope.

@@ -13,6 +13,18 @@ Packaged downloads are retained for the current build, the previous patch and th
 
 Only real tagged builds are listed as releases. The 0.2–0.4 product stages were development milestones rather than public tags, and 0.10.0–0.10.2 were not published as separate builds.
 
+## 1.0.0 Beta 5.4 — August 20, 2026
+
+- `ADD` open draggable, pannable and wheel-zoomable relationship maps with
+  distinct real foreign keys and LakeDB-only links.
+- `ADD` create, edit, remove and validate local relationships without changing
+  the database.
+- `ADD` browse MySQL/MariaDB system schemas in a dedicated explorer group.
+- `ADD` inspect and manage supported MySQL/MariaDB accounts and scoped
+  privileges through reviewable SQL.
+
+[Release notes and downloads](https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.5.4)
+
 ## 1.0.0 Beta 5.3.1 — August 18, 2026
 
 - `ADD` find, replace and visible match navigation in plain-text, JSON and HTML

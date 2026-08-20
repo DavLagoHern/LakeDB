@@ -17,20 +17,20 @@
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="LakeDB">
     <meta property="og:locale" content="en_US">
-    <meta property="og:title" content="LakeDB Beta 5.1 — SQLite joins the workspace">
-    <meta property="og:description" content="Open local SQLite files beside MySQL and MariaDB with engine-aware, review-first workflows.">
+    <meta property="og:title" content="LakeDB Beta 5.4 — Visible database context">
+    <meta property="og:description" content="Map real and local relationships, browse system schemas and review MySQL or MariaDB access changes.">
     <meta property="og:url" content="https://davlagohern.github.io/LakeDB/">
-    <meta property="og:image" content="https://davlagohern.github.io/LakeDB/assets/releases/beta5.1/beta-5.1-release-1920x1080.png">
-    <meta property="og:image:secure_url" content="https://davlagohern.github.io/LakeDB/assets/releases/beta5.1/beta-5.1-release-1920x1080.png">
+    <meta property="og:image" content="https://davlagohern.github.io/LakeDB/assets/releases/beta5.4/beta-5.4-release-1920x1080.png">
+    <meta property="og:image:secure_url" content="https://davlagohern.github.io/LakeDB/assets/releases/beta5.4/beta-5.4-release-1920x1080.png">
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="1920">
     <meta property="og:image:height" content="1080">
-    <meta property="og:image:alt" content="LakeDB Beta 5.1 presents SQLite as a first-class local connection">
+    <meta property="og:image:alt" content="LakeDB Beta 5.4 presents relationship maps, system schemas and access management">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="LakeDB Beta 5.1 — SQLite joins the workspace">
-    <meta name="twitter:description" content="Local SQLite files beside MySQL and MariaDB, with honest engine capabilities.">
-    <meta name="twitter:image" content="https://davlagohern.github.io/LakeDB/assets/releases/beta5.1/beta-5.1-release-1920x1080.png">
-    <meta name="twitter:image:alt" content="LakeDB Beta 5.1 SQLite release artwork">
+    <meta name="twitter:title" content="LakeDB Beta 5.4 — Visible database context">
+    <meta name="twitter:description" content="Relationship maps, browsable system schemas and reviewable MySQL or MariaDB access changes.">
+    <meta name="twitter:image" content="https://davlagohern.github.io/LakeDB/assets/releases/beta5.4/beta-5.4-release-1920x1080.png">
+    <meta name="twitter:image:alt" content="LakeDB Beta 5.4 release artwork">
     <script>
       (() => {
         try {
@@ -76,15 +76,15 @@
             "@id": "https://davlagohern.github.io/LakeDB/#software",
             "name": "LakeDB",
             "url": "https://davlagohern.github.io/LakeDB/",
-            "image": "https://davlagohern.github.io/LakeDB/assets/releases/beta5.1/beta-5.1-release-1920x1080.png",
+            "image": "https://davlagohern.github.io/LakeDB/assets/releases/beta5.4/beta-5.4-release-1920x1080.png",
             "screenshot": "https://davlagohern.github.io/LakeDB/assets/screenshots/queria.png",
             "applicationCategory": "DeveloperApplication",
             "applicationSubCategory": "Database client",
             "operatingSystem": "Windows 64-bit, macOS Apple Silicon, Linux 64-bit",
             "description": "A local-first, multi-database desktop client currently supporting MySQL, MariaDB and SQLite, with engine-aware workflows and reviewable natural-language SQL.",
-            "softwareVersion": "Beta 5.1",
-            "downloadUrl": "https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.5.1",
-            "releaseNotes": "https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.5.1",
+            "softwareVersion": "Beta 5.4",
+            "downloadUrl": "https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.5.4",
+            "releaseNotes": "https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.5.4",
             "isAccessibleForFree": true,
             "featureList": [
               "Reviewable natural-language SQL with QuerIA",
@@ -96,6 +96,9 @@
               "Schema-aware SQL autocomplete",
               "Independent multi-connection workspaces",
               "First-class local SQLite file connections",
+              "Visual real and local relationship maps",
+              "Browsable MySQL and MariaDB system schemas",
+              "Reviewable MySQL and MariaDB access management",
               "Local query execution and results",
               "MySQL and MariaDB database tools"
             ],
@@ -159,11 +162,11 @@
             <h2>SQLite joins the workspace.</h2>
             <p>Open local database files beside MySQL and MariaDB. LakeDB adapts the workspace to the real capabilities of each engine.</p>
             <div class="hero-actions">
-              <a class="button button-primary" href="https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.5.3.1" data-download-link>
+              <a class="button button-primary" href="https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.5.4" data-download-link>
                 <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v12m0 0 5-5m-5 5-5-5M4 19h16"/></svg>
-                <span data-download-label>Download Beta 5.3.1</span>
+                <span data-download-label>Download Beta 5.4</span>
               </a>
-              <a class="button button-secondary" href="#beta5">Explore Beta 5.3.1
+              <a class="button button-secondary" href="#beta5">Explore Beta 5
                 <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg>
               </a>
             </div>
@@ -521,10 +524,10 @@ ADD COLUMN last_login_at TIMESTAMP NULL;</code></pre>
           <h2>From direct SQL<br>to bounded investigation.</h2>
         </div>
         <figure class="shell capture-frame roadmap-visual" data-reveal>
-          <button class="media-button" type="button" data-lightbox="assets/roadmap/lakedb-roadmap-beta-5.1.png" aria-label="Open the LakeDB Beta 5.1 roadmap">
-            <img src="assets/roadmap/lakedb-roadmap-beta-5.1.png" alt="LakeDB roadmap from the SQL foundation through QuerIA, safer production workflows and SQL confidence toward 1.0" width="1600" height="900" loading="lazy" decoding="async">
+          <button class="media-button" type="button" data-lightbox="assets/roadmap/lakedb-roadmap-beta-5.4.png" aria-label="Open the LakeDB Beta 5.4 roadmap">
+            <img src="assets/roadmap/lakedb-roadmap-beta-5.4.png" alt="LakeDB roadmap from the SQL foundation through QuerIA and visible database context toward 1.0" width="1600" height="900" loading="lazy" decoding="async">
           </button>
-          <figcaption><strong>Five product stages, not a release calendar.</strong><span>Beta 5.1 adds the multi-engine foundation and guarded upgrades on the road to a trusted 1.0 release.</span></figcaption>
+          <figcaption><strong>Five product stages, not a release calendar.</strong><span>Beta 5.4 makes relationships, system metadata and database access visible on the road to a trusted 1.0 release.</span></figcaption>
         </figure>
         <div class="shell roadmap-actions">
           <a href="ROADMAP.md">Read the complete roadmap <span>↗</span></a>
@@ -536,16 +539,16 @@ ADD COLUMN last_login_at TIMESTAMP NULL;</code></pre>
           <div class="download-copy">
             <p class="section-index">08 / Download</p>
             <h2>Try the final public beta line.</h2>
-            <a class="button button-primary" href="https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.5.3.1" data-download-link>
+            <a class="button button-primary" href="https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.5.4" data-download-link>
               <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v12m0 0 5-5m-5 5-5-5M4 19h16"/></svg>
-              <span data-download-label>Download Beta 5.3.1</span>
+              <span data-download-label>Download Beta 5.4</span>
             </a>
             <p class="beta-note">QuerIA includes a free beta allowance. The complete SQL client remains usable when QuerIA is disabled, unavailable or has no remaining allowance.</p>
           </div>
           <div class="platform-list">
-            <a href="https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.5.3.1" data-platform="windows"><span><strong>Windows x64</strong><em>Installer and portable build</em></span><b>↗</b></a>
-            <a href="https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.5.3.1" data-platform="mac"><span><strong>macOS Apple Silicon</strong><em>DMG and ZIP</em></span><b>↗</b></a>
-            <a href="https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.5.3.1" data-platform="linux"><span><strong>Linux x64</strong><em>AppImage and Debian package</em></span><b>↗</b></a>
+            <a href="https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.5.4" data-platform="windows"><span><strong>Windows x64</strong><em>Installer and portable build</em></span><b>↗</b></a>
+            <a href="https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.5.4" data-platform="mac"><span><strong>macOS Apple Silicon</strong><em>DMG and ZIP</em></span><b>↗</b></a>
+            <a href="https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.5.4" data-platform="linux"><span><strong>Linux x64</strong><em>AppImage and Debian package</em></span><b>↗</b></a>
           </div>
         </div>
       </section>
