@@ -13,7 +13,7 @@
     </filter>
   </defs>
 
-  <image href="lakedb-roadmap-beta-5.4-background-source.png" width="1600" height="900" preserveAspectRatio="none"/>
+  <rect width="1600" height="900" fill="#020817"/>
   <rect width="1600" height="900" fill="#020817" opacity=".4"/>
   <rect x="38" y="35" width="1524" height="830" rx="28" fill="none" stroke="#0b7cff" stroke-opacity=".12"/>
 
