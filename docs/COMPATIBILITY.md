@@ -1,6 +1,6 @@
 # LakeDB compatibility
 
-This is the conservative compatibility baseline for LakeDB Beta 5.2 and the intended 1.0 foundation. A combination marked **best effort** may work but is not part of the supported release baseline.
+This is the conservative compatibility baseline for LakeDB Beta 6.0 and the intended 1.0 foundation. A combination marked **best effort** may work but is not part of the supported release baseline.
 
 ## Desktop packages
 
@@ -25,9 +25,28 @@ End users do not need to install Node.js, Electron, Docker or a database client 
 | MySQL 8.0 and MariaDB 10.6                          | Best effort; upstream community maintenance has ended     |
 | Newer MySQL Innovation or MariaDB LTS/rolling lines | Best effort until added to the supported baseline         |
 | MySQL-compatible forks and managed services         | Best effort; provider behaviour and privileges can differ |
-| PostgreSQL, SQL Server and Oracle Database          | Unsupported as connection targets                         |
+| PostgreSQL 18                                       | Validated Beta 6 baseline                                 |
+| PostgreSQL 14–17 and managed PostgreSQL services    | Best effort pending broader beta validation                |
+| SQL Server and Oracle Database                      | Unsupported as connection targets                         |
 
-LakeDB uses standard MySQL protocol connections and reads metadata from server statements and `information_schema`. Individual features require the connected user to have the corresponding permissions.
+LakeDB uses native MySQL-family and PostgreSQL drivers and engine-specific
+catalog queries. Individual features require the connected user or role to
+have the corresponding permissions.
+
+## PostgreSQL
+
+Beta 6 validates native behavior against PostgreSQL 18: direct or SSH-tunneled
+connections, PostgreSQL TLS/authentication modes, cancellable sessions,
+transactions and `search_path`; catalog browsing; typed optimistic editing;
+complete-query exports; table design; schema backup/restore; comparison and
+transactional table copy; operations, roles, QuerIA and AI correction.
+
+PostgreSQL 14–17 and managed services such as Supabase, Neon, Amazon RDS and
+Google Cloud SQL are best effort while real-world beta coverage expands.
+Partial and expression indexes are preserved but are not visually editable.
+Foreign tables can be inspected, but complete foreign-table design and
+migration are not declared. Cross-engine PostgreSQL/MySQL conversion is not
+available.
 
 ## SQLite files
 
@@ -47,7 +66,7 @@ backup or copy before inspecting that schema through the SQLite engine.
 
 ## Connection requirements
 
-- Direct TCP access to the configured MySQL/MariaDB host and port, access through the integrated SSH tunnel, or read/write access to the selected local SQLite file.
+- Direct TCP access to the configured MySQL/MariaDB/PostgreSQL host and port, access through the integrated SSH tunnel, or read/write access to the selected local SQLite file.
 - The operating system's OpenSSH `ssh` command for integrated tunnels.
 - A key already available to `ssh-agent` when the private key requires a passphrase.
 - A valid PEM certificate authority when TLS verification uses a custom CA.
@@ -56,6 +75,8 @@ backup or copy before inspecting that schema through the SQLite engine.
 ## Feature-dependent compatibility
 
 - Table editing requires a primary key or a complete non-nullable unique index.
+- PostgreSQL custom types, JSONB, arrays, UUID, numeric, temporal and binary
+  values are validated and rendered with PostgreSQL semantics.
 - Stored object definitions and schema-management SQL can vary between MySQL and MariaDB versions.
 - Backup, restore and migration operations remain subject to server privileges, SQL modes, character sets, collations and storage-engine behaviour.
 - Importing connections from another client does not guarantee that its encrypted password format can be recovered.

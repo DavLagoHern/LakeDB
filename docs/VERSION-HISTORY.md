@@ -13,6 +13,21 @@ Packaged downloads are retained for the current build, the previous patch and th
 
 Only real tagged builds are listed as releases. The 0.2–0.4 product stages were development milestones rather than public tags, and 0.10.0–0.10.2 were not published as separate builds.
 
+## 1.0.0 Beta 6.0 — August 21, 2026
+
+- `ADD` connect to PostgreSQL natively with direct or SSH routes, PostgreSQL
+  authentication and SSL modes, cancellable sessions and explicit
+  transactions.
+- `ADD` browse PostgreSQL databases, schemas, tables, views, materialized
+  views, functions, procedures, sequences and types with `search_path`
+  semantics.
+- `ADD` edit identifiable PostgreSQL rows optimistically, design tables and
+  export complete queries with PostgreSQL-aware types and SQL rendering.
+- `ADD` back up and restore schemas, compare and copy PostgreSQL tables, inspect
+  operations and roles, and use PostgreSQL-aware QuerIA and AI correction.
+
+[Release notes and downloads](https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.6.0)
+
 ## 1.0.0 Beta 5.4 — August 20, 2026
 
 - `ADD` open draggable, pannable and wheel-zoomable relationship maps with

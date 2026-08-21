@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">The road to LakeDB 1.0</title>
+  <desc id="desc">LakeDB's direction from its SQL foundation through QuerIA and production safety to native PostgreSQL in Beta 6.0 and a trusted 1.0 release.</desc>
+  <defs>
+    <linearGradient id="path" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#0b7cff"/>
+      <stop offset=".58" stop-color="#12d9ff"/>
+      <stop offset="1" stop-color="#55f0bd"/>
+    </linearGradient>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <image href="lakedb-roadmap-beta-5.4-background-source.png" width="1600" height="900" preserveAspectRatio="none"/>
+  <rect width="1600" height="900" fill="#020817" opacity=".4"/>
+  <rect x="38" y="35" width="1524" height="830" rx="28" fill="none" stroke="#0b7cff" stroke-opacity=".12"/>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="72" y="82" fill="#12d9ff" font-size="18" font-weight="800">LAKEDB ROADMAP</text>
+    <text x="72" y="150" fill="#f6fbff" font-size="56" font-weight="900">The road to LakeDB 1.0</text>
+    <text x="72" y="195" fill="#9bb0ca" font-size="20">SQL foundation → QuerIA → production safety → native PostgreSQL → trusted release</text>
+
+    <path d="M74 458H1522" stroke="#173953" stroke-width="8" stroke-linecap="round"/>
+    <path d="M74 458H1522" stroke="url(#path)" stroke-width="3" stroke-linecap="round" opacity=".82"/>
+
+    <g transform="translate(198 458)">
+      <circle r="18" fill="#06132b" stroke="#0b7cff" stroke-width="6"/>
+      <text y="-165" text-anchor="middle" fill="#8299b6" font-size="14" font-weight="900">FOUNDATION</text>
+      <text y="-113" text-anchor="middle" fill="#f6fbff" font-size="29" font-weight="900">Complete SQL</text>
+      <text y="-80" text-anchor="middle" fill="#f6fbff" font-size="29" font-weight="900">client</text>
+      <text y="-50" text-anchor="middle" fill="#9bb0ca" font-size="16">Workspaces · editor · data tools</text>
+      <text y="66" text-anchor="middle" fill="#8299b6" font-size="14" font-weight="800">BUILT AND AVAILABLE</text>
+    </g>
+
+    <g transform="translate(482 458)">
+      <circle r="18" fill="#06132b" stroke="#168dff" stroke-width="6"/>
+      <text y="-165" text-anchor="middle" fill="#8299b6" font-size="14" font-weight="900">BETA 3</text>
+      <text y="-101" text-anchor="middle" fill="#f6fbff" font-size="31" font-weight="900">QuerIA</text>
+      <text y="-50" text-anchor="middle" fill="#9bb0ca" font-size="16">Natural language · visible SQL</text>
+      <text y="66" text-anchor="middle" fill="#8299b6" font-size="14" font-weight="800">REVIEW BEFORE RUN</text>
+    </g>
+
+    <g transform="translate(772 458)">
+      <circle r="18" fill="#06132b" stroke="#12d9ff" stroke-width="6"/>
+      <text y="-165" text-anchor="middle" fill="#8299b6" font-size="14" font-weight="900">BETA 4</text>
+      <text y="-113" text-anchor="middle" fill="#f6fbff" font-size="29" font-weight="900">Safer production</text>
+      <text y="-80" text-anchor="middle" fill="#f6fbff" font-size="29" font-weight="900">work</text>
+      <text y="-50" text-anchor="middle" fill="#9bb0ca" font-size="16">Classify · confirm · control</text>
+      <text y="66" text-anchor="middle" fill="#8299b6" font-size="14" font-weight="800">ENVIRONMENT AWARE</text>
+    </g>
+
+    <g transform="translate(1095 458)">
+      <circle r="56" fill="#0a3540" opacity=".72" filter="url(#glow)"/>
+      <circle r="30" fill="#06132b" stroke="#55f0bd" stroke-width="7"/>
+      <text y="-175" text-anchor="middle" fill="#55f0bd" font-size="15" font-weight="900">BETA 6.0 · CURRENT</text>
+      <text y="-126" text-anchor="middle" fill="#f6fbff" font-size="31" font-weight="900">Native</text>
+      <text y="-90" text-anchor="middle" fill="#f6fbff" font-size="31" font-weight="900">PostgreSQL</text>
+      <text y="-50" text-anchor="middle" fill="#cbe4f7" font-size="16">Connect · explore · edit · operate</text>
+      <text y="78" text-anchor="middle" fill="#55f0bd" font-size="14" font-weight="900">ENGINE-SPECIFIC, END TO END</text>
+      <text y="109" text-anchor="middle" fill="#f6fbff" font-size="16" font-weight="800">Schemas, types and safe editing</text>
+      <text y="134" text-anchor="middle" fill="#f6fbff" font-size="16" font-weight="800">QuerIA and reviewable AI fixes</text>
+    </g>
+
+    <g transform="translate(1402 458)">
+      <circle r="18" fill="#06132b" stroke="#0b7cff" stroke-width="6"/>
+      <text y="-165" text-anchor="middle" fill="#8299b6" font-size="14" font-weight="900">1.0 DIRECTION</text>
+      <text y="-101" text-anchor="middle" fill="#f6fbff" font-size="29" font-weight="900">Trusted release</text>
+      <text y="-50" text-anchor="middle" fill="#9bb0ca" font-size="16">Measured quality · signed builds</text>
+      <text y="66" text-anchor="middle" fill="#8299b6" font-size="14" font-weight="800">DIRECTION, NOT A DATE</text>
+    </g>
+
+    <g transform="translate(210 724)">
+      <circle r="5" fill="#12d9ff"/>
+      <text x="19" y="6" fill="#e8f5ff" font-size="17" font-weight="800">Browse PostgreSQL</text>
+      <text x="19" y="34" fill="#8ea4be" font-size="15">Schemas, views, functions, sequences and types.</text>
+    </g>
+    <g transform="translate(625 724)">
+      <circle r="5" fill="#55f0bd"/>
+      <text x="19" y="6" fill="#e8f5ff" font-size="17" font-weight="800">Work safely</text>
+      <text x="19" y="34" fill="#8ea4be" font-size="15">Stable identities and optimistic conflict checks.</text>
+    </g>
+    <g transform="translate(1060 724)">
+      <circle r="5" fill="#0b7cff"/>
+      <text x="19" y="6" fill="#e8f5ff" font-size="17" font-weight="800">Keep SQL reviewable</text>
+      <text x="19" y="34" fill="#8ea4be" font-size="15">PostgreSQL-aware QuerIA and AI correction.</text>
+    </g>
+
+    <text x="72" y="844" fill="#6f87a5" font-size="15">Updated for LakeDB Beta 6.0 · Product direction, not a fixed release calendar.</text>
+  </g>
+</svg>

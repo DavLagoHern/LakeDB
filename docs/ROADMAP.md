@@ -1,21 +1,32 @@
 # LakeDB roadmap
 
-![LakeDB Beta 5.4 visible database context roadmap](assets/roadmap/lakedb-roadmap-beta-5.4.png)
+![LakeDB Beta 6.0 native PostgreSQL roadmap](assets/roadmap/lakedb-roadmap-beta-6.0.png)
 
-LakeDB Beta 5.4 makes relationships, system metadata and database access easier
-to see without blurring the boundary between server truth and local context.
-The roadmap tracks complete product stages rather than every patch.
+LakeDB Beta 6.0 adds PostgreSQL as a native engine across connections,
+metadata, safe editing, exports, database tools and QuerIA. The roadmap tracks
+complete product stages rather than every patch.
 
-## Current: Beta 5.4
+## Current: Beta 6.0
 
-MySQL and MariaDB databases can open a visual relationship map. Real foreign
-keys remain solid while user-defined links are dashed and stored only in
-LakeDB. Tables can be dragged, the canvas can be panned and the mouse wheel
-zooms around the cursor.
+PostgreSQL connections use their own runtime, dialect, quoting, catalog and
+type handling. LakeDB understands databases, schemas and `search_path`, and can
+browse tables, views, materialized views, functions, procedures, sequences and
+types.
 
-System schemas are grouped at the bottom of Object Explorer, collapsed by
-default and optionally hidden. Users and privileges can be inspected and
-managed through explicit SQL review when the connected account permits it.
+PostgreSQL rows are editable only with a stable identity and optimistic
+conflict detection. Complete-query exports, table design, schema backup and
+restore, comparison, transactional table copy, operations, roles, QuerIA and
+AI correction all use PostgreSQL-specific behavior and explicit review.
+
+The validated beta baseline is PostgreSQL 18. PostgreSQL 14–17, managed
+services, restricted roles and large schemas remain priority compatibility
+feedback areas before 1.0.
+
+## Released: Beta 5.4
+
+MySQL and MariaDB gained visual relationship maps, grouped system schemas and
+reviewable account and privilege management. Real foreign keys stay visually
+distinct from LakeDB-only local links.
 
 ## Released: Beta 5.3
 
@@ -67,7 +78,8 @@ defaults, bulk connection editing and lower-cost on-demand server monitoring.
 | **SQL foundation** | Multiple workspaces, schema-aware editing, safe table operations, Explain, transactions, backup, compare, migrate and recovery. |
 | **Beta 3** | QuerIA natural-language documents, schema-grounded SQL, visible review, explicit local execution and privacy opt-in. |
 | **Beta 4 — complete** | Reusable business context, Normal and Agentic generation, cross-database relationships, table and index inspection, plan review and community testing. |
-| **Beta 5 — current** | SQLite beside MySQL/MariaDB, review-first database tools, local learned formatting, visible relationships and access management. |
+| **Beta 5 — complete** | SQLite beside MySQL/MariaDB, review-first database tools, local learned formatting, visible relationships and access management. |
+| **Beta 6 — current** | Native PostgreSQL connections, catalog browsing, safe editing, design, exports, operations, transfer paths and review-first AI. |
 | **1.0 — direction** | Measured AI quality, trusted distribution, compatibility validation, accessibility and complete product polish. |
 
 Future stages describe direction, not a fixed date or guaranteed scope.
@@ -109,6 +121,8 @@ QuerIA must preserve these boundaries:
 
 - Test supported macOS, Windows and Linux versions.
 - Test representative MySQL and MariaDB versions.
+- Expand PostgreSQL validation beyond the PostgreSQL 18 beta baseline to
+  versions 14–17 and representative managed services.
 - Run packaged smoke tests and retained-beta upgrade tests.
 - Complete a release-candidate soak with no data-loss, credential, update,
   restore or destructive-query blockers.

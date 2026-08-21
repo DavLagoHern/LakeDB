@@ -4,24 +4,24 @@
 
 <p align="center">
   <strong>A local-first database client for people tired of switching tools, losing context between connections, and trusting black-box AI with SQL.</strong><br>
-  MySQL, MariaDB and SQLite today, with more engines planned. Keep separate workspaces, review generated or corrected SQL before anything runs, and stay in control of every database operation.
+  MySQL, MariaDB, PostgreSQL and SQLite in one honest, engine-aware workspace. Review generated or corrected SQL before anything runs, and stay in control of every database operation.
 </p>
 
 <p align="center">
-  <a href="https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.5.4"><img alt="Download LakeDB Beta 5.4" src="https://img.shields.io/badge/DOWNLOAD-BETA_5.4-0b7cff?style=for-the-badge&logo=github&logoColor=white"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.6.0"><img alt="Download LakeDB Beta 6.0" src="https://img.shields.io/badge/DOWNLOAD-BETA_6.0-0b7cff?style=for-the-badge&logo=github&logoColor=white"></a>
   <a href="https://github.com/DavLagoHern/homebrew-lakedb"><img alt="Install LakeDB with Homebrew" src="https://img.shields.io/badge/HOMEBREW-INSTALL_LAKEDB-fbb040?style=for-the-badge&logo=homebrew&logoColor=black"></a>
   <a href="https://davlagohern.github.io/LakeDB/"><img alt="LakeDB website" src="https://img.shields.io/badge/WEBSITE-EXPLORE_LAKEDB-19d2ff?style=for-the-badge&logoColor=020817"></a>
 </p>
 
 <p align="center">
-  <img src="docs/assets/screenshots/multitab.png" width="100%" alt="Multiple independent LakeDB connection workspaces">
+  <img src="docs/assets/releases/beta6/lakedb-beta-6-postgresql-1920x1080.png" width="100%" alt="LakeDB Beta 6.0 introduces native PostgreSQL support">
 </p>
 
-<p align="center"><sub><strong>One client, separate workspaces.</strong> Keep SQL, QuerIA, table tabs and connection context isolated instead of mixing everything into one editor state.</sub></p>
+<p align="center"><sub><strong>PostgreSQL joins LakeDB natively.</strong> Connect, explore, edit, design, export, operate and use review-first AI with PostgreSQL-specific behavior.</sub></p>
 
 ## Why LakeDB
 
-- **One workspace across multiple engines** — work with MySQL, MariaDB and SQLite without changing tools.
+- **One workspace across multiple engines** — work with MySQL, MariaDB, PostgreSQL and SQLite without changing tools.
 - **Review-first AI** — QuerIA can generate SQL and help explain or correct query errors, but nothing runs automatically.
 - **Production-aware workflows** — read-only connections, environment-specific confirmations and reviewable database operations.
 - **Local-first by default** — credentials stay local, and database rows or query results are not sent to the AI service.
@@ -42,7 +42,7 @@
   <img alt="macOS" src="https://img.shields.io/badge/macOS-Apple_Silicon-06132b?style=flat-square&logo=apple&logoColor=white">
   <img alt="Windows" src="https://img.shields.io/badge/Windows-x64-06132b?style=flat-square&logo=windows&logoColor=white">
   <img alt="Linux" src="https://img.shields.io/badge/Linux-x64-06132b?style=flat-square&logo=linux&logoColor=white">
-  <img alt="MySQL, MariaDB and SQLite" src="https://img.shields.io/badge/MySQL_+_MariaDB_+_SQLite-ready-0b7cff?style=flat-square&logo=sqlite&logoColor=white">
+  <img alt="MySQL, MariaDB, PostgreSQL and SQLite" src="https://img.shields.io/badge/MySQL_+_MariaDB_+_PostgreSQL_+_SQLite-ready-0b7cff?style=flat-square&logo=postgresql&logoColor=white">
   <img alt="English and Spanish" src="https://img.shields.io/badge/UI-English_+_Spanish-12d9ff?style=flat-square">
       <a href="https://ecohub.mariadb.org/database-management/lakedb"><img alt="LakeDB listed on the MariaDB Server Ecosystem Hub" src="https://img.shields.io/badge/MariaDB-Ecosystem_Hub-003545?style=flat-square&logo=mariadb&logoColor=white"></a>
 </p>
@@ -65,28 +65,28 @@ Cask version and SHA-256 current automatically.
 ### Direct downloads
 
 <p align="center">
-  <a href="https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.5.4/LakeDB-1.0.0-beta.5.4-mac-arm64.dmg"><img alt="Download LakeDB for macOS Apple Silicon" src="https://img.shields.io/badge/macOS-DOWNLOAD_DMG-06132b?style=for-the-badge&logo=apple&logoColor=white"></a>
-  <a href="https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.5.4/LakeDB-1.0.0-beta.5.4-win-x64-setup.exe"><img alt="Download LakeDB installer for Windows x64" src="https://img.shields.io/badge/Windows-DOWNLOAD_SETUP-0b7cff?style=for-the-badge&logo=windows&logoColor=white"></a>
-  <a href="https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.5.4/LakeDB-1.0.0-beta.5.4-linux-x86_64.AppImage"><img alt="Download LakeDB AppImage for Linux x64" src="https://img.shields.io/badge/Linux-DOWNLOAD_APPIMAGE-12d9ff?style=for-the-badge&logo=linux&logoColor=020817"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.6.0/LakeDB-1.0.0-beta.6.0-mac-arm64.dmg"><img alt="Download LakeDB for macOS Apple Silicon" src="https://img.shields.io/badge/macOS-DOWNLOAD_DMG-06132b?style=for-the-badge&logo=apple&logoColor=white"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.6.0/LakeDB-1.0.0-beta.6.0-win-x64-setup.exe"><img alt="Download LakeDB installer for Windows x64" src="https://img.shields.io/badge/Windows-DOWNLOAD_SETUP-0b7cff?style=for-the-badge&logo=windows&logoColor=white"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.6.0/LakeDB-1.0.0-beta.6.0-linux-x86_64.AppImage"><img alt="Download LakeDB AppImage for Linux x64" src="https://img.shields.io/badge/Linux-DOWNLOAD_APPIMAGE-12d9ff?style=for-the-badge&logo=linux&logoColor=020817"></a>
 </p>
 
 | Platform | Alternative package | Install |
 | --- | --- | --- |
-| macOS Apple Silicon | [ZIP](https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.5.4/LakeDB-1.0.0-beta.5.4-mac-arm64.zip) | Move `LakeDB.app` to Applications. |
-| Windows x64 | [Portable EXE](https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.5.4/LakeDB-1.0.0-beta.5.4-win-x64-portable.exe) | Run without installation. |
-| Linux x64 | [Debian package](https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.5.4/LakeDB-1.0.0-beta.5.4-linux-amd64.deb) | Install with your package manager. |
+| macOS Apple Silicon | [ZIP](https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.6.0/LakeDB-1.0.0-beta.6.0-mac-arm64.zip) | Move `LakeDB.app` to Applications. |
+| Windows x64 | [Portable EXE](https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.6.0/LakeDB-1.0.0-beta.6.0-win-x64-portable.exe) | Run without installation. |
+| Linux x64 | [Debian package](https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.6.0/LakeDB-1.0.0-beta.6.0-linux-amd64.deb) | Install with your package manager. |
 
 > **Public beta signing:** macOS packages have an ad-hoc signature but are not
 > notarized yet; Windows packages are not yet signed with a trusted
 > certificate. Download only from the official LakeDB repositories. Every
 > package has a matching SHA-256 file on the
-> [Beta 5.4 release page](https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.5.4).
+> [Beta 6.0 release page](https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.6.0).
 
 ---
 
 ## Latest release
 
-LakeDB is currently available as **Beta 5.4**. See its changes and the full
+LakeDB is currently available as **Beta 6.0**. See its changes and the full
 version history in [GitHub Releases](https://github.com/DavLagoHern/LakeDB/releases).
 
 ---
@@ -97,14 +97,14 @@ AI joins the existing LakeDB workflow; it does not replace it.
 
 | Area | Available now |
 | --- | --- |
-| **Connections** | Multiple simultaneous MySQL, MariaDB and SQLite connections, folders, colors, read-only mode, diagnostics and search from Home or the connection picker. SSH and TLS remain server-engine capabilities. |
+| **Connections** | Multiple simultaneous MySQL, MariaDB, PostgreSQL and SQLite connections, folders, colors, read-only mode, diagnostics and search. MySQL, MariaDB and PostgreSQL support direct, SSH and TLS paths. |
 | **Workspaces** | Independent SQL, QuerIA and table tabs per connection, with restored editor content, selected schema and layout. |
-| **Schema context** | Browse MySQL/MariaDB system schemas in a separate explorer group and open draggable, pannable and zoomable relationship maps that keep real constraints distinct from LakeDB-only links. |
+| **Schema context** | Browse PostgreSQL databases, schemas, `search_path`, tables, views, materialized views, functions, procedures, sequences and types. MySQL/MariaDB system schemas and visual relationship maps remain available. |
 | **SQL editor** | Monaco Editor, proactive schema completion, aliases, columns, PK/index hints, local syntax diagnostics, safe quick fixes, optional AI correction, formatting, Explain, transactions, history and streaming exports. |
 | **QuerIA** | Reusable per-connection business contexts, Normal and Agentic generation, cross-database relationships, index inspection, `EXPLAIN` review, visible SQL and explicit local execution. |
 | **Results and data** | Local query-result filters, draggable result columns, virtualized table grids, pagination, search, sorting and typed safe editing with conflict checks and rollback. |
-| **Database tools** | MySQL/MariaDB backup and restore; selectable comparison for tables, views, procedures, functions, triggers and events; reviewable table migration plans and single-table copy. Capability-aware controls stay disabled when an engine does not support them. |
-| **Access management** | Inspect MySQL/MariaDB accounts and grants, then review SQL before applying supported password, lock, account and scoped privilege changes. |
+| **Database tools** | PostgreSQL schema backup/restore, comparison and transactional table copy; MySQL/MariaDB backup, restore, comparison and migration. Capability-aware controls stay disabled when an engine does not support them. |
+| **Access management** | Inspect PostgreSQL roles or MySQL/MariaDB accounts and grants, then review SQL before applying supported role, password and privilege changes. |
 | **Safety** | Local encrypted credentials, production confirmations, renderer sandboxing, read-only enforcement and no remote database execution. |
 | **Resilience** | Stable device identity, crash recovery, session restore, verified updates, configuration backup and diagnostics. |
 
@@ -150,11 +150,12 @@ workflow. Sources: [DBeaver documentation](https://dbeaver.com/docs/dbeaver/Sepa
 | **SQL foundation** | Independent workspaces, schema-aware editing, safe data operations, database tools and recovery. |
 | **Beta 3** | Natural-language query documents, visible SQL and explicit local execution. |
 | **Beta 4 — complete** | Reusable connection context, Normal and Agentic generation, cross-database relationships, index inspection, reversible opt-in and clearer execution feedback. |
-| **Beta 5.4 — current** | Visual relationships, browsable system schemas and reviewable MySQL/MariaDB access management. |
+| **Beta 5 — complete** | SQLite, local diagnostics, visible relationships, system schemas and reviewable access management. |
+| **Beta 6 — current** | Native PostgreSQL connections, metadata, editing, design, exports, operations, database tools and review-first AI. |
 | **1.0 direction** | Measured quality, trusted signing and distribution, compatibility validation and complete product polish. |
 
 <p align="center">
-  <a href="docs/ROADMAP.md"><img src="docs/assets/roadmap/lakedb-roadmap-beta-5.4.png" width="100%" alt="LakeDB Beta 5.4 roadmap from the SQL foundation through visible database context toward 1.0"></a>
+  <a href="docs/ROADMAP.md"><img src="docs/assets/roadmap/lakedb-roadmap-beta-6.0.png" width="100%" alt="LakeDB Beta 6.0 roadmap from the SQL foundation through native PostgreSQL support toward 1.0"></a>
 </p>
 
 Roadmap items describe direction, not a fixed release date. See
