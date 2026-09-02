@@ -48,7 +48,11 @@ jobs:
             lifetime_total="$candidate_total"
           fi
 
-          jq --arg message "${lifetime_total}+" '.message = $message' badge.json > badge.next.json
+          jq --arg message "${lifetime_total}+" '
+            .message = $message |
+            .color = "0b5bd3" |
+            .labelColor = "06132b"
+          ' badge.json > badge.next.json
           mv badge.next.json badge.json
 
           if git diff --quiet -- badge.json; then

@@ -35,7 +35,7 @@
 
 <p align="center">
   <!-- 100 maintainer-recorded downloads from archived releases + live GitHub release asset downloads. -->
-  <a href="https://github.com/DavLagoHern/LakeDB/releases"><img alt="At least 115 LakeDB beta downloads, including archived releases" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FDavLagoHern%2FLakeDB%2Fdownload-stats%2Fbadge.json&style=flat-square"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases"><img alt="LakeDB beta downloads, including archived releases" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FDavLagoHern%2FLakeDB%2Fdownload-stats%2Fbadge.json&style=flat-square"></a>
 </p>
 
 <p align="center">
