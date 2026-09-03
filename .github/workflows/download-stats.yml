@@ -26,7 +26,9 @@ jobs:
       - name: Update persistent badge endpoint
         env:
           GH_TOKEN: ${{ github.token }}
-          HISTORICAL_DOWNLOAD_BASELINE: "100"
+          HISTORICAL_DOWNLOAD_BASELINE: "300"
+          # Installable-package total when the public counter was reset on 2026-09-03.
+          DOWNLOAD_COUNT_AT_RESET: "117"
         shell: bash
         run: |
           set -euo pipefail
@@ -34,15 +36,27 @@ jobs:
           current_downloads="$(
             gh api --paginate --slurp \
               "repos/${GITHUB_REPOSITORY}/releases?per_page=100" |
-              jq '[.[][] | .assets[]?.download_count] | add // 0'
+              jq '[
+                .[][]
+                | .assets[]?
+                | select(.name | endswith(".sha256") | not)
+                | .download_count
+              ] | add // 0'
           )"
-          candidate_total="$((HISTORICAL_DOWNLOAD_BASELINE + current_downloads))"
+          downloads_since_reset="$((current_downloads - DOWNLOAD_COUNT_AT_RESET))"
+          if (( downloads_since_reset < 0 )); then
+            downloads_since_reset=0
+          fi
+          candidate_total="$((HISTORICAL_DOWNLOAD_BASELINE + downloads_since_reset))"
 
           git fetch origin download-stats
           git switch --force-create download-stats origin/download-stats
 
           previous_total="$(jq -r '.message | sub("\\+$"; "") | tonumber' badge.json)"
-          if (( previous_total > candidate_total )); then
+          counting_method="$(jq -r '.countingMethod // "all-assets"' badge.json)"
+          if [[ "$counting_method" != "release-packages-from-400-v1" ]]; then
+            lifetime_total="$candidate_total"
+          elif (( previous_total > candidate_total )); then
             lifetime_total="$previous_total"
           else
             lifetime_total="$candidate_total"
@@ -51,7 +65,8 @@ jobs:
           jq --arg message "${lifetime_total}+" '
             .message = $message |
             .color = "0b5bd3" |
-            .labelColor = "06132b"
+            .labelColor = "06132b" |
+            .countingMethod = "release-packages-from-400-v1"
           ' badge.json > badge.next.json
           mv badge.next.json badge.json
 
