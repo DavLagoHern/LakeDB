@@ -1,9 +1,10 @@
 {
   "schemaVersion": 1,
   "label": "BETA DOWNLOADS",
-  "message": "367+",
+  "message": "300+",
   "color": "0b5bd3",
   "labelColor": "06132b",
   "namedLogo": "github",
-  "logoColor": "white"
+  "logoColor": "white",
+  "countingMethod": "release-packages-from-400-v1"
 }
