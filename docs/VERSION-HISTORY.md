@@ -13,6 +13,17 @@ Packaged downloads are retained for the current build, the previous patch and th
 
 Only real tagged builds are listed as releases. The 0.2–0.4 product stages were development milestones rather than public tags, and 0.10.0–0.10.2 were not published as separate builds.
 
+## 1.0.0 Beta 6.1 — September 8, 2026
+
+- `CHANGE` use native Cut, Copy and Paste behavior across editable controls,
+  Monaco and result grids, including native context menus.
+- `ADD` select and copy a useful portion of a long result value without
+  replacing it with the complete cell.
+- `SECURITY` distribute macOS Apple Silicon packages with LakeDB's Developer
+  ID signature and Apple notarization.
+
+[Release notes and downloads](https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.6.1)
+
 ## 1.0.0 Beta 6.0 — August 21, 2026
 
 - `ADD` connect to PostgreSQL natively with direct or SSH routes, PostgreSQL
