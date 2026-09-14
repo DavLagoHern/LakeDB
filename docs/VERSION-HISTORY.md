@@ -13,6 +13,15 @@ Packaged downloads are retained for the current build, the previous patch and th
 
 Only real tagged builds are listed as releases. The 0.2–0.4 product stages were development milestones rather than public tags, and 0.10.0–0.10.2 were not published as separate builds.
 
+## 1.0.0 Beta 6.2 — September 14, 2026
+
+- `FIX` select the complete focused field or active Query document with
+  **Cmd/Ctrl+A**.
+- `ADD` install future signed macOS updates in place after verifying the ZIP
+  checksum, Developer ID team, application identity and release version.
+
+[Release notes and downloads](https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.6.2)
+
 ## 1.0.0 Beta 6.1 — September 8, 2026
 
 - `CHANGE` use native Cut, Copy and Paste behavior across editable controls,
