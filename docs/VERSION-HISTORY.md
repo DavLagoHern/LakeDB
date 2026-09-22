@@ -13,6 +13,17 @@ Packaged downloads are retained for the current build, the previous patch and th
 
 Only real tagged builds are listed as releases. The 0.2–0.4 product stages were development milestones rather than public tags, and 0.10.0–0.10.2 were not published as separate builds.
 
+## 1.0.0 Beta 6.3 — September 22, 2026
+
+- `ADD` complete frequently used SQL keywords with `Tab`, prioritizing common
+  clauses and inserting required pairs such as `ORDER BY` and `INNER JOIN`.
+- `CHANGE` load and arrange relationship maps as one bounded engine-aware
+  graph, keeping connected tables and column-level edges easier to follow.
+- `FIX` distinguish database and LakeDB Service connectivity failures and
+  provide direct retry, edit or status-refresh actions.
+
+[Release notes and downloads](https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.6.3)
+
 ## 1.0.0 Beta 6.2.1 — September 15, 2026
 
 - `FIX` keep focus and the cursor in the JSON cell editor while typing instead

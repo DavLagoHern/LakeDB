@@ -1,12 +1,12 @@
 # LakeDB roadmap
 
-![LakeDB Beta 6.0 native PostgreSQL roadmap](assets/roadmap/lakedb-roadmap-beta-6.0.png)
+![LakeDB Beta 6.3 roadmap](assets/roadmap/lakedb-roadmap-beta-6.3.png)
 
 LakeDB Beta 6.0 adds PostgreSQL as a native engine across connections,
 metadata, safe editing, exports, database tools and QuerIA. The roadmap tracks
 complete product stages rather than every patch.
 
-## Current: Beta 6.0
+## Current: Beta 6.3
 
 PostgreSQL connections use their own runtime, dialect, quoting, catalog and
 type handling. LakeDB understands databases, schemas and `search_path`, and can
@@ -17,6 +17,10 @@ PostgreSQL rows are editable only with a stable identity and optimistic
 conflict detection. Complete-query exports, table design, schema backup and
 restore, comparison, transactional table copy, operations, roles, QuerIA and
 AI correction all use PostgreSQL-specific behavior and explicit review.
+
+Beta 6.3 polishes that multi-engine foundation with prioritized, dialect-aware
+SQL keyword completion, bounded relationship-map loading and clearer recovery
+actions for database or LakeDB Service connectivity failures.
 
 The validated beta baseline is PostgreSQL 18. PostgreSQL 14–17, managed
 services, restricted roles and large schemas remain priority compatibility

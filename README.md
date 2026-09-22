@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.6.2.1"><img alt="Download LakeDB Beta 6.2.1" src="https://img.shields.io/badge/DOWNLOAD-BETA_6.2.1-0b7cff?style=for-the-badge&logo=github&logoColor=white"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.6.3"><img alt="Download LakeDB Beta 6.3" src="https://img.shields.io/badge/DOWNLOAD-BETA_6.3-0b7cff?style=for-the-badge&logo=github&logoColor=white"></a>
   <a href="https://github.com/DavLagoHern/homebrew-lakedb"><img alt="Install LakeDB with Homebrew" src="https://img.shields.io/badge/HOMEBREW-INSTALL_LAKEDB-fbb040?style=for-the-badge&logo=homebrew&logoColor=black"></a>
   <a href="https://davlagohern.github.io/LakeDB/"><img alt="LakeDB website" src="https://img.shields.io/badge/WEBSITE-EXPLORE_LAKEDB-19d2ff?style=for-the-badge&logoColor=020817"></a>
 </p>
@@ -65,28 +65,28 @@ Cask version and SHA-256 current automatically.
 ### Direct downloads
 
 <p align="center">
-  <a href="https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.6.2.1/LakeDB-1.0.0-beta.6.2.1-mac-arm64.dmg"><img alt="Download LakeDB for macOS Apple Silicon" src="https://img.shields.io/badge/macOS-DOWNLOAD_DMG-06132b?style=for-the-badge&logo=apple&logoColor=white"></a>
-  <a href="https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.6.2.1/LakeDB-1.0.0-beta.6.2.1-win-x64-setup.exe"><img alt="Download LakeDB installer for Windows x64" src="https://img.shields.io/badge/Windows-DOWNLOAD_SETUP-0b7cff?style=for-the-badge&logo=windows&logoColor=white"></a>
-  <a href="https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.6.2.1/LakeDB-1.0.0-beta.6.2.1-linux-x86_64.AppImage"><img alt="Download LakeDB AppImage for Linux x64" src="https://img.shields.io/badge/Linux-DOWNLOAD_APPIMAGE-12d9ff?style=for-the-badge&logoColor=020817"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.6.3/LakeDB-1.0.0-beta.6.3-mac-arm64.dmg"><img alt="Download LakeDB for macOS Apple Silicon" src="https://img.shields.io/badge/macOS-DOWNLOAD_DMG-06132b?style=for-the-badge&logo=apple&logoColor=white"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.6.3/LakeDB-1.0.0-beta.6.3-win-x64-setup.exe"><img alt="Download LakeDB installer for Windows x64" src="https://img.shields.io/badge/Windows-DOWNLOAD_SETUP-0b7cff?style=for-the-badge&logo=windows&logoColor=white"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.6.3/LakeDB-1.0.0-beta.6.3-linux-x86_64.AppImage"><img alt="Download LakeDB AppImage for Linux x64" src="https://img.shields.io/badge/Linux-DOWNLOAD_APPIMAGE-12d9ff?style=for-the-badge&logoColor=020817"></a>
 </p>
 
 | Platform | Alternative package | Install |
 | --- | --- | --- |
-| macOS Apple Silicon | [ZIP](https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.6.2.1/LakeDB-1.0.0-beta.6.2.1-mac-arm64.zip) | Move `LakeDB.app` to Applications. |
-| Windows x64 | [Portable EXE](https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.6.2.1/LakeDB-1.0.0-beta.6.2.1-win-x64-portable.exe) | Run without installation. |
-| Linux x64 | [Debian package](https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.6.2.1/LakeDB-1.0.0-beta.6.2.1-linux-amd64.deb) | Install with your package manager. |
+| macOS Apple Silicon | [ZIP](https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.6.3/LakeDB-1.0.0-beta.6.3-mac-arm64.zip) | Move `LakeDB.app` to Applications. |
+| Windows x64 | [Portable EXE](https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.6.3/LakeDB-1.0.0-beta.6.3-win-x64-portable.exe) | Run without installation. |
+| Linux x64 | [Debian package](https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.6.3/LakeDB-1.0.0-beta.6.3-linux-amd64.deb) | Install with your package manager. |
 
 > **Public beta signing:** macOS Apple Silicon packages are Developer ID signed
 > and notarized by Apple. Windows packages are not yet signed with a trusted
 > certificate. Download only from the official LakeDB repositories. Every
 > package has a matching SHA-256 file on the
-> [Beta 6.2.1 release page](https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.6.2.1).
+> [Beta 6.3 release page](https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.6.3).
 
 ---
 
 ## Latest release
 
-LakeDB is currently available as **Beta 6.2.1**. See its changes and the full
+LakeDB is currently available as **Beta 6.3**. See its changes and the full
 version history in [GitHub Releases](https://github.com/DavLagoHern/LakeDB/releases).
 
 ---
@@ -100,7 +100,7 @@ AI joins the existing LakeDB workflow; it does not replace it.
 | **Connections** | Multiple simultaneous MySQL, MariaDB, PostgreSQL and SQLite connections, folders, colors, read-only mode, diagnostics and search. MySQL, MariaDB and PostgreSQL support direct, SSH and TLS paths. |
 | **Workspaces** | Independent SQL, QuerIA and table tabs per connection, with restored editor content, selected schema and layout. |
 | **Schema context** | Browse PostgreSQL databases, schemas, `search_path`, tables, views, materialized views, functions, procedures, sequences and types. MySQL/MariaDB system schemas and visual relationship maps remain available. |
-| **SQL editor** | Monaco Editor, proactive schema completion, aliases, columns, PK/index hints, local syntax diagnostics, safe quick fixes, optional AI correction, formatting, Explain, transactions, history and streaming exports. |
+| **SQL editor** | Monaco Editor, prioritized dialect-aware keyword completion, proactive schema completion, aliases, columns, PK/index hints, local syntax diagnostics, safe quick fixes, optional AI correction, formatting, Explain, transactions, history and streaming exports. |
 | **QuerIA** | Reusable per-connection business contexts, Normal and Agentic generation, cross-database relationships, index inspection, `EXPLAIN` review, visible SQL and explicit local execution. |
 | **Results and data** | Local query-result filters, draggable result columns, virtualized table grids, pagination, search, sorting and typed safe editing with conflict checks and rollback. |
 | **Database tools** | PostgreSQL schema backup/restore, comparison and transactional table copy; MySQL/MariaDB backup, restore, comparison and migration. Capability-aware controls stay disabled when an engine does not support them. |
@@ -155,7 +155,7 @@ workflow. Sources: [DBeaver documentation](https://dbeaver.com/docs/dbeaver/Sepa
 | **1.0 direction** | Measured quality, trusted signing and distribution, compatibility validation and complete product polish. |
 
 <p align="center">
-  <a href="docs/ROADMAP.md"><img src="docs/assets/roadmap/lakedb-roadmap-beta-6.0.png" width="100%" alt="LakeDB Beta 6.0 roadmap from the SQL foundation through native PostgreSQL support toward 1.0"></a>
+  <a href="docs/ROADMAP.md"><img src="docs/assets/roadmap/lakedb-roadmap-beta-6.3.png" width="100%" alt="LakeDB Beta 6.3 roadmap from the SQL foundation through native PostgreSQL support toward 1.0"></a>
 </p>
 
 Roadmap items describe direction, not a fixed release date. See
