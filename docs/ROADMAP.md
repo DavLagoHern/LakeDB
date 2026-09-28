@@ -1,12 +1,20 @@
 # LakeDB roadmap
 
-![LakeDB Beta 6.3 roadmap](assets/roadmap/lakedb-roadmap-beta-6.3.png)
+![LakeDB Beta 7.0 roadmap](assets/roadmap/lakedb-roadmap-beta-7.0.png)
 
 LakeDB Beta 6.0 adds PostgreSQL as a native engine across connections,
 metadata, safe editing, exports, database tools and QuerIA. The roadmap tracks
 complete product stages rather than every patch.
 
-## Current: Beta 6.3
+## Current: Beta 7.0
+
+Expired MySQL passwords can be changed directly in LakeDB, with confirmation,
+server-enforced complexity/history and secure updates to saved credentials.
+Wide table grids preserve horizontal position while data refreshes. Activated
+organization accounts show their name and configured color, including cached
+branding when services are unavailable.
+
+## Released: Beta 6.3
 
 PostgreSQL connections use their own runtime, dialect, quoting, catalog and
 type handling. LakeDB understands databases, schemas and `search_path`, and can
@@ -83,7 +91,8 @@ defaults, bulk connection editing and lower-cost on-demand server monitoring.
 | **Beta 3** | QuerIA natural-language documents, schema-grounded SQL, visible review, explicit local execution and privacy opt-in. |
 | **Beta 4 — complete** | Reusable business context, Normal and Agentic generation, cross-database relationships, table and index inspection, plan review and community testing. |
 | **Beta 5 — complete** | SQLite beside MySQL/MariaDB, review-first database tools, local learned formatting, visible relationships and access management. |
-| **Beta 6 — current** | Native PostgreSQL connections, catalog browsing, safe editing, design, exports, operations, transfer paths and review-first AI. |
+| **Beta 6 — complete** | Native PostgreSQL connections, catalog browsing, safe editing, design, exports, operations, transfer paths and review-first AI. |
+| **Beta 7 — current** | Expired-password recovery, stable wide-table browsing and organization identification. |
 | **1.0 — direction** | Measured AI quality, trusted distribution, compatibility validation, accessibility and complete product polish. |
 
 Future stages describe direction, not a fixed date or guaranteed scope.

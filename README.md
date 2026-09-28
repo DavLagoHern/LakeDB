@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.6.3"><img alt="Download LakeDB Beta 6.3" src="https://img.shields.io/badge/DOWNLOAD-BETA_6.3-0b7cff?style=for-the-badge&logo=github&logoColor=white"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.7.0"><img alt="Download LakeDB Beta 7.0" src="https://img.shields.io/badge/DOWNLOAD-BETA_7.0-0b7cff?style=for-the-badge&logo=github&logoColor=white"></a>
   <a href="https://github.com/DavLagoHern/homebrew-lakedb"><img alt="Install LakeDB with Homebrew" src="https://img.shields.io/badge/HOMEBREW-INSTALL_LAKEDB-fbb040?style=for-the-badge&logo=homebrew&logoColor=black"></a>
   <a href="https://davlagohern.github.io/LakeDB/"><img alt="LakeDB website" src="https://img.shields.io/badge/WEBSITE-EXPLORE_LAKEDB-19d2ff?style=for-the-badge&logoColor=020817"></a>
 </p>
@@ -80,13 +80,15 @@ Cask version and SHA-256 current automatically.
 > and notarized by Apple. Windows packages are not yet signed with a trusted
 > certificate. Download only from the official LakeDB repositories. Every
 > package has a matching SHA-256 file on the
-> [Beta 6.3 release page](https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.6.3).
+> [Beta 7.0 release page](https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.7.0).
 
 ---
 
 ## Latest release
 
-LakeDB is currently available as **Beta 6.3**. See its changes and the full
+LakeDB is currently available as **Beta 7.0**. Reset expired MySQL passwords
+inside the client, keep your position in wide table grids, and identify activated
+organization accounts by their name and color. See its changes and the full
 version history in [GitHub Releases](https://github.com/DavLagoHern/LakeDB/releases).
 
 ---
@@ -151,11 +153,12 @@ workflow. Sources: [DBeaver documentation](https://dbeaver.com/docs/dbeaver/Sepa
 | **Beta 3** | Natural-language query documents, visible SQL and explicit local execution. |
 | **Beta 4 — complete** | Reusable connection context, Normal and Agentic generation, cross-database relationships, index inspection, reversible opt-in and clearer execution feedback. |
 | **Beta 5 — complete** | SQLite, local diagnostics, visible relationships, system schemas and reviewable access management. |
-| **Beta 6 — current** | Native PostgreSQL connections, metadata, editing, design, exports, operations, database tools and review-first AI. |
+| **Beta 6 — complete** | Native PostgreSQL connections, metadata, editing, design, exports, operations, database tools and review-first AI. |
+| **Beta 7 — current** | Expired-password recovery, stable wide-table browsing and organization identification. |
 | **1.0 direction** | Measured quality, trusted signing and distribution, compatibility validation and complete product polish. |
 
 <p align="center">
-  <a href="docs/ROADMAP.md"><img src="docs/assets/roadmap/lakedb-roadmap-beta-6.3.png" width="100%" alt="LakeDB Beta 6.3 roadmap from the SQL foundation through native PostgreSQL support toward 1.0"></a>
+  <a href="docs/ROADMAP.md"><img src="docs/assets/roadmap/lakedb-roadmap-beta-7.0.png" width="100%" alt="LakeDB Beta 7.0 roadmap toward a trusted 1.0 release"></a>
 </p>
 
 Roadmap items describe direction, not a fixed release date. See
