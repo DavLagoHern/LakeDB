@@ -1,12 +1,21 @@
 # LakeDB roadmap
 
-![LakeDB Beta 7.0 roadmap](assets/roadmap/lakedb-roadmap-beta-7.0.png)
+![LakeDB Beta 7.1 roadmap](assets/roadmap/lakedb-roadmap-beta-7.1.png)
 
 LakeDB Beta 6.0 adds PostgreSQL as a native engine across connections,
 metadata, safe editing, exports, database tools and QuerIA. The roadmap tracks
 complete product stages rather than every patch.
 
-## Current: Beta 7.0
+## Current: Beta 7.1
+
+Customizable shortcuts, clearer history and server information improve daily
+work. Model comparison avoids row scans; selected-table analysis offers counts,
+content checksums, structure and partition checks. Migration plans can be
+reviewed, executed or exported as SQL, including supported MySQL/MariaDB
+`ALTER TABLE` changes. User-selected data actions stay separate from model
+comparison.
+
+## Released: Beta 7.0
 
 Expired MySQL passwords can be changed directly in LakeDB, with confirmation,
 server-enforced complexity/history and secure updates to saved credentials.
@@ -92,7 +101,7 @@ defaults, bulk connection editing and lower-cost on-demand server monitoring.
 | **Beta 4 — complete** | Reusable business context, Normal and Agentic generation, cross-database relationships, table and index inspection, plan review and community testing. |
 | **Beta 5 — complete** | SQLite beside MySQL/MariaDB, review-first database tools, local learned formatting, visible relationships and access management. |
 | **Beta 6 — complete** | Native PostgreSQL connections, catalog browsing, safe editing, design, exports, operations, transfer paths and review-first AI. |
-| **Beta 7 — current** | Expired-password recovery, stable wide-table browsing and organization identification. |
+| **Beta 7 — current** | Expired-password recovery, customizable shortcuts, clearer history and reviewable model and table migrations. |
 | **1.0 — direction** | Measured AI quality, trusted distribution, compatibility validation, accessibility and complete product polish. |
 
 Future stages describe direction, not a fixed date or guaranteed scope.

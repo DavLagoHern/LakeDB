@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">LakeDB Beta 7.1 roadmap</title>
+  <desc id="desc">Completed SQL, QuerIA and four-engine foundations; current workflow controls and reviewable migration planning; quality gates toward 1.0.</desc>
+  <defs><linearGradient id="path"><stop stop-color="#0b7cff"/><stop offset="1" stop-color="#12d9ff"/></linearGradient></defs>
+  <rect width="1600" height="900" fill="#020817"/>
+  <rect x="38" y="35" width="1524" height="830" rx="28" fill="none" stroke="#173953"/>
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="72" y="90" fill="#12d9ff" font-size="22" font-weight="800">LAKEDB ROADMAP · BETA 7.1</text>
+    <text x="72" y="170" fill="#f6fbff" font-size="60" font-weight="900">The road to LakeDB 1.0</text>
+    <text x="72" y="222" fill="#9bb0ca" font-size="23">Complete SQL workspaces. Four native engines. Visible review before execution.</text>
+    <path d="M120 470H1480" stroke="#173953" stroke-width="8" stroke-linecap="round"/>
+    <path d="M120 470H1480" stroke="url(#path)" stroke-width="3" stroke-linecap="round"/>
+    <g transform="translate(245 470)">
+      <circle r="18" fill="#06132b" stroke="#0b7cff" stroke-width="6"/>
+      <text y="-155" text-anchor="middle" fill="#8299b6" font-size="18" font-weight="800">FOUNDATION · BETAS 3–4</text>
+      <text y="-92" text-anchor="middle" fill="#f6fbff" font-size="34" font-weight="900">SQL + QuerIA</text>
+      <text y="-48" text-anchor="middle" fill="#9bb0ca" font-size="21">Review · context · safeguards</text>
+      <text y="70" text-anchor="middle" fill="#8299b6" font-size="18" font-weight="800">COMPLETE</text>
+    </g>
+    <g transform="translate(610 470)">
+      <circle r="18" fill="#06132b" stroke="#12d9ff" stroke-width="6"/>
+      <text y="-155" text-anchor="middle" fill="#8299b6" font-size="18" font-weight="800">BETAS 5–6</text>
+      <text y="-92" text-anchor="middle" fill="#f6fbff" font-size="34" font-weight="900">Four native engines</text>
+      <text y="-48" text-anchor="middle" fill="#9bb0ca" font-size="21">SQLite + PostgreSQL join</text>
+      <text y="70" text-anchor="middle" fill="#8299b6" font-size="18" font-weight="800">COMPLETE</text>
+    </g>
+    <g transform="translate(990 470)">
+      <circle r="54" fill="#0a3540" opacity=".8"/><circle r="29" fill="#06132b" stroke="#55f0bd" stroke-width="7"/>
+      <text y="-155" text-anchor="middle" fill="#55f0bd" font-size="18" font-weight="900">BETA 7.1 · CURRENT</text>
+      <text y="-92" text-anchor="middle" fill="#f6fbff" font-size="34" font-weight="900">Reviewable changes</text>
+      <text y="-48" text-anchor="middle" fill="#9bb0ca" font-size="21">Compare · preview · export SQL</text>
+      <text y="80" text-anchor="middle" fill="#55f0bd" font-size="18" font-weight="800">WORKSPACE CONTROL</text>
+      <text y="120" text-anchor="middle" fill="#cbe4f7" font-size="21">Custom shortcuts + clearer history</text>
+      <text y="151" text-anchor="middle" fill="#cbe4f7" font-size="21">Selected-table migration planning</text>
+    </g>
+    <g transform="translate(1365 470)">
+      <circle r="18" fill="#06132b" stroke="#0b7cff" stroke-width="6"/>
+      <text y="-155" text-anchor="middle" fill="#8299b6" font-size="18" font-weight="800">1.0 · DIRECTION</text>
+      <text y="-92" text-anchor="middle" fill="#f6fbff" font-size="34" font-weight="900">Trusted release</text>
+      <text y="-48" text-anchor="middle" fill="#9bb0ca" font-size="21">Quality · compatibility · signing</text>
+      <text y="70" text-anchor="middle" fill="#8299b6" font-size="18" font-weight="800">NO FIXED DATE</text>
+    </g>
+    <path d="M72 740H1528" stroke="#173953" stroke-width="2"/>
+    <text x="72" y="798" fill="#9bb0ca" font-size="22">Permanent gates: privacy, explicit execution, safe editing, accessibility and verified packages.</text>
+    <text x="72" y="838" fill="#6f87a5" font-size="20">Direction, not a promise. Share real workflows in GitHub Discussions.</text>
+  </g>
+</svg>

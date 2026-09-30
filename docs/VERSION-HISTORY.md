@@ -2,7 +2,7 @@
 
 The [README](../README.md) describes everything LakeDB can do today. The [roadmap](ROADMAP.md) follows the larger product milestones. This file records the smaller changes in each published build.
 
-Packaged downloads are retained for the current build, the previous patch and the previous major beta line. Older entries remain part of the historical record, but their installers may no longer be available.
+Published releases and their packaged downloads are retained so older builds remain available for audit and rollback.
 
 | Label      | Meaning                                      |
 | ---------- | -------------------------------------------- |
@@ -12,6 +12,26 @@ Packaged downloads are retained for the current build, the previous patch and th
 | `SECURITY` | Data-safety, credential or trust improvement |
 
 Only real tagged builds are listed as releases. The 0.2–0.4 product stages were development milestones rather than public tags, and 0.10.0–0.10.2 were not published as separate builds.
+
+## 1.0.0 Beta 7.1 — September 30, 2026
+
+- `ADD` customize keyboard and mouse shortcuts, inspect server information, and
+  see clearer query history with background-operation origins.
+- `CHANGE` compare database models without scanning data, then analyze selected
+  tables separately for counts, content, structure or partitions.
+- `ADD` review before/after SQL definitions and export selected migration actions
+  as SQL before execution, including supported MySQL/MariaDB `ALTER TABLE` changes.
+- `ADD` connect without saving a profile for future sessions.
+
+[Release notes and downloads](https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.7.1)
+
+## 1.0.0 Beta 7.0 — September 28, 2026
+
+- `ADD` recover expired MySQL passwords within LakeDB.
+- `FIX` preserve horizontal position while browsing wide tables.
+- `CHANGE` identify activated organization accounts with their name and color.
+
+[Release notes and downloads](https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.7.0)
 
 ## 1.0.0 Beta 6.3 — September 22, 2026
 
