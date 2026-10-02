@@ -1,6 +1,6 @@
 # LakeDB compatibility
 
-This is the conservative compatibility baseline for LakeDB Beta 7.2 and the intended 1.0 foundation. Package architectures and engine capability boundaries are unchanged by this update. A combination marked **best effort** may work but is not part of the supported release baseline.
+This is the conservative compatibility baseline for the published LakeDB Beta 7.1 and the upcoming Beta 7.2 update. Beta 7.2 is in preparation; its packages are not yet published. Package architectures and engine capability boundaries remain unchanged. A combination marked **best effort** may work but is not part of the supported release baseline.
 
 ## Desktop packages
 
