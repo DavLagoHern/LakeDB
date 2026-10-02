@@ -9,18 +9,16 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.7.1"><img alt="Download LakeDB Beta 7.1" src="https://img.shields.io/badge/DOWNLOAD-BETA_7.1-0b7cff?style=for-the-badge&logo=github&logoColor=white"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.7.2"><img alt="Download LakeDB Beta 7.2" src="https://img.shields.io/badge/DOWNLOAD-BETA_7.2-0b7cff?style=for-the-badge&logo=github&logoColor=white"></a>
   <a href="https://github.com/DavLagoHern/homebrew-lakedb"><img alt="Install LakeDB with Homebrew" src="https://img.shields.io/badge/HOMEBREW-INSTALL_LAKEDB-fbb040?style=for-the-badge&logo=homebrew&logoColor=black"></a>
   <a href="https://davlagohern.github.io/LakeDB/"><img alt="LakeDB website" src="https://img.shields.io/badge/WEBSITE-EXPLORE_LAKEDB-19d2ff?style=for-the-badge&logoColor=020817"></a>
 </p>
 
 <p align="center">
-  <img src="docs/assets/releases/beta7.2/lakedb-beta-7.2-1920x1080.png" width="100%" alt="LakeDB Beta 7.2 preview: compare structure first and review your next migration">
+  <img src="docs/assets/releases/beta7.2/lakedb-beta-7.2-1920x1080.png" width="100%" alt="LakeDB Beta 7.2: compare structure first and review your next migration">
 </p>
 
-<p align="center"><sub><strong>Beta 7.2 preview — in preparation.</strong> Structure-first comparisons, explicit data checks, clearer migration choices and automatic explorer refresh are coming in the next update.</sub></p>
-
-> **Available now: Beta 7.1.** Beta 7.2 is being prepared; its packages are not yet published. All download links below point to the verified Beta 7.1 release.
+<p align="center"><sub><strong>Compare clearly. Migrate deliberately.</strong> Beta 7.2 brings structure-first comparisons, explicit data checks, clearer migration choices and an explorer that follows your SQL changes.</sub></p>
 
 ## Why LakeDB
 
@@ -66,31 +64,27 @@ The official tap tracks verified releases and their SHA-256 checksums.
 
 ### Direct downloads
 
-Current published release: **Beta 7.1**.
-
 <p align="center">
-  <a href="https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.7.1/LakeDB-1.0.0-beta.7.1-mac-arm64.dmg"><img alt="Download LakeDB for macOS Apple Silicon" src="https://img.shields.io/badge/macOS-DOWNLOAD_DMG-06132b?style=for-the-badge&logo=apple&logoColor=white"></a>
-  <a href="https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.7.1/LakeDB-1.0.0-beta.7.1-win-x64-setup.exe"><img alt="Download LakeDB installer for Windows x64" src="https://img.shields.io/badge/Windows-DOWNLOAD_SETUP-0b7cff?style=for-the-badge&logo=windows&logoColor=white"></a>
-  <a href="https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.7.1/LakeDB-1.0.0-beta.7.1-linux-x86_64.AppImage"><img alt="Download LakeDB AppImage for Linux x64" src="https://img.shields.io/badge/Linux-DOWNLOAD_APPIMAGE-12d9ff?style=for-the-badge&logoColor=020817"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.7.2/LakeDB-1.0.0-beta.7.2-mac-arm64.dmg"><img alt="Download LakeDB for macOS Apple Silicon" src="https://img.shields.io/badge/macOS-DOWNLOAD_DMG-06132b?style=for-the-badge&logo=apple&logoColor=white"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.7.2/LakeDB-1.0.0-beta.7.2-win-x64-setup.exe"><img alt="Download LakeDB installer for Windows x64" src="https://img.shields.io/badge/Windows-DOWNLOAD_SETUP-0b7cff?style=for-the-badge&logo=windows&logoColor=white"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.7.2/LakeDB-1.0.0-beta.7.2-linux-x86_64.AppImage"><img alt="Download LakeDB AppImage for Linux x64" src="https://img.shields.io/badge/Linux-DOWNLOAD_APPIMAGE-12d9ff?style=for-the-badge&logoColor=020817"></a>
 </p>
 
 | Platform | Alternative package | Install |
 | --- | --- | --- |
-| macOS Apple Silicon | [ZIP](https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.7.1/LakeDB-1.0.0-beta.7.1-mac-arm64.zip) | Move `LakeDB.app` to Applications. |
-| Windows x64 | [Portable EXE](https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.7.1/LakeDB-1.0.0-beta.7.1-win-x64-portable.exe) | Run without installation. |
-| Linux x64 | [Debian package](https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.7.1/LakeDB-1.0.0-beta.7.1-linux-amd64.deb) | Install with your package manager. |
+| macOS Apple Silicon | [ZIP](https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.7.2/LakeDB-1.0.0-beta.7.2-mac-arm64.zip) | Move `LakeDB.app` to Applications. |
+| Windows x64 | [Portable EXE](https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.7.2/LakeDB-1.0.0-beta.7.2-win-x64-portable.exe) | Run without installation. |
+| Linux x64 | [Debian package](https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.7.2/LakeDB-1.0.0-beta.7.2-linux-amd64.deb) | Install with your package manager. |
 
 > **Public beta signing:** macOS Apple Silicon packages are Developer ID signed
 > and notarized by Apple. Windows packages are not yet signed with a trusted
 > certificate. Download only from the official LakeDB repositories. Every
 > package has a matching SHA-256 file on the
-> [Beta 7.1 release page](https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.7.1).
+> [Beta 7.2 release page](https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.7.2).
 
 ---
 
-## Coming in Beta 7.2
-
-These changes are prepared for the next update and are not included in the current Beta 7.1 downloads.
+## What’s new in Beta 7.2
 
 - **Explorer refresh after SQL changes:** successful `CREATE`, `ALTER`, `RENAME` and `DROP` operations appear without a manual reload, including when a later statement in the script fails.
 - **Structure-first comparison:** table analysis starts with model comparison. Exact row counts and content checks are explicit options.
@@ -98,7 +92,7 @@ These changes are prepared for the next update and are not included in the curre
 - **Clearer migrations:** Merge and Replace data explain their effects before copying. Local foreign keys compare correctly across differently named schemas.
 - **Steadier access management:** refreshing permissions preserves the selected scope, and delayed requests cannot overwrite a newly selected account.
 
-See the [Beta 7.2 preview](docs/VERSION-HISTORY.md#100-beta-72--in-preparation) and [published releases](https://github.com/DavLagoHern/LakeDB/releases).
+See the [Beta 7.2 release notes](https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.7.2) and [full version history](https://github.com/DavLagoHern/LakeDB/releases).
 
 Installing an update preserves the local profile and does not migrate your connected databases. Database changes require an explicit user operation.
 
@@ -124,8 +118,6 @@ AI joins the existing LakeDB workflow; it does not replace it.
 ---
 
 ## Compare and migrate with the right scope
-
-The defaults below describe the upcoming Beta 7.2 update. In Beta 7.1, use **Compare model** for structure-only checks and review the options before starting a table analysis.
 
 Model checks, data checks and migrations answer different questions:
 
@@ -153,12 +145,11 @@ Capabilities differ by engine; unsupported tools remain disabled.
 | **Beta 4 — complete** | Reusable connection context, Normal and Agentic generation, cross-database relationships, index inspection, reversible opt-in and clearer execution feedback. |
 | **Beta 5 — complete** | SQLite, local diagnostics, visible relationships, system schemas and reviewable access management. |
 | **Beta 6 — complete** | Native PostgreSQL connections, metadata, editing, design, exports, operations, database tools and review-first AI. |
-| **Beta 7.1 — current release** | Daily workflow controls, structure-only model comparison and reviewable migration plans. |
-| **Beta 7.2 — in preparation** | Structure-first comparison, explicit data checks, clearer migration review, automatic explorer refresh and steadier access management. |
+| **Beta 7.2 — current** | Structure-first comparison, explicit data checks, clearer migration review, automatic explorer refresh and steadier access management. |
 | **1.0 direction** | Measured quality, trusted signing and distribution, compatibility validation and complete product polish. |
 
 <p align="center">
-  <a href="docs/ROADMAP.md"><img src="docs/assets/roadmap/lakedb-roadmap-beta-7.2.png" width="100%" alt="Preview of the LakeDB Beta 7.2 roadmap toward quality, compatibility and trusted distribution for 1.0"></a>
+  <a href="docs/ROADMAP.md"><img src="docs/assets/roadmap/lakedb-roadmap-beta-7.2.png" width="100%" alt="LakeDB Beta 7.2 roadmap toward quality, compatibility and trusted distribution for 1.0"></a>
 </p>
 
 Roadmap items describe direction, not a fixed release date. See

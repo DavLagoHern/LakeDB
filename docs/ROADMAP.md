@@ -1,15 +1,13 @@
 # LakeDB roadmap
 
-![LakeDB Beta 7.2 roadmap preview: released foundations, upcoming structure-first comparison and planned 1.0 work](assets/roadmap/lakedb-roadmap-beta-7.2.png)
-
-**Beta 7.1 is the current published release.** The Beta 7.2 artwork and changes below preview the next update; its packages are not yet published.
+![LakeDB Beta 7.2 roadmap: released foundations, current structure-first comparison and planned 1.0 work](assets/roadmap/lakedb-roadmap-beta-7.2.png)
 
 LakeDB is a local-first desktop client for MySQL, MariaDB, PostgreSQL and
 SQLite. The roadmap separates released capabilities, the current beta and
 work planned toward 1.0. Engine capabilities determine which tools are available;
 SQLite does not offer schema comparison or database migration tools.
 
-## In preparation: Beta 7.2
+## Current: Beta 7.2
 
 Comparison starts with structure. Exact row counts and content checksums are
 off by default and must be selected explicitly. Counts can scan indexes;
@@ -34,7 +32,7 @@ including completed changes in a script whose later statement fails. Account
 and privilege refreshes retain the selected scope and ignore outdated responses
 when changing the selected account or connection.
 
-## Current release: Beta 7.1
+## Released: Beta 7.1
 
 Customizable shortcuts, clearer history and server information improve daily
 work. Model comparison avoids row scans; selected-table analysis offers counts,

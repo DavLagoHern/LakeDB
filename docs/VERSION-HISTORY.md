@@ -1,6 +1,6 @@
 # LakeDB version history
 
-The [README](../README.md) describes LakeDB's current release and previews the next update. The [roadmap](ROADMAP.md) follows the larger product milestones. This file records the smaller changes in each published build, with unpublished work explicitly marked as in preparation.
+The [README](../README.md) describes everything LakeDB can do today. The [roadmap](ROADMAP.md) follows the larger product milestones. This file records the smaller changes in each published build.
 
 Published releases and their packaged downloads are retained so older builds remain available for audit and rollback.
 
@@ -13,9 +13,7 @@ Published releases and their packaged downloads are retained so older builds rem
 
 Only real tagged builds are listed as releases. The 0.2–0.4 product stages were development milestones rather than public tags, and 0.10.0–0.10.2 were not published as separate builds.
 
-## 1.0.0 Beta 7.2 — in preparation
-
-Preview of the next update. Packages are not yet published; [Beta 7.1](https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.7.1) remains the current download.
+## 1.0.0 Beta 7.2 — October 2, 2026
 
 - `ADD` refresh the object explorer after successful metadata-changing SQL,
   including completed statements before a later script error.
@@ -31,7 +29,7 @@ Preview of the next update. Packages are not yet published; [Beta 7.1](https://g
   connection responses, and bound the row-count probe cache.
 - `FIX` bypass cached catalog entries when refreshing database objects manually.
 
-Release notes and downloads will be linked here after all platform packages are published and verified.
+[Release notes and downloads](https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.7.2)
 
 ## 1.0.0 Beta 7.1 — September 30, 2026
 
