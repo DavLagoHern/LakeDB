@@ -3,21 +3,22 @@
 </p>
 
 <p align="center">
-  <strong>A local-first database client for people tired of switching tools, losing context between connections, and trusting black-box AI with SQL.</strong><br>
-  MySQL, MariaDB, PostgreSQL and SQLite in one honest, engine-aware workspace. Review generated or corrected SQL before anything runs, and stay in control of every database operation.
+  <strong>Your databases. Your next move.</strong><br>
+  A free, local-first desktop client for MySQL, MariaDB, PostgreSQL and SQLite.<br>
+  Explore, query and edit in independent connection workspaces. Compare structures, review migrations and use optional AI with visible SQL.
 </p>
 
 <p align="center">
-  <a href="https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.7.1"><img alt="Download LakeDB Beta 7.1" src="https://img.shields.io/badge/DOWNLOAD-BETA_7.1-0b7cff?style=for-the-badge&logo=github&logoColor=white"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.7.2"><img alt="Download LakeDB Beta 7.2" src="https://img.shields.io/badge/DOWNLOAD-BETA_7.2-0b7cff?style=for-the-badge&logo=github&logoColor=white"></a>
   <a href="https://github.com/DavLagoHern/homebrew-lakedb"><img alt="Install LakeDB with Homebrew" src="https://img.shields.io/badge/HOMEBREW-INSTALL_LAKEDB-fbb040?style=for-the-badge&logo=homebrew&logoColor=black"></a>
   <a href="https://davlagohern.github.io/LakeDB/"><img alt="LakeDB website" src="https://img.shields.io/badge/WEBSITE-EXPLORE_LAKEDB-19d2ff?style=for-the-badge&logoColor=020817"></a>
 </p>
 
 <p align="center">
-  <img src="docs/assets/releases/beta6/lakedb-beta-6-postgresql-1920x1080.png" width="100%" alt="LakeDB Beta 6.0 introduces native PostgreSQL support">
+  <img src="docs/assets/releases/beta7.2/lakedb-beta-7.2-1920x1080.png" width="100%" alt="LakeDB Beta 7.2: compare structure first and review your next migration">
 </p>
 
-<p align="center"><sub><strong>PostgreSQL joins LakeDB natively.</strong> Connect, explore, edit, design, export, operate and use review-first AI with PostgreSQL-specific behavior.</sub></p>
+<p align="center"><sub><strong>Compare clearly. Migrate deliberately.</strong> Beta 7.2 brings structure-first comparisons, explicit data checks, clearer migration choices and an explorer that follows your SQL changes.</sub></p>
 
 ## Why LakeDB
 
@@ -59,37 +60,41 @@ brew trust DavLagoHern/lakedb
 brew install --cask lakedb
 ```
 
-The LakeDB tap checks the latest verified release every six hours and keeps the
-Cask version and SHA-256 current automatically.
+The official tap tracks verified releases and their SHA-256 checksums.
 
 ### Direct downloads
 
 <p align="center">
-  <a href="https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.7.1/LakeDB-1.0.0-beta.7.1-mac-arm64.dmg"><img alt="Download LakeDB for macOS Apple Silicon" src="https://img.shields.io/badge/macOS-DOWNLOAD_DMG-06132b?style=for-the-badge&logo=apple&logoColor=white"></a>
-  <a href="https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.7.1/LakeDB-1.0.0-beta.7.1-win-x64-setup.exe"><img alt="Download LakeDB installer for Windows x64" src="https://img.shields.io/badge/Windows-DOWNLOAD_SETUP-0b7cff?style=for-the-badge&logo=windows&logoColor=white"></a>
-  <a href="https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.7.1/LakeDB-1.0.0-beta.7.1-linux-x86_64.AppImage"><img alt="Download LakeDB AppImage for Linux x64" src="https://img.shields.io/badge/Linux-DOWNLOAD_APPIMAGE-12d9ff?style=for-the-badge&logoColor=020817"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.7.2/LakeDB-1.0.0-beta.7.2-mac-arm64.dmg"><img alt="Download LakeDB for macOS Apple Silicon" src="https://img.shields.io/badge/macOS-DOWNLOAD_DMG-06132b?style=for-the-badge&logo=apple&logoColor=white"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.7.2/LakeDB-1.0.0-beta.7.2-win-x64-setup.exe"><img alt="Download LakeDB installer for Windows x64" src="https://img.shields.io/badge/Windows-DOWNLOAD_SETUP-0b7cff?style=for-the-badge&logo=windows&logoColor=white"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.7.2/LakeDB-1.0.0-beta.7.2-linux-x86_64.AppImage"><img alt="Download LakeDB AppImage for Linux x64" src="https://img.shields.io/badge/Linux-DOWNLOAD_APPIMAGE-12d9ff?style=for-the-badge&logoColor=020817"></a>
 </p>
 
 | Platform | Alternative package | Install |
 | --- | --- | --- |
-| macOS Apple Silicon | [ZIP](https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.7.1/LakeDB-1.0.0-beta.7.1-mac-arm64.zip) | Move `LakeDB.app` to Applications. |
-| Windows x64 | [Portable EXE](https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.7.1/LakeDB-1.0.0-beta.7.1-win-x64-portable.exe) | Run without installation. |
-| Linux x64 | [Debian package](https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.7.1/LakeDB-1.0.0-beta.7.1-linux-amd64.deb) | Install with your package manager. |
+| macOS Apple Silicon | [ZIP](https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.7.2/LakeDB-1.0.0-beta.7.2-mac-arm64.zip) | Move `LakeDB.app` to Applications. |
+| Windows x64 | [Portable EXE](https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.7.2/LakeDB-1.0.0-beta.7.2-win-x64-portable.exe) | Run without installation. |
+| Linux x64 | [Debian package](https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.7.2/LakeDB-1.0.0-beta.7.2-linux-amd64.deb) | Install with your package manager. |
 
 > **Public beta signing:** macOS Apple Silicon packages are Developer ID signed
 > and notarized by Apple. Windows packages are not yet signed with a trusted
 > certificate. Download only from the official LakeDB repositories. Every
 > package has a matching SHA-256 file on the
-> [Beta 7.1 release page](https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.7.1).
+> [Beta 7.2 release page](https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.7.2).
 
 ---
 
-## Latest release
+## What’s new in Beta 7.2
 
-LakeDB Beta 7.1 adds customizable shortcuts, clearer query history and server
-information, and separates fast model comparison from selected-table analysis.
-Migration plans can be reviewed before running or exported as SQL. See its changes and the full
-version history in [GitHub Releases](https://github.com/DavLagoHern/LakeDB/releases).
+- **Explorer refresh after SQL changes:** successful `CREATE`, `ALTER`, `RENAME` and `DROP` operations appear without a manual reload, including when a later statement in the script fails.
+- **Structure-first comparison:** table analysis starts with model comparison. Exact row counts and content checks are explicit options.
+- **Results that say what matched:** structures, counts, checksums and partitions are identified separately. Matching counts are not presented as proof of identical data.
+- **Clearer migrations:** Merge and Replace data explain their effects before copying. Local foreign keys compare correctly across differently named schemas.
+- **Steadier access management:** refreshing permissions preserves the selected scope, and delayed requests cannot overwrite a newly selected account.
+
+See the [Beta 7.2 release notes](https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.7.2) and [full version history](https://github.com/DavLagoHern/LakeDB/releases).
+
+Installing an update preserves the local profile and does not migrate your connected databases. Database changes require an explicit user operation.
 
 ---
 
@@ -107,41 +112,27 @@ AI joins the existing LakeDB workflow; it does not replace it.
 | **Results and data** | Local query-result filters, draggable result columns, virtualized table grids, pagination, search, sorting and typed safe editing with conflict checks and rollback. |
 | **Database tools** | PostgreSQL schema backup/restore, comparison and transactional table copy; MySQL/MariaDB backup, restore, comparison and migration. Capability-aware controls stay disabled when an engine does not support them. |
 | **Access management** | Inspect PostgreSQL roles or MySQL/MariaDB accounts and grants, then review SQL before applying supported role, password and privilege changes. |
-| **Safety** | Local encrypted credentials, production confirmations, renderer sandboxing, read-only enforcement and no remote database execution. |
+| **Safety** | Locally encrypted credentials, production confirmations, renderer sandboxing and read-only enforcement. Database traffic goes directly from your computer to the configured host. |
 | **Resilience** | Stable device identity, crash recovery, session restore, verified updates, configuration backup and diagnostics. |
 
 ---
 
-## Where LakeDB differs
+## Compare and migrate with the right scope
 
-Shared capabilities such as merely opening multiple connections, SSH/SSL,
-normal autocomplete and editable grids are intentionally omitted. LakeDB's
-two-level connection workspace is included because every top-level connection
-keeps its own nested SQL, QuerIA and object tabs instead of sharing one editor
-context.
+Model checks, data checks and migrations answer different questions:
 
-**✓ Included · ◐ Limited, paid or a different workflow · × No comparable built-in workflow · — No built-in AI / not applicable**
+| Choice | What it checks or does | Database work |
+| --- | --- | --- |
+| **Model — default** | Compares selected structures and definitions. | Metadata inspection; no row-content comparison. |
+| **Exact row counts — opt-in** | Compares the number of rows in selected tables. | Can scan table indexes; equal counts do not prove equal values. |
+| **Content / checksums — opt-in** | Compares selected content checksums. | Reads table data and can be expensive on large tables. |
+| **Merge** | Inserts or updates source rows while keeping target-only rows. | Reads all source rows; it is not a row-by-row difference download. |
+| **Replace data** | Deletes target rows before copying the source. | Destructive copy; dependent tables may be required. |
 
-| Focused capability | LakeDB | DBeaver | TablePlus | MySQL Workbench | HeidiSQL |
-| --- | :---: | :---: | :---: | :---: | :---: |
-| Local syntax diagnostics before execution | ✓ | ✓ | × | ◐ | × |
-| Explicit AI error correction with complete SQL review | ✓ | ◐ | ◐ | — | — |
-| Top-level connection tabs with isolated, restored inner workspaces | ✓ | ◐ | ✓ | ✓ | ◐ |
-| PK and index-aware completion predicates | ✓ | ◐ | × | × | × |
-| Typed staged edits with conflict checks and rollback | ✓ | ◐ | ◐ | ◐ | ◐ |
-| Guided restore with automatic recovery dump | ✓ | ◐ | ◐ | ◐ | ◐ |
-| Schema compare and generated migration plan | ✓ | ◐ | × | ✓ | × |
-| Dedicated line-based natural-language documents | ✓ | × | × | — | — |
-| Agentic cross-database relationship discovery | ✓ | ◐ | × | — | — |
-| Mandatory local SQL review before execution | ✓ | ◐ | ◐ | — | — |
-| AI never receives row data or query results | ✓ | ◐ | ✓ | — | — |
-| No retained questions, generated SQL or schema names | ✓ | × | ◐ | — | — |
-
-A partial mark includes paid editions, plug-ins or a materially different
-workflow. Sources: [DBeaver documentation](https://dbeaver.com/docs/dbeaver/Separate-Connections/),
-[TablePlus documentation](https://docs.tableplus.com/gui-tools/the-interface/multi-tabs-workspaces-windows),
-[MySQL Workbench manual](https://dev.mysql.com/doc/workbench/en/wb-configuring-files.html) and
-[HeidiSQL documentation](https://www.heidisql.com/).
+On busy production databases, start with model comparison and a small scope.
+Review the SQL plan, target and dependencies before migrating. Data checks and
+copies grow with table size, and DDL rollback depends on the engine.
+Capabilities differ by engine; unsupported tools remain disabled.
 
 ---
 
@@ -154,11 +145,11 @@ workflow. Sources: [DBeaver documentation](https://dbeaver.com/docs/dbeaver/Sepa
 | **Beta 4 — complete** | Reusable connection context, Normal and Agentic generation, cross-database relationships, index inspection, reversible opt-in and clearer execution feedback. |
 | **Beta 5 — complete** | SQLite, local diagnostics, visible relationships, system schemas and reviewable access management. |
 | **Beta 6 — complete** | Native PostgreSQL connections, metadata, editing, design, exports, operations, database tools and review-first AI. |
-| **Beta 7 — current** | Expired-password recovery, customizable shortcuts, clearer history and reviewable model and table migrations. |
+| **Beta 7.2 — current** | Structure-first comparison, explicit data checks, clearer migration review, automatic explorer refresh and steadier access management. |
 | **1.0 direction** | Measured quality, trusted signing and distribution, compatibility validation and complete product polish. |
 
 <p align="center">
-  <a href="docs/ROADMAP.md"><img src="docs/assets/roadmap/lakedb-roadmap-beta-7.1.png" width="100%" alt="LakeDB Beta 7.1 roadmap toward a trusted 1.0 release"></a>
+  <a href="docs/ROADMAP.md"><img src="docs/assets/roadmap/lakedb-roadmap-beta-7.2.png" width="100%" alt="LakeDB Beta 7.2 roadmap toward quality, compatibility and trusted distribution for 1.0"></a>
 </p>
 
 Roadmap items describe direction, not a fixed release date. See

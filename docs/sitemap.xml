@@ -5,8 +5,19 @@
 >
   <url>
     <loc>https://davlagohern.github.io/LakeDB/</loc>
+    <lastmod>2026-10-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://davlagohern.github.io/LakeDB/assets/releases/beta7.2/lakedb-beta-7.2-1920x1080.png</image:loc>
+      <image:caption>LakeDB Beta 7.2 starts with structure comparison and keeps exact counts and checksums optional.</image:caption>
+      <image:title>LakeDB Beta 7.2 — Compare structure first</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://davlagohern.github.io/LakeDB/assets/roadmap/lakedb-roadmap-beta-7.2.png</image:loc>
+      <image:caption>LakeDB product stages and quality gates toward 1.0.</image:caption>
+      <image:title>LakeDB Beta 7.2 roadmap</image:title>
+    </image:image>
     <image:image>
       <image:loc>https://davlagohern.github.io/LakeDB/assets/screenshots/queria.png</image:loc>
       <image:caption>QuerIA prepares reviewable SQL inside the LakeDB desktop client.</image:caption>

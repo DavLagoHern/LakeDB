@@ -1,12 +1,38 @@
 # LakeDB roadmap
 
-![LakeDB Beta 7.1 roadmap](assets/roadmap/lakedb-roadmap-beta-7.1.png)
+![LakeDB Beta 7.2 roadmap: released foundations, current structure-first comparison and planned 1.0 work](assets/roadmap/lakedb-roadmap-beta-7.2.png)
 
-LakeDB Beta 6.0 adds PostgreSQL as a native engine across connections,
-metadata, safe editing, exports, database tools and QuerIA. The roadmap tracks
-complete product stages rather than every patch.
+LakeDB is a local-first desktop client for MySQL, MariaDB, PostgreSQL and
+SQLite. The roadmap separates released capabilities, the current beta and
+work planned toward 1.0. Engine capabilities determine which tools are available;
+SQLite does not offer schema comparison or database migration tools.
 
-## Current: Beta 7.1
+## Current: Beta 7.2
+
+Comparison starts with structure. Exact row counts and content checksums are
+off by default and must be selected explicitly. Counts can scan indexes;
+checksums read table contents. Metadata comparison still makes database
+requests, so this is a lower-cost starting point rather than a guarantee of
+zero production impact.
+
+Results state what was checked: equivalent structure, matching row counts,
+matching checksums or matching partitions. Matching definitions in differently
+named databases no longer become false changes because a foreign key points
+to its own database. References to genuinely different external databases
+remain differences. Migration preparation bounds parallel metadata work.
+
+Data actions are clearer before execution: **Merge data** reads all source rows
+and inserts or updates them while retaining target-only rows; **Replace data**
+deletes target data before copying. Review the plan, dependencies and target
+before running either action. Structural DDL is not universally reversible and
+LakeDB does not guarantee lock-free or online migrations.
+
+After successful schema-changing SQL, the explorer refreshes automatically,
+including completed changes in a script whose later statement fails. Account
+and privilege refreshes retain the selected scope and ignore outdated responses
+when changing the selected account or connection.
+
+## Released: Beta 7.1
 
 Customizable shortcuts, clearer history and server information improve daily
 work. Model comparison avoids row scans; selected-table analysis offers counts,
@@ -101,7 +127,7 @@ defaults, bulk connection editing and lower-cost on-demand server monitoring.
 | **Beta 4 — complete** | Reusable business context, Normal and Agentic generation, cross-database relationships, table and index inspection, plan review and community testing. |
 | **Beta 5 — complete** | SQLite beside MySQL/MariaDB, review-first database tools, local learned formatting, visible relationships and access management. |
 | **Beta 6 — complete** | Native PostgreSQL connections, catalog browsing, safe editing, design, exports, operations, transfer paths and review-first AI. |
-| **Beta 7 — current** | Expired-password recovery, customizable shortcuts, clearer history and reviewable model and table migrations. |
+| **Beta 7 — current** | Expired-password recovery, daily workflow controls, structure-first comparison, explicit data checks, clearer migration actions and automatic explorer refresh. |
 | **1.0 — direction** | Measured AI quality, trusted distribution, compatibility validation, accessibility and complete product polish. |
 
 Future stages describe direction, not a fixed date or guaranteed scope.
@@ -134,7 +160,8 @@ QuerIA must preserve these boundaries:
 
 ### Trusted distribution
 
-- Apple Developer ID signing and notarization for macOS.
+- Maintain Apple Developer ID signing and notarization for official macOS
+  packages; this is already part of beta distribution.
 - Trusted Windows code signing.
 - Clean-machine installation and upgrade validation.
 - Checksums and a documented verification path for every package.

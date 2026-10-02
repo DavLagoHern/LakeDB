@@ -1,6 +1,6 @@
 # LakeDB compatibility
 
-This is the conservative compatibility baseline for LakeDB Beta 6.0 and the intended 1.0 foundation. A combination marked **best effort** may work but is not part of the supported release baseline.
+This is the conservative compatibility baseline for LakeDB Beta 7.2 and the intended 1.0 foundation. Package architectures and engine capability boundaries are unchanged by this update. A combination marked **best effort** may work but is not part of the supported release baseline.
 
 ## Desktop packages
 
@@ -58,7 +58,7 @@ SQLite supports tables, views, triggers, SQL execution and cancellation,
 explicit transactions, safe row editing, `EXPLAIN QUERY PLAN`, local
 diagnostics and reviewable AI assistance. LakeDB database dump/restore, schema
 comparison, table copy, server monitoring, SSH and TLS are not SQLite
-capabilities in Beta 5.1.
+capabilities in the current beta.
 
 LakeDB refuses to open its live internal settings database, its WAL/SHM files,
 pre-upgrade snapshots or path aliases as user connections. Make a separate

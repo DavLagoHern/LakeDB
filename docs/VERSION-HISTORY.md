@@ -13,6 +13,24 @@ Published releases and their packaged downloads are retained so older builds rem
 
 Only real tagged builds are listed as releases. The 0.2–0.4 product stages were development milestones rather than public tags, and 0.10.0–0.10.2 were not published as separate builds.
 
+## 1.0.0 Beta 7.2 — October 2, 2026
+
+- `ADD` refresh the object explorer after successful metadata-changing SQL,
+  including completed statements before a later script error.
+- `CHANGE` start table analysis with Model only; exact counts and full-content
+  checksums require explicit selection and explain their possible cost.
+- `CHANGE` describe matching structure, counts, checksums, partitions and
+  definitions separately instead of implying complete data equality.
+- `FIX` compare local foreign-key references relative to each schema, avoiding
+  differences caused solely by different source and target schema names.
+- `CHANGE` explain Merge as processing all source rows and Replace data as
+  deleting target rows before copying; bound object-definition preparation.
+- `FIX` preserve permission scope after refresh, ignore stale principal or
+  connection responses, and bound the row-count probe cache.
+- `FIX` bypass cached catalog entries when refreshing database objects manually.
+
+[Release notes and downloads](https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.7.2)
+
 ## 1.0.0 Beta 7.1 — September 30, 2026
 
 - `ADD` customize keyboard and mouse shortcuts, inspect server information, and
