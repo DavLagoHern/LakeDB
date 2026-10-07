@@ -7,7 +7,20 @@ SQLite. The roadmap separates released capabilities, the current beta and
 work planned toward 1.0. Engine capabilities determine which tools are available;
 SQLite does not offer schema comparison or database migration tools.
 
-## Current: Beta 7.2
+## Current: Beta 7.3
+
+Lost connections can be recovered without closing the workspace. Retry opens
+a fresh session, keeps SQL documents and tabs, and never replays a failed write.
+Production reconnection remains manual.
+
+Routine schema-changing SQL refreshes the affected database. Refreshing one
+database preserves the rest of the explorer tree. A link button and explanatory
+tooltips make shared search and connection-wide refresh clearer. Namespace-list
+changes and uncertain SQL scopes retain a broader refresh.
+
+This patch continues the Beta 7 milestone; the existing milestone artwork is retained.
+
+## Released: Beta 7.2
 
 Comparison starts with structure. Exact row counts and content checksums are
 off by default and must be selected explicitly. Counts can scan indexes;

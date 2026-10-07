@@ -13,6 +13,21 @@ Published releases and their packaged downloads are retained so older builds rem
 
 Only real tagged builds are listed as releases. The 0.2–0.4 product stages were development milestones rather than public tags, and 0.10.0–0.10.2 were not published as separate builds.
 
+## 1.0.0 Beta 7.3 — October 7, 2026
+
+- `FIX` detect lost connections while loading databases, objects and table data,
+  and recognize MySQL closed-session errors.
+- `FIX` replace a failed session when Retry is selected, preserving SQL documents
+  and workspace tabs. Production recovery remains manual.
+- `CHANGE` refresh the affected database after routine successful schema-changing
+  SQL, including qualified targets and changes before later script errors.
+- `FIX` refreshing one database reloads its visited object categories without
+  rebuilding the rest of the tree; category refresh bypasses metadata caches.
+- `CHANGE` replace the Shared switch with a compact link button and add mouse
+  and keyboard tooltips for shared search and refresh in English and Spanish.
+
+[Release notes and downloads](https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.7.3)
+
 ## 1.0.0 Beta 7.2 — October 2, 2026
 
 - `ADD` refresh the object explorer after successful metadata-changing SQL,
