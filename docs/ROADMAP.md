@@ -1,13 +1,24 @@
 # LakeDB roadmap
 
-![LakeDB Beta 7.2 roadmap: released foundations, current structure-first comparison and planned 1.0 work](assets/roadmap/lakedb-roadmap-beta-7.2.png)
+![LakeDB Beta 7.2 roadmap: released foundations, current structure-first comparison and planned 1.0 work](assets/roadmap/lakedb-roadmap-beta-8.0.png)
 
 LakeDB is a local-first desktop client for MySQL, MariaDB, PostgreSQL and
 SQLite. The roadmap separates released capabilities, the current beta and
 work planned toward 1.0. Engine capabilities determine which tools are available;
 SQLite does not offer schema comparison or database migration tools.
 
-## Current: Beta 7.3
+## Current: Beta 8.0
+
+Open independent workspace windows in one application. Saved connections,
+encrypted credentials, preferences and the QuerIA account are shared; live
+sessions, queries, transactions and tabs remain window-specific. Quit/relaunch
+restores the windows left open, and production reconnection remains manual.
+
+The Apple edition adds Apple sign-in, optional verified subscriptions, account
+deletion and persistent user-selected file access. App Store availability follows
+Apple's review separately from the GitHub release.
+
+## Released: Beta 7.3
 
 Lost connections can be recovered without closing the workspace. Retry opens
 a fresh session, keeps SQL documents and tabs, and never replays a failed write.
