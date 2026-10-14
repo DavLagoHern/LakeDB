@@ -13,6 +13,22 @@ Published releases and their packaged downloads are retained so older builds rem
 
 Only real tagged builds are listed as releases. The 0.2–0.4 product stages were development milestones rather than public tags, and 0.10.0–0.10.2 were not published as separate builds.
 
+## 1.0.0 Beta 8.0 — October 14, 2026
+
+- `ADD` independent windows in one application, each with its own renderer,
+  live database sessions, query tabs and saved workspace.
+- `CHANGE` share saved connections, encrypted credentials, preferences and the
+  QuerIA account across windows; migrate existing secondary saved profiles into
+  the common catalogue while preserving the primary profile.
+- `ADD` restore the windows left open when quitting; keep individually closed
+  windows closed and never reconnect Production automatically.
+- `ADD` prepare the separate Apple edition with Apple sign-in, verified optional
+  subscriptions, purchase restoration and account deletion after fresh authorization.
+- `FIX` batch restored purchase callbacks and distinguish current, included and
+  upgrade plans in the Apple edition.
+- `SECURITY` retain encrypted authorizations for selected SQLite, SSH and
+  certificate files across relaunches in the Mac App Store sandbox.
+
 ## 1.0.0 Beta 7.3 — October 7, 2026
 
 - `FIX` detect lost connections while loading databases, objects and table data,
