@@ -1,6 +1,6 @@
 # LakeDB roadmap
 
-![LakeDB Beta 7.2 roadmap: released foundations, current structure-first comparison and planned 1.0 work](assets/roadmap/lakedb-roadmap-beta-8.0.png)
+![LakeDB Beta 8.0 roadmap: shared connections, independent windows and planned 1.0 work](assets/roadmap/lakedb-roadmap-beta-8.0.png)
 
 LakeDB is a local-first desktop client for MySQL, MariaDB, PostgreSQL and
 SQLite. The roadmap separates released capabilities, the current beta and
@@ -151,7 +151,8 @@ defaults, bulk connection editing and lower-cost on-demand server monitoring.
 | **Beta 4 — complete** | Reusable business context, Normal and Agentic generation, cross-database relationships, table and index inspection, plan review and community testing. |
 | **Beta 5 — complete** | SQLite beside MySQL/MariaDB, review-first database tools, local learned formatting, visible relationships and access management. |
 | **Beta 6 — complete** | Native PostgreSQL connections, catalog browsing, safe editing, design, exports, operations, transfer paths and review-first AI. |
-| **Beta 7 — current** | Expired-password recovery, daily workflow controls, structure-first comparison, explicit data checks, clearer migration actions and automatic explorer refresh. |
+| **Beta 7 — complete** | Expired-password recovery, daily workflow controls, structure-first comparison, explicit data checks, clearer migration actions and automatic explorer refresh. |
+| **Beta 8 — current** | Independent windows, shared saved connections, restored workspaces and Apple distribution preparation. |
 | **1.0 — direction** | Measured AI quality, trusted distribution, compatibility validation, accessibility and complete product polish. |
 
 Future stages describe direction, not a fixed date or guaranteed scope.
