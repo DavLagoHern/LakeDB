@@ -13,6 +13,13 @@ Published releases and their packaged downloads are retained so older builds rem
 
 Only real tagged builds are listed as releases. The 0.2–0.4 product stages were development milestones rather than public tags, and 0.10.0–0.10.2 were not published as separate builds.
 
+## 0.9.0 — October 27, 2026
+
+- `CHANGE` use literal 0.9.0 before stable 1.0; retain Beta 9.0 packages and archive the unrelated July 2026 source tag.
+- `FIX` exclude pre-restart releases from the new updater channel. Older betas require one manual installation.
+
+[Release notes and downloads](https://github.com/DavLagoHern/LakeDB/releases/tag/v0.9.0)
+
 ## 1.0.0 Beta 9.0 — October 27, 2026
 
 - `ADD` initial Amazon Redshift connections through the official AWS Python
@@ -554,13 +561,13 @@ Only real tagged builds are listed as releases. The 0.2–0.4 product stages wer
 
 [Release notes and downloads](https://github.com/DavLagoHern/LakeDB/releases/tag/v0.9.1)
 
-### 0.9.0
+### 0.9.0 — July 2026 legacy build
 
 - `ADD` Add Migration Studio, database/table comparison and selectable structure/data copy plans.
 - `ADD` Add explorer actions, connection-tool tabs, query timing and configurable timeouts.
 - `FIX` Complete write statements from MySQL OK packets and cancel editor queries more reliably.
 
-[Release notes and downloads](https://github.com/DavLagoHern/LakeDB/releases/tag/v0.9.0)
+[Archived historical tag](https://github.com/DavLagoHern/LakeDB/tree/legacy/v0.9.0-20260721)
 
 ## 0.8
 

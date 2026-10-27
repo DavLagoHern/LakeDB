@@ -1,6 +1,6 @@
 # LakeDB compatibility
 
-This is the conservative compatibility baseline for LakeDB Beta 9.0 and the intended 1.0 foundation. Redshift is an initial beta integration with live AWS validation pending. A combination marked **best effort** may work but is not part of the supported release baseline.
+This is the conservative compatibility baseline for LakeDB 0.9.0 and the intended 1.0 foundation. Redshift is an initial beta integration with live AWS validation pending. A combination marked **best effort** may work but is not part of the supported release baseline.
 
 ## Desktop packages
 
@@ -30,7 +30,7 @@ Redshift Data API does not require Python. See [Redshift](REDSHIFT.md).
 | PostgreSQL 18                                       | Validated Beta 6 baseline                                 |
 | PostgreSQL 14–17 and managed PostgreSQL services    | Best effort pending broader beta validation                |
 | SQL Server and Oracle Database                      | Unsupported as connection targets                         |
-| Amazon Redshift, direct Python connector or AWS Data API | Initial Beta 9 integration; live AWS validation pending |
+| Amazon Redshift, direct Python connector or AWS Data API | Initial 0.9 integration; live AWS validation pending |
 
 LakeDB uses native MySQL-family and PostgreSQL drivers and engine-specific
 catalog queries. Individual features require the connected user or role to

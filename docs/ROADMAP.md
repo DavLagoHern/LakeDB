@@ -1,13 +1,13 @@
 # LakeDB roadmap
 
-![LakeDB Beta 9.0 roadmap: clearer QuerIA, initial Redshift support and validation before 1.0](assets/roadmap/lakedb-roadmap-beta-9.0.png)
+![LakeDB 0.9.0 roadmap: clearer QuerIA, initial Redshift support and validation before 1.0](assets/roadmap/lakedb-roadmap-0.9.0.png)
 
 LakeDB is a local-first desktop client for MySQL, MariaDB, PostgreSQL and
 SQLite. The roadmap separates released capabilities, the current beta and
 work planned toward 1.0. Engine capabilities determine which tools are available;
 SQLite does not offer schema comparison or database migration tools.
 
-## Current: Beta 9.0
+## Current: 0.9.0
 
 QuerIA groups each request, SQL and numbered Run action in its own card. Refine
 a selected query or start an independent question. A focused clarification can

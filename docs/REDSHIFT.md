@@ -1,6 +1,6 @@
 # Amazon Redshift beta guide
 
-Beta 9.0 includes an initial Redshift engine using official AWS software.
+0.9.0 includes an initial Redshift engine using official AWS software.
 **Live AWS validation is pending before stable 1.0.** Local transport, bridge
 and interface tests do not establish compatibility with every AWS deployment.
 
