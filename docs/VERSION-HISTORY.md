@@ -28,6 +28,8 @@ Only real tagged builds are listed as releases. The 0.2–0.4 product stages wer
   field help, protected initial SQL tabs and comparison/migration views.
 - `FIX` improve MySQL metadata handling and query refinement; remove the bright
   active-connection line across the workspace.
+- `FIX` preserve text selection during QuerIA typing and prevent outdated
+  completion ranges from duplicating a qualifier.
 
 [Release notes and downloads](https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.9.0)
 
