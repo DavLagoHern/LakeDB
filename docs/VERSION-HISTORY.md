@@ -13,6 +13,24 @@ Published releases and their packaged downloads are retained so older builds rem
 
 Only real tagged builds are listed as releases. The 0.2–0.4 product stages were development milestones rather than public tags, and 0.10.0–0.10.2 were not published as separate builds.
 
+## 1.0.0 Beta 9.0 — October 27, 2026
+
+- `ADD` initial Amazon Redshift connections through the official AWS Python
+  connector or AWS Data API, with capability-aware metadata, SQL and exports.
+  Live AWS validation remains pending before stable 1.0.
+- `CHANGE` give each QuerIA request its own SQL card and numbered Run action;
+  distinguish refining a selected query from an independent question.
+- `ADD` focused clarification replies when inspected metadata leaves a real
+  ambiguity about tables, relationships or business meaning.
+- `FIX` retain pending Enterprise requests with Check access and connect to the
+  assigned organization after login without another confirmation.
+- `CHANGE` improve connection engine choices, themed selectors, accessible
+  field help, protected initial SQL tabs and comparison/migration views.
+- `FIX` improve MySQL metadata handling and query refinement; remove the bright
+  active-connection line across the workspace.
+
+[Release notes and downloads](https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.9.0)
+
 ## 1.0.0 Beta 8.0 — October 14, 2026
 
 - `ADD` independent windows in one application, each with its own renderer,

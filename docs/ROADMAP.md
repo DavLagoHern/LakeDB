@@ -1,13 +1,26 @@
 # LakeDB roadmap
 
-![LakeDB Beta 8.0 roadmap: shared connections, independent windows and planned 1.0 work](assets/roadmap/lakedb-roadmap-beta-8.0.png)
+![LakeDB Beta 9.0 roadmap: clearer QuerIA, initial Redshift support and validation before 1.0](assets/roadmap/lakedb-roadmap-beta-9.0.png)
 
 LakeDB is a local-first desktop client for MySQL, MariaDB, PostgreSQL and
 SQLite. The roadmap separates released capabilities, the current beta and
 work planned toward 1.0. Engine capabilities determine which tools are available;
 SQLite does not offer schema comparison or database migration tools.
 
-## Current: Beta 8.0
+## Current: Beta 9.0
+
+QuerIA groups each request, SQL and numbered Run action in its own card. Refine
+a selected query or start an independent question. A focused clarification can
+resolve real ambiguities after metadata inspection; generation never executes
+SQL. Enterprise sign-in connects directly, and approval requests retain a
+Check access action while pending.
+
+Initial Amazon Redshift support offers the official AWS Python connector and
+AWS Data API. Unsupported capabilities remain disabled. Live AWS validation
+is pending and is a prerequisite for considering stable 1.0. See the
+[Redshift beta guide](REDSHIFT.md) for external runtime requirements and limits.
+
+## Released: Beta 8.0
 
 Open independent workspace windows in one application. Saved connections,
 encrypted credentials, preferences and the QuerIA account are shared; live
@@ -197,6 +210,8 @@ QuerIA must preserve these boundaries:
 - Test representative MySQL and MariaDB versions.
 - Expand PostgreSQL validation beyond the PostgreSQL 18 beta baseline to
   versions 14–17 and representative managed services.
+- Validate both Redshift transports against a live AWS test environment,
+  including metadata, transactions, cancellation, session expiry and exports.
 - Run packaged smoke tests and retained-beta upgrade tests.
 - Complete a release-candidate soak with no data-loss, credential, update,
   restore or destructive-query blockers.

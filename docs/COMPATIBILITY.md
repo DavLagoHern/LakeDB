@@ -1,6 +1,6 @@
 # LakeDB compatibility
 
-This is the conservative compatibility baseline for LakeDB Beta 7.2 and the intended 1.0 foundation. Package architectures and engine capability boundaries are unchanged by this update. A combination marked **best effort** may work but is not part of the supported release baseline.
+This is the conservative compatibility baseline for LakeDB Beta 9.0 and the intended 1.0 foundation. Redshift is an initial beta integration with live AWS validation pending. A combination marked **best effort** may work but is not part of the supported release baseline.
 
 ## Desktop packages
 
@@ -14,7 +14,9 @@ This is the conservative compatibility baseline for LakeDB Beta 7.2 and the inte
 | macOS Intel, Windows ARM and Linux ARM        | —                       | No official package                  |
 | Windows 7, 8 and 8.1                          | —                       | Unsupported                          |
 
-End users do not need to install Node.js, Electron, Docker or a database client library.
+End users do not need Node.js, Electron or Docker. Direct Redshift connections
+require an external Python environment and the official AWS connector;
+Redshift Data API does not require Python. See [Redshift](REDSHIFT.md).
 
 ## Database servers
 
@@ -28,6 +30,7 @@ End users do not need to install Node.js, Electron, Docker or a database client 
 | PostgreSQL 18                                       | Validated Beta 6 baseline                                 |
 | PostgreSQL 14–17 and managed PostgreSQL services    | Best effort pending broader beta validation                |
 | SQL Server and Oracle Database                      | Unsupported as connection targets                         |
+| Amazon Redshift, direct Python connector or AWS Data API | Initial Beta 9 integration; live AWS validation pending |
 
 LakeDB uses native MySQL-family and PostgreSQL drivers and engine-specific
 catalog queries. Individual features require the connected user or role to

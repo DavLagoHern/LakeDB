@@ -9,16 +9,16 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.8.0"><img alt="Download LakeDB Beta 8.0" src="https://img.shields.io/badge/DOWNLOAD-BETA_8.0-0b7cff?style=for-the-badge&logo=github&logoColor=white"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.9.0"><img alt="Download LakeDB Beta 9.0" src="https://img.shields.io/badge/DOWNLOAD-BETA_9.0-0b7cff?style=for-the-badge&logo=github&logoColor=white"></a>
   <a href="https://github.com/DavLagoHern/homebrew-lakedb"><img alt="Install LakeDB with Homebrew" src="https://img.shields.io/badge/HOMEBREW-INSTALL_LAKEDB-fbb040?style=for-the-badge&logo=homebrew&logoColor=black"></a>
   <a href="https://davlagohern.github.io/LakeDB/"><img alt="LakeDB website" src="https://img.shields.io/badge/WEBSITE-EXPLORE_LAKEDB-19d2ff?style=for-the-badge&logoColor=020817"></a>
 </p>
 
 <p align="center">
-  <img src="docs/assets/releases/beta8.0/lakedb-beta-8.0-1920x1080.png" width="100%" alt="LakeDB Beta 8.0: shared connections and independent workspace windows">
+  <img src="docs/assets/releases/beta9.0/lakedb-beta-9.0-1920x1080.png" width="100%" alt="LakeDB Beta 9.0: ask, clarify and run when ready">
 </p>
 
-<p align="center"><sub><strong>One app. Your workspaces.</strong> Beta 8.0 shares saved connections across independent windows, restores the windows you left open and prepares Apple sign-in and subscriptions.</sub></p>
+<p align="center"><sub><strong>Ask. Clarify. Run when ready.</strong> Beta 9.0 gives QuerIA clearer query cards and refinement, simplifies Enterprise access and adds initial Redshift support for beta testing.</sub></p>
 
 ## Why LakeDB
 
@@ -65,33 +65,34 @@ The official tap tracks verified releases and their SHA-256 checksums.
 ### Direct downloads
 
 <p align="center">
-  <a href="https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.8.0/LakeDB-1.0.0-beta.8.0-mac-arm64.dmg"><img alt="Download LakeDB for macOS Apple Silicon" src="https://img.shields.io/badge/macOS-DOWNLOAD_DMG-06132b?style=for-the-badge&logo=apple&logoColor=white"></a>
-  <a href="https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.8.0/LakeDB-1.0.0-beta.8.0-win-x64-setup.exe"><img alt="Download LakeDB installer for Windows x64" src="https://img.shields.io/badge/Windows-DOWNLOAD_SETUP-0b7cff?style=for-the-badge&logo=windows&logoColor=white"></a>
-  <a href="https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.8.0/LakeDB-1.0.0-beta.8.0-linux-x86_64.AppImage"><img alt="Download LakeDB AppImage for Linux x64" src="https://img.shields.io/badge/Linux-DOWNLOAD_APPIMAGE-12d9ff?style=for-the-badge&logoColor=020817"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.9.0/LakeDB-1.0.0-beta.9.0-mac-arm64.dmg"><img alt="Download LakeDB for macOS Apple Silicon" src="https://img.shields.io/badge/macOS-DOWNLOAD_DMG-06132b?style=for-the-badge&logo=apple&logoColor=white"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.9.0/LakeDB-1.0.0-beta.9.0-win-x64-setup.exe"><img alt="Download LakeDB installer for Windows x64" src="https://img.shields.io/badge/Windows-DOWNLOAD_SETUP-0b7cff?style=for-the-badge&logo=windows&logoColor=white"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.9.0/LakeDB-1.0.0-beta.9.0-linux-x86_64.AppImage"><img alt="Download LakeDB AppImage for Linux x64" src="https://img.shields.io/badge/Linux-DOWNLOAD_APPIMAGE-12d9ff?style=for-the-badge&logoColor=020817"></a>
 </p>
 
 | Platform | Alternative package | Install |
 | --- | --- | --- |
-| macOS Apple Silicon | [ZIP](https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.8.0/LakeDB-1.0.0-beta.8.0-mac-arm64.zip) | Move `LakeDB.app` to Applications. |
-| Windows x64 | [Portable EXE](https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.8.0/LakeDB-1.0.0-beta.8.0-win-x64-portable.exe) | Run without installation. |
-| Linux x64 | [Debian package](https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.8.0/LakeDB-1.0.0-beta.8.0-linux-amd64.deb) | Install with your package manager. |
+| macOS Apple Silicon | [ZIP](https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.9.0/LakeDB-1.0.0-beta.9.0-mac-arm64.zip) | Move `LakeDB.app` to Applications. |
+| Windows x64 | [Portable EXE](https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.9.0/LakeDB-1.0.0-beta.9.0-win-x64-portable.exe) | Run without installation. |
+| Linux x64 | [Debian package](https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0-beta.9.0/LakeDB-1.0.0-beta.9.0-linux-amd64.deb) | Install with your package manager. |
 
 > **Public beta signing:** macOS Apple Silicon packages are Developer ID signed
 > and notarized by Apple. Windows packages are not yet signed with a trusted
 > certificate. Download only from the official LakeDB repositories. Every
 > package has a matching SHA-256 file on the
-> [Beta 8.0 release page](https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.8.0).
+> [Beta 9.0 release page](https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.9.0).
 
 ---
 
-## What’s new in Beta 8.0
+## What’s new in Beta 9.0
 
-- **Independent windows in one app:** File > New window or Cmd/Ctrl+Shift+N opens a workspace with its own live database sessions, SQL tabs, queries and results. macOS groups the windows under one Dock icon.
-- **Shared saved connections:** connection profiles and encrypted credentials are available in every window. Preferences, QuerIA activation and your account are shared too.
-- **Resume your windows:** quitting and reopening restores the windows you left open. Closing one while another remains open excludes it from startup restoration.
-- **Apple edition preparation:** Apple sign-in, optional subscriptions, current/included/upgrade plan states, account deletion and persistent access to selected files. The Mac App Store rollout is separate from the GitHub release.
+- **Clearer QuerIA queries:** each request owns its SQL card and numbered Run action. Refine a selected query or start an independent question; the original stays available.
+- **Focused clarification:** after metadata inspection, QuerIA can ask about a real ambiguity in tables, relationships or business meaning. Reply to continue; SQL requires explicit execution.
+- **Enterprise access:** login connects directly to the assigned organization. Pending approval keeps a Check access button without closing Preferences or requesting again.
+- **Initial Redshift support:** official AWS Python connector or AWS Data API, with capability-aware metadata, SQL, transactions, cancellation and supported exports. Live AWS validation is pending before stable 1.0. See the [Redshift beta guide](docs/REDSHIFT.md).
+- **Everyday polish:** recognizable engine choices, themed selectors, accessible field help, protected initial SQL tabs and clearer comparison/migration views.
 
-See the [Beta 8.0 release notes](https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.8.0) and [full version history](https://github.com/DavLagoHern/LakeDB/releases).
+See the [Beta 9.0 release notes](https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0-beta.9.0) and [full version history](https://github.com/DavLagoHern/LakeDB/releases).
 
 Installing an update preserves the local profile and does not migrate your connected databases. Database changes require an explicit user operation.
 
@@ -145,11 +146,12 @@ Capabilities differ by engine; unsupported tools remain disabled.
 | **Beta 5 — complete** | SQLite, local diagnostics, visible relationships, system schemas and reviewable access management. |
 | **Beta 6 — complete** | Native PostgreSQL connections, metadata, editing, design, exports, operations, database tools and review-first AI. |
 | **Beta 7 — complete** | Reliable connection recovery, focused database refresh, structure-first comparison and reviewable migrations. |
-| **Beta 8.0 — current** | Independent windows in one app, shared saved connections, restored workspaces and Apple distribution preparation. |
+| **Beta 8 — complete** | Independent windows, shared saved connections, restored workspaces and Apple distribution preparation. |
+| **Beta 9.0 — current** | Clearer QuerIA, refinement and clarification; simpler Enterprise access; initial Redshift support with live validation pending. |
 | **1.0 direction** | Measured quality, trusted signing and distribution, compatibility validation and complete product polish. |
 
 <p align="center">
-  <a href="docs/ROADMAP.md"><img src="docs/assets/roadmap/lakedb-roadmap-beta-8.0.png" width="100%" alt="LakeDB Beta 8.0 roadmap toward quality, compatibility and trusted distribution for 1.0"></a>
+  <a href="docs/ROADMAP.md"><img src="docs/assets/roadmap/lakedb-roadmap-beta-9.0.png" width="100%" alt="LakeDB Beta 9.0 roadmap toward quality, compatibility and trusted distribution for 1.0"></a>
 </p>
 
 Roadmap items describe direction, not a fixed release date. See
