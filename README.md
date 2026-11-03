@@ -9,16 +9,16 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/DavLagoHern/LakeDB/releases/tag/v0.9.0"><img alt="Download LakeDB 0.9.0" src="https://img.shields.io/badge/DOWNLOAD-0.9.0-0b7cff?style=for-the-badge&logo=github&logoColor=white"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0"><img alt="Download LakeDB 1.0.0" src="https://img.shields.io/badge/DOWNLOAD-1.0.0-0b7cff?style=for-the-badge&logo=github&logoColor=white"></a>
   <a href="https://github.com/DavLagoHern/homebrew-lakedb"><img alt="Install LakeDB with Homebrew" src="https://img.shields.io/badge/HOMEBREW-INSTALL_LAKEDB-fbb040?style=for-the-badge&logo=homebrew&logoColor=black"></a>
   <a href="https://davlagohern.github.io/LakeDB/"><img alt="LakeDB website" src="https://img.shields.io/badge/WEBSITE-EXPLORE_LAKEDB-19d2ff?style=for-the-badge&logoColor=020817"></a>
 </p>
 
 <p align="center">
-  <img src="docs/assets/releases/0.9.0/lakedb-0.9.0-1920x1080.png" width="100%" alt="LakeDB 0.9.0: ask, clarify and run when ready">
+  <img src="docs/assets/releases/1.0.0/lakedb-1.0.0-1920x1080.png" width="100%" alt="LakeDB 1.0.0: ask, clarify and run when ready">
 </p>
 
-<p align="center"><sub><strong>Ask. Clarify. Run when ready.</strong> 0.9.0 gives QuerIA clearer query cards and refinement, simplifies Enterprise access and adds initial Redshift support for beta testing.</sub></p>
+<p align="center"><sub><strong>Your databases. Your next move.</strong> 1.0 brings clearer result grids, consistent interface scaling, background query notifications and optional review-first QuerIA.</sub></p>
 
 ## Why LakeDB
 
@@ -36,7 +36,7 @@
 
 <p align="center">
   <!-- 100 maintainer-recorded downloads from archived releases + live GitHub release asset downloads. -->
-  <a href="https://github.com/DavLagoHern/LakeDB/releases"><img alt="LakeDB beta downloads, including archived releases" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FDavLagoHern%2FLakeDB%2Fdownload-stats%2Fbadge.json&style=flat-square"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases"><img alt="LakeDB downloads, including archived releases" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FDavLagoHern%2FLakeDB%2Fdownload-stats%2Fbadge.json&style=flat-square"></a>
 </p>
 
 <p align="center">
@@ -65,40 +65,43 @@ The official tap tracks verified releases and their SHA-256 checksums.
 ### Direct downloads
 
 <p align="center">
-  <a href="https://github.com/DavLagoHern/LakeDB/releases/download/v0.9.0/LakeDB-0.9.0-mac-arm64.dmg"><img alt="Download LakeDB for macOS Apple Silicon" src="https://img.shields.io/badge/macOS-DOWNLOAD_DMG-06132b?style=for-the-badge&logo=apple&logoColor=white"></a>
-  <a href="https://github.com/DavLagoHern/LakeDB/releases/download/v0.9.0/LakeDB-0.9.0-win-x64-setup.exe"><img alt="Download LakeDB installer for Windows x64" src="https://img.shields.io/badge/Windows-DOWNLOAD_SETUP-0b7cff?style=for-the-badge&logo=windows&logoColor=white"></a>
-  <a href="https://github.com/DavLagoHern/LakeDB/releases/download/v0.9.0/LakeDB-0.9.0-linux-x86_64.AppImage"><img alt="Download LakeDB AppImage for Linux x64" src="https://img.shields.io/badge/Linux-DOWNLOAD_APPIMAGE-12d9ff?style=for-the-badge&logoColor=020817"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0/LakeDB-1.0.0-mac-arm64.dmg"><img alt="Download LakeDB for macOS Apple Silicon" src="https://img.shields.io/badge/macOS-DOWNLOAD_DMG-06132b?style=for-the-badge&logo=apple&logoColor=white"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0/LakeDB-1.0.0-win-x64-setup.exe"><img alt="Download LakeDB installer for Windows x64" src="https://img.shields.io/badge/Windows-DOWNLOAD_SETUP-0b7cff?style=for-the-badge&logo=windows&logoColor=white"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0/LakeDB-1.0.0-linux-x86_64.AppImage"><img alt="Download LakeDB AppImage for Linux x64" src="https://img.shields.io/badge/Linux-DOWNLOAD_APPIMAGE-12d9ff?style=for-the-badge&logoColor=020817"></a>
 </p>
 
 | Platform | Alternative package | Install |
 | --- | --- | --- |
-| macOS Apple Silicon | [ZIP](https://github.com/DavLagoHern/LakeDB/releases/download/v0.9.0/LakeDB-0.9.0-mac-arm64.zip) | Move `LakeDB.app` to Applications. |
-| Windows x64 | [Portable EXE](https://github.com/DavLagoHern/LakeDB/releases/download/v0.9.0/LakeDB-0.9.0-win-x64-portable.exe) | Run without installation. |
-| Linux x64 | [Debian package](https://github.com/DavLagoHern/LakeDB/releases/download/v0.9.0/LakeDB-0.9.0-linux-amd64.deb) | Install with your package manager. |
+| macOS Apple Silicon | [ZIP](https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0/LakeDB-1.0.0-mac-arm64.zip) | Move `LakeDB.app` to Applications. |
+| Windows x64 | [Portable EXE](https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0/LakeDB-1.0.0-win-x64-portable.exe) | Run without installation. |
+| Linux x64 | [Debian package](https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0/LakeDB-1.0.0-linux-amd64.deb) | Install with your package manager. |
 
-> **Public beta signing:** macOS Apple Silicon packages are Developer ID signed
+> **Package signing:** macOS Apple Silicon packages are Developer ID signed
 > and notarized by Apple. Windows packages are not yet signed with a trusted
 > certificate. Download only from the official LakeDB repositories. Every
 > package has a matching SHA-256 file on the
-> [0.9.0 release page](https://github.com/DavLagoHern/LakeDB/releases/tag/v0.9.0).
+> [1.0.0 release page](https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0).
 
 ---
 
-0.9.0 restarts the version numbering before stable 1.0. Install it manually
-once if you use a previous `1.0.0-beta.*`, `0.10` or `0.11` build; their
-updaters consider 0.9.0 older. Keep your existing application data. Older
-published packages remain available, and the July 2026 `v0.9.0` source is
-archived under `legacy/v0.9.0-20260721`.
+1.0.0 is the first release without the beta label. Install it manually if you
+use a historical `1.0.0-beta.*` build: that older updater channel may not offer
+the transition. Keep your existing application data. Earlier published packages
+remain available; the July 2026 `v0.9.0` source is archived under
+`legacy/v0.9.0-20260721`.
 
-## What’s new in 0.9.0
+## What’s new in 1.0.0
 
 - **Clearer QuerIA queries:** each request owns its SQL card and numbered Run action. Refine a selected query or start an independent question; the original stays available.
 - **Focused clarification:** after metadata inspection, QuerIA can ask about a real ambiguity in tables, relationships or business meaning. Reply to continue; SQL requires explicit execution.
 - **Enterprise access:** login connects directly to the assigned organization. Pending approval keeps a Check access button without closing Preferences or requesting again.
-- **Initial Redshift support:** official AWS Python connector or AWS Data API, with capability-aware metadata, SQL, transactions, cancellation and supported exports. Live AWS validation is pending before stable 1.0. See the [Redshift beta guide](docs/REDSHIFT.md).
+- **Readable results:** numeric columns align by type and empty strings are distinct from NULL. The row-limit control opens its preference directly.
+- **Consistent interface scaling:** dialogs, forms and controls follow the interface font size.
+- **Background query notifications:** configurable notifications report long-running success/failure without including SQL or data.
+- **Experimental Redshift:** official AWS Python connector or AWS Data API; live AWS validation remains pending. See the [Redshift guide](docs/REDSHIFT.md).
 - **Everyday polish:** recognizable engine choices, themed selectors, accessible field help, protected initial SQL tabs and clearer comparison/migration views.
 
-See the [0.9.0 release notes](https://github.com/DavLagoHern/LakeDB/releases/tag/v0.9.0) and [full version history](https://github.com/DavLagoHern/LakeDB/releases).
+See the [1.0.0 release notes](https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0) and [full version history](https://github.com/DavLagoHern/LakeDB/releases).
 
 Installing an update preserves the local profile and does not migrate your connected databases. Database changes require an explicit user operation.
 
@@ -142,7 +145,7 @@ Capabilities differ by engine; unsupported tools remain disabled.
 
 ---
 
-## Road to 1.0
+## Roadmap: 1.0 and beyond
 
 | Stage | Direction |
 | --- | --- |
@@ -153,11 +156,11 @@ Capabilities differ by engine; unsupported tools remain disabled.
 | **Beta 6 — complete** | Native PostgreSQL connections, metadata, editing, design, exports, operations, database tools and review-first AI. |
 | **Beta 7 — complete** | Reliable connection recovery, focused database refresh, structure-first comparison and reviewable migrations. |
 | **Beta 8 — complete** | Independent windows, shared saved connections, restored workspaces and Apple distribution preparation. |
-| **0.9.0 — current** | Clearer QuerIA, refinement and clarification; simpler Enterprise access; initial Redshift support with live validation pending. |
-| **1.0 direction** | Measured quality, trusted signing and distribution, compatibility validation and complete product polish. |
+| **1.0.0 — current** | Clearer QuerIA, readable grids, consistent interface scaling and background query notifications. |
+| **Next directions** | SQL parameters, granular row differences, live Redshift validation and broader compatibility. |
 
 <p align="center">
-  <a href="docs/ROADMAP.md"><img src="docs/assets/roadmap/lakedb-roadmap-0.9.0.png" width="100%" alt="LakeDB 0.9.0 roadmap toward quality, compatibility and trusted distribution for 1.0"></a>
+  <a href="docs/ROADMAP.md"><img src="docs/assets/roadmap/lakedb-roadmap-1.0.0.png" width="100%" alt="LakeDB 1.0.0 roadmap toward quality, compatibility and trusted distribution for 1.0"></a>
 </p>
 
 Roadmap items describe direction, not a fixed release date. See
@@ -200,7 +203,7 @@ database features are not locked behind a membership.
 - Propose ideas in [GitHub Discussions](https://github.com/DavLagoHern/LakeDB/discussions).
 - Support continued development or follow public updates on [Patreon](https://www.patreon.com/LakeDB/membership).
 
-Testing, reporting and sharing LakeDB remain valuable ways to help this beta,
+Testing, reporting and sharing LakeDB remain valuable ways to help the project,
 whether or not you become a paid member.
 
 ---

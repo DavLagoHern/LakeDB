@@ -13,6 +13,18 @@ Published releases and their packaged downloads are retained so older builds rem
 
 Only real tagged builds are listed as releases. The 0.2–0.4 product stages were development milestones rather than public tags, and 0.10.0–0.10.2 were not published as separate builds.
 
+## 1.0.0 — November 3, 2026
+
+- `CHANGE` first release without the beta label; preserve existing profiles and workspaces.
+- `ADD` configurable privacy-preserving notifications for long-running background queries.
+- `CHANGE` scale interface controls consistently and distinguish numeric values, empty strings and NULL in results.
+- `ADD` direct row-limit settings and clear QuerIA read/write/schema action labels.
+- `ADD` optional one-time contributions in the Apple edition, subject to Apple's review.
+- `CHANGE` macOS remains signed/notarized; Windows remains unsigned by explicit maintainer choice.
+- `CHANGE` Redshift remains experimental with live AWS validation pending.
+
+[Release notes and downloads](https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0)
+
 ## 0.9.0 — October 27, 2026
 
 - `CHANGE` use literal 0.9.0 before stable 1.0; retain Beta 9.0 packages and archive the unrelated July 2026 source tag.

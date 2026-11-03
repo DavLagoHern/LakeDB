@@ -1,6 +1,6 @@
 # LakeDB compatibility
 
-This is the conservative compatibility baseline for LakeDB 0.9.0 and the intended 1.0 foundation. Redshift is an initial beta integration with live AWS validation pending. A combination marked **best effort** may work but is not part of the supported release baseline.
+This is the conservative compatibility baseline for LakeDB 1.0. Redshift remains experimental, with live AWS validation pending. A combination marked **best effort** may work but is not part of the supported release baseline.
 
 ## Desktop packages
 

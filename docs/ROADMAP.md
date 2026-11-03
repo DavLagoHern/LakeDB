@@ -1,13 +1,20 @@
 # LakeDB roadmap
 
-![LakeDB 0.9.0 roadmap: clearer QuerIA, initial Redshift support and validation before 1.0](assets/roadmap/lakedb-roadmap-0.9.0.png)
+![LakeDB 1.0 roadmap](assets/roadmap/lakedb-roadmap-1.0.0.png)
 
 LakeDB is a local-first desktop client for MySQL, MariaDB, PostgreSQL and
-SQLite. The roadmap separates released capabilities, the current beta and
-work planned toward 1.0. Engine capabilities determine which tools are available;
+SQLite. The roadmap separates released capabilities, the 1.0 foundation and
+planned improvements. Engine capabilities determine which tools are available;
 SQLite does not offer schema comparison or database migration tools.
 
-## Current: 0.9.0
+## Current: 1.0.0
+
+1.0 introduces consistent interface scaling, clearer numeric and empty result
+cells, direct row-limit preferences and privacy-preserving background query
+notifications. The core client remains free. Apple contributions and subscriptions
+are optional and follow App Review separately.
+
+## Released: 0.9.0
 
 QuerIA groups each request, SQL and numbered Run action in its own card. Refine
 a selected query or start an independent question. A focused clarification can
@@ -17,7 +24,7 @@ Check access action while pending.
 
 Initial Amazon Redshift support offers the official AWS Python connector and
 AWS Data API. Unsupported capabilities remain disabled. Live AWS validation
-is pending and is a prerequisite for considering stable 1.0. See the
+is pending; Redshift remains experimental in 1.0. See the
 [Redshift beta guide](REDSHIFT.md) for external runtime requirements and limits.
 
 ## Released: Beta 8.0
@@ -165,8 +172,10 @@ defaults, bulk connection editing and lower-cost on-demand server monitoring.
 | **Beta 5 — complete** | SQLite beside MySQL/MariaDB, review-first database tools, local learned formatting, visible relationships and access management. |
 | **Beta 6 — complete** | Native PostgreSQL connections, catalog browsing, safe editing, design, exports, operations, transfer paths and review-first AI. |
 | **Beta 7 — complete** | Expired-password recovery, daily workflow controls, structure-first comparison, explicit data checks, clearer migration actions and automatic explorer refresh. |
-| **Beta 8 — current** | Independent windows, shared saved connections, restored workspaces and Apple distribution preparation. |
-| **1.0 — direction** | Measured AI quality, trusted distribution, compatibility validation, accessibility and complete product polish. |
+| **Beta 8 — complete** | Independent windows, shared saved connections, restored workspaces and Apple distribution preparation. |
+| **0.9 — complete** | QuerIA clarification/refinement, Enterprise access checks and experimental Redshift transports. |
+| **1.0 — current** | Adjustable interface scale, readable numeric/empty cells, direct row-limit settings and background notifications. |
+| **Next directions** | SQL parameters, row comparisons, live Redshift validation and wider compatibility. |
 
 Future stages describe direction, not a fixed date or guaranteed scope.
 Feedback, privacy and safety findings can change their order.
@@ -187,7 +196,7 @@ QuerIA must preserve these boundaries:
 - the complete local client remains available when QuerIA is disabled,
   unavailable or has no remaining allowance.
 
-## Before 1.0
+## Continuing quality and compatibility work
 
 ### AI quality
 
@@ -200,7 +209,7 @@ QuerIA must preserve these boundaries:
 
 - Maintain Apple Developer ID signing and notarization for official macOS
   packages; this is already part of beta distribution.
-- Trusted Windows code signing.
+- Trusted Windows code signing remains future work; Windows 1.0 packages are unsigned.
 - Clean-machine installation and upgrade validation.
 - Checksums and a documented verification path for every package.
 
@@ -222,9 +231,9 @@ QuerIA must preserve these boundaries:
 - Keep first-run, privacy, known-limit, recovery and troubleshooting guides
   current.
 - Expand Beta Tester feedback against real multi-database workflows.
-- Freeze the 1.0 scope during release-candidate testing.
+- Keep future releases focused on validated workflows and reproducible feedback.
 
-## Help define 1.0
+## Help shape the next release
 
 Request Beta Tester access from **Settings → Account**, share workflows in
 [Discussions](https://github.com/DavLagoHern/LakeDB/discussions/categories/ideas)
