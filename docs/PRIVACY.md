@@ -52,6 +52,14 @@ aggregate operational usage, success/failure and latency. These measurements
 are not prompts, context or database metadata. Email and alias are optional and
 used only to identify an account for support or manually assigned access.
 
+## Codex integration
+
+Codex is optional in the direct downloads and uses a separate ChatGPT sign-in.
+Messages and database context used by Codex can be sent to OpenAI, including
+schema metadata and bounded read-only query results. Database credentials and
+the saved LakeDB conversation history stay local.
+[Using Codex](https://github.com/DavLagoHern/LakeDB/wiki/Using-Codex)
+
 ## Credentials
 
 Saved database passwords are encrypted locally and handled in LakeDB's Electron main process. They are not exposed directly to the renderer. Configuration backups exclude passwords unless you explicitly choose an unencrypted credential export and pass the additional confirmation.

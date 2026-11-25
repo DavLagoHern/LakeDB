@@ -1,13 +1,19 @@
 # LakeDB roadmap
 
-![LakeDB 1.0 roadmap](assets/roadmap/lakedb-roadmap-1.0.0.png)
+![LakeDB 1.1.0 roadmap](assets/roadmap/lakedb-roadmap-1.1.0.png)
 
 LakeDB is a local-first desktop client for MySQL, MariaDB, PostgreSQL and
 SQLite. The roadmap separates released capabilities, the 1.0 foundation and
 planned improvements. Engine capabilities determine which tools are available;
 SQLite does not offer schema comparison or database migration tools.
 
-## Current: 1.0.0
+## Current: 1.1.0
+
+Codex adds a connection-scoped tab for database questions and reviewable SQL
+in the direct downloads. Supported query results can be sorted, filtered
+and searched on the server after the grid reaches its row limit.
+
+## Released: 1.0.0
 
 1.0 introduces consistent interface scaling, clearer numeric and empty result
 cells, direct row-limit preferences and privacy-preserving background query

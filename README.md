@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0"><img alt="Download LakeDB 1.0.0" src="https://img.shields.io/badge/DOWNLOAD-1.0.0-0b7cff?style=for-the-badge&logo=github&logoColor=white"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/tag/v1.1.0"><img alt="Download LakeDB 1.1.0" src="https://img.shields.io/badge/DOWNLOAD-1.1.0-0b7cff?style=for-the-badge&logo=github&logoColor=white"></a>
   <a href="https://github.com/DavLagoHern/homebrew-lakedb"><img alt="Install LakeDB with Homebrew" src="https://img.shields.io/badge/HOMEBREW-INSTALL_LAKEDB-fbb040?style=for-the-badge&logo=homebrew&logoColor=black"></a>
   <a href="https://davlagohern.github.io/LakeDB/"><img alt="LakeDB website" src="https://img.shields.io/badge/WEBSITE-EXPLORE_LAKEDB-19d2ff?style=for-the-badge&logoColor=020817"></a>
 </p>
@@ -18,14 +18,14 @@
   <img src="docs/assets/releases/1.0.0/lakedb-1.0.0-1920x1080.png" width="100%" alt="LakeDB 1.0.0: ask, clarify and run when ready">
 </p>
 
-<p align="center"><sub><strong>Your databases. Your next move.</strong> 1.0 brings clearer result grids, consistent interface scaling, background query notifications and optional review-first QuerIA.</sub></p>
+<p align="center"><sub><strong>Your databases. Your next move.</strong> LakeDB 1.1.0 adds Codex tabs and server-side result tools.</sub></p>
 
 ## Why LakeDB
 
 - **One workspace across multiple engines** — work with MySQL, MariaDB, PostgreSQL and SQLite without changing tools.
-- **Review-first AI** — QuerIA can generate SQL and help explain or correct query errors, but nothing runs automatically.
+- **Review-first AI** — Codex can explore a connection in read-only mode and propose SQL. QuerIA also offers reviewable SQL drafts.
 - **Production-aware workflows** — read-only connections, environment-specific confirmations and reviewable database operations.
-- **Local-first by default** — credentials stay local, and database rows or query results are not sent to the AI service.
+- **Local-first by default** — credentials stay local. When enabled, Codex can send the database context it uses, including selected query results, to OpenAI.
 
 > 💡 **Help shape LakeDB:** suggest features, describe real database workflows and
 > react to and discuss community ideas in [GitHub Discussions](https://github.com/DavLagoHern/LakeDB/discussions/categories/ideas).
@@ -65,22 +65,22 @@ The official tap tracks verified releases and their SHA-256 checksums.
 ### Direct downloads
 
 <p align="center">
-  <a href="https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0/LakeDB-1.0.0-mac-arm64.dmg"><img alt="Download LakeDB for macOS Apple Silicon" src="https://img.shields.io/badge/macOS-DOWNLOAD_DMG-06132b?style=for-the-badge&logo=apple&logoColor=white"></a>
-  <a href="https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0/LakeDB-1.0.0-win-x64-setup.exe"><img alt="Download LakeDB installer for Windows x64" src="https://img.shields.io/badge/Windows-DOWNLOAD_SETUP-0b7cff?style=for-the-badge&logo=windows&logoColor=white"></a>
-  <a href="https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0/LakeDB-1.0.0-linux-x86_64.AppImage"><img alt="Download LakeDB AppImage for Linux x64" src="https://img.shields.io/badge/Linux-DOWNLOAD_APPIMAGE-12d9ff?style=for-the-badge&logoColor=020817"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/download/v1.1.0/LakeDB-1.1.0-mac-arm64.dmg"><img alt="Download LakeDB for macOS Apple Silicon" src="https://img.shields.io/badge/macOS-DOWNLOAD_DMG-06132b?style=for-the-badge&logo=apple&logoColor=white"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/download/v1.1.0/LakeDB-1.1.0-win-x64-setup.exe"><img alt="Download LakeDB installer for Windows x64" src="https://img.shields.io/badge/Windows-DOWNLOAD_SETUP-0b7cff?style=for-the-badge&logo=windows&logoColor=white"></a>
+  <a href="https://github.com/DavLagoHern/LakeDB/releases/download/v1.1.0/LakeDB-1.1.0-linux-x86_64.AppImage"><img alt="Download LakeDB AppImage for Linux x64" src="https://img.shields.io/badge/Linux-DOWNLOAD_APPIMAGE-12d9ff?style=for-the-badge&logoColor=020817"></a>
 </p>
 
 | Platform | Alternative package | Install |
 | --- | --- | --- |
-| macOS Apple Silicon | [ZIP](https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0/LakeDB-1.0.0-mac-arm64.zip) | Move `LakeDB.app` to Applications. |
-| Windows x64 | [Portable EXE](https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0/LakeDB-1.0.0-win-x64-portable.exe) | Run without installation. |
-| Linux x64 | [Debian package](https://github.com/DavLagoHern/LakeDB/releases/download/v1.0.0/LakeDB-1.0.0-linux-amd64.deb) | Install with your package manager. |
+| macOS Apple Silicon | [ZIP](https://github.com/DavLagoHern/LakeDB/releases/download/v1.1.0/LakeDB-1.1.0-mac-arm64.zip) | Move `LakeDB.app` to Applications. |
+| Windows x64 | [Portable EXE](https://github.com/DavLagoHern/LakeDB/releases/download/v1.1.0/LakeDB-1.1.0-win-x64-portable.exe) | Run without installation. |
+| Linux x64 | [Debian package](https://github.com/DavLagoHern/LakeDB/releases/download/v1.1.0/LakeDB-1.1.0-linux-amd64.deb) | Install with your package manager. |
 
 > **Package signing:** macOS Apple Silicon packages are Developer ID signed
 > and notarized by Apple. Windows packages are not yet signed with a trusted
 > certificate. Download only from the official LakeDB repositories. Every
 > package has a matching SHA-256 file on the
-> [1.0.0 release page](https://github.com/DavLagoHern/LakeDB/releases/tag/v1.0.0).
+> [1.1.0 release page](https://github.com/DavLagoHern/LakeDB/releases/tag/v1.1.0).
 
 ---
 
@@ -90,7 +90,15 @@ the transition. Keep your existing application data. Earlier published packages
 remain available; the July 2026 `v0.9.0` source is archived under
 `legacy/v0.9.0-20260721`.
 
-## What’s new in 1.0.0
+## What’s new in 1.1.0
+
+- **Codex in a connection tab.** Ask about your database, explain SQL and errors, and review improvements. Codex can run bounded reads. You review and run proposed writes through LakeDB’s safeguards.
+- **Search beyond the row limit.** Filters, sorting and search can run over the complete result on the database for supported read-only queries.
+- **Clearer editing and navigation.** Invalid JSON and HTML highlight the relevant line. The open-connection menu shows tab colors.
+
+The Codex integration requires the Codex CLI and ChatGPT sign-in and is available in the direct downloads. Read [Using Codex](https://github.com/DavLagoHern/LakeDB/wiki/Using-Codex).
+
+## LakeDB 1.0.0
 
 - **Clearer QuerIA queries:** each request owns its SQL card and numbered Run action. Refine a selected query or start an independent question; the original stays available.
 - **Focused clarification:** after metadata inspection, QuerIA can ask about a real ambiguity in tables, relationships or business meaning. Reply to continue; SQL requires explicit execution.
@@ -156,11 +164,12 @@ Capabilities differ by engine; unsupported tools remain disabled.
 | **Beta 6 — complete** | Native PostgreSQL connections, metadata, editing, design, exports, operations, database tools and review-first AI. |
 | **Beta 7 — complete** | Reliable connection recovery, focused database refresh, structure-first comparison and reviewable migrations. |
 | **Beta 8 — complete** | Independent windows, shared saved connections, restored workspaces and Apple distribution preparation. |
-| **1.0.0 — current** | Clearer QuerIA, readable grids, consistent interface scaling and background query notifications. |
+| **1.1.0 — current** | Codex connection tabs and server-side result tools. |
+| **1.0.0 — released** | Clearer QuerIA, readable grids, consistent interface scaling and background query notifications. |
 | **Next directions** | SQL parameters, granular row differences, live Redshift validation and broader compatibility. |
 
 <p align="center">
-  <a href="docs/ROADMAP.md"><img src="docs/assets/roadmap/lakedb-roadmap-1.0.0.png" width="100%" alt="LakeDB 1.0.0 roadmap toward quality, compatibility and trusted distribution for 1.0"></a>
+  <a href="docs/ROADMAP.md"><img src="docs/assets/roadmap/lakedb-roadmap-1.1.0.png" width="100%" alt="LakeDB roadmap for 1.1.0 and beyond"></a>
 </p>
 
 Roadmap items describe direction, not a fixed release date. See

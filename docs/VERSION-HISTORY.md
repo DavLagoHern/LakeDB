@@ -13,6 +13,13 @@ Published releases and their packaged downloads are retained so older builds rem
 
 Only real tagged builds are listed as releases. The 0.2–0.4 product stages were development milestones rather than public tags, and 0.10.0–0.10.2 were not published as separate builds.
 
+## 1.1.0
+
+- `ADD` Codex tabs scoped to a database connection in the direct downloads.
+- `ADD` server-side sorting, filtering and search for supported large query results.
+- `CHANGE` reduce redundant query-session checks and display partial result counts.
+- `FIX` highlight invalid lines in JSON and HTML and show connection colors in the tab menu.
+
 ## 1.0.0 — November 3, 2026
 
 - `CHANGE` first release without the beta label; preserve existing profiles and workspaces.
